@@ -54,40 +54,52 @@ function mapRuntimeModuleToGameRecord(module: { slug: string; name: string; subd
   };
 }
 
+function mapRuntimeGames(): GameRecord[] {
+  return moduleRegistry.list().map((module, index) => mapRuntimeModuleToGameRecord(module, index));
+}
+
 export class GameRepository {
   async findAll(): Promise<GameRecord[]> {
     if (db) {
-      const { data, error } = await db
-        .from('games')
-        .select('id, slug, name, subdomain, icon_url, banner_url, description, status, release_date, created_at, updated_at, deleted_at')
-        .is('deleted_at', null)
-        .order('name', { ascending: true });
+      try {
+        const { data, error } = await db
+          .from('games')
+          .select('id, slug, name, subdomain, icon_url, banner_url, description, status, release_date, created_at, updated_at, deleted_at')
+          .is('deleted_at', null)
+          .order('name', { ascending: true });
 
-      if (error) {
-        throw new Error(`Failed to load games: ${error.message}`);
+        if (error) {
+          throw new Error(error.message);
+        }
+
+        return (data ?? []).map((row) => mapGameRow(row as GameRow));
+      } catch {
+        return mapRuntimeGames();
       }
-
-      return (data ?? []).map((row) => mapGameRow(row as GameRow));
     }
 
-    return moduleRegistry.list().map((module, index) => mapRuntimeModuleToGameRecord(module, index));
+    return mapRuntimeGames();
   }
 
   async findBySlug(slug: string): Promise<GameRecord | undefined> {
     if (db) {
-      const { data, error } = await db
-        .from('games')
-        .select('id, slug, name, subdomain, icon_url, banner_url, description, status, release_date, created_at, updated_at, deleted_at')
-        .eq('slug', slug)
-        .is('deleted_at', null)
-        .maybeSingle();
+      try {
+        const { data, error } = await db
+          .from('games')
+          .select('id, slug, name, subdomain, icon_url, banner_url, description, status, release_date, created_at, updated_at, deleted_at')
+          .eq('slug', slug)
+          .is('deleted_at', null)
+          .maybeSingle();
 
-      if (error) {
-        throw new Error(`Failed to load game ${slug}: ${error.message}`);
-      }
+        if (error) {
+          throw new Error(error.message);
+        }
 
-      if (data) {
-        return mapGameRow(data as GameRow);
+        if (data) {
+          return mapGameRow(data as GameRow);
+        }
+      } catch {
+        // Fall back to runtime module metadata when the Supabase schema is unavailable.
       }
     }
 
