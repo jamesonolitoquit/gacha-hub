@@ -45,59 +45,79 @@ function mapCharacterRow(row: CharacterRow): CharacterRecord {
   };
 }
 
+function mapSeedCharacter(character: ReturnType<typeof findSeedCharacter> extends infer T ? T : never, index = 1): CharacterRecord {
+  if (!character) {
+    throw new Error('Seed character not found');
+  }
+
+  return {
+    id: index,
+    gameId: character.gameId,
+    slug: character.slug,
+    name: character.name,
+    rarity: character.rarity,
+    element: character.element,
+    characterClass: character.characterClass,
+    role: character.role,
+    portraitUrl: null,
+    fullArtUrl: null,
+    iconUrl: null,
+    description: character.description,
+    releasePatchId: null,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    deletedAt: null,
+  };
+}
+
+function mapSeedCharacters(gameId: number): CharacterRecord[] {
+  return getSeedCharacters(gameId).map((character, index) => mapSeedCharacter(character, index + 1));
+}
+
 export class CharacterRepository {
   async findByGameId(gameId: number): Promise<CharacterRecord[]> {
     if (db) {
-      const { data, error } = await db
-        .from('characters')
-        .select('id, game_id, slug, name, rarity, element, class, role, portrait_url, full_art_url, icon_url, description, release_patch_id, created_at, updated_at, deleted_at')
-        .eq('game_id', gameId)
-        .is('deleted_at', null)
-        .order('name', { ascending: true });
+      try {
+        const { data, error } = await db
+          .from('characters')
+          .select('id, game_id, slug, name, rarity, element, class, role, portrait_url, full_art_url, icon_url, description, release_patch_id, created_at, updated_at, deleted_at')
+          .eq('game_id', gameId)
+          .is('deleted_at', null)
+          .order('name', { ascending: true });
 
-      if (error) {
-        throw new Error(`Failed to load characters for game ${gameId}: ${error.message}`);
+        if (error) {
+          throw new Error(error.message);
+        }
+
+        return (data ?? []).map((row) => mapCharacterRow(row as CharacterRow));
+      } catch {
+        return mapSeedCharacters(gameId);
       }
-
-      return (data ?? []).map((row) => mapCharacterRow(row as CharacterRow));
     }
 
-    return getSeedCharacters(gameId).map((character, index) => ({
-      id: index + 1,
-      gameId: character.gameId,
-      slug: character.slug,
-      name: character.name,
-      rarity: character.rarity,
-      element: character.element,
-      characterClass: character.characterClass,
-      role: character.role,
-      portraitUrl: null,
-      fullArtUrl: null,
-      iconUrl: null,
-      description: character.description,
-      releasePatchId: null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    }));
+    return mapSeedCharacters(gameId);
   }
 
   async findById(gameId: number, id: number): Promise<CharacterRecord | undefined> {
     if (db) {
-      const { data, error } = await db
-        .from('characters')
-        .select('id, game_id, slug, name, rarity, element, class, role, portrait_url, full_art_url, icon_url, description, release_patch_id, created_at, updated_at, deleted_at')
-        .eq('game_id', gameId)
-        .eq('id', id)
-        .is('deleted_at', null)
-        .maybeSingle();
+      try {
+        const { data, error } = await db
+          .from('characters')
+          .select('id, game_id, slug, name, rarity, element, class, role, portrait_url, full_art_url, icon_url, description, release_patch_id, created_at, updated_at, deleted_at')
+          .eq('game_id', gameId)
+          .eq('id', id)
+          .is('deleted_at', null)
+          .maybeSingle();
 
-      if (error) {
-        throw new Error(`Failed to load character ${id}: ${error.message}`);
-      }
+        if (error) {
+          throw new Error(error.message);
+        }
 
-      if (data) {
-        return mapCharacterRow(data as CharacterRow);
+        if (data) {
+          return mapCharacterRow(data as CharacterRow);
+        }
+      } catch {
+        // Fall back to seed data when the Supabase schema is unavailable.
       }
     }
 
@@ -129,20 +149,24 @@ export class CharacterRepository {
 
   async findBySlug(gameId: number, slug: string): Promise<CharacterRecord | undefined> {
     if (db) {
-      const { data, error } = await db
-        .from('characters')
-        .select('id, game_id, slug, name, rarity, element, class, role, portrait_url, full_art_url, icon_url, description, release_patch_id, created_at, updated_at, deleted_at')
-        .eq('game_id', gameId)
-        .eq('slug', slug)
-        .is('deleted_at', null)
-        .maybeSingle();
+      try {
+        const { data, error } = await db
+          .from('characters')
+          .select('id, game_id, slug, name, rarity, element, class, role, portrait_url, full_art_url, icon_url, description, release_patch_id, created_at, updated_at, deleted_at')
+          .eq('game_id', gameId)
+          .eq('slug', slug)
+          .is('deleted_at', null)
+          .maybeSingle();
 
-      if (error) {
-        throw new Error(`Failed to load character ${slug}: ${error.message}`);
-      }
+        if (error) {
+          throw new Error(error.message);
+        }
 
-      if (data) {
-        return mapCharacterRow(data as CharacterRow);
+        if (data) {
+          return mapCharacterRow(data as CharacterRow);
+        }
+      } catch {
+        // Fall back to seed data when the Supabase schema is unavailable.
       }
     }
 
