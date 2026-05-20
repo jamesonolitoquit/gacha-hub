@@ -176,7 +176,7 @@ export default async function HomePage() {
             </Link>
           </div>
 
-                <div id="game-rail" className="mt-6 -mx-5 px-5 overflow-x-auto motion-scroll-rail snap-x snap-mandatory flex gap-4 py-4 relative">
+                <div id="game-rail" tabIndex={0} className="mt-6 -mx-5 px-5 overflow-x-auto motion-scroll-rail snap-x snap-mandatory flex gap-4 py-4 relative">
             {games.map((game) => (
               <Link
                 key={game.slug}

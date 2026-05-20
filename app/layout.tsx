@@ -28,13 +28,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        {/* Allow vercel storage fonts used by deployment previews */}
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="font-src 'self' *.vercel.com *.gstatic.com vercel.live public.blob.vercel-storage.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' https:;"
-        />
-      </head>
       <body>{children}</body>
     </html>
   );

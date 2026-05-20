@@ -33,10 +33,35 @@ export default function RailIndicator({ railId }: Props) {
 
     update();
     el.addEventListener('scroll', update, { passive: true });
+    // keyboard navigation: left/right arrow to move between cards
+    const onKey = (ev: KeyboardEvent) => {
+      if (ev.key !== 'ArrowLeft' && ev.key !== 'ArrowRight') return;
+      ev.preventDefault();
+      const children = Array.from(el.children).filter((c) => (c as HTMLElement).classList.contains('fantasy-card')) as HTMLElement[];
+      if (children.length === 0) return;
+      // find current nearest
+      const scrollLeft = el.scrollLeft;
+      let nearest = 0;
+      let nearestDiff = Infinity;
+      children.forEach((child, idx) => {
+        const diff = Math.abs(child.offsetLeft - scrollLeft);
+        if (diff < nearestDiff) {
+          nearest = idx;
+          nearestDiff = diff;
+        }
+      });
+      let target = nearest + (ev.key === 'ArrowRight' ? 1 : -1);
+      if (target < 0) target = 0;
+      if (target >= children.length) target = children.length - 1;
+      const child = children[target];
+      if (child) el.scrollTo({ left: child.offsetLeft, behavior: 'smooth' });
+    };
+    el.addEventListener('keydown', onKey as any);
     window.addEventListener('resize', update);
 
     return () => {
       el.removeEventListener('scroll', update);
+      el.removeEventListener('keydown', onKey as any);
       window.removeEventListener('resize', update);
     };
   }, [railId]);
