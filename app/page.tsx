@@ -39,6 +39,7 @@ export default async function HomePage() {
   const games = gameModules;
   const featuredGame = games[0];
   const ScrollRailControls = dynamic(() => import('./components/scroll-rail-controls'), { ssr: false });
+  const RailIndicator = dynamic(() => import('./components/rail-indicator'), { ssr: false });
 
   return (
     <>
@@ -222,6 +223,7 @@ export default async function HomePage() {
           {/* client scroll controls for the rail */}
           <div className="relative mt-2">
             <ScrollRailControls railId="game-rail" />
+            <RailIndicator railId="game-rail" />
           </div>
         </section>
       </div>

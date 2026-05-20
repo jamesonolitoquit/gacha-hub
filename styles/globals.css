@@ -239,3 +239,27 @@ textarea:focus-visible {
 .scroll-rail-btn.left { left: 0.5rem; }
 .scroll-rail-btn.right { right: 0.5rem; }
 .scroll-rail-btn:hover { transform: translateY(-50%) scale(1.05); background: rgba(255,255,255,0.04); }
+
+/* Rail indicator dots */
+.rail-indicator {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 8px;
+}
+.rail-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.04);
+  transition: transform 160ms ease, background 160ms ease, opacity 160ms ease;
+}
+.rail-dot.active {
+  background: linear-gradient(135deg, #5c7cff, #a96cff);
+  transform: scale(1.18);
+}
+
+@media (max-width: 640px) {
+  .scroll-rail-controls { display: none; }
+}
