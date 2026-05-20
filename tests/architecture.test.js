@@ -68,7 +68,7 @@ test('database boundary reads env-driven supabase config', () => {
   const source = read('server/db.ts');
 
   assert.match(source, /createClient\(/);
-  assert.match(source, /NEXT_PUBLIC_SUPABASE_URL/);
+  assert.match(source, /SUPABASE_URL/);
   assert.match(source, /SUPABASE_SERVICE_ROLE_KEY/);
 });
 

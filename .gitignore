@@ -11,3 +11,5 @@ tsconfig.tsbuildinfo
 /.idea/
 .DS_Store
 .ai/
+.vercel
+.env*.local
