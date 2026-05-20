@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0b1020;
+  --foreground: #f5f7fb;
+  --surface: #141b31;
+  --accent: #8ec5ff;
+  --accent-gold: #f6d37a;
+  --accent-violet: #9c7dff;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  overflow-x: visible;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(156, 125, 255, 0.25), transparent 0 22%),
+    radial-gradient(circle at 84% 10%, rgba(142, 197, 255, 0.22), transparent 0 24%),
+    radial-gradient(circle at 50% 0%, rgba(246, 211, 122, 0.14), transparent 0 18%),
+    linear-gradient(180deg, #070b16 0%, #0b1020 42%, #11192e 100%);
+  color: var(--foreground);
+  font-family: 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.01em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(142, 197, 255, 0.25);
+  color: var(--foreground);
+}
+
+.fantasy-shell {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.fantasy-shell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(142, 197, 255, 0.08), transparent 0 18%),
+    radial-gradient(circle at 80% 18%, rgba(246, 211, 122, 0.08), transparent 0 16%),
+    radial-gradient(circle at 50% 72%, rgba(156, 125, 255, 0.08), transparent 0 22%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.02), transparent 60%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.fantasy-panel {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03)),
+    rgba(7, 11, 22, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(18px);
+}
+
+.fantasy-card {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
+    rgba(16, 22, 39, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+}
+
+.fantasy-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(142, 197, 255, 0.08), transparent 35%, rgba(246, 211, 122, 0.06));
+  pointer-events: none;
+}
+
+.fantasy-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(2px);
+  pointer-events: none;
+  opacity: 0.9;
+  animation: float-orb 12s ease-in-out infinite;
+  will-change: transform;
+  mix-blend-mode: screen;
+}
+
+.fantasy-orb--blue {
+  background: radial-gradient(circle, rgba(142, 197, 255, 0.4), transparent 72%);
+}
+
+.fantasy-orb--gold {
+  background: radial-gradient(circle, rgba(246, 211, 122, 0.34), transparent 72%);
+}
+
+.fantasy-orb--violet {
+  background: radial-gradient(circle, rgba(156, 125, 255, 0.34), transparent 72%);
+}
+
+@keyframes float-orb {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0) scale(1.05);
+  }
+}
+
+/* Focus indicators for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* High contrast focus state for dark theme */
+@media (prefers-contrast: more) {
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline-width: 3px;
+  }
+}
