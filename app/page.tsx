@@ -36,6 +36,7 @@ const featurePillars = [
 
 export default async function HomePage() {
   const games = gameModules;
+  const featuredGame = games[0];
 
   return (
     <>
@@ -73,21 +74,49 @@ export default async function HomePage() {
 
               <aside className="fantasy-card grid min-w-0 gap-4 rounded-[1.5rem] p-5">
                 <div className="min-w-0">
-                  <p className="text-xs uppercase tracking-[0.3em] text-white/65 font-semibold">Realm status</p>
-                  <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3">
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                      <p className="text-2xl font-semibold text-sky-300" aria-label="Games registered">
-                        {games.length}
-                      </p>
-                      <p className="mt-1 text-xs text-white/70 font-medium">Active worlds</p>
-                    </div>
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                      <p className="text-2xl font-semibold text-white">SSR</p>
-                      <p className="mt-1 text-xs text-white/70 font-medium">Live scenes</p>
-                    </div>
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                      <p className="text-2xl font-semibold text-white">AI</p>
-                      <p className="mt-1 text-xs text-white/70 font-medium">Lore tools</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-white/65 font-semibold">Featured realm</p>
+                  <div className="mt-3 overflow-hidden rounded-[1.25rem] border border-white/10 bg-slate-950/40">
+                    <div
+                      className="min-h-40 bg-cover bg-center"
+                      style={{
+                        backgroundImage: featuredGame
+                          ? `linear-gradient(135deg, ${featuredGame.theme.colors.primary}33, ${featuredGame.theme.colors.secondary}66), url(${getOptimizedBannerUrl(featuredGame.bannerUrl, 960)})`
+                          : undefined,
+                      }}
+                      aria-hidden="true"
+                    />
+                    <div className="border-t border-white/10 p-4">
+                      <p className="text-[0.7rem] uppercase tracking-[0.3em] text-white/60 font-semibold">Ready to enter</p>
+                      <div className="mt-2 flex items-center justify-between gap-3">
+                        <div className="min-w-0">
+                          <p className="text-lg font-semibold text-white">
+                            {featuredGame?.name ?? 'Choose a realm'}
+                          </p>
+                          <p className="text-sm text-white/70 font-medium">
+                            {featuredGame?.subdomain ?? 'Launcher preview'}
+                          </p>
+                        </div>
+                        <div
+                          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-xs font-semibold text-white"
+                          style={{
+                            background: featuredGame
+                              ? `linear-gradient(135deg, ${featuredGame.theme.colors.primary}, ${featuredGame.theme.colors.secondary})`
+                              : 'linear-gradient(135deg, #7dd3fc, #dbeafe)',
+                          }}
+                          aria-hidden="true"
+                        >
+                          {featuredGame
+                            ? featuredGame.name
+                                .replace(/[^a-z0-9]+/gi, ' ')
+                                .trim()
+                                .split(/\s+/)
+                                .map((word) => word[0])
+                                .join('')
+                                .slice(0, 3)
+                                .toUpperCase()
+                            : 'HUB'}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -95,8 +124,25 @@ export default async function HomePage() {
                 <div className="min-w-0 rounded-2xl border border-white/10 bg-white/5 p-4">
                   <p className="text-xs uppercase tracking-[0.3em] text-white/65 font-semibold">Portal preview</p>
                   <p className="mt-3 text-sm text-white/75 font-medium">
-                    Pick a game from the switcher or the cards below to reshape the shell into that realm.
+                    Choose a world below and the launcher shell follows it into that realm.
                   </p>
+                </div>
+
+                <div className="grid grid-cols-3 gap-3">
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-2xl font-semibold text-sky-300" aria-label="Games registered">
+                      {games.length}
+                    </p>
+                    <p className="mt-1 text-xs text-white/70 font-medium">Active worlds</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-2xl font-semibold text-white">SSR</p>
+                    <p className="mt-1 text-xs text-white/70 font-medium">Live scenes</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-2xl font-semibold text-white">AI</p>
+                    <p className="mt-1 text-xs text-white/70 font-medium">Lore tools</p>
+                  </div>
                 </div>
               </aside>
             </div>
