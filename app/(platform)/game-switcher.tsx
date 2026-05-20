@@ -62,7 +62,7 @@ export function GameSwitcher({ games }: GameSwitcherProps) {
         aria-expanded={open}
         aria-controls="game-switcher-menu"
         onClick={() => setOpen((value) => !value)}
-        className="relative inline-flex min-h-11 items-center gap-3 overflow-hidden rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-left transition hover:border-white/25 hover:bg-white/10 focus-visible:border-sky-300/55 focus-visible:bg-white/10"
+        className="group relative inline-flex min-h-12 items-center gap-4 overflow-hidden rounded-3xl border border-white/10 bg-white/5 px-4 py-3 text-left transition hover:border-white/25 hover:bg-white/10 focus-visible:border-sky-300/55 focus-visible:bg-white/10"
       >
         {currentGame ? (
           <span
@@ -74,8 +74,10 @@ export function GameSwitcher({ games }: GameSwitcherProps) {
           <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-slate-950/35 via-slate-950/65 to-slate-950/85" aria-hidden="true" />
         )}
         <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-slate-950/20 via-slate-950/55 to-slate-950/80" aria-hidden="true" />
+        {/* subtle sheen that animates on hover */}
+        <span className="absolute inset-0 motion-sheen-sweep opacity-0 pointer-events-none group-hover:opacity-30" aria-hidden="true" />
         <span
-          className="relative z-10 inline-flex h-9 w-9 items-center justify-center rounded-xl text-[0.65rem] font-semibold tracking-[0.2em] text-white"
+          className="relative z-10 inline-flex h-11 w-11 items-center justify-center rounded-xl text-[0.72rem] font-semibold tracking-[0.2em] text-white"
           style={{
             background: isLauncherHub
               ? 'linear-gradient(135deg, #5c7cff, #a96cff)'

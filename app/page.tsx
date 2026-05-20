@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { gameModules } from '../config/games.config';
 import { getOptimizedBannerUrl } from '../shared/utils/banner';
 
@@ -37,6 +38,7 @@ const featurePillars = [
 export default async function HomePage() {
   const games = gameModules;
   const featuredGame = games[0];
+  const ScrollRailControls = dynamic(() => import('./components/scroll-rail-controls'), { ssr: false });
 
   return (
     <>
@@ -126,6 +128,8 @@ export default async function HomePage() {
                   <p className="mt-3 text-sm text-white/75 font-medium">
                     Choose a world below and the launcher shell follows it into that realm.
                   </p>
+                  <p className="mt-3 text-sm text-white/75 font-medium">Realm status: Ready to preview</p>
+                  <p className="mt-2 text-sm text-white/70">Pick a game from the switcher or the cards below</p>
                 </div>
 
                 <div className="grid grid-cols-3 gap-3">
@@ -171,12 +175,12 @@ export default async function HomePage() {
             </Link>
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
+                <div id="game-rail" className="mt-6 -mx-5 px-5 overflow-x-auto motion-scroll-rail snap-x snap-mandatory flex gap-4 py-4 relative">
             {games.map((game) => (
               <Link
                 key={game.slug}
                 href={`/games/${game.slug}`}
-                className="fantasy-card group rounded-2xl p-5 transition hover:-translate-y-0.5 hover:border-sky-300/40 focus-visible:border-sky-300/55 block w-full"
+                className="fantasy-card group rounded-2xl p-5 transition hover:-translate-y-0.5 hover:border-sky-300/40 focus-visible:border-sky-300/55 shrink-0 w-[min(70vw,26rem)] snap-start"
               >
                 <div
                   className="absolute inset-0 w-full h-full bg-cover bg-center opacity-18"
@@ -214,6 +218,10 @@ export default async function HomePage() {
                 </div>
               </Link>
             ))}
+          </div>
+          {/* client scroll controls for the rail */}
+          <div className="relative mt-2">
+            <ScrollRailControls railId="game-rail" />
           </div>
         </section>
       </div>

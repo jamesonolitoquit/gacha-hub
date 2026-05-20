@@ -147,3 +147,95 @@ textarea:focus-visible {
     outline-width: 3px;
   }
 }
+
+/* Motion utilities for launcher polish */
+.motion-hero-drift {
+  /* gentle slow drift to give the hero a living feel */
+  animation: hero-drift 24s linear infinite;
+  will-change: transform;
+}
+
+@keyframes hero-drift {
+  0% { transform: translate3d(0,0,0) rotate(0.001deg); }
+  25% { transform: translate3d(-5px,-3px,0) rotate(-0.12deg); }
+  50% { transform: translate3d(0,-6px,0) rotate(0.08deg); }
+  75% { transform: translate3d(5px,-3px,0) rotate(-0.04deg); }
+  100% { transform: translate3d(0,0,0) rotate(0.001deg); }
+}
+
+.motion-sheen-sweep {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.10) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  mix-blend-mode: screen;
+  animation: sheen-sweep 3.4s linear infinite;
+  animation-play-state: paused; /* will run on hover */
+  opacity: 0.0;
+}
+
+@keyframes sheen-sweep {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Play sheen when parent group is hovered */
+.group:hover .motion-sheen-sweep {
+  animation-play-state: running;
+  opacity: 0.22; /* slightly subtler on hover */
+}
+
+.motion-scroll-rail {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.motion-scroll-rail > * {
+  scroll-snap-align: start;
+}
+
+/* Subtle shadow to suggest more content off-screen */
+.motion-scroll-rail::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 5rem;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(7,11,22,0), rgba(7,11,22,0.6));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-hero-drift,
+  .motion-sheen-sweep {
+    animation: none !important;
+  }
+}
+
+/* Scroll rail control styles */
+.scroll-rail-controls {
+  position: absolute;
+  inset: 0 auto 0 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.scroll-rail-btn {
+  pointer-events: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  background: rgba(10,12,20,0.6);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.36);
+  transition: transform 160ms ease, background 160ms ease, opacity 160ms ease;
+}
+.scroll-rail-btn.left { left: 0.5rem; }
+.scroll-rail-btn.right { right: 0.5rem; }
+.scroll-rail-btn:hover { transform: translateY(-50%) scale(1.05); background: rgba(255,255,255,0.04); }
