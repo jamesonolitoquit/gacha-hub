@@ -14,6 +14,7 @@ export default function ScrollCollapseHeader({ games }: Props) {
   const lastY = useRef(0);
   const ticking = useRef(false);
   const headerRef = useRef<HTMLElement | null>(null);
+  const compactRef = useRef(compact);
 
   function publishHeight(el: HTMLElement | null, compactState: boolean) {
     try {
@@ -31,12 +32,26 @@ export default function ScrollCollapseHeader({ games }: Props) {
     function onScroll() {
       const y = window.scrollY || 0;
 
+      // small hysteresis to avoid toggling on tiny scroll jitters
+      const DELTA = 12;
+
       if (!ticking.current) {
         window.requestAnimationFrame(() => {
-          if (y > lastY.current && y > 48) {
-            setCompact(true);
-          } else if (y < lastY.current) {
-            setCompact(false);
+          const dy = y - lastY.current;
+          // enter compact when scrolling down past threshold
+          if (dy > DELTA && y > 48) {
+            if (!compactRef.current) {
+              setCompact(true);
+              compactRef.current = true;
+            }
+          }
+
+          // exit compact when scrolling up past threshold
+          if (lastY.current - y > DELTA) {
+            if (compactRef.current) {
+              setCompact(false);
+              compactRef.current = false;
+            }
           }
 
           lastY.current = y;
@@ -54,6 +69,9 @@ export default function ScrollCollapseHeader({ games }: Props) {
 
   // publish height on mount, on compact change, and on resize
   useEffect(() => {
+    // keep the ref in sync if compact changes externally
+    compactRef.current = compact;
+    
     const el = headerRef.current;
     publishHeight(el, compact);
 
