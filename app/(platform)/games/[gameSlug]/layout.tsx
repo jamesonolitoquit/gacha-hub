@@ -26,21 +26,20 @@ export default function GameLayout({ children, params }: Props) {
         <AppShell
           skipTargetId="game-main"
           skipLabel="Skip to game content"
-          header={(
+          header={
             <header
-                className="sticky z-40 border-b px-6 py-2.5 backdrop-blur-xl xl:px-10 game-header transition-all duration-200"
-                style={{
-                  top: '0px',
-                  transform: 'translateY(var(--platform-header-height, 92px))',
-                  borderColor: 'rgba(255,255,255,0.06)',
-                  background: 'rgba(10,15,24,0.7)',
-                  ['--skr-primary-rgb' as string]: hexToRgbTriplet(game.theme.colors.primary),
-                  ['--skr-secondary-rgb' as string]: hexToRgbTriplet(game.theme.colors.secondary),
-                  ['--skr-background-rgb' as string]: hexToRgbTriplet(game.theme.colors.background),
-                  ['--skr-surface-rgb' as string]: hexToRgbTriplet(game.theme.colors.surface),
-                  ['--skr-text-rgb' as string]: hexToRgbTriplet(game.theme.colors.text),
-                }}
-              >
+              className="sticky z-40 border-b px-6 py-2.5 backdrop-blur-xl xl:px-10 game-header transition-all duration-200"
+              style={{
+                top: 'var(--platform-header-height, 60px)',
+                borderColor: 'rgba(255,255,255,0.06)',
+                background: 'rgba(10,15,24,0.7)',
+                ['--skr-primary-rgb' as string]: hexToRgbTriplet(game.theme.colors.primary),
+                ['--skr-secondary-rgb' as string]: hexToRgbTriplet(game.theme.colors.secondary),
+                ['--skr-background-rgb' as string]: hexToRgbTriplet(game.theme.colors.background),
+                ['--skr-surface-rgb' as string]: hexToRgbTriplet(game.theme.colors.surface),
+                ['--skr-text-rgb' as string]: hexToRgbTriplet(game.theme.colors.text),
+              }}
+            >
               <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between gap-4">
                 <div className="flex items-center gap-4">
                   <span
@@ -56,7 +55,7 @@ export default function GameLayout({ children, params }: Props) {
                 </div>
               </div>
             </header>
-          )}
+          }
         >
           <section id="game-main" className="mx-auto w-full max-w-[1600px] px-6 py-8 xl:px-10">
             {children}

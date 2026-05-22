@@ -67,7 +67,8 @@ export default function ScrollCollapseHeader({ games }: Props) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // publish height on mount, on compact change, and on resize
+  // publish the stable layout height on mount and resize only.
+  // The header's visual collapse now happens inside that fixed height.
   useEffect(() => {
     // keep the ref in sync if compact changes externally
     compactRef.current = compact;
@@ -75,38 +76,20 @@ export default function ScrollCollapseHeader({ games }: Props) {
     const el = headerRef.current;
     publishHeight(el, compact);
 
-    // Use ResizeObserver to continuously publish height while the header animates
-    // so consumers (game headers) can smoothly track the change without a gap.
-    let ro: ResizeObserver | null = null;
-    try {
-      ro = new ResizeObserver(() => publishHeight(headerRef.current, compact));
-      if (el) ro.observe(el);
-    } catch (e) {
-      // ResizeObserver may not be available in some environments — ignore.
-    }
-
-    // After the header finishes its CSS transition, republish the final height as a fallback
-    const onTransitionEnd = (ev: TransitionEvent) => publishHeight(el, compact);
-    el?.addEventListener('transitionend', onTransitionEnd);
-
-    // schedule a timed fallback publish after the transition duration in case events don't fire
-    const fallbackTimer = window.setTimeout(() => publishHeight(el, compact), 320);
-
     const onResize = () => publishHeight(headerRef.current, compact);
     window.addEventListener('resize', onResize);
     return () => {
       window.removeEventListener('resize', onResize);
-      el?.removeEventListener('transitionend', onTransitionEnd);
-      window.clearTimeout(fallbackTimer);
-      if (ro) {
-        try { ro.disconnect(); } catch (e) {}
-      }
     };
-  }, [compact]);
+  }, []);
 
   return (
-    <header ref={headerRef as any} className={`sticky top-0 z-50 border-b border-white/10 bg-black/55 backdrop-blur-xl transition-all duration-200 ${compact ? 'py-0' : 'py-1 md:py-1.5'}`}>
-      <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 md:px-6">
+    <header
+      ref={headerRef as any}
+      className="sticky top-0 z-50 overflow-hidden border-b border-white/10 bg-black/55 backdrop-blur-xl"
+      style={{ minHeight: 'var(--platform-header-height, 60px)' }}
+    >
+      <div className={`mx-auto flex max-w-6xl items-center gap-3 px-4 md:px-6 transition-transform duration-200 ${compact ? 'translate-y-0 md:translate-y-[-1px] scale-[0.985]' : 'translate-y-0 scale-100'}`}>
         <GameSwitcher games={games} compact={compact} />
         <div className="hidden md:block flex-1 max-w-[200px]">
           {!compact && <HeaderSearch />}
