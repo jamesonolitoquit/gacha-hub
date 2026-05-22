@@ -71,22 +71,26 @@ export default function ScrollCollapseHeader({ games }: Props) {
   useEffect(() => {
     // keep the ref in sync if compact changes externally
     compactRef.current = compact;
-    
+
     const el = headerRef.current;
     publishHeight(el, compact);
 
-    // After the header finishes its CSS transition, republish the final height so
-    // consuming game headers can animate to the correct top value without jumping.
-    const onTransitionEnd = (ev: TransitionEvent) => {
-      // only react to height/padding/top-ish transitions coming from this header
-      publishHeight(el, compact);
-    };
+    // Use ResizeObserver to continuously publish height while the header animates
+    // so consumers (game headers) can smoothly track the change without a gap.
+    let ro: ResizeObserver | null = null;
+    try {
+      ro = new ResizeObserver(() => publishHeight(headerRef.current, compact));
+      if (el) ro.observe(el);
+    } catch (e) {
+      // ResizeObserver may not be available in some environments — ignore.
+    }
 
+    // After the header finishes its CSS transition, republish the final height as a fallback
+    const onTransitionEnd = (ev: TransitionEvent) => publishHeight(el, compact);
     el?.addEventListener('transitionend', onTransitionEnd);
 
-    // also schedule a fallback publish after the transition duration in case
-    // the event doesn't fire (browsers, reduced-motion, etc.)
-    const fallbackTimer = window.setTimeout(() => publishHeight(el, compact), 260);
+    // schedule a timed fallback publish after the transition duration in case events don't fire
+    const fallbackTimer = window.setTimeout(() => publishHeight(el, compact), 320);
 
     const onResize = () => publishHeight(headerRef.current, compact);
     window.addEventListener('resize', onResize);
@@ -94,6 +98,9 @@ export default function ScrollCollapseHeader({ games }: Props) {
       window.removeEventListener('resize', onResize);
       el?.removeEventListener('transitionend', onTransitionEnd);
       window.clearTimeout(fallbackTimer);
+      if (ro) {
+        try { ro.disconnect(); } catch (e) {}
+      }
     };
   }, [compact]);
 
