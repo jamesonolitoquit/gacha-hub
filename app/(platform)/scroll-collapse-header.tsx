@@ -18,7 +18,8 @@ export default function ScrollCollapseHeader({ games }: Props) {
   function publishHeight(el: HTMLElement | null, compactState: boolean) {
     try {
       if (!el) return;
-      const h = Math.round(el.getBoundingClientRect().height);
+      // Use offsetHeight to get an integer height and avoid fractional layout jumps
+      const h = Math.round(el.offsetHeight || el.getBoundingClientRect().height);
       document.documentElement.style.setProperty('--platform-header-height', `${h}px`);
       document.documentElement.setAttribute('data-platform-compact', compactState ? 'true' : 'false');
     } catch (e) {
@@ -56,9 +57,26 @@ export default function ScrollCollapseHeader({ games }: Props) {
     const el = headerRef.current;
     publishHeight(el, compact);
 
+    // After the header finishes its CSS transition, republish the final height so
+    // consuming game headers can animate to the correct top value without jumping.
+    const onTransitionEnd = (ev: TransitionEvent) => {
+      // only react to height/padding/top-ish transitions coming from this header
+      publishHeight(el, compact);
+    };
+
+    el?.addEventListener('transitionend', onTransitionEnd);
+
+    // also schedule a fallback publish after the transition duration in case
+    // the event doesn't fire (browsers, reduced-motion, etc.)
+    const fallbackTimer = window.setTimeout(() => publishHeight(el, compact), 260);
+
     const onResize = () => publishHeight(headerRef.current, compact);
     window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
+    return () => {
+      window.removeEventListener('resize', onResize);
+      el?.removeEventListener('transitionend', onTransitionEnd);
+      window.clearTimeout(fallbackTimer);
+    };
   }, [compact]);
 
   return (

@@ -307,7 +307,7 @@ header[data-compact] {
 
 /* Game header should follow platform header height and animate padding/top */
 .game-header {
-  transition: top 200ms ease, padding 180ms ease, background 160ms ease;
+  transition: top 200ms ease, padding 200ms ease, background 160ms ease;
 }
 
 /* When platform header is compact, tighten the game header padding for a connected look */
