@@ -8,14 +8,23 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "test": "node --test tests/architecture.test.js"
+    "test": "node --test tests/architecture.test.js tests/datasources.test.js tests/seed.test.js tests/banner-url.test.js",
+    "test:all": "node --test tests/**/*.test.js",
+    "test:watch": "node --test --watch tests/**/*.test.js",
+    "import:sheet": "node ./scripts/import-sheet.js",
+    "process:seeds": "node ./scripts/process-seeds.js",
+    "process:seeds:mapped": "node ./scripts/process-seeds-mapping.js",
+    "prune:seeds": "node ./scripts/prune-seeds.js",
+    "seed:db": "node ./scripts/seed-db-transactional.js"
   },
   "dependencies": {
-    "next": "14.2.30",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
     "@supabase/supabase-js": "^2.49.1",
-    "drizzle-orm": "^0.36.4"
+    "drizzle-orm": "^0.45.2",
+    "fuse.js": "^7.3.0",
+    "next": "14.2.30",
+    "pg": "^8.11.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

@@ -1,0 +1,4443 @@
+[
+  {
+    "characterSlug": "karl-heron",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "SPELLWEAVE-PWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Spellweaver"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Weakness Hit",
+      "Effect Hit",
+      "All ATK (%)",
+      "Effect Resistance",
+      "Crit DMG"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "infinite-tower",
+      "arena",
+      "total-war",
+      "advent-karma",
+      "guild-war",
+      "real-time-arena"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "As with all other ATTACK heroes, the goal is to push the two main damage multipliers to a high amount. Even though he may not be a main damage dealer, the output can still be decent. Assassin Set can be used as the opposite. Due to his low Shock chance, you can also raise it with this build to land Shock more easily for better enemy disruption, particularly against the main damage dealer on their team."
+  },
+  {
+    "characterSlug": "fai",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Bounty Tracker"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "Block Rate",
+      "DMG Taken Reduction",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "advent-god",
+      "pudungeon-earth",
+      "guild-war",
+      "advent-phys",
+      "adventure-both"
+    ],
+    "notes": "Playing a key role as a Sub DPS, her ATK% has to be highest/ second highest on the team. Crit Rate & Crit DMG are the main stats to focus on, with Weakness Hit aimed to be around 46%. Execution comes in handy against certain enemies (for Guild War) since it is easier to ensure she wouldn't be aiming into an Immortal/Indomitable enemy. If she is required just for her Passive and to get DEF Reduction off, survivability is priority so investing in high Block Rate is probably best considering how frail she is."
+  },
+  {
+    "characterSlug": "branze-bransel",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "VAN-PWEAPON",
+      "armor": "VAN-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Vanguard"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "All ATK (%)",
+      "Weakness Hit",
+      "All ATK",
+      "Crit DMG"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "tower-of-trials",
+      "arena",
+      "total-war",
+      "infinite-tower",
+      "pudungeon-light",
+      "guild-war",
+      "real-time-arena"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Allows them to do considerable DMG, especially necessary to have successful Chain Attacks on their S1."
+  },
+  {
+    "characterSlug": "colt",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "VAN-PWEAPON",
+      "armor": "VAN-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Vanguard"
+    },
+    "gearSet2": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Effect Hit Rate +24%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "All ATK (%)",
+      "Crit Rate",
+      "Weakness Hit",
+      "Effect Hit",
+      "Crit DMG",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "total-war",
+      "guild-war"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Preferred in Guild War where you know Crits are going to be blocked. This build will maintain her DMG output. Aim for 77 Speed to achieve maximum ATK Boost from passive."
+  },
+  {
+    "characterSlug": "dellons",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "advent-kyle",
+      "adventure-both",
+      "total-war",
+      "infinite-tower"
+    ],
+    "notes": "This build aims to let his S1 (ST Skill) hit hard on bosses."
+  },
+  {
+    "characterSlug": "kagura",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "VAN-PWEAPON",
+      "armor": "VAN-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Vanguard"
+    },
+    "gearSet2": {
+      "weapon": "SPELLWEAVE-PWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Spellweaver"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Effect Hit Rate +24%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "All ATK (%)",
+      "Effect Hit",
+      "All ATK",
+      "Effect Resistance"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "arena",
+      "real-time-arena",
+      "infinite-tower",
+      "total-war",
+      "guild-war"
+    ],
+    "notes": "Heal scales off ATK% so having high ATK% has the potential to full-heal the entire team to turn the tide of the battle. Accessory may not be 5* even. This aims to allow Petrification to happen at a higher rate, immobilizing the enemies when it is most necessary. Also, petrification DMG scales off ATK%."
+  },
+  {
+    "characterSlug": "klahan",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "ASSASSIN-PWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "45DMG",
+      "setName": "Assassin"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "adventure-both"
+    ],
+    "notes": "Focuses primarily on Crit Rate (make 100%) & Crit DMG to allow consistent DMG. If he misses Crits, the entire DMG output suffers and farming may fail. Weakess Hit is a bonus stat to boost DMG."
+  },
+  {
+    "characterSlug": "kyle",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit DMG",
+      "Crit Rate",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "tower-of-trials",
+      "guild-war",
+      "arena",
+      "infinite-tower",
+      "pudungeon-light",
+      "total-war",
+      "real-time-arena"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Has passive Crit Rate Boost (27%) amd at T4 (18%) so aim for 55% Crit Rate from gears and the rest should be focused on Crit DMG & Weakness Hit. A potential build if used against Bosses, particularly Castle Rush Spike, for players who have no built out other PVE damage dealers."
+  },
+  {
+    "characterSlug": "lu-bu",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Weakness Hit Chance +20%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Weakness Hit",
+      "Crit DMG",
+      "Speed",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "advent-phys",
+      "arena",
+      "real-time-arena",
+      "advent-god",
+      "infinite-tower",
+      "guild-war",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "This build is suitable for both PVP and PVE, focusing on both key DMG multipliers i.e. Crit Rate & Weakness Hit. As he does more DMG when Weakness Hits happen, it is important to get it high."
+  },
+  {
+    "characterSlug": "randgrid",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Weakness Hit Chance +20%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Weakness Hit",
+      "Crit DMG",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "advent-kyle",
+      "arena",
+      "real-time-arena",
+      "infinite-tower",
+      "guild-war",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Has passive Weakness Hit Rate Boost (39%) & at T4 (20%), allowing focus to placed on Crit Rate & Crit DMG, allowing her to become an impactful damage dealer."
+  },
+  {
+    "characterSlug": "ryan",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Block Rate",
+      "Speed",
+      "Crit DMG",
+      "HP (%)",
+      "Weakness Hit",
+      "DEF (%)",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "raid-dg",
+      "guild-war",
+      "advent-karma",
+      "suddenraid-calistra"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Main damage dealer oriented build. Weapon main stat can have a few options depending on how well the offensive substats are rolled. If Crit Rate is lacking, make sure to prioritize it first."
+  },
+  {
+    "characterSlug": "teo",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Bounty Tracker"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit DMG +24%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Weakness Hit",
+      "Crit DMG",
+      "All ATK (%)",
+      "Effect Resistance",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "infinite-tower",
+      "arena",
+      "real-time-arena",
+      "guild-war",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "At T6, has 100% Crit Rate on skills so focus will be on mximizing Crit DMG & Weakness Hit. (Prior to T6, make sure to have Crit Rate as priority). Effect Resist has growing importance to resist Duration Reduction."
+  },
+  {
+    "characterSlug": "amelia",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "VAN-PWEAPON",
+      "armor": "VAN-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Vanguard"
+    },
+    "gearSet2": {
+      "weapon": "SPELLWEAVE-PWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Spellweaver"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "All ATK (%)",
+      "Block Rate",
+      "Effect Hit",
+      "DMG Taken Reduction",
+      "All ATK",
+      "Weakness Hit"
+    ],
+    "keyUsage": [
+      "pudungeon-water",
+      "guild-war",
+      "total-war"
+    ],
+    "notes": "Has passive Effect Hit Rate boost (up to 49%) so focus on ATK% as her barriers scale off ATK%, allowing herself and the team to survive longer."
+  },
+  {
+    "characterSlug": "bai-long",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "ASSASSIN-PWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Assassin"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "advent-god",
+      "suddenraid-leonid",
+      "tower-of-trials",
+      "advent-kyle",
+      "raid-dg"
+    ],
+    "notes": "Has passive Crit Rate boost (33%) & at T4 (18%) so will need 49% Crit Rate from gears with the rest focusing on Crit DMG. Often tend to be used with Biscuit so Weakness Hit should range from 20% (w/ Rachel) to 46% (w/o Rachel). Against Leonid who has very high DEF, DEF Ignoring from this build comes in very essential to be able to defeat the boss as soon as possible. As 100% Crit Rate is easier to achieve, focus on Crit DMG and 46% Weakness Hit. An extremely endgame build that required a Legendary combination Ring to get him to survive as long as possible to be able to nuke the boss down without additional support. Crit DMG is priotized over Weakness Hit."
+  },
+  {
+    "characterSlug": "ballista",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Bounty Tracker"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Crit DMG",
+      "All ATK (%)",
+      "Weakness Hit",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "guild-war"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Focus on Crit Rate & Weakness Hit for consistent DMG output even on Follow-Up attacks."
+  },
+  {
+    "characterSlug": "bidam",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "All ATK (%)",
+      "Crit DMG",
+      "All ATK",
+      "Weakness Hit",
+      "Effect Hit",
+      "Speed"
+    ],
+    "keyUsage": [
+      "advent-karma",
+      "pudungeon-dark"
+    ],
+    "notes": "Although reliant on Bleed, Crit Rate & Crit DMG are still important multipliers for dealing pure DMG to bosses. Although ATK% allows for more (but not significantly more) Bleed DMG, overall the results lead to slower runs if Crits do not happen."
+  },
+  {
+    "characterSlug": "deo",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Block Rate",
+      "Crit DMG",
+      "HP (%)",
+      "Weakness Hit",
+      "DEF (%)",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "cr-dellons",
+      "adventure-both",
+      "tower-of-trials",
+      "infinite-tower"
+    ],
+    "notes": "While not the main damage dealer, this build helps to allow DMG against bosses to stilll be above average. Focus on Crit Rate & Crit DMG. Make sure his ATK is not higher than the actual DPSs. If bulk is lacking, this build can be used instead. Afterall, it is more important for him to survive for his immunity and Crit DMG Boost."
+  },
+  {
+    "characterSlug": "shane",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "raid-dg",
+      "tower-of-trials",
+      "suddenraid-calistra"
+    ],
+    "notes": "Standard damage dealer build. Has passive Crit Rate boost (41%) & at T4 (18%), so aim for 41% Crit Rate from gears and 20-46% Weakness Hit. If substat rolls for Crit Rate, can opt for double Crit DMG weapons."
+  },
+  {
+    "characterSlug": "taka",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "advent-karma"
+    ],
+    "notes": "Standard damage dealer build. Without innate self-boosts, he will need 82% Crit Rate from here and 46% Weakness Hit. If substat rolls for Crit Rate, can opt for double Crit DMG weapon main stats."
+  },
+  {
+    "characterSlug": "cha-haein",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Bounty Tracker"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "infinite-tower"
+    ],
+    "notes": "Main priority would be to boost all 3 offensive multipliers to turn her into somewhat of a damage dealer to allow her to get her Chain Attacks off and continuously lower allies' Skill Cooldown (T6)."
+  },
+  {
+    "characterSlug": "aquila",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Spellweaver"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Block Rate",
+      "Effect Hit",
+      "Effect Resistance",
+      "DMG Taken Reduction",
+      "HP (%)",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "adventure-nightmare",
+      "guild-war",
+      "infinite-tower",
+      "total-war"
+    ],
+    "exclusiveEquipment": "DEF (%)",
+    "notes": "Barrier & heals scale off Max HP so the build goes for a mixture of Effect Hit & HP%. If Effect Hit is decently high (considering Pets & allies), HP% should be the go-to weapon main stat."
+  },
+  {
+    "characterSlug": "radgrid",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "PALADIN-PWEAPON",
+      "armor": "PALADIN-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Paladin"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Block Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "DEF (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "HP (%)"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "adventure-nightmare",
+      "arena",
+      "total-war",
+      "pudungeon-earth",
+      "guild-war",
+      "real-time-arena"
+    ],
+    "exclusiveEquipment": "HP (%)",
+    "notes": "This build aims to not only let her heal more, but also increase Max HP due to her innate bulk so there for her to outlast the enemy and win by HP. For those without good Paladin pieces, the standard Gatekeeper build is something to fall back on to give her 100% Block Rate more easily with DMG Taken Reduction."
+  },
+  {
+    "characterSlug": "rudy",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "ORCHES-PWEAPON",
+      "armor": "ORCHES-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Orchestrator"
+    },
+    "transcendencePath": [
+      "DEF +12%",
+      "DEF +6%",
+      "HP +18%",
+      "Block Rate +18%",
+      "DEF +12%",
+      "DEF +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "Effect Resistance",
+      "DEF (%)",
+      "DMG Taken Reduction",
+      "HP (%)"
+    ],
+    "keyUsage": [
+      "tower-of-trials",
+      "infinite-tower",
+      "guild-war",
+      "adventure-both",
+      "total-war"
+    ],
+    "notes": "Standard build to boost tankiness via Block Rate and also DGM Taken Reduction. S2 provides CC Immunity at T6 so having Turn 1 CC Immunity almost guarantees that it will be casted without any hindrance from the enemy."
+  },
+  {
+    "characterSlug": "aragon",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Block Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "DEF (%)",
+      "Effect Hit",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "Crit Rate"
+    ],
+    "keyUsage": [
+      "guild-war"
+    ],
+    "notes": "Main DMG multipliers have DEF scaling. Main role is also to stun enemies effectively so having some Effect Hit substats would be good."
+  },
+  {
+    "characterSlug": "knox",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Spellweaver"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Block Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Block Rate",
+      "Effect Hit",
+      "Effect Resistance",
+      "DMG Taken Reduction",
+      "HP (%)",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "guild-war",
+      "infinite-tower",
+      "total-war"
+    ],
+    "exclusiveEquipment": "DEF (%)",
+    "notes": "This build aims to increase the chance of landing Death while also having decent bulk for him to serve his Tank purposes. If Effect Hit is sufficient, HP% can be considered as his healing scales off HP%."
+  },
+  {
+    "characterSlug": "rook",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "PALADIN-PWEAPON",
+      "armor": "PALADIN-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Paladin"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Block Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "total-war",
+      "guild-war"
+    ],
+    "exclusiveEquipment": "DEF (%)",
+    "notes": "Barrier and attacks scale with HP so it's best to maximize his Max HP, which also ensuring tankiness with DMG Taken Reduction with good Block Rate rolls. With a passive Block Rate (23%), aim for 77% more Block Rate, along with DMG Taken Reduction to boost his tankiness as best as possible."
+  },
+  {
+    "characterSlug": "o-mok",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-MWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "ASSASSIN-MWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Assassin"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Weakness Hit",
+      "Crit DMG",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "arena",
+      "guild-war",
+      "adventure-both",
+      "advent-yh",
+      "real-time-arena",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Aim for high Crit Rate & Weakness Hit to maximise DMG output. Viable for both PVP and PVE. If used in PVE, can also use Assassin Set with the same priority on substats."
+  },
+  {
+    "characterSlug": "juri",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Spellweaver"
+    },
+    "gearSet2": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Spellweaver"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Block Rate",
+      "Crit Rate",
+      "Effect Hit",
+      "Crit DMG",
+      "Weakness Hit",
+      "Effect Resistance",
+      "DMG Taken Reduction",
+      "All ATK (%)",
+      "HP (%)",
+      "DEF (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "advent-yh",
+      "guild-war",
+      "infinite-tower",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%), DEF (%)",
+    "notes": "CC accessories can proc during follow-up attacks. Spellweaver for increased Effect Probability. Can opt for more Defensive Main Stats if allies give Effect Hit."
+  },
+  {
+    "characterSlug": "melia",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Effect Hit Rate +24%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Block Rate",
+      "Effect Hit",
+      "DMG Taken Reduction",
+      "DEF (%)",
+      "Effect Resistance",
+      "HP (%)"
+    ],
+    "keyUsage": [
+      "advent-god",
+      "infinite-tower",
+      "arena",
+      "real-time-arena",
+      "advent-yh",
+      "adventure-both",
+      "guild-war",
+      "total-war"
+    ],
+    "exclusiveEquipment": "DEF (%), HP (%)",
+    "notes": "Some Effect Resistance to resist Death and CC. Some Effect Hit to inflict Crystals debuffs. Aim for high Block Rate with DMG Taken Reduction for the best results."
+  },
+  {
+    "characterSlug": "freyja",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-MWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "BOUNTY-MWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Weakness Hit",
+      "Crit DMG",
+      "All ATK (%)",
+      "Effect Hit",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "arena",
+      "real-time-arena",
+      "adventure-both",
+      "pudungeon-dark",
+      "guild-war",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "As Crit may be resisted by Block, Weakness Hit gives her more consistent damage so that her S2 can nuke right after the HP alteration. Aim for high Crit Rate & Weakness Hit, both near 100%. Having some Crit DMG will ensure more consistent 1-Shotting of the mobs with her S2. Aim for high Crit Rate & Weakness Hit, both near 100%. Having some Crit DMG will ensure more consistent 1-Shotting of the mobs with her S2."
+  },
+  {
+    "characterSlug": "kyrielle",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-MWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Spellweaver"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Effect Hit",
+      "Weakness Hit",
+      "All ATK (%)",
+      "Crit DMG"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "advent-god",
+      "arena",
+      "guild-war",
+      "adventure-both",
+      "advent-teo",
+      "total-war",
+      "real-time-arena"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Has SPD-Based ATK Boost (up to 1320 with 77 Speed). Sufficient Weakness Hit Chance also needed to help her target lower HP enemies, enabling her Chain Attack. This build makes her take on the debuffer role where to land Paralysis on enemies, so that their Block Rate becomes 0% and allies can then nuke much easier."
+  },
+  {
+    "characterSlug": "nezha",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "BOUNTY-MWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit DMG",
+      "Speed",
+      "Weakness Hit",
+      "Crit Rate",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "tower-of-trials",
+      "guild-war",
+      "advent-yh"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Has passive Crit Rate Boost (33%) & at T4 (18%), requiring just 51% Crit Rate from gears and allies that provide Active Crit Rate Boost. More focus on building Crit DMG and Weakness Hit Chance. With a powerful 3-Target Skill, capitalize on getting her Crit Rate & Weakness Hit multipliers high to be able to deal with even Tank teams."
+  },
+  {
+    "characterSlug": "mercure",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "VAN-MWEAPON",
+      "armor": "VAN-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Vanguard"
+    },
+    "gearSet2": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Spellweaver"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Effect Hit Rate +24%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Effect Hit",
+      "All ATK (%)",
+      "Effect Resistance",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "arena",
+      "real-time-arena",
+      "infinite-tower",
+      "advanced-arena",
+      "total-war"
+    ],
+    "notes": "Magic Reflux DMG scales with ATK. Reliant on Blessing to tank DMG instead of defensive stats . Spellweaver Effect Probability for increased Stun and Magic Reflux chances."
+  },
+  {
+    "characterSlug": "reginleif",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-MWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "ORCHES-MWEAPON",
+      "armor": "ORCHES-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Orchestrator"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Weakness Hit Chance +20%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit DMG",
+      "Weakness Hit",
+      "Effect Resistance",
+      "All ATK (%)",
+      "Effect Hit",
+      "DMG Taken Reduction"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "infinite-tower",
+      "arena",
+      "real-time-arena",
+      "advent-god",
+      "guild-war",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Effect Resist helps keep her Immortality on against Buff Removals and Buff Duration Reductions. T6 grants 100% Crit Rate to her skills, so prioritize building for Weakness Hit Chance and Crit DMG. If non-T6, can also have substats in Crit Rate but less recommended."
+  },
+  {
+    "characterSlug": "rin",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-MWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Spellweaver"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Weakness Hit Chance +20%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Weakness Hit",
+      "Crit Rate",
+      "All ATK (%)",
+      "Crit DMG",
+      "Effect Hit"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "arena",
+      "real-time-arena",
+      "adventure-both",
+      "guild-war",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "One of her skills deal extra DMG if it lands as a weakness hit so high weakness hit chance is highly desirable"
+  },
+  {
+    "characterSlug": "silvesta",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "ASSASSIN-MWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Assassin"
+    },
+    "gearSet2": {
+      "weapon": "BOUNTY-MWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Weakness Hit",
+      "Crit DMG",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "total-war",
+      "adventure-both"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Primarily a PVP hero so aim to have high Crit Rate & Weakness Hit so as to kill better to activate his Chain Attack. Primarily a PVP hero so aim to have high Crit Rate & Weakness Hit so as to kill better to activate his Chain Attack."
+  },
+  {
+    "characterSlug": "vanessa",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Spellweaver"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Effect Hit Rate +24%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Block Rate",
+      "Effect Hit",
+      "Effect Resistance",
+      "DMG Taken Reduction",
+      "HP (%)",
+      "DEF (%)",
+      "All ATK (%)"
+    ],
+    "keyUsage": [
+      "advent-yh",
+      "advent-teo",
+      "guild-war",
+      "advent-god",
+      "adventure-both",
+      "total-war"
+    ],
+    "exclusiveEquipment": "HP (%), DEF (%), All ATK (%)",
+    "notes": "Speed mule for Magic teams in Guild War. Win speed contest to increase all enemies Skill Cooldown."
+  },
+  {
+    "characterSlug": "yeonhee",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "ASSASSIN-MWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Assassin"
+    },
+    "gearSet2": {
+      "weapon": "BOUNTY-MWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Speed",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "advent-yh",
+      "arena",
+      "total-war",
+      "infinite-tower",
+      "guild-war",
+      "real-time-arena"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Aim for high Crit Rate & Crit DMG to hit hard on both Basic Attacks and skills. More for PVE purposes. Aim for high Crit Rate & Crit DMG to hit hard on both Basic Attacks and skills. More for PVP purposes. Immortal ring is most recommended due to her fragility."
+  },
+  {
+    "characterSlug": "daisy",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "ASSASSIN-MWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Assassin"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit DMG",
+      "Crit Rate",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "raid-ox",
+      "advent-god",
+      "tower-of-trials",
+      "suddenraid-astrea",
+      "advent-kyle"
+    ],
+    "notes": "It is very important to land Crits on the Ox King minions to kill them properly so focus primarily on Crit Rate & Crit DMG. Transition towards Avenger Set, focusing on Crit Rate and Crit DMG (especially after Daisy is T6) to allow her to become a ST damage dealer."
+  },
+  {
+    "characterSlug": "espada",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "ASSASSIN-MWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Assassin"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit DMG",
+      "Crit Rate",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "raid-ox",
+      "tower-of-trials",
+      "suddenraid-astrea",
+      "advent-teo"
+    ],
+    "notes": "Has passive Crit Rate Boost (40%) before T4 so make up the rest of the 60% with the Assassin Set & Crit Rate rolls. Has passive Crit Rate Boost (40%) & at T4 (18%), allowing for priority in building for Crit DMG and Weakness Hit Chance. Will still need 42% Crit Rate from gears."
+  },
+  {
+    "characterSlug": "miho",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "ASSASSIN-MWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Assassin"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Weakness Hit Chance +20%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Weakness Hit",
+      "Crit DMG",
+      "All ATK (%)",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "advent-god",
+      "advent-magic",
+      "pudungeon-gold"
+    ],
+    "notes": "Guts accessory can be helpful to if Miho faces trouble in survival. Primarily a Sub DPS so aim for high Crit Rate & Weakness Hit (taking into account allies and accessories). Without much self-boosts in Crit Rate & Weakness Hit, nweer players may find difficulty in building these core stats. So using the Assassin Set for the early stages is decent."
+  },
+  {
+    "characterSlug": "pascal",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit DMG +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "raid-id",
+      "advent-god",
+      "tower-of-trials",
+      "cr-kris",
+      "advent-teo"
+    ],
+    "notes": "Prior to T6, Crit Rate is highly important to have consistent DMG against bosses. As he is usually paired with Bicuit, aim to have 45% Weakness Hit Rate. Has 100% Crit Rate attached to S2. So it's best to focus on Crit DMG maxing and Weakness Hit Rate (usually 45%). Possible to also have some Crit Rate to supplement his basic attacks. 5* Guts Ring is the minimal requirement. You will need 100% Weakness Hit Rate from gears (88%) & accessory substats (12%), ATK at 4.5K, Crit DMG at 270%."
+  },
+  {
+    "characterSlug": "ruri",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "ASSASSIN-MWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Assassin"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Weakness Hit Chance +20%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "advent-yh",
+      "tower-of-trials"
+    ],
+    "notes": "Before T4, Weakness Hit could be lacking so it may be necessary to have Weakness Hit main stats on the weapons. Has passive Weakness Hit Chance Boost (39%) & at T4 (20%) and often used with Biscuit, allowing for heavier priority in building for Crit Rate and Crit DMG."
+  },
+  {
+    "characterSlug": "velika",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BURN",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "All ATK (%)",
+      "HP (%)",
+      "All ATK",
+      "DEF (%)",
+      "Effect Hit",
+      "DMG Taken Reduction",
+      "Speed",
+      "Crit Rate",
+      "Effect Resistance",
+      "Crit DMG",
+      "Weakness Hit"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "pudungeon-earth",
+      "tower-of-trials"
+    ],
+    "notes": "Prioritize survivability to ensure her basic attack's effect can be casted continuously. Aim is to increase Burn DMG on the boss."
+  },
+  {
+    "characterSlug": "xiao-qiao",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Weakness Hit Chance +20%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "raid-id",
+      "advent-god",
+      "tower-of-trials",
+      "cr-kris",
+      "advent-teo"
+    ],
+    "notes": "Has Passive Weakness Hit Chance Boost (T2; 39%) & at T4 (20%) and often paired with Biscuit, allowing for priority in building for Crit Rate and Crit DMG. Focus only on Crit Rate to be 100% and Weakness Hit to be 60%. ATK at 4.3K. Crit DMG is secondary importance."
+  },
+  {
+    "characterSlug": "yu-shin",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Spellweaver"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Effect Hit Rate +24%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Block Rate",
+      "Effect Hit",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "DEF (%)",
+      "Effect Resistance"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "infinite-tower"
+    ],
+    "exclusiveEquipment": "HP (%), DEF (%)",
+    "notes": "Has passive Effect Hit Rate Boost (34%), allowing for priority in building for also having some bulk for survivability."
+  },
+  {
+    "characterSlug": "sung-jinwoo",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-MWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "ASSASSIN-MWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Assassin"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Weakness Hit",
+      "All ATK (%)",
+      "Crit DMG",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "arena",
+      "real-time-arena",
+      "infinite-tower",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Longer duration Immortality helps SJW build Level Up stacks better than Guts. An option for PVE especially when farming and high Crit Rate allows consistently high damage."
+  },
+  {
+    "characterSlug": "rosie",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Spellweaver"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "DEF +12%",
+      "DEF +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "DEF +12%",
+      "DEF +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Block Rate",
+      "Effect Hit",
+      "Effect Resistance",
+      "DMG Taken Reduction",
+      "HP (%)",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "guild-war",
+      "real-time-arena",
+      "infinite-tower",
+      "total-war"
+    ],
+    "exclusiveEquipment": "DEF (%)",
+    "notes": "Recommended for Death teams so that Death has a better chance to be inflicted. Alternatively, for Death teams, Gatekeeper set with Speed rolls also work (main stats see right)."
+  },
+  {
+    "characterSlug": "biscuit",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "DEF +12%",
+      "DEF +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "DEF +12%",
+      "DEF +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "Block Rate",
+      "All ATK (%)",
+      "DEF (%)",
+      "DMG Taken Reduction",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "cr-all",
+      "suddenraid-all",
+      "tower-of-trials",
+      "advent-all",
+      "raid-all",
+      "pudungeon-all"
+    ],
+    "exclusiveEquipment": "All ATK (%), DEF (%)",
+    "notes": "Usually enough for survivability. Choice of Armor main stat will depend on how much Block Rate on substats. Speed is situational but can be the Most important stat for efficient PVE runs."
+  },
+  {
+    "characterSlug": "orly",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "PALADIN-MWEAPON",
+      "armor": "PALADIN-ARMOR",
+      "accessory": "DOT",
+      "setName": "Paladin"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "DEF +12%",
+      "DEF +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "DEF +12%",
+      "DEF +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "HP (%)",
+      "Block Rate",
+      "DEF (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance"
+    ],
+    "keyUsage": [
+      "advent-magic",
+      "total-war",
+      "raid-ox",
+      "suddenraid-astrea"
+    ],
+    "notes": "Attacks, heals and barrier provision are all HP%-scaling so this build fully maximizes her HP so that she gives MAGIC allies better survivability."
+  },
+  {
+    "characterSlug": "platin",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "PALADIN-MWEAPON",
+      "armor": "PALADIN-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Paladin"
+    },
+    "transcendencePath": [
+      "DEF +12%",
+      "DEF +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "DEF +12%",
+      "DEF +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "DEF (%)",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance"
+    ],
+    "keyUsage": [
+      "total-war",
+      "guild-war"
+    ],
+    "notes": "Attacks also scale off DEF so DEF% is the preferred main stat. He is usually used in the frontline, best to get his Block Rate as high as possible while using DMG Taken Reduction armors. Paladin set so that the Incoming Healing Boost increases his recovery to a large extent. However, this will require way better substat rolls for Block Rate."
+  },
+  {
+    "characterSlug": "alice",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "PALADIN-MWEAPON",
+      "armor": "PALADIN-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Paladin"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "DEF +12%",
+      "DEF +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "DEF +12%",
+      "DEF +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "HP (%)",
+      "Block Rate",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "infinite-tower",
+      "arena",
+      "guild-war",
+      "tower-of-trials",
+      "total-war",
+      "real-time-arena"
+    ],
+    "exclusiveEquipment": "DEF (%)",
+    "notes": "Heals based off her HP% so this build maximizes her healing capabiltiies as much as possible. It would be essential to also have 100% Block Rate."
+  },
+  {
+    "characterSlug": "diaochan",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Spellweaver"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Block Rate",
+      "Effect Hit",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "guild-war"
+    ],
+    "exclusiveEquipment": "HP (%), DEF (%)",
+    "notes": "Has Max HP-based Effect Hit Rate Boost so will need at least 9000 HP to get up to 45% additional Effect Hit Rate. High speed is essential. This is better used with MAGIC/ATTACK allies. Has Max HP-based Effect Hit Rate Boost so will need at least 9000 HP to get up to 45% additional Effect Hit Rate. This is useful to be paired with a tankier team. This build should allow hitting 9000HP for her passive bonus to be achieved must easier but also, do not forsake for bulk."
+  },
+  {
+    "characterSlug": "lina",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "PALADIN-MWEAPON",
+      "armor": "PALADIN-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Paladin"
+    },
+    "gearSet2": {
+      "weapon": "ORCHES-MWEAPON",
+      "armor": "ORCHES-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Orchestrator"
+    },
+    "transcendencePath": [
+      "DEF +12%",
+      "DEF +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "DEF +12%",
+      "DEF +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "HP (%)",
+      "Block Rate",
+      "DMG Taken Reduction",
+      "All ATK (%)",
+      "DEF (%)",
+      "Effect Resistance"
+    ],
+    "keyUsage": [
+      "tower-of-trials",
+      "total-war",
+      "advent-all",
+      "raid-all",
+      "guild-war"
+    ],
+    "notes": "Heals based off her HP% so this build maximizes her healing capabiltiies. As she is mostly used in PVE, Block Rate % is less important but in PVP, Block Rate should be 100% with Revive. May opt for Gatekeeper set in PVP."
+  },
+  {
+    "characterSlug": "gelidus",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-PWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Spellweaver"
+    },
+    "gearSet2": {
+      "weapon": "GUARDIAN-PWEAPON",
+      "armor": "GUARDIAN-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Guardian"
+    },
+    "transcendencePath": [
+      "DEF +12%",
+      "DEF +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "DEF +12%",
+      "DEF +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "DEF (%)",
+      "Effect Hit",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "HP (%)"
+    ],
+    "keyUsage": [
+      "pudungeon-fire",
+      "infinite-tower",
+      "arena",
+      "real-time-arena",
+      "adventure-both",
+      "guild-war",
+      "total-war"
+    ],
+    "exclusiveEquipment": "HP (%)",
+    "notes": "Has DEF-Based Block Rate Boost so will need at least 1350/1650 DEF to get up to 27%/33% Block Rate."
+  },
+  {
+    "characterSlug": "ace",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "HP (%)",
+      "DEF (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "Effect Hit",
+      "Speed"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "advent-phys",
+      "arena",
+      "guild-war",
+      "adventure-normal",
+      "raid-all",
+      "total-war",
+      "real-time-arena"
+    ],
+    "notes": "Very important to keep him alive for this passive to be retained. So making him bulky is the most important priority, with as much Block Rate rolls as possible to complement DMG Taken Reduction."
+  },
+  {
+    "characterSlug": "eileene",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-PWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Spellweaver"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Effect Hit Rate +24%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "Effect Hit",
+      "Effect Resistance",
+      "All ATK (%)",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "advent-phys",
+      "adventure-both",
+      "total-war",
+      "infinite-tower"
+    ],
+    "exclusiveEquipment": "HP (%)",
+    "notes": "Goal is to land Shock with higher probability since her innate Effect Probability is considerably low. May opt for ATK% main stats as Shock scales off caster's ATK. If using her, then having her around is the biggest asset your team can have to upkeep their DMG output. Thus, keeping her alive as long as possible is the most important priority."
+  },
+  {
+    "characterSlug": "elysia",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "ORCHES-PWEAPON",
+      "armor": "ORCHES-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Orchestrator"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "DEF (%)",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Effect Hit",
+      "Effect Resistance"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "arena",
+      "total-war",
+      "adventure-both",
+      "guild-war",
+      "real-time-arena"
+    ],
+    "notes": "Being able to cleanse debuffs with any skill would mean starting the battle with guaranteed CC immunity equates to a guaranteed cleanse for your heroes. This build aims to make her more bulky so that her core effects can last on the field longer."
+  },
+  {
+    "characterSlug": "jave",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BURN",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "ASSASSIN-PWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "45DMG",
+      "setName": "Assassin"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Block Rate",
+      "Crit DMG",
+      "Effect Hit",
+      "Weakness Hit",
+      "Effect Resistance",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "HP (%)",
+      "All ATK",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "pudungeon-earth",
+      "infinite-tower",
+      "guild-war",
+      "adventure-normal",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%), DEF (%)",
+    "notes": "This build increases Burn DMG dealt to the Bosses."
+  },
+  {
+    "characterSlug": "karma",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "DEF +12%",
+      "DEF +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "DEF +12%",
+      "DEF +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "Crit Rate",
+      "Crit DMG",
+      "DMG Taken Reduction",
+      "DEF (%)",
+      "HP (%)",
+      "Effect Resistance"
+    ],
+    "keyUsage": [
+      "pudungeon-light",
+      "total-war",
+      "infinite-tower"
+    ],
+    "exclusiveEquipment": "HP (%)",
+    "notes": "His heal is based off DMG dealt so it is important to boost his DMG and traditionally this was done by raising Crit Rate & Crit DMG. Has passive Block Rate of 33%."
+  },
+  {
+    "characterSlug": "kris",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-PWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Spellweaver"
+    },
+    "gearSet2": {
+      "weapon": "VAN-PWEAPON",
+      "armor": "VAN-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Vanguard"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Effect Hit Rate +24%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "All ATK (%)",
+      "Block Rate",
+      "All ATK",
+      "Effect Hit",
+      "DMG Taken Reduction",
+      "HP (%)",
+      "Effect Resistance",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "total-war",
+      "real-time-arena",
+      "infinite-tower",
+      "guild-war"
+    ],
+    "exclusiveEquipment": "DEF (%), HP (%)",
+    "notes": "Being a Death hero, the goal is the have the highest possible chance to land Death. Defensive armor main stats are used to prolong his existence on the field, given that he does have innate Immortality. Healing scales of ATK% so having a max ATK% build for PVE can continuously sustain your team."
+  },
+  {
+    "characterSlug": "mist",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Spellweaver"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Effect Hit Rate +24%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Block Rate",
+      "Effect Hit",
+      "DMG Taken Reduction",
+      "All ATK (%)",
+      "Effect Resistance",
+      "All ATK",
+      "DEF (%)",
+      "HP (%)"
+    ],
+    "keyUsage": [
+      "adventure-nightmare",
+      "guild-war",
+      "real-time-arena",
+      "infinite-tower",
+      "total-war",
+      "arena"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "A must-use to increase chance of Fear and Death. ATK% may also be needed to allow Mist to have higher ATK to be able to inflict Death instantly after Fear. Has passive 34% Effect Hit Rate. Despite being a universal hero, she is not very tanky and so this build seeks to sustain her better so as to give her more time to land her debuffs for field control. Having high ATK% allows Mist to have higher likelihood of inflicting Unremovable Death after Fear with just her Skill 2. However, this causes her to be more fragile and Death is still not guaranteed."
+  },
+  {
+    "characterSlug": "pallanus",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "ASSASSIN-PWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Assassin"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Block Rate",
+      "DMG Taken Reduction",
+      "All ATK (%)",
+      "HP (%)",
+      "All ATK",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "arena",
+      "guild-war",
+      "adventure-both",
+      "total-war",
+      "real-time-arena"
+    ],
+    "exclusiveEquipment": "DEF (%), HP (%), All ATK (%)",
+    "notes": "As she gets 100% Weakness Hit at T6, focus substats and gears on Crit Rate & Crit DMG. This maximizes her DMG output as she also gains PATK%. Before T6, include Weakness Hit rolls too."
+  },
+  {
+    "characterSlug": "rachel",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Weakness Hit Chance +20%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "Block Rate",
+      "DMG Taken Reduction",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "raid-dg",
+      "advent-phys",
+      "tower-of-trials",
+      "pudungeon-earth",
+      "suddenraid-calistra",
+      "advent-god"
+    ],
+    "notes": "Due to usage in various score-related Boss battles, this build helps to achieve that. If she's too frail, Guts Accessory and DMG Taken Reduction armors can be considered. Make sure ATK is not higher than main DPS and Crit Rate & Crit DMG are the main focus. This build is an option if you find survivability an issue, especially in the early game where she isn't actually a SubDPS either. May need Speed to allow DPS to go last."
+  },
+  {
+    "characterSlug": "spike",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "PALADIN-PWEAPON",
+      "armor": "PALADIN-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Paladin"
+    },
+    "gearSet2": {
+      "weapon": "SPELLWEAVE-PWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Spellweaver"
+    },
+    "transcendencePath": [
+      "DEF +12%",
+      "DEF +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "DEF +12%",
+      "DEF +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "Effect Hit",
+      "Crit Rate",
+      "All ATK (%)",
+      "Weakness Hit",
+      "Effect Resistance",
+      "All ATK",
+      "DMG Taken Reduction",
+      "HP (%)",
+      "Crit DMG",
+      "Speed",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "pudungeon-fire",
+      "infinite-tower",
+      "guild-war",
+      "real-time-arena",
+      "adventure-both",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%), DEF (%), HP (%)",
+    "notes": "Has Max HP-Based ATK Boost so this build aims to make it easier to get 9000-11000 HP to get 1080/1320 additional ATK. Furthermore, skills also have HP scaling."
+  },
+  {
+    "characterSlug": "sunwukong",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-MWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit DMG",
+      "Weakness Hit",
+      "Block Rate",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "All ATK",
+      "HP (%)",
+      "Speed"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "adventure-nightmare",
+      "arena",
+      "real-time-arena",
+      "tower-of-trials",
+      "pudungeon-light",
+      "guild-war",
+      "total-war"
+    ],
+    "exclusiveEquipment": "HP (%)",
+    "notes": "At T6, gets 100% Crit Rate, allowing focus to be placed on Weakness Hit & Crit DMG. Sometimes, Crit DMG may be less of a focus and tankiness is prioritized instead. Can use this for non-Boss PVE too."
+  },
+  {
+    "characterSlug": "trude",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Bounty Tracker"
+    },
+    "gearSet2": {
+      "weapon": "ASSASSIN-PWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Assassin"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Weakness Hit Chance +20%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit DMG",
+      "Weakness Hit",
+      "Block Rate",
+      "DMG Taken Reduction",
+      "Crit Rate",
+      "All ATK (%)",
+      "Effect Resistance",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "guild-war",
+      "arena",
+      "adventure-both",
+      "total-war"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "At T6, focus purely on near 100% Weakness Hit & high Crit DMG. Also, aim for 40% Block Rate from gears (passive Block Rate 60%). Before getting 100% Crit Rate at T6, Crit Rate is still an important stat to have on her for DMG so using this build allows you to achieve a high Crit Rate with relative ease. Not a common build but this aims to increase her Barrier amount and self-heal as well to sustain herself for much longer since her Pain Endurance acts as a DMG Cap already."
+  },
+  {
+    "characterSlug": "bai-jiao",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BLEED",
+      "setName": "Avenger"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "All ATK (%)",
+      "All ATK",
+      "Effect Hit",
+      "Block Rate",
+      "Speed",
+      "Effect Resistance"
+    ],
+    "keyUsage": [
+      "pudungeon-water",
+      "pudungeon-light",
+      "pudungeon-dark",
+      "tower-of-trials"
+    ],
+    "notes": "Boss DMG also spills over to DMG from DOT effects (which scale off ATK%) so this allows maximum potential DOT damage allowing runs to be super fast."
+  },
+  {
+    "characterSlug": "chancellor",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "DEF +12%",
+      "DEF +6%",
+      "HP +18%",
+      "DMG Reduction +10%",
+      "DEF +12%",
+      "DEF +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Block Rate",
+      "DEF (%)",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance"
+    ],
+    "keyUsage": [
+      "advent-teo",
+      "guild-war"
+    ],
+    "notes": "Aim to keep him alive with highest possible Block Rate and DMG Taken Reduction (more so for Guild War)."
+  },
+  {
+    "characterSlug": "guan-yu",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Weakness Hit Chance +20%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Block Rate",
+      "Crit Rate",
+      "HP (%)",
+      "Weakness Hit",
+      "DEF (%)",
+      "Crit DMG",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "suddenraid-leonid",
+      "tower-of-trials",
+      "pudungeon-light",
+      "advent-kyle",
+      "cr-eileene",
+      "adventure-both"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "Prior to T6, the focus should be on maximizing Crit Rate and Crit DMG. After T6, focus on Crit DMG solely. Weakness Hit is secondary but good to have."
+  },
+  {
+    "characterSlug": "nia",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Spellweaver"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Effect Hit Rate +24%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Speed",
+      "Block Rate",
+      "HP (%)",
+      "Effect Hit",
+      "DMG Taken Reduction",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "real-time-arena",
+      "guild-war",
+      "adventure-nightmare",
+      "total-war"
+    ],
+    "notes": "Speed is top priority for her on this build to not only allow your team to have speed advantage but also to land the Skill Cooldown Increase more effectively (since it is also probability-based)."
+  },
+  {
+    "characterSlug": "sieg",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "VAN-PWEAPON",
+      "armor": "VAN-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Vanguard"
+    },
+    "transcendencePath": [
+      "ATK +12%",
+      "ATK +6%",
+      "HP +18%",
+      "Crit Rate +18%",
+      "ATK +12%",
+      "ATK +6%"
+    ],
+    "skillPriority": [
+      "basic-attack",
+      "skill-1",
+      "skill-2",
+      "passive",
+      "awakened"
+    ],
+    "statPriorities": [
+      "Crit Rate",
+      "All ATK (%)",
+      "Block Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK",
+      "DMG Taken Reduction",
+      "Speed"
+    ],
+    "keyUsage": [
+      "raid-dg",
+      "pudungeon-earth",
+      "cr-jave",
+      "advent-kyle"
+    ],
+    "exclusiveEquipment": "All ATK (%)",
+    "notes": "This is the ideal damage dealer build to maximize DMG output. There may be times where Guts/Immortal Rings are needed as his heal may not be sufficient and his bulk isn't enough."
+  },
+  {
+    "characterSlug": "xiao",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "VAN-PWEAPON",
+      "armor": "VAN-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Vanguard"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "Crit Rate",
+      "Weakness Hit",
+      "DMG Taken Reduction",
+      "All ATK",
+      "Effect Hit",
+      "Speed"
+    ],
+    "keyUsage": [
+      "pudungeon-dark",
+      "infinite-tower",
+      "cr-kris",
+      "advent-kyle",
+      "adventure-both",
+      "suddenraid-leonid",
+      "advent-teo",
+      "advent-god"
+    ],
+    "notes": "Giving her this build increases the chip damage. If she doesn't survive well, give her DMG Taken Reduction instead of ATK%. Weakness Hit main stat for CR. ATK% main stat for Dungeon. Barrier scales off ATK% so this build pushes her ATK to the maximum possible. However, regardless of how thick the barrier is, it will only last for 2 turns."
+  },
+  {
+    "characterSlug": "evan",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "GUARDIAN-PWEAPON",
+      "armor": "GUARDIAN-ARMOR",
+      "accessory": "DOT",
+      "setName": "Guardian"
+    },
+    "statPriorities": [
+      "DEF (%)",
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Speed"
+    ],
+    "keyUsage": [
+      "raid-dg",
+      "cr-rudy",
+      "suddenraid-calistra",
+      "cr-jave",
+      "adventure-both",
+      "infinite-tower",
+      "pudungeon-earth",
+      "advent-god"
+    ],
+    "notes": "This build focuses on his self bulk where it boosts his survivability greatly. Will be recommended if your team doesn't have too much issue surviving. Barrier scales off DEF so this build focuses on increasing the survivability of the entire team with his barrier. However, the barrier only last for 2 turns."
+  },
+  {
+    "characterSlug": "yui",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "PALADIN-MWEAPON",
+      "armor": "PALADIN-ARMOR",
+      "accessory": "HP",
+      "setName": "Paladin"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "HP",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "HP (%)",
+      "Block Rate",
+      "DEF (%)",
+      "Speed"
+    ],
+    "keyUsage": [
+      "raid-dg",
+      "cr-all",
+      "suddenraid-calistra",
+      "infinite-tower",
+      "adventure-both",
+      "tower-of-trials",
+      "pudungeon-fire",
+      "advent-all"
+    ],
+    "notes": "Healing scales off HP so push it to the maximum possible for reliable continuous healing per turn. This build puts more focus on her bulk, if she is still not strong enough while also not forsaking the HP-scaling heals."
+  },
+  {
+    "characterSlug": "karon",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "VAN-MWEAPON",
+      "armor": "VAN-ARMOR",
+      "accessory": "DOT",
+      "setName": "Vanguard"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "DEF (%)",
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Speed",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "raid-ox",
+      "infinite-tower",
+      "suddenraid-astrea",
+      "tower-of-trials",
+      "adventure-both",
+      "pudungeon-all"
+    ],
+    "notes": "Healing scales of ATK% but also not forsaking survivalibity concerns. Healing scales of ATK% so this build pushes his healing capabilities to the maximum. Just be careful such that his ATK does not exceed the damage dealers (it can happen). If your main stats are all ATK%, then regulate the substats."
+  },
+  {
+    "characterSlug": "lee-joohee",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "VAN-MWEAPON",
+      "armor": "VAN-ARMOR",
+      "accessory": "DOT",
+      "setName": "Vanguard"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "DEF (%)",
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Speed",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "raid-ox",
+      "infinite-tower",
+      "suddenraid-astrea",
+      "tower-of-trials",
+      "adventure-both",
+      "pudungeon-all"
+    ],
+    "notes": "Healing scales of ATK% but also not forsaking survivalibity concerns. Healing scales of ATK% so this build pushes his healing capabilities to the maximum. Just be careful such that his ATK does not exceed the damage dealers (it can happen). If your main stats are all ATK%, then regulate the substats."
+  },
+  {
+    "characterSlug": "black-rose",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "ASSASSIN-PWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Assassin"
+    },
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "Weakness Hit",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "raid-ox",
+      "suddenraid-astrea",
+      "adventure-both",
+      "infinite-tower"
+    ],
+    "notes": "Having high Crit Rate & decent Crit DMG is very essential in allowing her to kill the minions in the raids. If too frail, give 1 piece of DMG Taken Reduction armor."
+  },
+  {
+    "characterSlug": "lucy",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GUARDIAN-MWEAPON",
+      "armor": "GUARDIAN-ARMOR",
+      "accessory": "DOT",
+      "setName": "Guardian"
+    },
+    "statPriorities": [
+      "DEF (%)",
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Speed"
+    ],
+    "keyUsage": [
+      "raid-dg",
+      "advent-yh",
+      "pudungeon-dark",
+      "tower-of-trials",
+      "adventure-both",
+      "infinite-tower"
+    ],
+    "notes": "Healing scales off DEF% so this build maximizes her DEF% and thereby her heals as well."
+  },
+  {
+    "characterSlug": "victoria",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "DEF (%)",
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Speed"
+    ],
+    "keyUsage": [
+      "raid-id",
+      "adventure-both",
+      "advent-teo",
+      "advent-god"
+    ],
+    "notes": "Prioritize on keeping her alive as her survivability is key in not letting your team get paralyzed."
+  },
+  {
+    "characterSlug": "heavenia",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "FREEZE",
+      "setName": "Avenger"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "Effect Hit",
+      "All ATK",
+      "DMG Taken Reduction",
+      "Speed",
+      "DEF (%)",
+      "HP (%)"
+    ],
+    "keyUsage": [
+      "pudungeon-fire"
+    ],
+    "notes": "This build increases Freeze DMG dealt to the Bosses."
+  },
+  {
+    "characterSlug": "lania",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "FREEZE",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "Effect Hit",
+      "All ATK",
+      "DEF (%)",
+      "Block Rate",
+      "DMG Taken Reduction",
+      "Speed",
+      "HP (%)"
+    ],
+    "keyUsage": [
+      "pudungeon-fire",
+      "cr-spike"
+    ],
+    "notes": "This build increases Freeze DMG dealt to the Bosses. If used for Freeze Immunity, go for bulk and survivability instead to prolong her utility on the field."
+  },
+  {
+    "characterSlug": "chloe",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "ORCHES-MWEAPON",
+      "armor": "ORCHES-ARMOR",
+      "accessory": "DOT",
+      "setName": "Orchestrator"
+    },
+    "statPriorities": [
+      "DEF (%)",
+      "HP (%)",
+      "Block Rate",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "Speed"
+    ],
+    "keyUsage": [
+      "pudungeon-light",
+      "infinite-tower",
+      "pudungeon-water",
+      "adventure-both",
+      "cr-eileene",
+      "tower-of-trials",
+      "advent-yh"
+    ],
+    "notes": "Self-heal scales off HP. With a variety of useful effects, this build aims to sustain her on the field long enough for the intended modes. Make sure she has 1 turn CC Immunity otherwise Shadow Yeonhee will put her to Sleep and the run will be ruined. She needs to be awake to cleanse allies."
+  },
+  {
+    "characterSlug": "jane",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "POISON",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "SPELLWEAVE-PWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "POISON",
+      "setName": "Spellweaver"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "Effect Hit",
+      "All ATK",
+      "DMG Taken Reduction",
+      "Speed",
+      "DEF (%)",
+      "HP (%)"
+    ],
+    "keyUsage": [
+      "pudungeon-water",
+      "tower-of-trials"
+    ],
+    "notes": "This build increases Poison DMG dealt to the Bosses. Gatekeeper set is also possible for more bulk or just use DMG Taken Reduction. If the Poison is not landing very well, then use this build for higher Poison Probability."
+  },
+  {
+    "characterSlug": "feng-yan",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "Crit Rate",
+      "DEF (%)",
+      "Crit DMG",
+      "Block Rate",
+      "Weakness Hit",
+      "HP (%)",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "pudungeon-water",
+      "adventure-both",
+      "advent-karma"
+    ],
+    "notes": "He can serve as an early game Sub DPS alongside Ryan (in Castle Rush) or Phase 1 in Advent Expedition so ensure his Crit Rate is high and have at least 20% Weakness Hit Rate if used as Sub DPS. If used for Freeze Immunity, go for bulk and survivability instead to prolong his utility on the field."
+  },
+  {
+    "characterSlug": "yuri",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "raid-id",
+      "pudungeon-earth",
+      "advent-teo"
+    ],
+    "notes": "This build increases Burn DMG dealt to the Bosses. She is also a strong ST Magic damage dealer so focusing on Crit Rate & Crit DMG is key. If used in Iron Devourer, make sure Weakness Hit is high too."
+  },
+  {
+    "characterSlug": "joker",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "DEF (%)",
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Speed"
+    ],
+    "keyUsage": [
+      "pudungeon-light",
+      "tower-of-trials",
+      "cr-rudy",
+      "cr-spike"
+    ],
+    "notes": "Pretty frail so best to build defensively on him so that he can quickly shred DMG Nullification."
+  },
+  {
+    "characterSlug": "ling-ling",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "POISON",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "AVENGER-MWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "POISON",
+      "setName": "Avenger"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "All ATK",
+      "Weakness Hit",
+      "Block Rate",
+      "Crit Rate",
+      "DMG Taken Reduction",
+      "Speed",
+      "Crit DMG"
+    ],
+    "keyUsage": [
+      "pudungeon-light",
+      "tower-of-trials"
+    ],
+    "notes": "Barrier scales of ATK% so this build focuses on that while also keeping her survivability decent. With primary use to remove hit shields, stacking on additional DOT potential makes her an all-in-one DMG nullification shredder,"
+  },
+  {
+    "characterSlug": "zhao-yun",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Avenger"
+    },
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "suddenraid-calistra",
+      "pudungeon-dark"
+    ],
+    "notes": "Primarily geared with this build for chip damage on the boss. Enhances Bleed DMG too."
+  },
+  {
+    "characterSlug": "jin",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "Crit Rate",
+      "DEF (%)",
+      "Crit DMG",
+      "Block Rate",
+      "Weakness Hit",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "All ATK (%)",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "cr-dellons",
+      "tower-of-trials"
+    ],
+    "notes": "A build to allow him to do more chip damage on the boss. At T6, he gains 31% ATK Boost so you must make sure his ATK doesn't exceed your main DPSs. If used for Silence Immunity, go for bulk and survivability instead to prolong his utility on the field."
+  },
+  {
+    "characterSlug": "catty",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "Crit Rate",
+      "Weakness Hit",
+      "Block Rate",
+      "DMG Taken Reduction",
+      "Speed",
+      "All ATK (%)",
+      "All ATK"
+    ],
+    "keyUsage": [
+      "tower-of-trials"
+    ],
+    "notes": "Maximize her Crit Rate in order for her to land Crits consistently."
+  },
+  {
+    "characterSlug": "ariel",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "Crit Rate",
+      "DEF (%)",
+      "Crit DMG",
+      "Block Rate",
+      "Weakness Hit",
+      "HP (%)",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "pudungeon-fire",
+      "cr-rachel",
+      "cr-jave",
+      "advent-yh"
+    ],
+    "notes": "With 2 3-TARGET AOEs, she can also do decently well in Castle Rush. However, can be too fragile on this build so you may not favour it. If used for MDMG Boost, go for bulk and survivability instead to prolong her utility on the field."
+  },
+  {
+    "characterSlug": "asura",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "VAN-MWEAPON",
+      "armor": "VAN-ARMOR",
+      "accessory": "BLOCK",
+      "setName": "Vanguard"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "All ATK",
+      "Weakness Hit",
+      "DMG Taken Reduction",
+      "Block Rate",
+      "HP (%)",
+      "DEF (%)"
+    ],
+    "keyUsage": [
+      "raid-id",
+      "tower-of-trials"
+    ],
+    "notes": "Barrier scales with ATK% so this build ensures her barrier is thick enough to keep the team alive."
+  },
+  {
+    "characterSlug": "jupy",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "statPriorities": [
+      "Crit DMG",
+      "Weakness Hit",
+      "Crit Rate",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "raid-dg",
+      "advent-kyle",
+      "pudungeon-water"
+    ],
+    "notes": "For a ST damage dealer, S1 gives her Crit Rate boost (37%) & at T4 (14%) so she only needs 49% Crit Rate from gears and focus can shift to Crit DMG & Weakness Hit. This build also increases Poison DMG dealt to the Bosses."
+  },
+  {
+    "characterSlug": "snipper",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "raid-ox",
+      "pudungeon-earth"
+    ],
+    "notes": "This build increases Burn DMG dealt to the Bosses."
+  },
+  {
+    "characterSlug": "rei",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "ASSASSIN-PWEAPON",
+      "armor": "ASSASSIN-ARMOR",
+      "accessory": "45DMG",
+      "setName": "Assassin"
+    },
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "Weakness Hit",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "adventure-normal"
+    ],
+    "notes": "Having high Crit Rate & decent Crit DMG for consistent DMG is important."
+  },
+  {
+    "characterSlug": "li",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "BLOCK",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "ORCHES-PWEAPON",
+      "armor": "ORCHES-ARMOR",
+      "accessory": "BLOCK",
+      "setName": "Orchestrator"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "All ATK",
+      "Weakness Hit",
+      "Block Rate",
+      "Crit Rate",
+      "DMG Taken Reduction",
+      "Speed",
+      "Crit DMG"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "infinite-tower",
+      "tower-of-trials"
+    ],
+    "notes": "Barrier scales of ATK% so this build focuses on that while also keeping her survivability decent. With primary use to remove hit shields, stacking on additional DOT potential makes her an all-in-one DMG nullification shredder,"
+  },
+  {
+    "characterSlug": "karin",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "DEF (%)",
+      "Speed"
+    ],
+    "keyUsage": [
+      "adventure-both",
+      "guild-war"
+    ],
+    "notes": "Heals scale off ATK% so this build not only makes her bulky enough but also allows for substantial healing."
+  },
+  {
+    "characterSlug": "hellenia",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GUARDIAN-PWEAPON",
+      "armor": "GUARDIAN-ARMOR",
+      "accessory": "BLOCK",
+      "setName": "Guardian"
+    },
+    "statPriorities": [
+      "DEF (%)",
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "Speed"
+    ],
+    "keyUsage": [
+      "infinite-tower",
+      "adventure-both"
+    ],
+    "notes": "Self-heal scales off DEF so it aims to raise her DEF as high as possible, while maintaining bulk."
+  },
+  {
+    "characterSlug": "noho",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "HP (%)",
+      "Block Rate",
+      "DEF (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "Speed"
+    ],
+    "keyUsage": [
+      "adventure-nightmare",
+      "cr-rudy",
+      "cr-spike",
+      "infinite-tower"
+    ],
+    "notes": "Some DMG multipliers scale of HP. This build makes her bulky enough to sustain HP Alteration."
+  },
+  {
+    "characterSlug": "sera",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "BOSSDMG",
+      "setName": "Avenger"
+    },
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "All ATK",
+      "Speed"
+    ],
+    "keyUsage": [
+      "advent-yh"
+    ],
+    "notes": "Has passive Crit Rate Boost (27%) & at T4 (14$) so will only need 59% Crit Rate from gears. Assassin set is also fine if it's too difficult to get high Crit Rate."
+  },
+  {
+    "characterSlug": "sarah",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "DEF (%)",
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "Speed"
+    ],
+    "keyUsage": [
+      "advent-yh"
+    ],
+    "notes": "Focus on making sure she survives."
+  },
+  {
+    "characterSlug": "soi",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "DEF (%)",
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Effect Resistance",
+      "Speed"
+    ],
+    "keyUsage": [
+      "pudungeon-dark",
+      "cr-spike",
+      "cr-rudy"
+    ],
+    "notes": "Focus on making sure she survives."
+  },
+  {
+    "characterSlug": "yoo-jinho",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-PWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "gearSet2": {
+      "weapon": "GUARDIAN-PWEAPON",
+      "armor": "GUARDIAN-ARMOR",
+      "accessory": "DOT",
+      "setName": "Guardian"
+    },
+    "statPriorities": [
+      "DEF (%)",
+      "Block Rate",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Speed"
+    ],
+    "keyUsage": [
+      "cr-dellons"
+    ],
+    "notes": "This build focuses on his self bulk where it boosts his survivability greatly. Will be recommended if your team doesn't have too much issue surviving. Barrier scales off DEF so this build focuses on increasing the survivability of the entire team with his barrier. However, the barrier only last for 2 turns."
+  },
+  {
+    "characterSlug": "leo",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "DEF (%)",
+      "Effect Hit",
+      "Block Rate",
+      "All ATK",
+      "HP (%)",
+      "Weakness Hit",
+      "DMG Taken Reduction",
+      "Speed",
+      "Effect Resistance"
+    ],
+    "keyUsage": [
+      "pudungeon-dark",
+      "infinite-tower",
+      "cr-kris",
+      "advent-kyle",
+      "adventure-both",
+      "suddenraid-leonid",
+      "advent-teo"
+    ],
+    "notes": "This build increases Bleed DMG dealt to the Bosses. Weakness Hit main stats for Castle Rush/multi-target battles. This build allows better surivavibility but just rememeber he also has an innate Revive."
+  },
+  {
+    "characterSlug": "cleo",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "POISON",
+      "setName": "Avenger"
+    },
+    "gearSet2": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "DOT",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "DEF (%)",
+      "Effect Hit",
+      "Block Rate",
+      "All ATK",
+      "HP (%)",
+      "DMG Taken Reduction",
+      "Speed",
+      "Effect Resistance"
+    ],
+    "keyUsage": [
+      "pudungeon-water",
+      "cr-dellons"
+    ],
+    "notes": "This build increases Poison DMG dealt to the Bosses. Gatekeeper set is also possible for more bulk or just use DMG Taken Reduction. If used for Silence Immunity, go for bulk and survivability instead to prolong her utility on the field."
+  },
+  {
+    "characterSlug": "may",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "AVENGER-PWEAPON",
+      "armor": "AVENGER-ARMOR",
+      "accessory": "POISON",
+      "setName": "Avenger"
+    },
+    "statPriorities": [
+      "All ATK (%)",
+      "Effect Hit",
+      "All ATK",
+      "DMG Taken Reduction",
+      "Speed",
+      "DEF (%)",
+      "HP (%)"
+    ],
+    "notes": "Being a DOT hero, aim to boost any DOT damage with this build against bosses."
+  },
+  {
+    "characterSlug": "sylvia",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Bounty Tracker"
+    },
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Weakness Hit",
+      "All ATK (%)",
+      "Crit DMG",
+      "All ATK"
+    ],
+    "notes": "Early-game Guild War DMG dealer so aim for a damage-oriented build (but is there really such thing as early game Guild War?)"
+  },
+  {
+    "characterSlug": "hokin",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "BOUNTY-PWEAPON",
+      "armor": "BOUNTY-ARMOR",
+      "accessory": "IMMORTAL",
+      "setName": "Bounty Tracker"
+    },
+    "statPriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Weakness Hit",
+      "All ATK (%)",
+      "Speed",
+      "All ATK"
+    ],
+    "notes": "Offense build."
+  },
+  {
+    "characterSlug": "rahkun",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "GATEKEEP-MWEAPON",
+      "armor": "GATEKEEP-ARMOR",
+      "accessory": "REVIVE",
+      "setName": "Gatekeeper"
+    },
+    "statPriorities": [
+      "DEF (%)",
+      "Block Rate",
+      "Effect Resistance",
+      "DMG Taken Reduction",
+      "HP (%)"
+    ],
+    "notes": "Defense build. S2 grants Block Rate Boost (45%)."
+  },
+  {
+    "characterSlug": "bane",
+    "gameSlug": "seven-knights-rebirth",
+    "gearSet1": {
+      "weapon": "SPELLWEAVE-MWEAPON",
+      "armor": "SPELLWEAVE-ARMOR",
+      "accessory": "GUTS",
+      "setName": "Spellweaver"
+    },
+    "statPriorities": [
+      "Speed",
+      "Crit Rate",
+      "Crit DMG",
+      "Effect Hit",
+      "All ATK (%)",
+      "DMG Taken Reduction",
+      "Weakness Hit",
+      "All ATK"
+    ],
+    "notes": "CC build. Has passive Effect Hit Rate boost (40%)."
+  }
+]

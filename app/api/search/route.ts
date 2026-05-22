@@ -7,7 +7,7 @@ export async function GET(request: Request) {
   const scope = (url.searchParams.get('scope') ?? 'all') as 'all' | 'game';
   const gameSlug = url.searchParams.get('gameSlug') ?? undefined;
 
-  const results = searchService.search(query, scope, gameSlug);
+  const results = await searchService.search(query, scope, gameSlug);
 
   return NextResponse.json({
     data: results,

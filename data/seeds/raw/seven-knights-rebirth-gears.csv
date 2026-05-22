@@ -1,0 +1,23 @@
+,,,,,,,,,,,,,,,,,,,,
+,,SET NAME,,GEARS,,,,,,,,,,,,,,,SET EFFECTS,
+,NO.,,,RAID,,,SUDDEN RAID,,,4LOO (ADVENT EXPEDITION),,,,SPECIAL PIECES,,,,,2-PIECE SET,4-PIECE SET
+,1,Vanguard,,,,,,,,,,,,,,,,,All ATK +20%,"All ATK +45%
+Effect Hit Rate +20%"
+,,Bountry Tracker,,,,,,,,,,,,,,,,,Weakness Hit Chance +15%,"Weakness Hit Chance +35%
+Weakness Hit DMG +35%"
+,2,Paladin,,,,,,,,,,,,,,,,,HP +17%,"HP +40%
+Incoming Healing Boost +20%"
+,,,,,,,,,,,,,,,,,,,,
+,3,Gatekeeper,,,,,,,,,,,,,,,,,Block Rate +15%,"Block Rate +30%
+Block DMG Reduction +15%"
+,,Guardian,,,,,,,,,,,,,,,,,DEF +20%,"DEF +45%
+Effect Resist Rate +20%"
+,4,Assassin,,,,,,,,,,,,,,,,,Crit Rate +15%,"Crit Rate +35%
+Ignore DEF +15%"
+,,,,,,,,,,,,,,,,,,,,
+,5,Avenger,,,,,,,,,,,,,,,,,DMG dealt +15%,"DMG dealt +30%
+DMG Boost to Boss +40%"
+,,Spellweaver,,,,,,,,,,,,,,,,,Effect Hit Rate +17%,"Effect Hit Rate +35%
+Effect Probability +10%"
+,6,Orchestrator,,,,,,,,,,,,,,,,,Effect Resist Rate +17%,"Effect Resist Rate +35%
+CC Immunity for 1 turn at the start"

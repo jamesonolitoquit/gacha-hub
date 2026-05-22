@@ -1,0 +1,162 @@
+[
+  {
+    "name": "KARL HERON",
+    "slug": "karl-heron",
+    "characterClass": "Attack",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Due to his low Shock chance, you can also raise it with this build to land Shock more easily for better enemy disruption, particularly against the main damage dealer on their team."
+  },
+  {
+    "name": "FAI",
+    "slug": "fai",
+    "characterClass": "Attack",
+    "rarity": "Legendary++",
+    "element": null,
+    "description": "If she is required just for her Passive and to get DEF Reduction off, survivability is priority so investing in high Block Rate is probably best considering how frail she is."
+  },
+  {
+    "name": "BRANZE&BRANSEL",
+    "slug": "branze-bransel",
+    "characterClass": "Attack",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Barrier provided upon enemy's death scales of their ATK. So having more ATK prolongs your ATTACK team much better and it is constantly renewable."
+  },
+  {
+    "name": "COLT",
+    "slug": "colt",
+    "characterClass": "Attack",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Preferred in Guild War where you know Crits are going to be blocked. This build will maintain her DMG output. Aim for 77 Speed to achieve maximum ATK Boost from passive."
+  },
+  {
+    "name": "DELLONS",
+    "slug": "dellons",
+    "characterClass": "Attack",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "This build aims to let his S1 (ST Skill) hit hard on bosses."
+  },
+  {
+    "name": "KAGURA",
+    "slug": "kagura",
+    "characterClass": "Attack",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "This aims to allow Petrification to happen at a higher rate, immobilizing the enemies when it is most necessary. Also, petrification DMG scales off ATK%."
+  },
+  {
+    "name": "KLAHAN",
+    "slug": "klahan",
+    "characterClass": "Attack",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Focuses primarily on Crit Rate (make 100%) & Crit DMG to allow consistent DMG. If he misses Crits, the entire DMG output suffers and farming may fail. Weakess Hit is a bonus stat to boost DMG."
+  },
+  {
+    "name": "KYLE",
+    "slug": "kyle",
+    "characterClass": "Attack",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "A potential build if used against Bosses, particularly Castle Rush Spike, for players who have no built out other PVE damage dealers."
+  },
+  {
+    "name": "LU BU",
+    "slug": "lu-bu",
+    "characterClass": "Attack",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "As a support, make sure his ATK stat is not higher than the main DPS and sub DPS."
+  },
+  {
+    "name": "RANDGRID",
+    "slug": "randgrid",
+    "characterClass": "Attack",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Boasting an ST that hits 4 times is no small damage. Make sure to have higher than 3576 ATK so that additional Piercing DMG can be applied."
+  },
+  {
+    "name": "RYAN",
+    "slug": "ryan",
+    "characterClass": "Attack",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Ensure that his Weakness Hit is high as he deals more DMG when landing Weakness Hits. Crit may be blocked in Guild War so it depends on what kind of enemy you choose to fight."
+  },
+  {
+    "name": "TEO",
+    "slug": "teo",
+    "characterClass": "Attack",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "At T6, has 100% Crit Rate on skills so focus will be on mximizing Crit DMG & Weakness Hit. (Prior to T6, make sure to have Crit Rate as priority). Effect Resist has growing importance to resist Duration Reduction."
+  },
+  {
+    "name": "AMELIA",
+    "slug": "amelia",
+    "characterClass": "Attack",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Has not much tankiness so to keep her alive, it may be necessary to give her some defensive capabilities to do well at least in the start of the battle."
+  },
+  {
+    "name": "BAI LONG",
+    "slug": "bai-long",
+    "characterClass": "Attack",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "An extremely endgame build that required a Legendary combination Ring to get him to survive as long as possible to be able to nuke the boss down without additional support. Crit DMG is priotized over Weakness Hit."
+  },
+  {
+    "name": "BALLISTA",
+    "slug": "ballista",
+    "characterClass": "Attack",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Focus on Crit Rate & Weakness Hit for consistent DMG output even on Follow-Up attacks."
+  },
+  {
+    "name": "BIDAM",
+    "slug": "bidam",
+    "characterClass": "Attack",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "This build increases Bleed DMG dealt to the Bosses."
+  },
+  {
+    "name": "DEO",
+    "slug": "deo",
+    "characterClass": "Attack",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "If bulk is lacking, this build can be used instead. Afterall, it is more important for him to survive for his immunity and Crit DMG Boost."
+  },
+  {
+    "name": "SHANE",
+    "slug": "shane",
+    "characterClass": "Attack",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Standard damage dealer build. Has passive Crit Rate boost (41%) & at T4 (18%), so aim for 41% Crit Rate from gears and 20-46% Weakness Hit. If substat rolls for Crit Rate, can opt for double Crit DMG weapons."
+  },
+  {
+    "name": "TAKA",
+    "slug": "taka",
+    "characterClass": "Attack",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Standard damage dealer build. Without innate self-boosts, he will need 82% Crit Rate from here and 46% Weakness Hit. If substat rolls for Crit Rate, can opt for double Crit DMG weapon main stats."
+  },
+  {
+    "name": "CHA HAEIN",
+    "slug": "cha-haein",
+    "characterClass": "Attack",
+    "rarity": "Collab",
+    "element": null,
+    "description": "Main priority would be to boost all 3 offensive multipliers to turn her into somewhat of a damage dealer to allow her to get her Chain Attacks off and continuously lower allies' Skill Cooldown (T6)."
+  }
+]

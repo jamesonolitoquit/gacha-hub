@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Flamewing Kael's Dragon Strike",
+    "character_slug": "flamewing-kael",
+    "slug": "flamewing-kael-dragon-strike",
+    "type": "Active",
+    "description": "1 ENEMY:\n● Deals DMG equal to 380% of ATK\n● Inflicts [Burn] for 2 turns",
+    "order": 0,
+    "enhancements": ["● Increases DMG: 380% > 450% of ATK"],
+    "transcendence": ["Adds Effect: [Burn] DMG +50%"]
+  },
+  {
+    "name": "Flamewing Kael's Blazing Aura",
+    "character_slug": "flamewing-kael",
+    "slug": "flamewing-kael-blazing-aura",
+    "type": "Passive",
+    "description": "SELF:\n● ATK +25%\n● Immune to [Burn]",
+    "order": 1,
+    "enhancements": ["● Increases ATK: 25% > 35%"],
+    "transcendence": ["Adds Effect: ALL ALLIES ATK +10%"]
+  },
+  {
+    "name": "Flamewing Kael's Inferno Cleave",
+    "character_slug": "flamewing-kael",
+    "slug": "flamewing-kael-inferno-cleabe",
+    "type": "Ultimate",
+    "description": "ALL ENEMIES:\n● Deals DMG equal to 250% of ATK\n● Removes 1 [Buff]",
+    "order": 2,
+    "enhancements": ["● Increases DMG: 250% > 320% of ATK"],
+    "transcendence": ["Adds Effect: Removes 2 [Buffs]"]
+  },
+  {
+    "name": "Flamewing Kael's Dragon Fang",
+    "character_slug": "flamewing-kael",
+    "slug": "flamewing-kael-dragon-fang",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 100% of ATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Seraphina Iceveil's Glacial Spear",
+    "character_slug": "seraphina-iceveil",
+    "slug": "seraphina-iceveil-glacial-spear",
+    "type": "Active",
+    "description": "1 ENEMY:\n● Deals DMG equal to 350% of MATK\n● Inflicts [Freeze] for 1 turn",
+    "order": 0,
+    "enhancements": ["● Increases DMG: 350% > 420% of MATK"],
+    "transcendence": ["Adds Effect: [Freeze] duration +1 turn"]
+  },
+  {
+    "name": "Seraphina Iceveil's Frost Armor",
+    "character_slug": "seraphina-iceveil",
+    "slug": "seraphina-iceveil-frost-armor",
+    "type": "Passive",
+    "description": "SELF:\n● DEF +20%\n● [Freeze] enemies on incoming attack (20% chance)",
+    "order": 1,
+    "enhancements": ["● Increases DEF: 20% > 30%"],
+    "transcendence": ["Adds Effect: [Freeze] chance +15%"]
+  },
+  {
+    "name": "Seraphina Iceveil's Blizzard",
+    "character_slug": "seraphina-iceveil",
+    "slug": "seraphina-iceveil-blizzard",
+    "type": "Ultimate",
+    "description": "ALL ENEMIES:\n● Deals DMG equal to 200% of MATK\n● 50% chance to [Freeze] for 1 turn",
+    "order": 2,
+    "enhancements": ["● Increases DMG: 200% > 280% of MATK"],
+    "transcendence": ["Adds Effect: [Freeze] chance 50% > 75%"]
+  },
+  {
+    "name": "Seraphina Iceveil's Ice Shard",
+    "character_slug": "seraphina-iceveil",
+    "slug": "seraphina-iceveil-ice-shard",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 80% of MATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Zephyr Nightwhisper's Shadow Strike",
+    "character_slug": "zephyr-nightwhisper",
+    "slug": "zephyr-nightwhisper-shadow-strike",
+    "type": "Active",
+    "description": "1 ENEMY:\n● Deals DMG equal to 420% of ATK\n● Ignores 30% of target DEF",
+    "order": 0,
+    "enhancements": ["● Increases DMG: 420% > 500% of ATK"],
+    "transcendence": ["Adds Effect: Ignores 50% of target DEF"]
+  },
+  {
+    "name": "Zephyr Nightwhisper's Veil of Darkness",
+    "character_slug": "zephyr-nightwhisper",
+    "slug": "zephyr-nightwhisper-veil-of-darkness",
+    "type": "Passive",
+    "description": "SELF:\n● Crit Rate +18%\n● +30% DMG from stealth",
+    "order": 1,
+    "enhancements": ["● Increases Crit Rate: 18% > 25%"],
+    "transcendence": ["Adds Effect: [Stealth] on battle start"]
+  },
+  {
+    "name": "Zephyr Nightwhisper's Death Mark",
+    "character_slug": "zephyr-nightwhisper",
+    "slug": "zephyr-nightwhisper-death-mark",
+    "type": "Ultimate",
+    "description": "1 ENEMY:\n● Deals DMG equal to 600% of ATK\n● Inflicts [Death Mark] for 2 turns",
+    "order": 2,
+    "enhancements": ["● Increases DMG: 600% > 750% of ATK"],
+    "transcendence": ["Adds Effect: [Death Mark] DMG taken +30%"]
+  },
+  {
+    "name": "Zephyr Nightwhisper's Dagger Throw",
+    "character_slug": "zephyr-nightwhisper",
+    "slug": "zephyr-nightwhisper-dagger-throw",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 90% of ATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Caelum Stormshot's Piercing Wind",
+    "character_slug": "caelum-stormshot",
+    "slug": "caelum-stormshot-piercing-wind",
+    "type": "Active",
+    "description": "1 ENEMY:\n● Deals DMG equal to 300% of ATK\n● +15% Crit Rate against [Wind] enemies",
+    "order": 0,
+    "enhancements": ["● Increases DMG: 300% > 360% of ATK"],
+    "transcendence": ["Adds Effect: Crit Rate bonus +15% > +25%"]
+  },
+  {
+    "name": "Caelum Stormshot's Eagle Eye",
+    "character_slug": "caelum-stormshot",
+    "slug": "caelum-stormshot-eagle-eye",
+    "type": "Passive",
+    "description": "SELF:\n● ACC +20%\n● Range +1",
+    "order": 1,
+    "enhancements": ["● Increases ACC: 20% > 30%"],
+    "transcendence": ["Adds Effect: ALL ALLIES ACC +10%"]
+  },
+  {
+    "name": "Caelum Stormshot's Tempest Barrage",
+    "character_slug": "caelum-stormshot",
+    "slug": "caelum-stormshot-tempest-barrage",
+    "type": "Ultimate",
+    "description": "ALL ENEMIES:\n● Deals DMG equal to 180% of ATK\n● -20% SPD for 2 turns",
+    "order": 2,
+    "enhancements": ["● Increases DMG: 180% > 240% of ATK"],
+    "transcendence": ["Adds Effect: -SPD 20% > 30%"]
+  },
+  {
+    "name": "Caelum Stormshot's Quick Shot",
+    "character_slug": "caelum-stormshot",
+    "slug": "caelum-stormshot-quick-shot",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 85% of ATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Lunara Dawnwell's Radiant Heal",
+    "character_slug": "lunara-dawnwell",
+    "slug": "lunara-dawnwell-radiant-heal",
+    "type": "Active",
+    "description": "1 ALLY:\n● Heals HP equal to 300% of MATK\n● Removes 1 [Debuff]",
+    "order": 0,
+    "enhancements": ["● Increases Heal: 300% > 400% of MATK"],
+    "transcendence": ["Adds Effect: Removes 2 [Debuffs]"]
+  },
+  {
+    "name": "Lunara Dawnwell's Light of Creation",
+    "character_slug": "lunara-dawnwell",
+    "slug": "lunara-dawnwell-light-of-creation",
+    "type": "Passive",
+    "description": "ALL ALLIES:\n● HP +15%\n● [Cleanse] at start of every turn (20% chance)",
+    "order": 1,
+    "enhancements": ["● Increases HP: 15% > 22%"],
+    "transcendence": ["Adds Effect: [Cleanse] chance 20% > 35%"]
+  },
+  {
+    "name": "Lunara Dawnwell's Salvation",
+    "character_slug": "lunara-dawnwell",
+    "slug": "lunara-dawnwell-salvation",
+    "type": "Ultimate",
+    "description": "ALL ALLIES:\n● Heals HP equal to 200% of MATK\n● Grants [Barrier] for 2 turns",
+    "order": 2,
+    "enhancements": ["● Increases Heal: 200% > 300% of MATK"],
+    "transcendence": ["Adds Effect: [Barrier] strength +50%"]
+  },
+  {
+    "name": "Lunara Dawnwell's Holy Light",
+    "character_slug": "lunara-dawnwell",
+    "slug": "lunara-dawnwell-holy-light",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 70% of MATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Ignis Emberclaw's Fire Breath",
+    "character_slug": "ignis-emberclaw",
+    "slug": "ignis-emberclaw-fire-breath",
+    "type": "Active",
+    "description": "1 ENEMY:\n● Deals DMG equal to 280% of ATK\n● 30% chance to [Burn] for 1 turn",
+    "order": 0,
+    "enhancements": ["● Increases DMG: 280% > 340% of ATK"],
+    "transcendence": ["Adds Effect: [Burn] chance +20%"]
+  },
+  {
+    "name": "Ignis Emberclaw's Draconic Bond",
+    "character_slug": "ignis-emberclaw",
+    "slug": "ignis-emberclaw-draconic-bond",
+    "type": "Passive",
+    "description": "SELF:\n● ATK +12%\n● [Burn] DMG +20%",
+    "order": 1,
+    "enhancements": ["● Increases ATK: 12% > 18%"],
+    "transcendence": ["Adds Effect: ALL ALLIES ATK +5%"]
+  },
+  {
+    "name": "Ignis Emberclaw's Wild Charge",
+    "character_slug": "ignis-emberclaw",
+    "slug": "ignis-emberclaw-wild-charge",
+    "type": "Ultimate",
+    "description": "1 ENEMY:\n● Deals DMG equal to 400% of ATK\n● [Stun] for 1 turn",
+    "order": 2,
+    "enhancements": ["● Increases DMG: 400% > 500% of ATK"],
+    "transcendence": ["Adds Effect: [Stun] duration +1 turn"]
+  },
+  {
+    "name": "Ignis Emberclaw's Claw Swipe",
+    "character_slug": "ignis-emberclaw",
+    "slug": "ignis-emberclaw-claw-swipe",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 100% of ATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Tidecaller Mara's Tidal Wave",
+    "character_slug": "tidecaller-mara",
+    "slug": "tidecaller-mara-tidal-wave",
+    "type": "Active",
+    "description": "ALL ENEMIES:\n● Deals DMG equal to 150% of MATK\n● -20% SPD for 1 turn",
+    "order": 0,
+    "enhancements": ["● Increases DMG: 150% > 200% of MATK"],
+    "transcendence": ["Adds Effect: -SPD 20% > 30%"]
+  },
+  {
+    "name": "Tidecaller Mara's Serpent Scales",
+    "character_slug": "tidecaller-mara",
+    "slug": "tidecaller-mara-serpent-scales",
+    "type": "Passive",
+    "description": "SELF:\n● Effect Resist +25%\n● Counter +15%",
+    "order": 1,
+    "enhancements": ["● Increases Effect Resist: 25% > 35%"],
+    "transcendence": ["Adds Effect: ALL ALLIES Effect Resist +10%"]
+  },
+  {
+    "name": "Tidecaller Mara's Abyssal Surge",
+    "character_slug": "tidecaller-mara",
+    "slug": "tidecaller-mara-abyssal-surge",
+    "type": "Ultimate",
+    "description": "ALL ENEMIES:\n● Deals DMG equal to 230% of MATK\n● [Silence] for 1 turn",
+    "order": 2,
+    "enhancements": ["● Increases DMG: 230% > 300% of MATK"],
+    "transcendence": ["Adds Effect: [Silence] duration +1 turn"]
+  },
+  {
+    "name": "Tidecaller Mara's Water Bolt",
+    "character_slug": "tidecaller-mara",
+    "slug": "tidecaller-mara-water-bolt",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 80% of MATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  }
+]

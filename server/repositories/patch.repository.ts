@@ -10,6 +10,7 @@ type PatchRow = {
   game_id: number;
   version: string;
   title: string | null;
+  display_name: string | null;
   notes: string | null;
   release_date: string;
   changes: string | null;
@@ -23,6 +24,7 @@ function mapPatchRow(row: PatchRow): PatchRecord {
     gameId: row.game_id,
     version: row.version,
     title: row.title,
+    displayName: row.display_name,
     notes: row.notes,
     releaseDate: new Date(row.release_date),
     changes: row.changes,
@@ -34,17 +36,19 @@ function mapPatchRow(row: PatchRow): PatchRecord {
 export class PatchRepository {
   async findByGameId(gameId: number): Promise<PatchRecord[]> {
     if (db) {
-      const { data, error } = await db
-        .from('patches')
-        .select('id, game_id, version, title, notes, release_date, changes, created_at, updated_at')
-        .eq('game_id', gameId)
-        .order('release_date', { ascending: false });
+      try {
+        const { data, error } = await db
+          .from('patches')
+          .select('id, game_id, version, title, notes, release_date, changes, created_at, updated_at')
+          .eq('game_id', gameId)
+          .order('release_date', { ascending: false });
 
-      if (error) {
-        throw new Error(`Failed to load patches for game ${gameId}: ${error.message}`);
+        if (error) throw new Error(`Failed to load patches for game ${gameId}: ${error.message}`);
+
+        return (data ?? []).map((row) => mapPatchRow(row as PatchRow));
+      } catch {
+        // fall through to seed data
       }
-
-      return (data ?? []).map((row) => mapPatchRow(row as PatchRow));
     }
 
     return getSeedPatches(gameId).map((patch, index) => ({
@@ -52,6 +56,7 @@ export class PatchRepository {
       gameId: patch.gameId,
       version: patch.version,
       title: patch.title,
+      displayName: null,
       notes: patch.notes,
       releaseDate: new Date(patch.releaseDate),
       changes: patch.changes,
@@ -62,18 +67,20 @@ export class PatchRepository {
 
   async findByVersion(gameId: number, version: string): Promise<PatchRecord | undefined> {
     if (db) {
-      const { data, error } = await db
-        .from('patches')
-        .select('id, game_id, version, title, notes, release_date, changes, created_at, updated_at')
-        .eq('game_id', gameId)
-        .eq('version', version)
-        .maybeSingle();
+      try {
+        const { data, error } = await db
+          .from('patches')
+          .select('id, game_id, version, title, notes, release_date, changes, created_at, updated_at')
+          .eq('game_id', gameId)
+          .eq('version', version)
+          .maybeSingle();
 
-      if (error) {
-        throw new Error(`Failed to load patch ${version} for game ${gameId}: ${error.message}`);
+        if (error) throw new Error(`Failed to load patch ${version} for game ${gameId}: ${error.message}`);
+
+        return data ? mapPatchRow(data as PatchRow) : undefined;
+      } catch {
+        // fall through to seed data
       }
-
-      return data ? mapPatchRow(data as PatchRow) : undefined;
     }
 
     const seedPatch = findSeedPatch(gameId, version);
@@ -87,6 +94,7 @@ export class PatchRepository {
       gameId: seedPatch.gameId,
       version: seedPatch.version,
       title: seedPatch.title,
+      displayName: null,
       notes: seedPatch.notes,
       releaseDate: new Date(seedPatch.releaseDate),
       changes: seedPatch.changes,

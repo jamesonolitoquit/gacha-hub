@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Valeria Steelheart's Blade Dance",
+    "character_slug": "valeria-steelheart",
+    "slug": "valeria-steelheart-blade-dance",
+    "type": "Skill",
+    "description": "1 ENEMY:\n● Deals DMG equal to 400% of ATK\n● [Armor Break] for 2 turns",
+    "order": 0,
+    "enhancements": ["● Increases DMG: 400% > 480% of ATK"],
+    "transcendence": ["Adds Effect: [Armor Break] DEF -50%"]
+  },
+  {
+    "name": "Valeria Steelheart's Combat Focus",
+    "character_slug": "valeria-steelheart",
+    "slug": "valeria-steelheart-combat-focus",
+    "type": "Passive",
+    "description": "SELF:\n● ATK +20%\n● Crit Rate +12%",
+    "order": 1,
+    "enhancements": ["● Increases ATK: 20% > 30%"],
+    "transcendence": ["Adds Effect: Crit Rate +12% > +20%"]
+  },
+  {
+    "name": "Valeria Steelheart's Rampage",
+    "character_slug": "valeria-steelheart",
+    "slug": "valeria-steelheart-rampage",
+    "type": "Ultimate",
+    "description": "ALL ENEMIES:\n● Deals DMG equal to 280% of ATK\n● +30% DMG per [Debuff] on target",
+    "order": 2,
+    "enhancements": ["● Increases DMG: 280% > 350% of ATK"],
+    "transcendence": ["Adds Effect: +30% DMG > +45% DMG per [Debuff]"]
+  },
+  {
+    "name": "Valeria Steelheart's Quick Slash",
+    "character_slug": "valeria-steelheart",
+    "slug": "valeria-steelheart-quick-slash",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 100% of ATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Knight-Commander Roderic's Shield Wall",
+    "character_slug": "knight-commander-roderic",
+    "slug": "knight-commander-roderic-shield-wall",
+    "type": "Skill",
+    "description": "ALL ALLIES:\n● [Barrier] equal to 25% of max HP for 2 turns\n● [Taunt] SELF for 1 turn",
+    "order": 0,
+    "enhancements": ["● [Barrier] 25% > 35% of max HP"],
+    "transcendence": ["Adds Effect: [Barrier] duration +1 turn"]
+  },
+  {
+    "name": "Knight-Commander Roderic's Iron Will",
+    "character_slug": "knight-commander-roderic",
+    "slug": "knight-commander-roderic-iron-will",
+    "type": "Passive",
+    "description": "SELF:\n● DEF +30%\n● -20% incoming DMG when HP < 50%",
+    "order": 1,
+    "enhancements": ["● Increases DEF: 30% > 40%"],
+    "transcendence": ["Adds Effect: ALL ALLIES DEF +10%"]
+  },
+  {
+    "name": "Knight-Commander Roderic's Divine Bastion",
+    "character_slug": "knight-commander-roderic",
+    "slug": "knight-commander-roderic-divine-bastion",
+    "type": "Ultimate",
+    "description": "ALL ALLIES:\n● Heals HP equal to 200% of DEF\n● [Invincibility] for 1 turn",
+    "order": 2,
+    "enhancements": ["● Increases Heal: 200% > 300% of DEF"],
+    "transcendence": ["Adds Effect: [Invincibility] duration +1 turn"]
+  },
+  {
+    "name": "Knight-Commander Roderic's Shield Bash",
+    "character_slug": "knight-commander-roderic",
+    "slug": "knight-commander-roderic-shield-bash",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 80% of DEF",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Enchantress Mira's Arcane Bolt",
+    "character_slug": "enchantress-mira",
+    "slug": "enchantress-mira-arcane-bolt",
+    "type": "Skill",
+    "description": "1 ENEMY:\n● Deals DMG equal to 380% of MATK\n● [Curse] for 2 turns",
+    "order": 0,
+    "enhancements": ["● Increases DMG: 380% > 450% of MATK"],
+    "transcendence": ["Adds Effect: [Curse] ATK -30%"]
+  },
+  {
+    "name": "Enchantress Mira's Dark Pact",
+    "character_slug": "enchantress-mira",
+    "slug": "enchantress-mira-dark-pact",
+    "type": "Passive",
+    "description": "SELF:\n● MATK +25%\n● [Lifesteal] +15%",
+    "order": 1,
+    "enhancements": ["● Increases MATK: 25% > 35%"],
+    "transcendence": ["Adds Effect: [Lifesteal] +15% > +25%"]
+  },
+  {
+    "name": "Enchantress Mira's Void Call",
+    "character_slug": "enchantress-mira",
+    "slug": "enchantress-mira-void-call",
+    "type": "Ultimate",
+    "description": "ALL ENEMIES:\n● Deals DMG equal to 300% of MATK\n● [Silence] for 1 turn",
+    "order": 2,
+    "enhancements": ["● Increases DMG: 300% > 400% of MATK"],
+    "transcendence": ["Adds Effect: [Silence] duration +1 turn"]
+  },
+  {
+    "name": "Enchantress Mira's Shadow Bolt",
+    "character_slug": "enchantress-mira",
+    "slug": "enchantress-mira-shadow-bolt",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 80% of MATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Celestine the Luminary's Blessing of Light",
+    "character_slug": "celestine-the-luminary",
+    "slug": "celestine-the-luminary-blessing-of-light",
+    "type": "Skill",
+    "description": "1 ALLY:\n● Heals HP equal to 280% of MATK\n● +30% ATK for 2 turns",
+    "order": 0,
+    "enhancements": ["● Increases Heal: 280% > 360% of MATK"],
+    "transcendence": ["Adds Effect: +30% ATK > +45% ATK"]
+  },
+  {
+    "name": "Celestine the Luminary's Radiant Aura",
+    "character_slug": "celestine-the-luminary",
+    "slug": "celestine-the-luminary-radiant-aura",
+    "type": "Passive",
+    "description": "ALL ALLIES:\n● HP +12%\n● Debuff Resist +15%",
+    "order": 1,
+    "enhancements": ["● Increases HP: 12% > 18%"],
+    "transcendence": ["Adds Effect: Debuff Resist +15% > +25%"]
+  },
+  {
+    "name": "Celestine the Luminary's Purification",
+    "character_slug": "celestine-the-luminary",
+    "slug": "celestine-the-luminary-purification",
+    "type": "Ultimate",
+    "description": "ALL ALLIES:\n● Heals HP equal to 180% of MATK\n● Removes all [Debuffs]",
+    "order": 2,
+    "enhancements": ["● Increases Heal: 180% > 250% of MATK"],
+    "transcendence": ["Adds Effect: Immunity to [Debuffs] for 1 turn"]
+  },
+  {
+    "name": "Celestine the Luminary's Light Ray",
+    "character_slug": "celestine-the-luminary",
+    "slug": "celestine-the-luminary-light-ray",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 70% of MATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Fenris Wolfbane's Feral Strike",
+    "character_slug": "fenris-wolfbane",
+    "slug": "fenris-wolfbane-feral-strike",
+    "type": "Skill",
+    "description": "1 ENEMY:\n● Deals DMG equal to 350% of ATK\n● [Bleed] for 2 turns",
+    "order": 0,
+    "enhancements": ["● Increases DMG: 350% > 420% of ATK"],
+    "transcendence": ["Adds Effect: [Bleed] DMG +50%"]
+  },
+  {
+    "name": "Fenris Wolfbane's Pack Instinct",
+    "character_slug": "fenris-wolfbane",
+    "slug": "fenris-wolfbane-pack-instinct",
+    "type": "Passive",
+    "description": "SELF:\n● SPD +20%\n● +15% DMG against enemies with < 50% HP",
+    "order": 1,
+    "enhancements": ["● Increases SPD: 20% > 30%"],
+    "transcendence": ["Adds Effect: ALL ALLIES SPD +8%"]
+  },
+  {
+    "name": "Fenris Wolfbane's Howling Rage",
+    "character_slug": "fenris-wolfbane",
+    "slug": "fenris-wolfbane-howling-rage",
+    "type": "Ultimate",
+    "description": "1 ENEMY:\n● Deals DMG equal to 500% of ATK\n● Ignores 20% of target DEF",
+    "order": 2,
+    "enhancements": ["● Increases DMG: 500% > 650% of ATK"],
+    "transcendence": ["Adds Effect: Ignores 20% > 35% of target DEF"]
+  },
+  {
+    "name": "Fenris Wolfbane's Claw Strike",
+    "character_slug": "fenris-wolfbane",
+    "slug": "fenris-wolfbane-claw-strike",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 95% of ATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Stonewall Brunhild's Fortress Stance",
+    "character_slug": "stonewall-brunhild",
+    "slug": "stonewall-brunhild-fortress-stance",
+    "type": "Skill",
+    "description": "SELF:\n● [Taunt] for 2 turns\n● -30% incoming DMG for 2 turns",
+    "order": 0,
+    "enhancements": ["● -30% > -40% incoming DMG"],
+    "transcendence": ["Adds Effect: [Barrier] equal to 15% of max HP"]
+  },
+  {
+    "name": "Stonewall Brunhild's Steadfast",
+    "character_slug": "stonewall-brunhild",
+    "slug": "stonewall-brunhild-steadfast",
+    "type": "Passive",
+    "description": "SELF:\n● DEF +18%\n● HP +12%",
+    "order": 1,
+    "enhancements": ["● Increases DEF: 18% > 25%"],
+    "transcendence": ["Adds Effect: HP +12% > +20%"]
+  },
+  {
+    "name": "Stonewall Brunhild's Unyielding Stand",
+    "character_slug": "stonewall-brunhild",
+    "slug": "stonewall-brunhild-unyielding-stand",
+    "type": "Ultimate",
+    "description": "ALL ALLIES:\n● [Barrier] equal to 20% of max HP for 2 turns\n● [Taunt] SELF for 2 turns",
+    "order": 2,
+    "enhancements": ["● [Barrier] 20% > 30% of max HP"],
+    "transcendence": ["Adds Effect: Heals 10% of max HP"]
+  },
+  {
+    "name": "Stonewall Brunhild's Heavy Strike",
+    "character_slug": "stonewall-brunhild",
+    "slug": "stonewall-brunhild-heavy-strike",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 90% of ATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  },
+  {
+    "name": "Pyromancer Cinder's Fireball",
+    "character_slug": "pyromancer-cinder",
+    "slug": "pyromancer-cinder-fireball",
+    "type": "Skill",
+    "description": "1 ENEMY:\n● Deals DMG equal to 320% of MATK\n● 40% chance to [Burn] for 1 turn",
+    "order": 0,
+    "enhancements": ["● Increases DMG: 320% > 380% of MATK"],
+    "transcendence": ["Adds Effect: [Burn] chance 40% > 60%"]
+  },
+  {
+    "name": "Pyromancer Cinder's Combustion",
+    "character_slug": "pyromancer-cinder",
+    "slug": "pyromancer-cinder-combustion",
+    "type": "Passive",
+    "description": "SELF:\n● MATK +15%\n● +25% DMG against [Burned] targets",
+    "order": 1,
+    "enhancements": ["● Increases MATK: 15% > 22%"],
+    "transcendence": ["Adds Effect: +25% DMG > +40% DMG against [Burned]"]
+  },
+  {
+    "name": "Pyromancer Cinder's Inferno",
+    "character_slug": "pyromancer-cinder",
+    "slug": "pyromancer-cinder-inferno",
+    "type": "Ultimate",
+    "description": "ALL ENEMIES:\n● Deals DMG equal to 220% of MATK\n● [Burn] for 2 turns",
+    "order": 2,
+    "enhancements": ["● Increases DMG: 220% > 300% of MATK"],
+    "transcendence": ["Adds Effect: [Burn] DMG +50%"]
+  },
+  {
+    "name": "Pyromancer Cinder's Ember",
+    "character_slug": "pyromancer-cinder",
+    "slug": "pyromancer-cinder-ember",
+    "type": "Normal Attack",
+    "description": "1 ENEMY:\n● Deals DMG equal to 80% of MATK",
+    "order": 3,
+    "enhancements": [],
+    "transcendence": []
+  }
+]

@@ -2,6 +2,7 @@ import type { GameModule } from '../../core/types';
 import { dragonTravelerCapabilities } from './capabilities';
 import { dragonTravelerRoutes } from './routes';
 import { dragonTravelerTheme } from './theme';
+import { dtTaxonomies, dtNav } from './config';
 
 export const dragonTravelerModule: GameModule = {
   id: 'dragontraveler',
@@ -12,4 +13,6 @@ export const dragonTravelerModule: GameModule = {
   routes: dragonTravelerRoutes,
   theme: dragonTravelerTheme,
   capabilities: dragonTravelerCapabilities,
+  taxonomies: dtTaxonomies,
+  nav: dtNav,
 };

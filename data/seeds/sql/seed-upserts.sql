@@ -1,0 +1,13 @@
+-- WARNING: GAME_ID not provided. Replace GAME_ID placeholder with actual integer game id before running this SQL.
+
+-- upsert character sword-knight
+
+INSERT INTO characters (game_id, slug, name, rarity, element, class, role, portrait_url, full_art_url, icon_url, description, release_patch_id) VALUES ('/* GAME_ID */', 'sword-knight', 'Sword Knight', '5', 'Light', 'Warrior', 'Attacker', 'https://picsum.photos/seed/swordknight/300/300', 'https://picsum.photos/seed/swordknight/1200/800', 'https://picsum.photos/seed/swordknight/96/96', 'Frontline sword fighter for the Seven Knights starter dataset.', NULL) ON CONFLICT (game_id, slug) DO UPDATE SET name=EXCLUDED.name, rarity=EXCLUDED.rarity, element=EXCLUDED.element, class=EXCLUDED.class, role=EXCLUDED.role, portrait_url=EXCLUDED.portrait_url, full_art_url=EXCLUDED.full_art_url, icon_url=EXCLUDED.icon_url, description=EXCLUDED.description, release_patch_id=EXCLUDED.release_patch_id;
+
+-- upsert character blade-mage
+
+INSERT INTO characters (game_id, slug, name, rarity, element, class, role, portrait_url, full_art_url, icon_url, description, release_patch_id) VALUES ('/* GAME_ID */', 'blade-mage', 'Blade Mage', '4', 'Dark', 'Mage', 'Support', 'https://picsum.photos/seed/blademage/300/300', 'https://picsum.photos/seed/blademage/1200/800', 'https://picsum.photos/seed/blademage/96/96', 'A magic wielder who augments the party with blade enchantments.', NULL) ON CONFLICT (game_id, slug) DO UPDATE SET name=EXCLUDED.name, rarity=EXCLUDED.rarity, element=EXCLUDED.element, class=EXCLUDED.class, role=EXCLUDED.role, portrait_url=EXCLUDED.portrait_url, full_art_url=EXCLUDED.full_art_url, icon_url=EXCLUDED.icon_url, description=EXCLUDED.description, release_patch_id=EXCLUDED.release_patch_id;
+
+-- upsert character shield-warden
+
+INSERT INTO characters (game_id, slug, name, rarity, element, class, role, portrait_url, full_art_url, icon_url, description, release_patch_id) VALUES ('/* GAME_ID */', 'shield-warden', 'Shield Warden', '3', 'Earth', 'Guardian', 'Defender', 'https://picsum.photos/seed/shieldwarden/300/300', 'https://picsum.photos/seed/shieldwarden/1200/800', 'https://picsum.photos/seed/shieldwarden/96/96', 'A sturdy defender who protects allies with heavy shields.', NULL) ON CONFLICT (game_id, slug) DO UPDATE SET name=EXCLUDED.name, rarity=EXCLUDED.rarity, element=EXCLUDED.element, class=EXCLUDED.class, role=EXCLUDED.role, portrait_url=EXCLUDED.portrait_url, full_art_url=EXCLUDED.full_art_url, icon_url=EXCLUDED.icon_url, description=EXCLUDED.description, release_patch_id=EXCLUDED.release_patch_id;

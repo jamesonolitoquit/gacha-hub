@@ -1,0 +1,396 @@
+    ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,CASTLE RUSH 공성전,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,CASTLE RUSH PLAYLIST,,,,,"Positioning MATTERS! Speed priority goes from Front to Back in a Left to Right fashion.
+For. e.g. If all heroes have the same speed, the speed attack of heroes will proceed in the same numbering you see in the formation label.
+If a hero on the right frontline has the same speed as both heroes in the backline, the hero in the front will go first, then those in the back and then the other 2 with lower speed.
+
+The relationship between Gears & Accessories is flexible. Whichever combination is easier to hit near 100%, use that.
+For e.g., If you have better Crit Rolls on your gears, then accessory can have Weakness Hit Chance instead and vice versa. 
+If you can achieve both well with gears alone, then accessory can boost other 1-3 Target Atk DMG instead (IDEAL).",,,,,,,,,,,,,,,,"Skill Queues shown here MAY NOT match the Video Guide shown. In any case, the Skill Queue is the more updated guide.
+It is to be assumed that skills of DPS and fixed Support Heroes are enhanced. Any special cases will be identified in Notes.
+
+The Stats Tables focus on the 2 main stats to work on. 
+Other stats like ATK & Crit DMG are good as high as they can go. If you can gamble for higher score with higher Crit DMG stats but <100% Crit Rate or Weakness Hit Chance.
+The shaded stats, upon adding up, will be what you actually see on your Hero's Stat screen (BASE+GEARS+T4). The sum is shown in the adjacent cell.
+Stats from ACC, EE, PASSIVE & ALLY will only be applied in battle and is not reflected on the hero's stats details.",,,,,,,,,,,,,,,
+,Rudy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Eileene,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Rachel,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Dellons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Jave,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Spike,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Kris,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,"GUARDIAN'S CASTLE 
+수호자의 성:
+RUDY",,,,,,,TOP SCORING,,,,,,,,,,,OPTION,,,,,,,,,,,NEWBIE,,,,,,,
+,,,,,,STUN IMMUNITY,,DEF DOWN (P),,3-TARGET DPS,,"+WEAKNESS DMG
+3-TARGET DPS",,"+CRIT RATE
+BUFF REMOVE",,,STUN IMMUNITY,,"DEF DOWN (P)
+BUFF REMOVE",,3-TARGET DPS,,"+WEAKNESS DMG
+3-TARGET DPS",,"+DMG
+DEF DOWN (A)",,,STUN IMMUNITY,,"+WEAKNESS DMG
+3-TARGET DPS",,"DEF DOWN (P)
+BUFF REMOVE",,3-TARGET DPS,,"+CRIT RATE
+BUFF REMOVE",
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SKILL QUEUE:,,,A,B,0,4,8,12,16,20,24,28,,A,B,0,4,8,12,16,20,24,28,,A,B,0,4,8,12,16,20,24,28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,"SPEED
+ORDER",,E,,C,,B,,A,,E,,,E,,C,,B,,A,,E,,,E,,A,,C,,B,,D,
+,,,,,,16,,19,,29,,29,,19,,,16,,19,,29,,29,,19,,,16,,29,,19,,29,,19,
+,,,,TOTAL:,,NOT IMPT,,97,,100,,101,,NOT IMPT,,,NOT IMPT,,97,,100,,99,,NOT IMPT,,,NOT IMPT,,100,,97,,100,,NOT IMPT,
+,,,,BASE,,,,5,97,5,67,5,74,,,,,,5,97,5,67,5,89,,,,,,5,73,5,97,5,73,,
+,,,,T4,,,,-,,18,,-,,,,,,,-,,18,,-,,,,,,,-,,-,,-,,,
+,,,,GEARS,,,,92,,44,,69,,,,,,,92,,44,,84,,,,,,,68,,92,,68,,,
+,"SPEED:
+RUDY - 19
+ROOK - 19
+CHANCELLOR - 25",,,ACC,,,,-,,-,,10,,,,,,,-,,-,,10,,,,,,,10,,-,,10,,,
+,,,,EE,,,,-,,-,,-,,,,,,,-,,-,,-,,,,,,,-,,-,,-,,,
+,,,,PASSIVE,,,,-,,33,,-,,,,,,,-,,33,,-,,,,,,,-,,-,,-,,,
+,,,,ALLY,,,,-,,-,,17,,,,,,,-,,-,,-,,,,,,,17,,-,,17,,,
+,,,,TOTAL:,,NOT IMPT,,NOT IMPT,,99,,99,,NOT IMPT,,,NOT IMPT,,NOT IMPT,,99,,99,,NOT IMPT,,,NOT IMPT,,89,,NOT IMPT,,93,,NOT IMPT,
+,,,,T4,,,,,,-,45,20,45,,,,,,,,-,45,20,45,,,,,,-,35,,,-,0,,
+,,,,GEARS,,,,,,45,,25,,,,,,,,,45,,25,,,,,,,35,,,,-,,,
+,,,,ACC,,,,,,-,,-,,,,,,,,,-,,-,,,,,,,-,,,,-,,,
+,,,,EE,,,,,,-,,-,,,,,,,,,-,,-,,,,,,,-,,,,-,,,
+,,,,PASSIVE,,,,,,-,,-,,,,,,,,,-,,-,,,,,,,-,,,,39,,,
+,https://youtu.be/juFpBKbALDw,,,ALLY,,,,,,54,,54,,,,,,,,,54,,54,,,,,,,54,,,,54,,,
+,,,2-3,,,EVAN-T6,,BISCUIT-T6,,NEZHA-T6,,MIHO-T6,,ORLY-SE,,,EVAN-T6,,BISCUIT-T6,,NEZHA-T6,,MIHO-T0,,LINA-T6,,,EVAN-SE,,MIHO-T6,,BISCUIT-T6,,RURI-T0,,ORLY-SE,
+,,,,,,GATEKEEP,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,,GATEKEEP,,AVENGER,,AVENGER,,AVENGER,,PALADIN,,,GATEKEEP,,AVENGER,,AVENGER,,AVENGER,,PALADIN,
+,,,,,,DOT,,GUTS,,BOSSDMG+ST,,BOSSDMG+CWR,,DOT,,,DOT,,GUTS,,BOSSDMG+CWR,,BOSSDMG+CWR,,DOT,,,DOT,,BOSSDMG+CWR,,GUTS,,BOSSDMG+CWR,,DOT,
+,Buff Removal important against Rudy's Link and Barrier Buff (10000% of DEF). Damaging the Barrier will not earn you points.,,NOTES:,,,"Orly's S1 must be Skill Enhanced to have DEF Reduction. If Orly is not available, Lina is possible (video on the left).
+
+Orly's Crit Rate Passive cannot stack with Nezha's Crit Rate Boost Passive.",,,,,,,,,,,"Biscuit recommended to have Guts if survivability is an issue. If not, can use Boss DMG Ring.",,,,,,,,,,,"If Miho is not T6, use Ruri solo backline. (Although even if she is T6, you can still use Ruri solo backline).
+DOT is very important in ensuring Miho's skill is ready by Turn 32. Otherwise use Biscuit's ATK instead and use Miho's BTM skill on Turn 36. Sequence is the same from Turn 40 onwards.",,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,"FODINA CASTLE 
+포디나의 성:
+EILEENE",,,,,,,TOP SCORING,,,,,,,,,,,OPTION,,,,,,,,,,,NEWBIE,,,,,,,
+,,,,,,SHOCK IMMUNITY,,"+DMG
+DEF DOWN (A)",,3-TARGET DPS,,"BUFF REDUCE
+3-TARGET DPS",,DEF DOWN (P),,,SHOCK IMMUNITY,,"+DMG
+DEF DOWN (A)",,3-TARGET DPS,,"+WEAKNESS DMG
+3-TARGET DPS",,DEF DOWN (P),,,SHOCK IMMUNITY,,"+DMG
+DEF DOWN (A)",,3-TARGET DPS,,"BUFF REDUCE
+3-TARGET DPS",,DEF DOWN (P),
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SKILL QUEUE:,,,0,4,B,8,C,12,16,20,24,28,,0,4,B,8,C,12,16,20,24,28,,0,4,B,8,C,12,16,20,24,28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,"SPEED
+ORDER",,A,,B,,D,,E,,C,,,C,,D,,B,,A,,E,,,E,,C,,B,,A,,E,
+,,,,,,36,,35,,33,,29,,35,,,28,,27,,29,,29,,27,,,16,,19,,29,,29,,19,
+,,,,TOTAL:,,NOT IMPT,,NOT IMPT,,99,,98,,97,,,NOT IMPT,,NOT IMPT,,98,,98,,97,,,NOT IMPT,,NOT IMPT,,100,,98,,97,
+,,,,BASE,,,,,,5,39,5,61,5,97,,,,,,5,61,5,61,5,97,,,,,,5,36,5,61,5,97
+,,,,T4,,,,,,18,,-,,-,,,,,,,-,,-,,-,,,,,,,14,,-,,-,
+,,,,GEARS,,,,,,16,,56,,92,,,,,,,56,,56,,92,,,,,,,17,,56,,92,
+,"SPEED:
+EILEENE - 25
+ROOK - 19
+CHANCELLOR - 25",,,ACC,,,,,,-,,10,,-,,,,,,,10,,10,,-,,,,,,,10,,10,,-,
+,,,,EE,,,,,,-,,-,,-,,,,,,,-,,-,,-,,,,,,,-,,-,,-,
+,,,,PASSIVE,,,,,,33,,-,,-,,,,,,,-,,-,,-,,,,,,,27,,-,,-,
+,,,,ALLY,,,,,,27,,27,,-,,,,,,,27,,27,,-,,,,,,,27,,27,,-,
+,,,,TOTAL:,,NOT IMPT,,NOT IMPT,,99,,99,,NOT IMPT,,,NOT IMPT,,NOT IMPT,,113,,99,,NOT IMPT,,,NOT IMPT,,NOT IMPT,,99,,70,,NOT IMPT,
+,,,,T4,,,,,,-,45,20,45,,,,,,,,20,20,20,45,,,,,,,,-,45,-,70,,
+,,,,GEARS,,,,,,45,,25,,,,,,,,,-,,25,,,,,,,,,45,,70,,,
+,,,,ACC,,,,,,-,,-,,,,,,,,,-,,-,,,,,,,,,-,,-,,,
+,,,,EE,,,,,,-,,-,,,,,,,,,-,,-,,,,,,,,,-,,-,,,
+,,,,PASSIVE,,,,,,-,,-,,,,,,,,,39,,-,,,,,,,,,-,,-,,,
+,https://youtu.be/Ei3Ddl900kA,,,ALLY,,,,,,54,,54,,,,,,,,,54,,54,,,,,,,,,54,,-,,,
+,,,1-4,,,CHLOE-T6,,LINA-T6,,NEZHA-T6,,MIHO-T6,,BISCUIT-T6,,,CHLOE-T6,,LINA-T6,,RURI-T0,,MIHO-T0,,BISCUIT-T6,,,CHLOE-T6,,LINA-T0,,SERA-T6,,MIHO-T0,,BISCUIT-T0,
+,,,,,,GATEKEEP,,PALADIN,,AVENGER,,AVENGER,,AVENGER,,,GATEKEEP,,PALADIN,,AVENGER,,AVENGER,,AVENGER,,,GATEKEEP,,PALADIN,,AVENGER,,ASSASSIN,,GATEKEEP,
+,,,,,,DOT,,DOT,,BOSSDMG+ST,,BOSSDMG+CWR,,GUTS,,,DOT,,DOT,,BOSSDMG+CWR,,BOSSDMG+CWR,,GUTS,,,DOT,,HP,,BOSSDMG+CWR,,BOSSDMG+CWR,,BLOCK,
+,Rook grants team with [ALL DMG Immunity] for 2 turns. Can only be removed with [Buff Duration Reduction]. Buff Removal does not work.,,NOTES:,,,"If using 2-3 Formation, Nezha and Miho could have the same speed but Nezha must be in Position 4.
+
+Chloe's Crit Rate buff can stack with Nezha's Crit Rate Boost Passive.",,,,,,,,,,,Can also you 2-3 Formation with Ruri and Miho at the back. ,,,,,,,,,,,"If need to heal, Turn 32 would be the healing turn.
+If no Avenger Set, Assassin Set can work too.
+
+Assumption here is Biscuit isn't T6 so Miho has to cope with Weakness Hit Chance from gears.",,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,"IMMORTAL CASTLE
+불멸의 성:
+RACHEL",,,,,,,TOP SCORING,,,,,,,,,,,OPTION,,,,,,,,,,,NEWBIE,,,,,,,
+,,,,,,BURN IMMUNITY,,"+DMG
+DEF DOWN (A)",,3-TARGET DPS,,"3-TARGET DPS
+CLEANSE",,DEF DOWN (P),,,BURN IMMUNITY,,"3-TARGET DPS
+CLEANSE",,"+DMG
+DEF DOWN (A)",,3-TARGET DPS,,DEF DOWN (P),,,BURN IMMUNITY,,"+DMG
+DEF DOWN (A)",,3-TARGET DPS,,"MATK BUFFER
+CLEANSE",,DEF DOWN (P),
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SKILL QUEUE:,,,A,B,C,4,8,12,16,20,24,28,,A,B,C,4,8,12,16,20,24,28,,A,B,C,4,8,12,16,20,24,28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,"SPEED
+ORDER",,C,,A,,D,,E,,B,,,C,,A,,D,,E,,B,,,C,,A,,D,,E,,B,
+,,,,,,29,,31,,29,,29,,31,,,29,,31,,29,,29,,31,,,29,,31,,29,,29,,31,
+,,,,TOTAL:,,AS HIGH AS POSSIBLE,,NOT IMPT,,100,,99,,97,,,AS HIGH AS POSSIBLE,,100,,NOT IMPT,,100,,97,,,AS HIGH AS POSSIBLE,,NOT IMPT,,101,,89,,97,
+,,,,BASE,,,,,,5,67,5,89,5,97,,,,5,73,,,5,73,5,97,,,,,,5,91,5,89,5,97
+,,,,T4,,,,,,18,,-,,-,,,,,-,,,,-,,-,,,,,,,14,,-,,-,
+,,,,GEARS,,,,,,44,,84,,92,,,,,68,,,,68,,92,,,,,,,72,,84,,92,
+,"SPEED:
+RACHEL - 25
+ROOK - 19
+CHANCELLOR - 25",,,ACC,,,,,,-,,10,,-,,,,,10,,,,10,,-,,,,,,,10,,-,,-,
+,,,,EE,,,,,,-,,-,,-,,,,,-,,,,-,,,,,,,,,-,,-,,-,
+,,,,PASSIVE,,,,,,33,,-,,-,,,,,-,,,,-,,-,,,,,,,-,,-,,-,
+,,,,ALLY,,,,,,-,,-,,-,,,,,17,,,,17,,-,,,,,,,-,,-,,-,
+,,,,TOTAL:,,NOT IMPT,,NOT IMPT,,99,,99,,NOT IMPT,,,NOT IMPT,,99,,NOT IMPT,,113,,NOT IMPT,,,NOT IMPT,,NOT IMPT,,99,,74,,NOT IMPT,
+,,,,T4,,,,,,-,45,20,45,,,,,,20,45,,,20,20,,,,,,,,-,45,-,25,,
+,,,,GEARS,,,,,,45,,25,,,,,,,25,,,,0,,,,,,,,,45,,25,,,
+,,,,ACC,,,,,,-,,-,,,,,,,-,,,,-,,,,,,,,,-,,10,,,
+,,,,EE,,,,,,-,,-,,,,,,,-,,,,-,,,,,,,,,-,,-,,,
+,,,,PASSIVE,,,,,,-,,-,,,,,,,-,,,,39,,,,,,,,,-,,39,,,
+,https://youtu.be/Rd2JWbERFPk,,,ALLY,,,,,,54,,54,,,,,,,54,,,,54,,,,,,,,,54,,-,,,
+,,,1-4,,,RYAN-T0,,LINA-T6,,NEZHA-T6,,MIHO-T6,,BISCUIT-T6,,,RYAN-T0,,MIHO-T2,,ORLY-SE,,RURI-T0,,BISCUIT-T6,,,ARIEL-T6,,LINA-T0,,SERA-T6,,LUCY-T6,,BISCUIT-T0,
+,,,,,,GATEKEEP,,VAN,,AVENGER,,AVENGER,,AVENGER,,,GATEKEEP,,AVENGER,,PALADIN,,AVENGER,,AVENGER,,,GATEKEEP,,PALADIN,,AVENGER,,GUARDIAN,,GATEKEEP,
+,,,,,,GUTS,,HP,,BOSSDMG+ST,,BOSSDMG+CWR,,GUTS,,,GUTS,,BOSSDMG+CWR,,REVIVE,,BOSSDMG+CWR,,GUTS,,,BLOCK,,HP,,BOSSDMG+CWR,,BLOCK,,BLOCK,
+,Debuff Removal important for Rachel's heavy Debuffs (ALL Attack Reduction and Defense Reduction).,,NOTES:,,,"If Nezha has low transcendence, make sure to adjust the ATK stats such that Ryan will not cooldown Nezha. 
+Lina has 2nd highest ATK than Miho so Nezha will cooldown Lina instead. Please do some testing to see if Biscuit's buff goes to Lina or Miho and adjust accordingly. Lina should have at least 350 more ATK than Miho. ",,,,,,,,,,,"1-4 Formation with Ruri solo backline works too.
+
+Orly can cleanse as well in this comp if Miho is not T2.",,,,,,,,,,,"If no Avenger Set, Assassin Set can work too. 
+
+Please do not follow too rigidly. Some skills like Ariel's skills can be forsaken to heal up and preserve your team instead. Judge accordingly based on the DMG you are taking from Rachel. Likewise if healing is not needed, then use another skill for damage.",,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,"DEATH CASTLE
+죽음의 성:
+DELLONS",,,,,,,TOP SCORING,,,,,,,,,,,OPTION,,,,,,,,,,,NEWBIE,,,,,,,
+,,,,,,SILENCE IMMUNITY,,3-TARGET DPS,,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,3-TARGET DPS,,DEF DOWN (P),,,SILENCE IMMUNITY,,3-TARGET DPS,,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,3-TARGET DPS,,DEF DOWN (P),,,SILENCE IMMUNITY,,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,3-TARGET DPS,,"+DMG
+DEF DOWN (A)",,DEF DOWN (P),
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SKILL QUEUE:,,,A,B,C,4,8,12,16,20,24,28,,A,B,C,4,8,12,16,20,24,28,,A,B,C,4,8,12,16,20,24,28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,"SPEED
+ORDER",,A,,C,,D,,E,,B,,,A,,C,,D,,E,,B,,,A,,D,,E,,B,,C,
+,,,,,,33,,29,,29,,29,,31,,,41,,29,,29,,29,,35,,,41,,29,,29,,31,,31,
+,,,,TOTAL:,,95,,99,,93,,97,,NOT IMPT,,,100,,97,,93,,99,,NOT IMPT,,,100,,93,,99,,NOT IMPT,,NOT IMPT,
+,,,,BASE,,5,95,5,89,5,93,5,87,,,,5,73,5,87,5,93,5,89,,,,5,73,5,93,5,89,,,,
+,,,,T4,,18,,-,,-,,18,,,,,14,,18,,-,,-,,,,,14,,-,,-,,,,,
+,,,,GEARS,,72,,84,,88,,64,,,,,54,,64,,88,,84,,,,,54,,88,,84,,,,,
+,"SPEED:
+DELLONS - 29
+ROOK - 19
+CHANCELLOR - 25",,,ACC,,-,,10,,-,,10,,,,,-,,10,,-,,10,,,,,-,,-,,10,,,,,
+,,,,EE,,-,,-,,-,,-,,,,,-,,-,,-,,-,,,,,-,,-,,-,,,,,
+,,,,PASSIVE,,-,,-,,-,,-,,,,,27,,-,,-,,-,,,,,27,,-,,-,,,,,
+,,,,ALLY,,-,,-,,-,,-,,,,,-,,-,,-,,-,,,,,-,,-,,-,,,,,
+,,,,TOTAL:,,NOT IMPT,,101,,97,,101,,NOT IMPT,,,NOT IMPT,,101,,97,,101,,NOT IMPT,,,87,,82,,101,,NOT IMPT,,NOT IMPT,
+,,,,T4,,,,20,20,20,60,-,20,,,,,,-,20,20,60,20,20,,,,-,60,-,45,-,20,,,,
+,,,,GEARS,,,,-,,40,,20,,,,,,,20,,40,,-,,,,,60,,45,,20,,,,,
+,,,,ACC,,,,-,,10,,-,,,,,,,-,,10,,-,,,,,-,,10,,-,,,,,
+,,,,EE,,,,-,,-,,-,,,,,,,-,,-,,-,,,,,-,,-,,-,,,,,
+,,,,PASSIVE,,,,-,,27,,-,,,,,,,-,,27,,-,,,,,-,,27,,-,,,,,
+,https://youtu.be/EvfTXxNM-4A,,,ALLY,,,,81,,-,,81,,,,,,,81,,-,,81,,,,,27,,-,,81,,,,,
+,,,2-3,,,DEO-T0,,RYAN-T6,,RACHEL-T6,,TAKA-T6,,BISCUIT-T6,,,JIN-T6,,TAKA-T0,,RACHEL-T0,,RYAN-T0,,BISCUIT-T6,,,JIN-T0,,RACHEL-T0,,RYAN-T0,,LINA-T0,,BISCUIT-T0,
+,,,,,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,GATEKEEP,,,AVENGER,,AVENGER,,PALADIN,,AVENGER,,GATEKEEP,,,GATEKEEP,,GATEKEEP,,AVENGER,,GUARDIAN,,GATEKEEP,
+,,,,,,DOT,,BOSSDMG+CWR,,BOSSDMG+CWR,,BOSSDMG+CWR,,DOT,,,GUTS,,BOSSDMG+CWR,,GUTS,,BOSSDMG+CWR,,DOT,,,BLOCK,,BLOCK,,BOSSDMG+CWR,,BLOCK,,BLOCK,
+,Time Taunt skill to tank Dellons' single-target skill. Dellons gain ALL DMG Nullification for 4 hits on each of your unit's death.,,NOTES:,,,,,,,,,,,,,,"Make sure Jin's ATK is not higher than Taka's or Ryan's. Check what are Taka's and Ryan's ATK stat and multiply 0.7 to find out what Jin's ATK stat should be. If it is too high, can opt for DMG Taken Reduction armors. If Jin is too frail, Gatekeeper set also works.",,,,,,,,,,,Some Testing required,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,"ANCIENT DRAGON'S CASTLE
+고대용의 성:
+JAVE",,,,,,,TOP SCORING,,,,,,,,,,,OPTION,,,,,,,,,,,NEWBIE,,,,,,,
+,,,,,,STUN IMMUNITY,,"3-TARGET DPS
+BURN IMMUNITY",,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,3-TARGET DPS,,DEF DOWN (P),,,STUN IMMUNITY,,"3-TARGET DPS
+BURN IMMUNITY",,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,3-TARGET DPS,,DEF DOWN (P),,,STUN IMMUNITY,,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,"3-TARGET DPS
+BURN IMMUNITY",,"+DMG
+DEF DOWN (A)",,DEF DOWN (P),
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SKILL QUEUE:,,,A,B,4,C,8,12,16,20,24,28,,A,B,4,C,8,12,16,20,24,28,,A,B,C,4,8,12,16,20,24,28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,"SPEED
+ORDER",,B,,C,,D,,E,,A,,,B,,C,,D,,E,,A,,,E,,C,,D,,A,,B,
+,,,,,,29,,29,,29,,29,,31,,,29,,29,,29,,29,,31,,,29,,29,,29,,29,,31,
+,,,,TOTAL:,,99,,99,,93,,97,,NOT IMPT,,,99,,99,,93,,97,,NOT IMPT,,,NOT IMPT,,93,,99,,NOT IMPT,,NOT IMPT,
+,,,,BASE,,5,99,5,89,5,93,5,87,,,,5,99,5,89,5,93,5,87,,,,,,5,93,5,89,,,,
+,,,,T4,,18,,-,,-,,18,,,,,18,,-,,-,,18,,,,,,,-,,-,,,,,
+,,,,GEARS,,76,,84,,88,,64,,,,,76,,84,,88,,64,,,,,,,88,,84,,,,,
+,"SPEED:
+JAVE - 25
+ROOK - 19
+CHANCELLOR - 25",,,ACC,,-,,10,,-,,10,,,,,-,,10,,-,,10,,,,,,,-,,10,,,,,
+,,,,EE,,-,,-,,-,,-,,,,,-,,-,,-,,-,,,,,,,-,,-,,,,,
+,,,,PASSIVE,,-,,-,,-,,-,,,,,-,,-,,-,,-,,,,,,,-,,-,,,,,
+,,,,ALLY,,-,,-,,-,,-,,,,,-,,-,,-,,-,,,,,,,-,,-,,,,,
+,,,,TOTAL:,,NOT IMPT,,101,,97,,101,,NOT IMPT,,,NOT IMPT,,101,,97,,101,,NOT IMPT,,,NOT IMPT,,87,,101,,NOT IMPT,,NOT IMPT,
+,,,,T4,,,,20,20,20,60,-,20,,,,,,20,20,20,60,-,20,,,,,,-,50,-,20,,,,
+,,,,GEARS,,,,-,,40,,20,,,,,,,-,,40,,20,,,,,,,50,,20,,,,,
+,,,,ACC,,,,-,,10,,-,,,,,,,-,,10,,-,,,,,,,10,,-,,,,,
+,,,,EE,,,,-,,-,,-,,,,,,,-,,-,,-,,,,,,,-,,-,,,,,
+,,,,PASSIVE,,,,-,,27,,-,,,,,,,-,,27,,-,,,,,,,27,,-,,,,,
+,https://youtu.be/H069whNx9-c,,,ALLY,,,,81,,-,,81,,,,,,,81,,-,,81,,,,,,,-,,81,,,,,
+,,,2-3,,,SIEG-T6,,RYAN-T6,,RACHEL-T6,,TAKA-T6,,BISCUIT-T6,,,SIEG-T0,,RYAN-T6,,RACHEL-T6,,TAKA-T6,,BISCUIT-T6,,,EVAN-T6,,RACHEL-T0,,RYAN-T0,,LINA-T0,,BISCUIT-T0,
+,,,,,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,GATEKEEP,,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,GATEKEEP,,,GATEKEEP,,GATEKEEP,,AVENGER,,GUARDIAN,,GATEKEEP,
+,,,,,,GUTS,,BOSSDMG+CWR,,GUTS,,BOSSDMG+CWR,,DOT,,,GUTS,,BOSSDMG+CWR,,GUTS,,BOSSDMG+CWR,,DOT,,,BLOCK,,BLOCK,,BOSSDMG+CWR,,BLOCK,,BLOCK,
+,"Blind helps to survive Jave's [Counterattack] (100% Crit Rate, 500% Crit DMG). ",,NOTES:,,,"Make sure Sieg's ATK is not higher than Taka's or Ryan's.
+
+Rachel must be T6 for this skill queue. If not T6, check the option beside.
+At Turn 56, if HP is low, use Sieg's Top Skill to heal somewhat.",,,,,,,,,,,"Due to the randomness of Jave's counters, skill animations and timings may be off so you will have to judge accordingly as you play.",,,,,,,,,,,Some Testing required,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,"BLIZZARD CASTLE
+혹한의 성:
+SPIKE",,,,,,,TOP SCORING,,,,,,,,,,,OPTION,,,,,,,,,,,NEWBIE,,,,,,,
+,,,,,,FREEZE IMMUNITY,,3-TARGET DPS,,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,3-TARGET DPS,,DEF DOWN (P),,,FREEZE IMMUNITY,,"4-MAN DPS
+BUFF REMOVE",,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,3-TARGET DPS,,DEF DOWN (P),,,FREEZE IMMUNITY,,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,"3-TARGET DPS
+BURN IMMUNITY",,"+DMG
+DEF DOWN (A)",,DEF DOWN (P),
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SKILL QUEUE:,,,A,B,C,4,8,12,16,20,24,28,,A,B,C,4,8,12,16,20,24,28,,A,B,C,4,8,12,16,20,24,28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,"SPEED
+ORDER",,B,,C,,D,,E,,A,,,B,,C,,D,,E,,A,,,C,,D,,E,,A,,B,
+,,,,,,29,,29,,29,,29,,31,,,29,,29,,29,,29,,31,,,29,,29,,29,,29,,31,
+,,,,TOTAL:,,95,,97,,93,,99,,NOT IMPT,,,91,,100,,93,,99,,NOT IMPT,,,91,,93,,99,,NOT IMPT,,NOT IMPT,
+,,,,BASE,,5,95,5,87,5,93,5,89,,,,5,91,5,63,5,93,5,89,,,,5,91,5,93,5,89,,,,
+,,,,T4,,18,,18,,-,,-,,,,,14,,18,,-,,-,,,,,14,,-,,-,,,,,
+,,,,GEARS,,72,,64,,88,,84,,,,,72,,40,,88,,84,,,,,72,,88,,84,,,,,
+,"SPEED:
+SPIKE - 25
+ROOK - 19
+CHANCELLOR - 25",,,ACC,,-,,10,,-,,10,,,,,-,,10,,-,,10,,,,,-,,-,,10,,,,,
+,,,,EE,,-,,-,,-,,-,,,,,-,,-,,-,,-,,,,,-,,-,,-,,,,,
+,,,,PASSIVE,,-,,-,,-,,-,,,,,-,,27,,-,,-,,,,,-,,-,,-,,,,,
+,,,,ALLY,,-,,-,,-,,-,,,,,-,,-,,-,,-,,,,,-,,-,,-,,,,,
+,,,,TOTAL:,,NOT IMPT,,101,,97,,101,,NOT IMPT,,,NOT IMPT,,101,,97,,101,,NOT IMPT,,,NOT IMPT,,87,,101,,NOT IMPT,,NOT IMPT,
+,,,,T4,,,,-,20,20,60,20,20,,,,,,-,20,20,60,20,20,,,,,,-,50,-,20,,,,
+,,,,GEARS,,,,20,,40,,-,,,,,,,20,,40,,-,,,,,,,50,,20,,,,,
+,,,,ACC,,,,-,,10,,-,,,,,,,-,,10,,-,,,,,,,10,,-,,,,,
+,,,,EE,,,,-,,-,,-,,,,,,,-,,-,,-,,,,,,,-,,-,,,,,
+,,,,PASSIVE,,,,-,,27,,-,,,,,,,-,,27,,-,,,,,,,27,,-,,,,,
+,https://youtu.be/H069whNx9-c,,,ALLY,,,,81,,-,,81,,,,,,,81,,-,,81,,,,,,,-,,81,,,,,
+,,,2-3,,,FENG YAN-T6,,TAKA-T6,,RACHEL-T6,,RYAN-T6,,BISCUIT-T6,,,FENG YAN-T6,,KYLE-T6,,RACHEL-T6,,RYAN-T6,,BISCUIT-T6,,,FENG YAN-T6,,RACHEL-T0,,RYAN-T0,,LINA-T0,,BISCUIT-T0,
+,,,,,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,GATEKEEP,,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,GATEKEEP,,,GATEKEEP,,GATEKEEP,,AVENGER,,GUARDIAN,,GATEKEEP,
+,,,,,,GUTS,,BOSSDMG+CWR,,GUTS,,BOSSDMG+CWR,,DOT,,,GUTS,,BOSSDMG+CWR,,GUTS,,BOSSDMG+CWR,,DOT,,,BLOCK,,BLOCK,,BOSSDMG+CWR,,BLOCK,,BLOCK,
+,Buff Removal important to negate Minions' buff on Spike (100% Crit Rate and 500% Crit DMG) for 5 turns. Use Kyle's Buff Removal instead of Biscuit's to reduce number of skills used in skill queue,,NOTES:,,,,,,,,,,,,,,,,,,,,,,,,,Some Testing required,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,"HELL CASTLE
+지옥의 성:
+KRIS",,,,,,,TOP SCORING,,,,,,,,,,,OPTION,,,,,,,,,,,NEWBIE,,,,,,,
+,,,,,,DEATH IMMUNITY,,+WEAKNESS DMG,,ST DPS,,ST DPS,,DEF DOWN (P),,,DEATH IMMUNITY,,"ST DPS
+HEAL",,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,ST DPS,,DEF DOWN (P),,,DEATH IMMUNITY,,+WEAKNESS DMG,,ST DPS,,"+DMG
+DEF DOWN (A)",,DEF DOWN (P),
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SKILL QUEUE:,,,A,B,C,4,8,12,16,20,24,28,,A,B,C,4,8,12,16,20,24,28,,A,B,C,4,8,12,16,20,24,28
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68,,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,"SPEED
+ORDER",,A,,C,,D,,E,,B,,,A,,C,,D,,E,,B,,,A,,C,,D,,B,,E,
+,,,,,,37,,29,,29,,29,,31,,,37,,29,,29,,29,,31,,,37,,29,,29,,35,,23,
+,,,,TOTAL:,,93,,99,,105,,99,,NOT IMPT,,,93,,99,,93,,100,,NOT IMPT,,,93,,93,,97,,NOT IMPT,,NOT IMPT,
+,,,,BASE,,5,83,5,89,5,5,5,89,,,,5,83,5,89,5,93,5,59,,,,5,83,5,93,5,37,,,,
+,,,,T4,,14,,-,,-,,-,,,,,14,,18,,-,,-,,,,,14,,-,,-,,,,,
+,,,,GEARS,,64,,84,,-,,84,,,,,64,,66,,88,,54,,,,,64,,88,,32,,,,,
+,"SPEED:
+KRIS - 25
+ROOK - 19
+CHANCELLOR - 25",,,ACC,,10,,10,,-,,10,,,,,10,,10,,-,,-,,,,,10,,-,,10,,,,,
+,,,,EE,,-,,-,,-,,-,,,,,-,,-,,-,,-,,,,,-,,-,,-,,,,,
+,,,,PASSIVE,,-,,-,,100,,-,,,,,-,,-,,-,,41,,,,,-,,-,,50,,,,,
+,,,,ALLY,,-,,-,,-,,-,,,,,-,,-,,-,,-,,,,,-,,-,,-,,,,,
+,,,,TOTAL:,,90,,95,,99,,113,,100,,,100,,101,,97,,101,,100,,,100,,97,,99,,100,,100,
+,,,,T4,,-,80,20,95,-,45,20,20,-,100,,-,63,-,20,20,60,20,20,-,73,,-,90,-,60,-,45,-,100,-,100
+,,,,GEARS,,80,,75,,45,,-,,100,,,63,,20,,40,,-,,73,,,90,,60,,45,,100,,100,
+,,,,ACC,,10,,-,,-,,-,,-,,,10,,-,,10,,-,,-,,,10,,10,,-,,-,,-,
+,,,,EE,,-,,-,,-,,-,,-,,,-,,-,,-,,-,,-,,,-,,-,,-,,-,,-,
+,,,,PASSIVE,,-,,-,,-,,39,,-,,,-,,-,,27,,-,,-,,,-,,27,,-,,-,,-,
+,https://youtu.be/sCrlNcK8ea8,,,ALLY,,-,,-,,54,,54,,-,,,27,,81,,-,,81,,27,,,-,,-,,54,,-,,-,
+,,,1-4,,,XIAO-T6,,MIHO-T6,,PASCAL-T6,,XIAO QIAO-T6,,BISCUIT-T6,,,XIAO-T6,,SIEG-T6,,RACHEL-T6,,SHANE-T6,,BISCUIT-T6,,,XIAO-T6,,MIHO-T0,,PASCAL-T0,,LINA-T0,,BISCUIT-T0,
+,,,,,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,GATEKEEP,,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,GATEKEEP,,,AVENGER,,ASSASSIN,,AVENGER,,PALADIN,,GATEKEEP,
+,,,,,,DMGCOMBI,,BOSSDMG+CWR,,BOSSDMG+ST,,BOSSDMG+CWR,,DOT,,,DMGCOMBI,,BOSSDMG+CWR,,GUTS,,BOSSDMG+ST,,DOT,,,DMGCOMBI,,BOSSDMG+CWR,,BOSSDMG+CWR,,HP,,DOT,
+,"When Rook & Chancellor take DMG, Kris' skill cooldown is reduced by 15s so it is advisable to apply Focus Target OR have HIGH Weakness Hit to ensure hits only land on Kris",,NOTES:,,,Aim for high Weakness Hit especially for the support heroes even if it means sacrificing Crit DMG because you do not want them to be hitting the minions.,,,,,,,,,,,,,,,,,,,,,,Some Testing required,,,,,,,,,

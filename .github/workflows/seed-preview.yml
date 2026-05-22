@@ -1,0 +1,43 @@
+name: Generate seed SQL preview
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/seeds/**'
+      - 'scripts/**'
+
+jobs:
+  seed-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install
+        run: npm ci
+      - name: Generate seed SQL preview
+        run: |
+          npm run prune:seeds || true
+          npm run --silent seed:db
+      - name: Upload SQL preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: seed-upserts-sql
+          path: data/seeds/sql/seed-upserts.sql
+      - name: Optionally sign SQL preview
+        if: ${{ secrets.SIGNING_KEY != '' }}
+        run: |
+          echo 'Signing enabled — creating signature file'
+          echo "$SIGNING_KEY" | base64 -d > /tmp/signing_key.pem
+          openssl dgst -sha256 -sign /tmp/signing_key.pem -out data/seeds/sql/seed-upserts.sql.sig data/seeds/sql/seed-upserts.sql
+        env:
+          SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+      - name: Upload SQL signature (if present)
+        if: ${{ secrets.SIGNING_KEY != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: seed-upserts-sql-signature
+          path: data/seeds/sql/seed-upserts.sql.sig

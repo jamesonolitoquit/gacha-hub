@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Flamewing Kael",
+    "slug": "flamewing-kael",
+    "characterClass": "Warrior",
+    "rarity": "5★",
+    "element": "Fire",
+    "description": "A dragon-touched warrior who wields a blazing greatsword. Excels at frontline damage and breaking enemy formation.",
+    "gameId": 2
+  },
+  {
+    "name": "Seraphina Iceveil",
+    "slug": "seraphina-iceveil",
+    "characterClass": "Mage",
+    "rarity": "5★",
+    "element": "Water",
+    "description": "A frost mage who draws power from ancient glacial dragons. Her spells slow and freeze entire battlefields.",
+    "gameId": 2
+  },
+  {
+    "name": "Zephyr Nightwhisper",
+    "slug": "zephyr-nightwhisper",
+    "characterClass": "Rogue",
+    "rarity": "4★",
+    "element": "Dark",
+    "description": "A shadowy rogue who stalks the night. Specializes in backline assassinations and poisons.",
+    "gameId": 2
+  },
+  {
+    "name": "Caelum Stormshot",
+    "slug": "caelum-stormshot",
+    "characterClass": "Archer",
+    "rarity": "4★",
+    "element": "Wind",
+    "description": "A sharpshooter blessed by sky dragons. Her arrows carry the force of gale winds.",
+    "gameId": 2
+  },
+  {
+    "name": "Lunara Dawnwell",
+    "slug": "lunara-dawnwell",
+    "characterClass": "Healer",
+    "rarity": "5★",
+    "element": "Light",
+    "description": "A priestess who channels the light of creation dragons. Her healing and cleansing abilities keep allies fighting.",
+    "gameId": 2
+  },
+  {
+    "name": "Ignis Emberclaw",
+    "slug": "ignis-emberclaw",
+    "characterClass": "Warrior",
+    "rarity": "3★",
+    "element": "Fire",
+    "description": "A novice dragon tamer who fights alongside her fire drake. Reliable and easy to raise.",
+    "gameId": 2
+  },
+  {
+    "name": "Tidecaller Mara",
+    "slug": "tidecaller-mara",
+    "characterClass": "Mage",
+    "rarity": "3★",
+    "element": "Water",
+    "description": "A coastal mage who communes with sea serpents. Her tidal magic provides excellent area control.",
+    "gameId": 2
+  }
+]

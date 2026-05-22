@@ -40,18 +40,20 @@ function mapTierListRow(row: TierListRow): TierListRecord {
 export class TierListRepository {
   async findByGameId(gameId: number): Promise<TierListRecord[]> {
     if (db) {
-      const { data, error } = await db
-      .from('tier_lists')
-      .select('id, game_id, slug, title, tier_type, tiers, created_by, is_community, view_count, created_at, updated_at, deleted_at')
-      .eq('game_id', gameId)
-      .is('deleted_at', null)
-      .order('title', { ascending: true });
+      try {
+        const { data, error } = await db
+        .from('tier_lists')
+        .select('id, game_id, slug, title, tier_type, tiers, created_by, is_community, view_count, created_at, updated_at, deleted_at')
+        .eq('game_id', gameId)
+        .is('deleted_at', null)
+        .order('title', { ascending: true });
 
-      if (error) {
-      throw new Error(`Failed to load tier lists for game ${gameId}: ${error.message}`);
-    }
+        if (error) throw new Error(`Failed to load tier lists for game ${gameId}: ${error.message}`);
 
-      return (data ?? []).map((row) => mapTierListRow(row as TierListRow));
+        return (data ?? []).map((row) => mapTierListRow(row as TierListRow));
+      } catch {
+        // fall through to seed data
+      }
     }
 
     return getSeedTierLists(gameId).map((tierList, index) => ({
@@ -72,20 +74,22 @@ export class TierListRepository {
 
   async findBySlug(gameId: number, slug: string): Promise<TierListRecord | undefined> {
     if (db) {
-      const { data, error } = await db
-      .from('tier_lists')
-      .select('id, game_id, slug, title, tier_type, tiers, created_by, is_community, view_count, created_at, updated_at, deleted_at')
-      .eq('game_id', gameId)
-      .eq('slug', slug)
-      .is('deleted_at', null)
-      .maybeSingle();
+      try {
+        const { data, error } = await db
+        .from('tier_lists')
+        .select('id, game_id, slug, title, tier_type, tiers, created_by, is_community, view_count, created_at, updated_at, deleted_at')
+        .eq('game_id', gameId)
+        .eq('slug', slug)
+        .is('deleted_at', null)
+        .maybeSingle();
 
-      if (error) {
-      throw new Error(`Failed to load tier list ${slug}: ${error.message}`);
-    }
+        if (error) throw new Error(`Failed to load tier list ${slug}: ${error.message}`);
 
-      if (data) {
-      return mapTierListRow(data as TierListRow);
+        if (data) {
+        return mapTierListRow(data as TierListRow);
+        }
+      } catch {
+        // fall through to seed data
       }
     }
 

@@ -1,0 +1,170 @@
+[
+  {
+    "name": "O'MOK",
+    "slug": "o-mok",
+    "characterClass": "Magic",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Primarily in Boss battles as a support due to her MATK Buff. While not used as a main DMG Dealer, she can still do chip damage."
+  },
+  {
+    "name": "JURI",
+    "slug": "juri",
+    "characterClass": "Magic",
+    "rarity": "Legendary++",
+    "element": null,
+    "description": "High Crit Rate and Crit DMG for big damage with Follow-up Attacks but those are chance-based."
+  },
+  {
+    "name": "MELIA",
+    "slug": "melia",
+    "characterClass": "Magic",
+    "rarity": "Legendary++",
+    "element": null,
+    "description": "Some Effect Resistance to resist Death and CC. Some Effect Hit to inflict Crystals debuffs. Aim for high Block Rate with DMG Taken Reduction for the best results."
+  },
+  {
+    "name": "FREYJA",
+    "slug": "freyja",
+    "characterClass": "Magic",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Aim for high Crit Rate & Weakness Hit, both near 100%. Having some Crit DMG will ensure more consistent 1-Shotting of the mobs with her S2."
+  },
+  {
+    "name": "KYRIELLE",
+    "slug": "kyrielle",
+    "characterClass": "Magic",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "This build makes her take on the debuffer role where to land Paralysis on enemies, so that their Block Rate becomes 0% and allies can then nuke much easier."
+  },
+  {
+    "name": "NEZHA",
+    "slug": "nezha",
+    "characterClass": "Magic",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "With a powerful 3-Target Skill, capitalize on getting her Crit Rate & Weakness Hit multipliers high to be able to deal with even Tank teams."
+  },
+  {
+    "name": "MERCURE",
+    "slug": "mercure",
+    "characterClass": "Magic",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Spellweaver Effect Probability for increased Stun and Magic Reflux chances."
+  },
+  {
+    "name": "REGINLEIF",
+    "slug": "reginleif",
+    "characterClass": "Magic",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "If non-T6, can also have substats in Crit Rate but less recommended."
+  },
+  {
+    "name": "RIN",
+    "slug": "rin",
+    "characterClass": "Magic",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "One of her skills deal extra DMG if it lands as a weakness hit so high weakness hit chance is highly desirable"
+  },
+  {
+    "name": "SILVESTA",
+    "slug": "silvesta",
+    "characterClass": "Magic",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Primarily a PVP hero so aim to have high Crit Rate & Weakness Hit so as to kill better to activate his Chain Attack."
+  },
+  {
+    "name": "VANESSA",
+    "slug": "vanessa",
+    "characterClass": "Magic",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Defensive utiliity support role for PVE (i.e. defense reduction passive and buff removal). Focus on survivability."
+  },
+  {
+    "name": "YEONHEE",
+    "slug": "yeonhee",
+    "characterClass": "Magic",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Aim for high Crit Rate & Crit DMG to hit hard on both Basic Attacks and skills. More for PVP purposes. Immortal ring is most recommended due to her fragility."
+  },
+  {
+    "name": "DAISY",
+    "slug": "daisy",
+    "characterClass": "Magic",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Transition towards Avenger Set, focusing on Crit Rate and Crit DMG (especially after Daisy is T6) to allow her to become a ST damage dealer."
+  },
+  {
+    "name": "ESPADA",
+    "slug": "espada",
+    "characterClass": "Magic",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Has passive Crit Rate Boost (40%) & at T4 (18%), allowing for priority in building for Crit DMG and Weakness Hit Chance. Will still need 42% Crit Rate from gears."
+  },
+  {
+    "name": "MIHO",
+    "slug": "miho",
+    "characterClass": "Magic",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Without much self-boosts in Crit Rate & Weakness Hit, nweer players may find difficulty in building these core stats. So using the Assassin Set for the early stages is decent."
+  },
+  {
+    "name": "PASCAL",
+    "slug": "pascal",
+    "characterClass": "Magic",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "5* Guts Ring is the minimal requirement. You will need 100% Weakness Hit Rate from gears (88%) & accessory substats (12%), ATK at 4.5K, Crit DMG at 270%."
+  },
+  {
+    "name": "RURI",
+    "slug": "ruri",
+    "characterClass": "Magic",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Has passive Weakness Hit Chance Boost (39%) & at T4 (20%) and often used with Biscuit, allowing for heavier priority in building for Crit Rate and Crit DMG."
+  },
+  {
+    "name": "VELIKA",
+    "slug": "velika",
+    "characterClass": "Magic",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Aim is to increase Burn DMG on the boss."
+  },
+  {
+    "name": "XIAO QIAO",
+    "slug": "xiao-qiao",
+    "characterClass": "Magic",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Focus only on Crit Rate to be 100% and Weakness Hit to be 60%. ATK at 4.3K. Crit DMG is secondary importance."
+  },
+  {
+    "name": "YU SHIN",
+    "slug": "yu-shin",
+    "characterClass": "Magic",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Has passive Effect Hit Rate Boost (34%), allowing for priority in building for also having some bulk for survivability."
+  },
+  {
+    "name": "SUNG JINWOO",
+    "slug": "sung-jinwoo",
+    "characterClass": "Magic",
+    "rarity": "Collab",
+    "element": null,
+    "description": "An option for PVE especially when farming and high Crit Rate allows consistently high damage."
+  }
+]

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { gameService } from '../../../server/services/game.service';
 import { getOptimizedBannerUrl } from '../../../shared/utils/banner';
 
@@ -51,11 +52,11 @@ export default async function GamesDirectoryPage() {
                   href={`/games/${game.slug}`}
                   className="fantasy-card group rounded-3xl p-6 transition hover:-translate-y-0.5 hover:border-sky-300/40 focus-visible:border-sky-300/55 block w-full"
                 >
-                  <div
-                    className="absolute inset-0 w-full h-full bg-cover bg-center opacity-20"
-                    style={{ backgroundImage: `url(${getOptimizedBannerUrl(game.bannerUrl, 720)})` }}
-                    aria-hidden="true"
-                  />
+                  {game.bannerUrl ? (
+                    <div className="absolute inset-0 -z-10">
+                      <Image src={getOptimizedBannerUrl(game.bannerUrl, 720)} alt={`${game.name} banner`} fill className="object-cover opacity-20" />
+                    </div>
+                  ) : null}
                   <div
                     className="absolute inset-0 w-full h-full bg-gradient-to-b from-slate-950/10 via-slate-950/45 to-slate-950/85"
                     style={{ left: 0, right: 0, top: 0, bottom: 0 }}

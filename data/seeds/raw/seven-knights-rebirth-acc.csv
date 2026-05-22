@@ -1,0 +1,81 @@
+,,,,,,,,
+,,NAME,RARITY,,,ACCESSORY,,EFFECT
+,,,Legendary,Rare,,,,
+,NO.,,Uncommon,Common,,,,
+,1,Uncommon Ring of Ressurection,Legendary,,,,,"[Revives] with 100% HP 1 time upon falling in battle 
+(does not stack with hero passives)"
+,,,,,,,,
+,2,Uncommon Ring of Immortality,Legendary,,,,,"Grants [Immortality] for 3 turns upon falling in battle
+(does not stack with hero passives)"
+,,,,,,,,
+,3,Uncommon Ring of Authority,Legendary,,,,,"Grants [Guts]
+Grants [Barrier] equal to 150% of Attack for 4 turns upon triggering [Guts]
+[Unremovable] (does not stack with hero passives)"
+,,,,,,,,
+,4,?,Legendary,,,,,Grants [All DMG Immunity] for 3 turns
+,,,,,,,,
+,5,?,Legendary,,,,,Grants [PDMG Immunity] for 3 turns
+,,,,,,,,
+,6,?,Legendary,,,,,Grants [MDMG Immunity] for 3 turns
+,,,,,,,,
+,7,Uncommon Ring of Roar,Rare,,,,,"At the start of battle, grants Barrier equal to 90% of caster's ATK for 2 turns (once per battle, does not stack with Hero passive)"
+,,,,,,,,
+,8,Uncommon Ring of Bulwark,Rare,,,,,"At the start of battle, grants Barrier equal to 100% of caster's DEF for 2 turns (once per battle, does not stack with Hero passive)"
+,,,,,,,,
+,9,Uncommon Ring of Health,Rare,,,,,"At the start of battle, grants Barrier equal to 18% of caster's MAX HP for 2 turns (once per battle, does not stack with Hero passive)"
+,,,,,,,,
+,10,Uncommon Ring of Subjugation,Rare,,,,,Increases DMG dealt to bosses by 12%
+,,,,,,,,
+,11,Uncommon Ring of Siege,Rare,,,,,Increases DMG of 1-3 Target Attacks by 10%
+,,,,,,,,
+,12,Uncommon Ring of Annihilation,Rare,,,,,Increases DMG of 4&5 Target Attacks by 10%
+,,,,,,,,
+,13,Uncommon Ring of Tenacity,Rare,,,,,"Heals HP equal to 18% of caster's MAX HP when HP falls to 50% or lower (once per battle, accessory priority)"
+,,,,,,,,
+,14,100 Days Celebration Ring,Rare,,,,,"Heals HP equal to 18% of caster's MAX HP when HP falls to 50% or lower (once per battle, accessories first)"
+,,,,,,,,
+,15,200 Days Celebration Ring,Rare,,,,,"Start battles with a Barrier equal to 90% of the caster's ATK for 2 turns (once per round, does not stack with hero passives)"
+,,,,,,,,
+,16,Uncommon Ring of Magic,Uncommon,,,,,12% chance to [Remove 1 buff] upon performing a basic attack
+,,,,,,,,
+,17,Uncommon Ring of Time,Uncommon,,,,,12% chance to [Reduce Buff Durations] by 1 turn upon performing a basic attack
+,,,,,,,,
+,18,Uncommon Ring of Chance,Uncommon,,,,,10% chance of inflicting [Stun] for 1 turn upon performing a basic attack
+,,,,,,,,
+,19,Uncommon Ring of Curses,Uncommon,,,,,12% chance of inflicting [Silence] for 1 turn upon performing a basic attack
+,,,,,,,,
+,20,Uncommon Ring of Death,Uncommon,,,,,6% chance of inflicting [Death] for 3 turns upon performing a basic attack
+,,,,,,,,
+,21,Uncommon Ring of Doom,Uncommon,,,,,10% chance of inflicting [Paralysis] for 1 turn upon performing a basic attack
+,,,,,,,,
+,22,Uncommon Ring of Brilliance,Uncommon,,,,,10% chance of inflicting [Shock] for 1 turn u pon performing a basic attack
+,,,,,,,,
+,23,Uncommon Ring of Horror,Uncommon,,,,,12% chance of inflicting [Blind] for 1 turn upon performing a basic attack
+,,,,,,,,
+,24,Uncommon Ring of the Snow,Uncommon,,,,,12% chance of inflicting [Freeze] for 1 turn upon performing a basic attack
+,,,,,,,,
+,25,Uncommon Ring of Medusa,Uncommon,,,,,10% chance of inflicting [Petrify] for 1 turn upon performing a basic attack
+,,,,,,,,
+,26,Uncommon Ring of Dreams,Uncommon,,,,,12% chance of inflicting [Sleep] for 1 turn upon performing a basic attack
+,,,,,,,,
+,27,Uncommon Ring of Thorns,Uncommon,,,,,15% chance of inflicting [Bleed] for 2 turns upon performing a basic attack
+,,,,,,,,
+,28,Uncommon Ring of the Salamander,Uncommon,,,,,15% chance of inflicting [Burn] for 2 turns upon performing a basic attack
+,,,,,,,,
+,29,Uncommon Ring of the Viper,Uncommon,,,,,15% chance of inflicting [Poison] for 2 turns upon performing a basic attack
+,,,,,,,,
+,30,Uncommon Ring of Vengeance,Common,,,,,Start battles with +6% DMG
+,,,,,,,,
+,31,Uncommon Ring of Protection,Common,,,,,Start battles with +10% DEF
+,,,,,,,,
+,32,Uncommon Ring of Fortune,Common,,,,,Start battles with +10% Crit Rate
+,,,,,,,,
+,33,Uncommon Ring of Protection,Common,,,,,Start battles with +10% Block Rate
+,,,,,,,,
+,34,Uncommon Ring of Concentration,Common,,,,,Start battles with +10% Weakness Hit Chance
+,,,,,,,,
+,35,Uncommon Ring of Nature,Common,,,,,Start battles with +10% HP
+,,,,,,,,
+,36,Uncommon Ring of Accuracy,Common,,,,,Start battles with +15% Effect Hit Rate
+,,,,,,,,
+,,Uncommon Ring of Resistance,Common,,,,,Start battles with +15% Effect Resistance

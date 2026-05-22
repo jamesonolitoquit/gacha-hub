@@ -2,6 +2,9 @@ import { ReactNode } from 'react';
 import { GameSwitcher } from './game-switcher';
 import { PlatformNav } from './platform-nav';
 import { gameModules } from '../../config/games.config';
+import SearchProvider from '../../features/search/components/SearchProvider';
+import HeaderSearch from '../../features/search/components/HeaderSearch';
+import { AppShell } from './app-shell';
 
 const gameSwitcherItems = gameModules.map((game) => ({
   slug: game.slug,
@@ -15,25 +18,31 @@ const gameSwitcherItems = gameModules.map((game) => ({
 
 export default function PlatformLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen">
-      <a
-        href="#platform-main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-40 focus:rounded focus:bg-sky-300 focus:px-4 focus:py-2 focus:font-semibold focus:text-slate-950"
+    <SearchProvider>
+      <AppShell
+        skipTargetId="platform-main"
+        skipLabel="Skip to main content"
+        header={(
+          <header className="sticky top-0 z-50 border-b border-white/10 bg-black/55 px-4 py-1 backdrop-blur-xl md:px-6 md:py-1.5">
+            <div className="mx-auto flex max-w-6xl items-center gap-3">
+              <GameSwitcher games={gameSwitcherItems} />
+              <div className="hidden md:block flex-1 max-w-[200px]">
+                <HeaderSearch />
+              </div>
+              <div className="md:ml-auto">
+                <PlatformNav />
+              </div>
+            </div>
+          </header>
+        )}
+        footer={(
+          <footer className="border-t border-white/10 px-4 py-6 text-center text-xs tracking-[0.2em] text-white/40 md:px-6">
+            SSR-first runtime shell for GachaHub
+          </footer>
+        )}
       >
-        Skip to main content
-      </a>
-      <header className="sticky top-0 z-30 border-b border-white/10 bg-black/30 px-4 py-3 backdrop-blur md:px-6 md:py-4">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 md:flex-row md:items-center md:justify-between md:gap-4">
-          <GameSwitcher games={gameSwitcherItems} />
-          <PlatformNav />
-        </div>
-      </header>
-      <main id="platform-main" className="pb-16">
         {children}
-      </main>
-      <footer className="border-t border-white/10 px-4 py-6 text-center text-xs tracking-[0.2em] text-white/40 md:px-6">
-        SSR-first runtime shell for GachaHub
-      </footer>
-    </div>
+      </AppShell>
+    </SearchProvider>
   );
 }

@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "vanguard",
+    "name": "Vanguard",
+    "source": "Raid",
+    "twoPieceEffect": "All ATK +20%",
+    "fourPieceEffect": "All ATK +45%, Effect Hit Rate +20%",
+    "tags": ["offense", "attack", "raid"]
+  },
+  {
+    "slug": "bounty-tracker",
+    "name": "Bounty Tracker",
+    "source": "Sudden Raid",
+    "twoPieceEffect": "Weakness Hit Chance +15%",
+    "fourPieceEffect": "Weakness Hit Chance +35%, Weakness Hit DMG +35%",
+    "tags": ["offense", "weakness", "sudden-raid"]
+  },
+  {
+    "slug": "paladin",
+    "name": "Paladin",
+    "source": "Raid",
+    "twoPieceEffect": "HP +17%",
+    "fourPieceEffect": "HP +40%, Incoming Healing Boost +20%",
+    "tags": ["defense", "hp", "raid"]
+  },
+  {
+    "slug": "gatekeeper",
+    "name": "Gatekeeper",
+    "source": "Raid",
+    "twoPieceEffect": "Block Rate +15%",
+    "fourPieceEffect": "Block Rate +30%, Block DMG Reduction +15%",
+    "tags": ["defense", "block", "raid"]
+  },
+  {
+    "slug": "guardian",
+    "name": "Guardian",
+    "source": "Sudden Raid",
+    "twoPieceEffect": "DEF +20%",
+    "fourPieceEffect": "DEF +45%, Effect Resist Rate +20%",
+    "tags": ["defense", "def", "sudden-raid"]
+  },
+  {
+    "slug": "assassin",
+    "name": "Assassin",
+    "source": "Raid",
+    "twoPieceEffect": "Crit Rate +15%",
+    "fourPieceEffect": "Crit Rate +35%, Ignore DEF +15%",
+    "tags": ["offense", "crit", "raid"]
+  },
+  {
+    "slug": "avenger",
+    "name": "Avenger",
+    "source": "Raid",
+    "twoPieceEffect": "DMG dealt +15%",
+    "fourPieceEffect": "DMG dealt +30%, DMG Boost to Boss +40%",
+    "tags": ["offense", "boss", "raid"]
+  },
+  {
+    "slug": "spellweaver",
+    "name": "Spellweaver",
+    "source": "Sudden Raid",
+    "twoPieceEffect": "Effect Hit Rate +17%",
+    "fourPieceEffect": "Effect Hit Rate +35%, Effect Probability +10%",
+    "tags": ["support", "effect", "sudden-raid"]
+  },
+  {
+    "slug": "orchestrator",
+    "name": "Orchestrator",
+    "source": "Raid",
+    "twoPieceEffect": "Effect Resist Rate +17%",
+    "fourPieceEffect": "Effect Resist Rate +35%, CC Immunity for 1 turn at the start",
+    "tags": ["defense", "resist", "raid"]
+  }
+]

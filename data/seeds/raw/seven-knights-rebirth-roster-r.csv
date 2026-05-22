@@ -1,0 +1,587 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,NO.,HERO,,,TYPE,,,,PASSIVE,,,,BASIC ATTACK,,,,SKILL1 (BTM SKILL),,,,SKILL2 (TOP SKILL),,,,AWK SKILL
+,1,,,XIAO-T0,ATK,,,,,"ALL ALLIES:
+● Grants [Death Immunity] for 2 turns
+● Grants [Death Immunity] for 2 turns upon performing a basic attack
+● Heals HP equal to 40% of the caster's PATK when HP falls to 50% or lower. (Once per Battle)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK",,,,"1 ENEMY:
+● Deals DMG equal to 230% of PATK
+● Deals additional DMG equal to 180% of PATK against targets inflicted with [Bleed]
+
+ALL ALLIES:
+● Grants a [Barrier] equal to 160% of the caster's PATK for 2 turns",,,,"1 ENEMY:
+● Deals DMG equal to 170% of PATK
+● 100% chance to inflict [Bleed] for 3 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Healing: 40% > 45% of PATK ,,,,● Increases DMG: 100% > 120% of PATK ,,,,● Increases DMG: 230% > 270% of PATK ,,,,● Increases DMG: 170% > 205% of PATK ,,,
+,,,,,,,,Transcendence Effects,,,Adds Effect to ALL ALLIES: Grants [Single-Target ATK DMG Boost] (always active),,,,,,,,Adds Effect: 100% chance to inflict [DEF Reduction] for 5 turns,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,,,,,,,,,DEF Reduction: Decreases DEF by 39%,,,,"Bleed: The target takes [Piercing] DMG equal to 60% of the caster's ATK every turn. DMG increases for every stack of [Bleed] on the target, up to 5 stacks.",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,2,,,EVAN-T0,DEF,,,,,"ALL ALLIES:
+● Grants [DEF Boost] (always active)
+● Grants [Stun Immunity] for 2 turns
+● Grants [Stun Immunity] for 2 turns upon performing a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 50% of PATK and 60% of DEF",,,,"1 ENEMY (By Highest No. of Buffs):
+● Deals DMG equal to 145% of PATK and 165% of DEF
+● 85% chance to inflict [Stun] for 3 turns",,,,"ALL ALLIES:
+● Grants [Barrier] equal to 110% of caster's DEF for 2 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [DEF Boost] from 13% > 18%,,,,● Increases DMG: 50% > 60% of PATK and 60% > 70% of DEF,,,,● Increases Turns: [Stun] duration from 3 > 4 turns,,,,● Increases Effect: [Barrier] from 110% > 130% of caster's DEF,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,"Increases DMG: 145% > 170% of PATK and 165% > 200% of DEF
+Increases Chance: [Stun] chance increasess from 85% > 100%        ",,,,Adds Effect: Grants [Block Rate Boost] for 3 turns,,
+,,,,,,,,,,-,,,,-,,,,-,,,,,,,
+,,,,,,,,Effect Descriptions,,DEF Boost: Increases DEF by 13%,,,,,,,,Stun: Unable to act for the duration of the effect,,,,Block Rate Boost: Increases Block Rate by 21%,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,3,,,KARIN-T0,SUPPORT,,,,,"SELF:
+● [Revive] with 65% HP upon falling in battle (once per battle)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"1 ALLY:
+● Heals HP equal to 200% of caster's MATK
+● Grants 2 [Debuff Removal]",,,,"1 ALLY:
+● [Revive] the fallen target with 50% HP",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: HP gained upon revival from 65% > 80%,,,,● Increases DMG: 100% > 120% of MATK,,,,"● Increases Healing: Recovery amount from 200% > 230% of caster's MATK
+● Increases Effect: [Debuff Removal] from 2 > 3",,,,● Increases Effect: HP gained upon revival from 50% > 70%,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Reduces Cooldown: Skill cooldown reduction from 83s > 61s,,,,Change Number of Targets: 1 > 2 ALLIES,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,4,,,YURI-T0,MAGIC,,,,,"SELF:
+● Grants [Crit Rate Boost] (always active)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK
+● Landing a Critical Hit has 100% chance to inflict [Burn] for 2 turns",,,,"1 ENEMY:
+● Deals DMG equal to 285% of MATK
+● 100% chance to inflict [Burn] for 3 turns",,,,"1 ENEMY:
+● Deals [DEF-ignoring] DMG equal to 285% of MATK
+● Deals additional DMG equal to 170% of MATK against targets inflicted with [Burn]",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [Crit Rate Boost] from 21% > 27%,,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases DMG: 285% > 340% of MATK,,,,● Increases DMG: 285% > 340% of MATK,,,
+,,,,,,,,Transcendence Effects,,,Adds Effect to SELF: [Revive] with 80% HP upon falling in battle,,,,,,,,Adds Effect to SELF: Grants [MDMG Boost] for 5 turns,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,Crit Rate Boost: Increases Crit Rate by 21%,,,,Burn: Deals DMG equal to 80% of caster's ATK every turn,,,,"Burn: Deals DMG equal to 80% of caster's ATK every turn
+
+MDMG Boost: Increase MDMG dealt by 29%",,,,Ignore DEF: Ignores 40% of target's DEF,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,5,,,LI-T0,DEF,,,,,"SELF:
+● 29% chance of performing a [Counterattack]
+● When caster's HP falls below 50%, recover 29% of caster's MAX HP (once per battle)
+
+1 ENEMY upon a [Counterattack]:
+● Deals DMG equal to 50% of PATK and 12% of caster's MAX HP
+● 35% chance to inflict [Stun] for 1 turn",,,,"1 ENEMY:
+● Deals DMG equal to 50% of PATK and 12% of caster's MAX HP",,,,"SELF:
+● Grants [PDMG Immunity] for 2 turns
+● Grants [Taunt] for 2 turns",,,,"1 ENEMY:
+● Sets current HP to 28% of MAX HP.
+● Deals DMG equal to 120% of PATK and 29% of caster's MAX HP",,,
+,,,,,,,,Skill Enhancements,,● Increases Chance: [Counterattack] chance increases from 29% > 38%,,,,● Increases DMG: 50% > 60% of PATK and 12% > 14% of caster's MAX HP,,,,● Increases Turns: [PDMG Immunity] duration from 2 > 3 turns,,,,● Increases Effect: [HP Alteration] from 28% > 11%,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Reduces Cooldown: Skill cooldown reduced from 90s > 68s,,,,Cooldown reduction: Skill cooldown reduced from 90s > 68s,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,"Counterattack: Retaliates against the attacker upon taking a hit
+
+Stun: Unable to act for the duration of the effect",,,,,,,,"Taunt: Taunts enemies, becoming the target of most of their attacks. Only 1 hero on the team may have Taunt or Focus Target effect active at any given time ",,,,HP Alteration: Sets the target's HP to a specified amount. Will not change the target's HP if their current HP is lower than that amount,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,6,,,YUI-T0,SUPPORT,,,,,"ALL ALLIES:
+● Grants [Burn Immunity] for 2 turns
+● Grants [Burn Immunity] for 2 turns upon performing a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK
+● 100% chance to inflict [MATK Reduction] for 2 turns",,,,"ALL ALLIES:
+● Grants [Continuous Healing] for 2 turns",,,,"2 ALLIES:
+● [Revive] the fallen target with 35% HP",,,
+,,,,,,,,Skill Enhancements,,● Adds Healing to SELF: Heals HP equal to 22% of MAX HP upon activating a skill ,,,,● Increases Effect: [MATK Reduction] from 9% > 11%,,,,● Increases Turns: [Continuous Healing] duration from 2 > 3 turns,,,,● Increases Effect: HP gained upon revival from 35% > 45%        ,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect: Grants [PDMG Boost] for 3 turns,,,,,,
+,,,,,,,,,,,,,,,,,,,Increases Effect: [PDMG Boost] from 19% > 24%,,,,,,
+,,,,,,,,Effect Descriptions,,,,,,MATK Reduction: Decreases MATK is by 9%,,,,"Continuous Healing: Recover 15% of caster's maximum health each turn
+
+PDMG Boost: Increase PDMG dealt by 19%",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,7,,,ARIEL-T0,MAGIC,,,,,"ALL ALLIES:
+● Grants [Burn Immunity] for 2 turns
+● Grants [Burn Immunity] for 2 turns upon performing a basic attack
+● Grants [MDMG Boost] (always active)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"3 ENEMIES:
+● Deals DMG equal to 120% of MATK
+● 75% chance to inflict [Blind] for 2 turns",,,,"3 ENEMIES:
+● Deals DMG equal to 120% of MATK
+● 100% chance to inflict [DEF Reduction] for 3 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [MDMG Boost] from 11% > 15%,,,,● Increases DMG: 100% > 120% of MATK ,,,,● Increases DMG: 120% > 145% of MATK ,,,,● Increases DMG: 120% > 145% of MATK ,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect: 100% chance to inflict [Increased Miss Chance] for 3 turns,,,,Increases Effect: [DEF Reduction] from 20% > 24%,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,MDMG Boost: Increases MDMG dealt by 11%,,,,,,,,"Blind: Basic attacks, counterattacks, and combo attacks are guaranteed to miss during the duration of the debuff
+
+Increased Miss Chance: Increases the chance of missing attacks by 44%",,,,DEF Reduction: Decreases DEF by 20%,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,8,,,JUPY-T0,ATK,,,,,"SELF:
+● Grants [Crit DMG Boost] always",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK
+● 40% chance to inflict [Poison] for 2 turns",,,,"SELF:
+● Grants [Sniping Stance] for 6 turns
+● Grants [Crit Rate Boost] for 6 turns
+● Grants [Camouflage] for 2 turns
+
+[SKILL CONVERSION]
+1 ENEMY:
+● Deals DMG equal to 370% of PATK",,,,"1 ENEMY:
+● Deals DMG equal to 315% of PATK
+● Deals additional DMG equal to 155% of PATK while in [Sniping Stance]",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [Crit DMG Boost] from 31% > 40%,,,,"● Increases DMG: 100% > 120% of PATK 
+● Increases Chance: [Poison] chance increases from 40% > 50%",,,,"● Increases Effect: [Crit Rate Boost] from 37% > 45%
+● Increases DMG: 370% > 440% of PATK",,,,● Increases DMG: 315% > 375% of PATK ,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,"Increases Turns: [Sniping Stance] duration from 6 > 12 turns
+Increases Turns: [Crit Rate Boost] duration from 6 > 12 turns",,,,Increases DMG: Deals additional DMG equal to 155% > 185% of PATK while in [Sniping Stance],,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,Crit DMG Boost: Increases Crit DMG by 31%,,,,Poison: Deals 6% of target's MAX HP as DMG each turn (DMG cannot exceed 150% of the caster's ATK),,,,"Sniping Stance: The skill changes from [Sniping stance] to [Swift Shot]. Skill Change lasts for the duration of the buff
+
+Crit Rate Boost: Crit Rate increasesd by 37%
+
+Stealth: Cannot be targeted by single target attacks. Attacks directed at you while in stealth will miss. If enemy has no other target to attack besides the stealthed unit, stealth will be removed",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,9,,,SNIPPER-T0,ATK,,,,,"SELF:
+● Grants 1 stack of [Hunter's Expertise] when 1 enemy falls in battle. Max 4 stacks.",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK",,,,"1 ENEMY:
+● Deals DMG equal to 240% of PATK
+● 100% chance to inflict [Burn] for 3 turns",,,,"1 ENEMY:
+● Consumes 4 stacks of [Hunter's Expertise] to deal additional DMG equal to 20% of the target's MAX HP (limited to 1000% of caster's ATK)
+● Deals DMG equal to 340% of PATK",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [Hunter's Expertise] (Increase PDMG dealt) from 11% > 13%,,,,● Increases DMG: 100% > 120% of PATK ,,,,● Increases DMG: 240% > 290% of PATK ,,,,● Increases DMG: 340% > 410% of PATK,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Reduces Cooldown: Skill cooldown reduced from 60s > 45s,,,,Increases DMG: 20% > 26% of target's MAX HP,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,Hunter's Expertise: Increase PDMG dealt by 11%,,,,,,,,Burn: Deals DMG equal to 80% of caster's ATK every turn,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,10,,,HELLENIA-T0,DEF,,,,,"ALLY WITH LOWEST CURRENT HEALTH:
+● When hit 5 times, recover HP equal to 30% of caster's DEF
+
+SELF:
+● Grants [DEF Boost] always",,,,"1 ENEMY:
+● Deals DMG equal to 50% of PATK and 60% of DEF",,,,"ALL ENEMIES:
+● Deals DMG equal to 50% of PATK and 55% of DEF 
+
+ALL ALLIES:
+● Grants 1 [Debuff Removal]",,,,"SELF: 
+● Grants [MDMG Immunity] for 2 turns
+● Grants [Taunt] for 2 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Healing: Recovery amount from 30% > 35% of caster's DEF,,,,● Increases DMG: 50% > 60% of PATK and 60% > 70% of DEF ,,,,● Increases Effect: [Debuff Removal] from 1 > 2,,,,● Increases Turns: [MDMG Immunity] duration from 2 > 3 turns,,,
+,,,,,,,,Transcendence Effects,,,Change Number of Targets: 1 > 2 ALLIES WITH LOWEST CURRENT HEALTH,,,,,,,,Adds Effect to ALL ENEMIES: 100% chance to inflict [Increased Miss Chance] for 3 turns,,,,,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,DEF Boost: Increases DEF by 22%,,,,,,,,Increased Miss Chance: Increases the chance of missing attacks by 40%,,,,"Taunt: Taunts enemies, becoming the target of most of their attacks. Only 1 hero on the team may have Taunt or Focus Target effect active at any given time ",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,11,,,HEAVENIA-T0,ATK,,,,,"SELF:
+● Grants [PATK Boost] for 3 turns",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK
+● 45% chance to inflict [Freeze] for 1 turn",,,,"3 ENEMIES:
+● Deals DMG equal to 120% of PATK
+● 75% chance to inflict [Freeze] for 2 turns.",,,,"1 ENEMY:
+● Deals DMG equal to 285% of PATK
+● 100% chance to inflict [Buff Duration Reduction] by 2 turns ",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [PATK Boost] from 25% > 31%,,,,● Increases Chance: [Freeze] chance increases from 45 > 50%,,,,● Increases DMG: 120% > 145% of PATK,,,,"● Increases DMG: 285% > 340% of PATK 
+● Increases Turns: [Buff Duration Reduction] from 2 > 3 turns",,,
+,,,,,,,,Transcendence Effects,,,Adds Effect: [All DMG Immunity] for 2 turns,,,,,,,,Increases Chance: [Freeze] chance increases from 75% > 85%,,,,,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,PATK Boost: Increases PATK by 25%,,,,"Freeze: Unable to use perform any actions for the duration of the effect. [Freeze] will be removed when taking damage. When removed, the afflicted target takes DEF-ignoring DMG equal to 40% of the their MAX HP (ignores 40% of target's DEF, DMG cannot exceed 300% of caster's ATK)	",,,,"Freeze: Unable to use perform any actions for the duration of the effect. [Freeze] will be removed when taking damage. When removed, the afflicted target takes DEF-ignoring DMG equal to 40% of the their MAX HP (ignores 40% of target's DEF, DMG cannot exceed 300% of caster's ATK)	",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,12,,,KARON-T0,SUPPORT,,,,,"ALL ALLIES:
+● Grants [Bleed Immunity] for 2 turns
+● Grants [Bleed Immunity] for 2 turns upon performing a basic attack
+
+SELF:
+● Grant [Barrier] equal to 115% of caster's MATK for 3 turns upon activating a skill",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"1 ALLY:
+● Heals HP equal to 200% of caster's MATK",,,,"ALL ALLIES:
+● Heals HP equal to 105% of caster's MATK",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [Barrier] granted increase from 115% > 135% of MATK,,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases Healing: Recovery amount 200% > 230% of caster's MATK,,,,● Increases Healing: Recovery amount 105% > 125% of caster's MATK,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Change Number of Targets: 1 > 3 ALLIES,,,,Reduces Cooldown: Skill cooldown reduced from 124s > 91s,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,13,,,VICTORIA-T0,UNI,,,,,"ALL ALLIES:
+● Grants [Paralysis Immunity] for 2 turns
+● Grants [Paralysis Immunity] for 2 turns upon performing a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"1 ENEMY:
+● Deals DMG equal to 285% of MATK
+● 100% chance to inflict [Magic Vulnerability] for 5 turns",,,,"ALL ALLIES:
+● Grants [MATK Boost] for 3 turns",,,
+,,,,,,,,Skill Enhancements,,● Adds Healing to SELF: Heals HP equal to 90% of MATK upon activating a skill,,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases DMG: 285% > 340% of MATK,,,,● Increases Effect: [MATK Boost] from 29% > 35%,,,
+,,,,,,,,Transcendence Effects,,,Adds Effect to BACKROW ALLIES: Grants [Physical Resistance] (always active),,,,,,,,,,,,Increases Turns: [MATK Boost] duration from 3 > 4 turns,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,Physical Resistance: Decreases PDMG taken by 22% ,,,,,,,,Magic Vulnerability: Increase MDMG taken by 22%,,,,MATK Boost: Increases MATK by 29%,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,14,,,LUCY-T0,SUPPORT,,,,,"ALL ALLIES:
+● Grants [Poison Immunity] for 2 turns
+● Grants [Poison Immunity] for 2 turns upon performing a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 50% of MATK and 60% of DEF 
+● 100% chance to inflict [PATK Reduction] for 2 turns",,,,"ALL ALLIES:
+● Heals HP equal to 100% of caster's DEF",,,,"ALL ALLIES:
+● Grants 2 [Debuff Removal]
+● Grants [DEF Boost] for 3 turns",,,
+,,,,,,,,Skill Enhancements,,● Adds Healing to SELF: Heals HP equal to 92% of DEF upon activating a skill,,,,● Increases Effect: [PATK Reduction] from 9% > 11% ,,,,● Increases Healing: Recovery amount 100% > 120% of caster's DEF,,,,● Increases Effect: [DEF Boost] from 18% > 22%,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect to BACKROW MAGIC-TYPE ALLIES: Skill cooldown reduced by 15s,,,,Increases Effect: Debuff Removal count 2 > 3,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,,,,,PATK Reduction: Decreases PATK by 9%,,,,,,,,DEF Boost: Increases DEF by 18%,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,15,,,SYLVIA-T0,MAGIC,,,,,"SELF:
+● Grants [MATK Boost] for 3 turns
+● Upon falling in battle, Revive with [Immortality] for 2 turns (once per battle)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"3 ENEMIES:
+● Deals [Piercing] DMG equal to 150% of MATK",,,,"ALL ENEMIES:
+● Deals DMG equal to 95% of MATK
+● 100% chance to inflict [DEF Reduction] for 3 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [MATK Boost] from 25% > 31%,,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases DMG: 150% > 180% of MATK,,,,● Increases DMG: 95% > 115% of MATK,,,
+,,,,,,,,Transcendence Effects,,,Increases Turns: [Immortality] duration from 2 > 3 turns,,,,,,,,Adds Effect: Ignore DEF,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,"MATK Boost: Increases MATK by 25%
+
+Immortality: HP is set to 1 for the duration of the effect. Hero will perish once the effect expires",,,,,,,,"Pierce: Ignores DMG immunity effects on the target
+
+Ignore DEF: Ignores 40% of the target's DEF",,,,DEF Reduction: Decreases DEF by 18%,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,16,,,JOKER-T0,MAGIC,,,,,"ALL ALLIES:
+● Grants [Crit DMG Boost] (always active)",,,,"1 ENEMY:
+● Deals DMG equal to 50% of MATK 2 time(s)",,,,"1 ENEMY:
+● Deals DMG equal to 28% of MATK 7 time(s) 
+● 85% chance to inflict [Stun] for 3 turns",,,,"3 ENEMIES (By Highest No. of Buffs):
+● Deals DMG equal to 40% of MATK 3 time(s)
+● Inflicts 2 [Buff Removal]",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [Crit DMG Boost] from 19% > 25%,,,,● Increases DMG: 50% > 60% of MATK,,,,"● Increases DMG: 28% > 34% of MATK
+● Increases Chance: [Stun] chance increases from 85% > 100%",,,,● Increases DMG: 40% > 48% of MATK,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Increases Turns: [Stun] duration from 3 > 4 turns,,,,Adds Effect: 100% chance to inflict [Crit Rate Reduction] for 3 turns,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,Crit DMG Boost: Increases Crit DMG by 19%,,,,,,,,Stun: Unable to act for the duration of the effect,,,,"Crit Rate Reduction: Decreases Crit Rate by 23%
+
+Buff Removal: Removes buff in the order they are applied. DMG immunity and DMG nullification cannot be removed",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,17,,,MAY-T0,ATK,,,,,"ALL ALLIES:
+● Grants [PDMG Boost] (always active)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK ",,,,"1 ENEMY with HIGHEST ATK:
+● Deals DMG equal to 95% of PATK 3 time(s) 
+● 100% chance to inflict [Blind] for 3 turns",,,,"3 ENEMIES:
+● Deals DMG equal to 38% of PATK 3 time(s)
+● 35% chance to inflict [Burn] for 2 turns
+● 35% chance to inflict  [Poison] for 2 turns
+● 35% chance to inflict [Bleed] for 2 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [PDMG Boost] from 11% > 15%,,,,● Increases DMG: 100% > 120% of PATK,,,,"● Increases Turns: [Blind] duration from 3 > 4 turns
+● Adds Effect: 100% chance to inflict [Physical Vulnerability] for 5 turns",,,,"● Increases Chance: [Burn] chance increases from 35% > 40%
+● Increases Chance: [Poison] chance increases from 35% > 40%
+● Increases Chance: [Bleed] chance increases from 35% > 40%",,,
+,,,,,,,,Transcendence Effects,,,Adds Effect to SELF: Grants [Barrier] equal to 160% of caster's PATK for 3 turns (once per battle),,,,,,,,,,,,"Increases Effect: [Burn] is applied 2 time(s)
+Increases Effect: [Poison] is applied 2 time(s)
+Increases Effect: [Bleed] is applied 2 time(s)",,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,PDMG Boost: Increase PDMG dealt by 11%,,,,,,,,"Blind: Basic attacks, counterattacks, and combo attacks are guaranteed to miss during the duration of the debuff
+
+Physical Vulnerability: Increases PDMG taken by 29%",,,,"Burn: Deals DMG equal to 80% of caster's ATK every turn
+
+Poison: Deals 6% of target's MAX HP as DMG each turn (DMG cannot exceed 150% of the caster's ATK)
+
+Bleed: The target takes [Piercing] DMG equal to 60% of the caster's ATK every turn. DMG increases for every stack of [Bleed] on the target, up to 5 stacks.",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,18,,,NOHO-T0,MAGIC,,,,,"ALL ALLIES:
+● Grants [MATK Boost] for 2 turns",,,,"1 ENEMY:
+● Deals DMG equal to 50% of MATK and 12% of caster's MAX HP",,,,"2 ENEMIES:
+● 35% [HP Alteration]",,,,"3 ENEMIES (By Highest No. of Buffs):
+● Deals DMG equal to 80% of MATK and 19% of caster's MAX HP
+● Inflicts 2 [Buff Removal]",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [MATK Boost] from 19% > 23%,,,,● Increases DMG: 50% > 60% of MATK and 12% > 14% of caster's MAX HP,,,,● Increases Effect: [HP Alteration] from 35% > 25%,,,,● Increases DMG: 80% > 95% of MATK and 19% > 22% of caster's MAX HP,,,
+,,,,,,,,Transcendence Effects,,,Adds Effect: Grants [Barrier] equal to 32% of caster's MAX HP for 3 turns upon activating skill,,,,,,,,,,,,Adds Effect: 100% chance to inflict [All ATK Reduction] for 3 turns,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,MATK Boost: Increases MATK by 19%,,,,,,,,HP Alteration: Sets the target's HP to a specified amount. Will not change the target's HP if their current HP is lower than that amount,,,,"All ATK Reduction: Decreases All ATK by 16%
+
+Buff Removal: Removes buff in the order they are applied. DMG immunity and DMG nullification cannot be removed",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,19,,,CHLOE-T0,SUPPORT,,,,,"ALL ALLIES:
+● Grants [Shock Immunity] for 2 turns
+● Grants [Shock Immunity] for 2 turns upon performing a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"1 ENEMY:
+● Deals DMG equal to 90% of MATK 3 time(s)
+● 100% chance to inflict [Unable to Recover] for 4 turns",,,,"ALL ALLIES:
+● Grants [All ATK Boost] for 3 turns
+● Grants 2 [Debuff Removal]",,,
+,,,,,,,,Skill Enhancements,,● Adds Healing to SELF: Heals HP equal to 22% of MAX HP upon activating a skill,,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases DMG: 90% > 108% of MATK,,,,● Increases Effect: [All ATK Boost] from 15% > 20%,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect: Inflicts 2 [Buff Removal],,,,Adds Effect: Grants [Crit Rate Boost] for 3 turns,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,,,,,,,,,Buff Removal: Removes buff in the order they are applied. DMG immunity and DMG nullification cannot be removed,,,,"All ATK Boost: Increases all ATK by 15%
+
+Crit Rate Boost: Increases Crit Rate by 27%",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,20,,,JANE-T0,ATK,,,,,"SELF:
+● Grants [Camouflage] for 2 turns",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK
+● 40% chance to inflict [Poison] for 2 turns",,,,"1 ENEMY:
+● Deals DMG equal to 135% of PATK 2 time(s)
+● Each attack has 70% chance to inflict [Poison] for 3 turns",,,,"1 ENEMY:
+● Deals DMG equal to 285% of PATK
+● Deals additional DMG equal to 190% of PATK against targets inflicted with [Poison]",,,
+,,,,,,,,Skill Enhancements,,● Increases Turns: [Camouflage] duration from 2 > 3 turns,,,,● Increases DMG: 100% > 120% of PATK,,,,"● Increases DMG: 135% > 162% of PATK
+● Increases Chance: [Poison] chance increases from 70% > 85%",,,,● Increases DMG: 285% > 340% of PATK,,,
+,,,,,,,,Transcendence Effects,,,,,,,Increases Chance: [Poison] chance increases from 40% > 50%,,,,,,,,Increases DMG: 190% > 230% of PATK against targets inflicted with [Poison],,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,"Camouflage: Cannot become the target of a single-target attack. Attacks received while Camouflaged are guaranteed to miss. If the only attackable heroes on a team are Camouflaged, Camouflage will be removed from all heroes on that team",,,,Poison: Deals 6% of target's MAX HP as DMG each turn (DMG cannot exceed 150% of the caster's ATK),,,,Poison: Deals 6% of target's MAX HP as DMG each turn (DMG cannot exceed 150% of the caster's ATK),,,,Poison: Deals 6% of target's MAX HP as DMG each turn (DMG cannot exceed 150% of the caster's ATK),,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,21,,,BLACK ROSE-T0,ATK,,,,,"ALL ALLIES:
+● Grants [Petrify Immunity] for 2 turns
+● Grants [Petrify Immunity] for 2 turns upon activating a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK",,,,"1 ENEMY:
+● Deals DMG equal to 340% of PATK ",,,,"ALL ENEMIES (can only be used if the target has a removable buff):
+● Inflicts 1 [Buff Removal]
+● Deals DMG equal to 125% of PATK",,,
+,,,,,,,,Skill Enhancements,,● Adds Healing to SELF: Heals HP equal to 90% of PATK upon activating a skill,,,,● Increases DMG: 100% > 120% of PATK,,,,● Increases DMG: 340% > 410% of PATK,,,,● Increases DMG: 125% > 150% of PATK,,,
+,,,,,,,,Transcendence Effects,,,Adds Effect to SELF: Grants [PATK Boost] (always active),,,,,,,,,,,,Adds Effect to ALL ALLIES: Grants [All ATK Boost] for 2 turns,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,PATK Boost: Increases PATK by 31%,,,,,,,,,,,,"Buff Removal: Removes buff in the order they are applied. DMG immunity and DMG nullification cannot be removed
+
+All ATK Boost: Increases All ATK by 20%",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,22,,,SERA-T0,MAGIC,,,,,"SELF:
+● Grants [Crit Rate Boost] (always active)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"3 ENEMIES:
+● Deals DMG equal to 60% of MATK 2 time(s)",,,,"3 ENEMIES:
+● 100% chance to inflict [Buff Duration Reduction] by 2 turns
+● Deals DMG equal to 145% of MATK",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [Crit Rate Boost] from 21% > 27%,,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases DMG: 60% > 72% of MATK,,,,● Increases DMG: 145% > 175% of MATK,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds DMG: Deals additional DMG equal to 32% of MATK upon landing a Critical Hit,,,,Adds DMG: Deals additional DMG equal to 80% of MATK upon landing a Critical Hit,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,Crit Rate Boost: Increases Crit Rate by 21%,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,23,,,CATTY-T0,ATK,,,,,"SELF:
+● Grants [PATK Boost] for 3 turns",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK ",,,,"1 ENEMY:
+● Deals DMG equal to 230% of PATK
+● 100% chance to inflict [Unable to Recover] for 4 turns
+● 100% chance to inflict [Physical Vulnerability] for 5 turns",,,,"ALL ALLIES:
+● Grants [Crit Rate Boost] for 3 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [PATK Boost] from 25% > 31%,,,,● Increases DMG: 100% > 120% of PATK,,,,● Increases DMG: 230% > 270% of PATK,,,,● Increases Effect: [Crit Rate Boost] from 21% > 27%,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect: 100% chance to inflicts [Block Rate Reduction] for 5 turns,,,,Adds Effect: Grants [Weakness Hit Chance Boost] for 3 turns,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,PATK Boost: Increases PATK by 25%,,,,,,,,"Physical Vulnerability: Increases PDMG taken by 22%
+
+Block Rate Reduction: Decreases Block Rate by 33%",,,,Weakness Hit Chance Boost: Increases Weakness Hit Chanceby 32%,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,24,,,JIN-T0,ATK,,,,,"ALL ALLIES:
+● Grants [Silence Immunity] for 2 turns
+● Grants [Silence Immunity] for 2 turns upon performing a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK ",,,,"3 ENEMIES:
+● Deals DMG equal to 120% of PATK
+● Deals 775 Fixed DMG per turn ",,,,"3 ENEMIES:
+● Deals DMG equal to 145% of PATK
+● 55% chance to inflict [Stun] for 2 turns",,,
+,,,,,,,,Skill Enhancements,,● Adds Effect to SELF: 27% Crit Rate Boost ((always active)),,,,● Increases DMG: 100% > 120% of PATK,,,,"● Increases DMG: 120% > 145% of PATK
+● Increases DMG: 775 > 1100 Fixed DMG",,,,"● Increases DMG: 145% > 175% of PATK
+● Increases Chance: [Stun] chance increases from 55% > 65%",,,
+,,,,,,,,Transcendence Effects,,,Adds Effect to SELF: Grants [Barrier] equal to 160% of caster's PATK for 3 turns when HP falls below 50%,,,,,,,,,,,,,,
+,,,,,,,,,,,Adds Effect to SELF: [PATK Boost] for 3 turns,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,PATK Boost: Increase ATK by 31%,,,,,,,,,,,,Stun: Unable to act for the duration of the effect,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,25,,,REI-T0,ATK,,,,,"SELF:
+● Grants [Camouflage] for 2 turns
+● Grants [PATK Boost] for 3 turns",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK",,,,"ALL ENEMIES:
+● Deals DMG equal to 47% of PATK 2 time(s)
+● 40% chance to inflict [Poison] on each attack for 2 turns",,,,"ALL ENEMIES:
+● Deals DMG equal to 47% of PATK 2 time(s)
+● Each attack has 40% chance to inflict [Bleed] for 2 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Turns: [Camouflage] duration from 2 > 3 turns,,,,● Increases DMG: 100% > 120% of PATK,,,,● Adds Effect: [Pierce],,,,● Increases DMG: 47% > 57% of PATK,,,
+,,,,,,,,Transcendence Effects,,,Increases Effect: [PATK Boost] from 25% > 31%,,,,,,,,,,,,Adds Effect: Each attack has 55% chance of inflicting [Poison] for 2 turns,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,"Camouflage: Cannot become the target of a single-target attack. Attacks received while Camouflaged are guaranteed to miss. If the only attackable heroes on a team are Camouflaged, Camouflage will be removed from all heroes on that team
+
+PATK Boost: Increases PATK by 25%",,,,,,,,"Poison: Deals 6% of target's MAX HP as DMG each turn (DMG cannot exceed 150% of the caster's ATK)
+
+Pierce: Ignores DMG immunity effects on the target",,,,"Bleed: The target takes [Piercing] DMG equal to 60% of the caster's ATK every turn. DMG increases for every stack of [Bleed] on the target, up to 5 stacks
+
+Poison: Deals 6% of target's MAX HP as DMG each turn (DMG cannot exceed 150% of the caster's ATK).",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,26,,,SOI-T0,ATK,,,,,"ALL ALLIES:
+● Grants [Quintuple-Target Attack Resistance] (always active)
+
+SELF:
+●  Grants [Effect Hit Rate Boost] (always active)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK
+● 40% chance to inflict [Bleed] for 2 turns",,,,"1 ENEMY:
+● Deals DMG equal to 315% of PATK
+● 100% chance to inflict [Bleed] for 3 turns",,,,"2 ENEMIES (By Highest No. of Buffs):
+● Deals DMG equal to 120% of PATK
+● Inflicts 2 [Buff Removal]",,,
+,,,,,,,,Skill Enhancements,,"● Increases Effect: [Quintuple-Target Attack Resistance] from 11% > 15%
+● Increases Effect: [Effect Hit Rate Boost] from 31% > 40%",,,,● Increases DMG: 100% > 120% of PATK,,,,● Increases DMG: 315% > 375% of PATK,,,,● Increases DMG: 120% > 145% of PATK,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect: 100% chance to inflict [Buff Duration Reduction] by 3 turns,,,,Adds DMG: Grants an additional 15% DMG Boost each time the number of targets is reduced by 1,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,"Quintuple-Target Attack Resistance: Decrease DMG taken from quintuple-target attacks by 11%
+
+Effect Hit Rate Boost: Increases Effect Hit Rate by 31%",,,,,,,,"Bleed: The target takes [Piercing] DMG equal to 60% of the caster's ATK every turn. DMG increases for every stack of [Bleed] on the target, up to 5 stacks.",,,,Buff Removal: Removes buff in the order they are applied. DMG immunity and DMG nullification cannot be removed,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,27,,,FENG YAN-T0,ATK,,,,,"SELF:
+● Grants [All DMG Immunity] for 2 turns
+
+ALL ALLIES:
+● Grants [Freeze Immunity] for 2 turns
+● Grants [Freeze Immunity] for 2 turns upon performing a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK ",,,,"3 ENEMIES:
+● Deals DMG equal to 155% of PATK ",,,,"3 ENEMIES:
+● Deals DMG equal to 175% of PATK",,,
+,,,,,,,,Skill Enhancements,,● Adds Effect to SELF: Grants [Crit DMG Boost] (always active),,,,● Increases DMG: 100% > 120% of PATK,,,,● Increases DMG: 155% > 190% of PATK,,,,● Increases DMG: 175% > 210% of PATK,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect: 100% chance to inflict [DEF Reduction] for 3 turns,,,,Adds Effect: Ignore DEF,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,Crit DMG Boost: Increases Crit DMG by 40%,,,,,,,,DEF Reduction: Decrease DEF by 24%,,,,Ignore DEF: Ignores 40% of target's DEF,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,28,,,ASURA-T0,UNI,,,,,"SELF:
+● Grants [Weakness Hit Chance Boost] (always active)
+● When your skill is activated, grant [Barrier] equal to 115% of caster's MATK for 3 turns",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"1 ENEMY:
+● Deals DMG equal to 285% of MATK
+● 100% chance to inflict [Focus Target] for 4 turns
+● 100% chance to inflict [DEF Reduction] for 4 turns",,,,"ALL ALLIES:
+● Grants [Barrier] equal to 85% of the caster's MATK for 2 turns",,,
+,,,,,,,,Skill Enhancements,,"● Increases Effect: [Weakness Hit Chance Boost] from 70% > 80%
+● Increases Effect: [Barrier] from 115% > 135% of caster's MATK",,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases Effect: [DEF Reduction] from 29% > 36%,,,,● Increases Effect: [Barrier] from 85% > 100% of caster's MATK,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Increases Turns: [Focus Target] duration from 4 > 5 turns,,,,,,
+,,,,,,,,,,,,,,,,,,,Increases Turns: [DEF Reduction] duration from 4 > 5 turns,,,,,,
+,,,,,,,,Effect Descriptions,,Weakness Hit Chance Boost: Increases Weakness Hit Chance by 70%,,,,,,,,"Focus Target: Becomes the target of all enemy attacks with the exception of counterattacks. Only one hero on a team may have a Taunt or Focus Target effect active at any given time
+
+DEF Reduction: Decreases DEF by 29%",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,29,,,HOKIN-T0,ATK,,,,,"SELF:
+● Grants [PATK Boost] when HP is 50% or lower ((always active))",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK ",,,,"1 ENEMY:
+● Deals DMG equal to 285% of PATK 
+● 85% chance to inflict [Stun] for 3 turns",,,,"SELF:
+● Grants [PDMG Immunity] for 2 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [PATK Boost] from 20% > 24%,,,,● Increases DMG: 100% > 120% of PATK,,,,● Increases DMG: 285% > 340% of PATK,,,,● Increases Turns: [PDMG Immunity] duration from 2 > 3 turns,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect: 100% chance to inflict [DEF Reduction] for 5 turns,,,,Adds Effect: Grants [PDMG Boost] for 5 turns,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,PATK Boost: Increases PATK by 19%,,,,,,,,"Stun: Unable to act for the duration of the effect
+
+DEF Reduction: Decreases DEF by 39%",,,,PDMG Boost: Increases PDMG by 33%,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,30,,,RAHKUN-T0,DEF,,,,,"SELF:
+● Grants [Physical Resistance] (always active)",,,,"1 ENEMY:
+● Deals DMG equal to 50% of PATK and 60% of DEF",,,,"SELF:
+● Grants [DEF Boost] for 5 turns",,,,"SELF:
+● Grants [Taunt] for 2 turns
+● Grants [Block Rate Boost] for 5 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [Physical Resistance] from 19% > 24%,,,,● Increases DMG: 50% > 60% of PATK and 60% > 70% of DEF,,,,● Increases Effect: [DEF Boost] from 34% > 44%,,,,● Increases Effect: [Block Rate Boost] from 37% > 45%,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect: Grants [Effect Resist Boost] for 5 turns,,,,Adds Effect: Grants [Barrier] equal to 310% of caster's DEF for 3 turns,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,Physical Resistance: Decreases PDMG taken by 19%,,,,,,,,"DEF Boost: Increases DEF by 34%
+
+Effect Resist Boost: Increases Effect Resist by 55%",,,,"Taunt: Taunts enemies, becoming the target of most of their attacks. Only 1 hero on the team may have Taunt or Focus Target effect active at any given time         
+
+Block Rate Boost: Increases Block Rate by 37%",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,31,,,LEO-T0,ATK,,,,,"ALL ALLIES:
+● Grants [Death Immunity] for 2 turns
+● Grants [Death Immunity] for 2 turns upon performing a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK 
+● 40% chance to inflict [Bleed] for 2 turns",,,,"1 ENEMY:
+● Deals DMG equal to 230% of PATK
+● 100% chance to inflict [DEF Reduction] for 5 turns
+● 100% chance to inflict [Bleed] for 3 turns",,,,"3 ENEMIES:
+● Deals DMG equal to 120% of PATK
+● 100% chance to inflict [Damage Reduction] for 3 turns",,,
+,,,,,,,,Skill Enhancements,,● Adds Effect to SELF: Grants [All ATK Boost] for 3 turns,,,,● Increases DMG: 100% > 120% of PATK,,,,"● Increases DMG: 230% > 270% of PATK
+● Increases Effect: [DEF Reduction] from 29% > 39%",,,,"● Increases DMG: 120% > 145% of PATK
+● Increases Effect: [Damage Reduction] from 11% > 13%",,,
+,,,,,,,,Transcendence Effects,,,Adds Effect to SELF: [Revive] with 80% HP upon falling in battle (once per battle),,,,,,,,,,,,Adds Effect to SELF: Grants [Life Drain] for 3 turns,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,All ATK Boost: Increases All ATK by 24%,,,,"Bleed: The target takes [Piercing] DMG equal to 60% of the caster's ATK every turn. DMG increases for every stack of [Bleed] on the target, up to 5 stacks",,,,"DEF Reduction: Decreases DEF by 29%
+
+Bleed: The target takes [Piercing] DMG equal to 60% of the caster's ATK every turn. DMG increases for every stack of [Bleed] on the target, up to 5 stacks",,,,"DMG Reduction: Decrease DMG by 11%
+
+Life Drain: Recovers HP equal to 20% of the DMG dealt",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,32,,,BANE-T0,MAGIC,,,,,"SELF:
+● Upon falling in battle, Revive with [Immortality] for 2 turns (once per battle)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK ",,,,"1 ENEMY:
+● Deals DMG equal to 285% of MATK  
+● 90% chance to inflict [Silence] for 3 turns",,,,"3 ENEMIES:
+● Deals DMG equal to 120% of MATK
+● 65% chance to [Silence] for 2 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Turns: [Immortality] duration from 2 > 3 turns,,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases DMG: 285% > 340% of MATK,,,,● Increases DMG: 120% > 145% of MATK,,,
+,,,,,,,,Transcendence Effects,,,Adds Effect: Grants [Effect Hit Rate Boost] (always active),,,,,,,,Adds Effect: 100% chance to inflict [PATK Reduction] for 5 turns,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,"Immortality: HP is set to 1 for the duration of the effect. Hero will perish once the effect expires
+
+Effect Hit Rate Boost: Increases Effect Hit Rate by 40%",,,,,,,,"Silence: Unable to use active skills for the duration of the effect
+
+PATK Reduction: Decrease PATK by 33%",,,,Silence: Unable to use active skills for the duration of the effect,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,33,,,CLEO-T0,MAGIC,,,,,"ALL ALLIES:
+● Grants [Silence Immunity] for 2 turns
+● Grants [Silence Immunity] for 2 turns upon performing a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK 
+● 40% chance to inflict [Poison] for 2 turns",,,,"3 ENEMIES:
+● Deals DMG equal to 120% of MATK
+● 75% chance to inflict [Poison] for 2 turns",,,,"3 ENEMIES:
+● Deals DMG equal to 120% of MATK
+● 50% chance to inflict [Petrify] for 2 turns",,,
+,,,,,,,,Skill Enhancements,,● Adds Effect to SELF: Grants [MATK Boost] for 3 turns,,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases DMG: 120% > 145% of MATK,,,,"● Increases DMG: 120% > 145% of MATK
+● Increases Chance: [Petrify] chance increases from 50% > 60%",,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect: 100% chance to inflict [PATK Reduction] for 5 turns,,,,Adds Effect: 85% chance to inflict [Poison] for 2 turns,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,MATK Boost: Increases MATK by 31%,,,,Poison: Deals 6% of target's MAX HP as DMG each turn (DMG cannot exceed 150% of the caster's ATK),,,,"Poison: Deals 6% of target's MAX HP as DMG each turn (DMG cannot exceed 150% of the caster's ATK)
+
+PATK Reduction: Decrease PATK by 25%",,,,"Petrify: Unable to perform any actions for the duration of the effect, and the afflicted target will take DMG equal to 120% of the caster's ATK when the effect wears off
+
+Poison: Deals 6% of target's MAX HP as DMG each turn (DMG cannot exceed 150% of the caster's ATK)",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,34,,,LANIA-T0,UNI,,,,,"ALL ALLIES:
+● Grants [Freeze Immunity] for 2 turns
+● Grants [Freeze Immunity] for 2 turns upon performing a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"1 ENEMY:
+● Deals DMG equal to 285% of MATK
+● 100% chance to inflict [Freeze] for 3 turns",,,,"ALL ENEMIES:
+● Deals DMG equal to 95% of MATK
+● 60% chance to inflict [Freeze] for 2 turns",,,
+,,,,,,,,Skill Enhancements,,● Adds Effect to SELF: Grants [Effect Hit Rate Boost] for 3 turns,,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases DMG: 285% > 340% of MATK,,,,● Increases DMG: 95% > 115% of MATK,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect to SELF: Grants [MATK Boost] for 5 turns,,,,Increases Chance: [Freeze] chance increases from 60% > 70%,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,Effect Hit Rate Boost: Increases Effect Hit Rate by 46%,,,,,,,,"Freeze: Unable to use perform any actions for the duration of the effect. [Freeze] will be removed when taking damage. When removed, the afflicted target takes DEF-ignoring DMG equal to 40% of the their MAX HP (ignores 40% of target's DEF, DMG cannot exceed 300% of caster's ATK)
+
+MATK Boost: Increases MATK by 35%",,,,"Freeze: Unable to use perform any actions for the duration of the effect. [Freeze] will be removed when taking damage. When removed, the afflicted target takes DEF-ignoring DMG equal to 40% of the their MAX HP (ignores 40% of target's DEF, DMG cannot exceed 300% of caster's ATK)	",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,35,,,SARAH-T0,SUPPORT,,,,,"SELF:
+● Grants [DMG Resistance] (always active)
+
+ALL ALLIES:
+● Grants [Sleep Immunity] for 2 turns
+● Grants [Sleep Immunity] for 2 turns upon using a basic attack
+● Grants 2 [Debuff Removal] when HP falls to 30% or lower (once per battle)
+● When HP falls below 30%, recover HP equal to 10% of the caster's MATK (once per battle)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"3 ENEMIES:
+● Deals DMG equal to 95% of MATK
+● 100% chance to inflict [DEF Reduction] for 3 turns",,,,"3 ALLIES:
+● Grants 2 [Debuff Removal]",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [DMG Resistance] increase from 12% > 16%,,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases Effect: [DEF Reduction] from 20% > 24%,,,,● Adds Effect: Grants [DEF Boost] for 3 turns,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Adds Effect: 100% chance to inflict [DMG Reduction] for 3 turns,,,,Change Number of Targets: 3 ALLIES > ALL ALLIES,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,"DMG Resistance: Decreases DMG taken by 12%
+
+Sleep Immunity:  Immune to Sleep",,,,,,,,"DEF Reduction: Decreases DEF by 20%
+
+DMG Reduction: Decreases DMG by 13%",,,,DEF Boost: Increases DEF by 34%,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,36,,,ZHAO YUN-T0,ATK,,,,,"ALL ALLIES:
+● Grants [Blind Immunity] for 2 turns
+● Grants [Blind Immunity] for 2 turns upon performing a basic attack
+
+SELF:
+● Grants [Effect Resist Boost] (always active)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK",,,,"1 ENEMY:
+● Deals DMG equal to 285% of PATK
+● 100% chance to inflict [Bleed] for 3 turns",,,,"3 ENEMIES:
+● Deals DMG equal to 90% of PATK 
+● 75% chance to inflict [Bleed] for 2 turns
+
+SELF:
+● Grants [PDMG Immunity] for 2 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect to SELF: [Effect Resist Boost] from 31% > 40%,,,,● Increases DMG: 100% > 120% of PATK,,,,● Increases DMG: 285% > 340% of PATK,,,,● Increases Chance: [Bleed] from 75% > 85%,,,
+,,,,,,,,Transcendence Effects,,,Adds Effect to SELF: Grants [Barrier] equal to 100% of PATK for 3 turns when caster performs a skill,,,,,,,,,,,,,,
+,,,,,,,,,,,Adds Effect to SELF: Reduces skill cooldown by 8s when hit by an enemy attack,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,Effect Resist Boost: Increases Effect Resist by 31%,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,37,,,LING LING-T0,MAGIC,,,,,"ALL ALLIES:
+● Grants [Effect Hit Rate Boost] (akways active)
+",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"1 ENEMY:
+● Deals DMG equal to 30% of MATK 7 times
+● 100% chance to inflict [DMG Reduction] for 5 turns",,,,"3 ENEMIES:
+● Deals [Piercing] DMG equal to 20% of MATK 5 times
+● 100% chance to inflict [Buff Duration Reduction] by 2 turns",,,
+,,,,,,,,Skill Enhancements,,● Increases Effect: [Effect Hit Rate Boost] from 19% > 25%,,,,● Increases DMG: 100% > 120% of MATK,,,,● Increases Effect: [DMG Reduction] from 15% > 20%,,,,● Increases DMG: 20% > 25% of MATK,,,
+,,,,,,,,Transcendence Effects,,,Adds Effect: Grants [Barrier] equal to 45% of caster's MATK for 2 turns upon activating a skill 1 time,,,Adds Healing to SELF: Heals HP equal to 45% of MATK,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,Effect Hit Rate Boost: Increases Effect Hit Rate by 19%,,,,,,,,DMG Reduction: Reduces DMG taken by 15%,,,,,,,

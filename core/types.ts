@@ -1,3 +1,5 @@
+import type { GameTaxonomyConfig, NavItem } from '../shared/types/taxonomies'
+
 export type GameCapabilities = {
   tools: Record<string, boolean>;
   content: Record<string, boolean>;
@@ -21,6 +23,8 @@ export type GameModule = {
   name: string;
   subdomain: string;
   bannerUrl?: string;
+  taxonomies?: GameTaxonomyConfig;
+  nav?: NavItem[];
   routes: Record<string, GameRoute>;
   theme: GameTheme;
   capabilities: GameCapabilities;

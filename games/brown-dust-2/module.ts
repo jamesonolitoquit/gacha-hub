@@ -2,6 +2,7 @@ import type { GameModule } from '../../core/types';
 import { brownDust2Capabilities } from './capabilities';
 import { brownDust2Routes } from './routes';
 import { brownDust2Theme } from './theme';
+import { bd2Taxonomies, bd2Nav } from './config';
 
 export const brownDust2Module: GameModule = {
   id: 'browndust2',
@@ -12,4 +13,6 @@ export const brownDust2Module: GameModule = {
   routes: brownDust2Routes,
   theme: brownDust2Theme,
   capabilities: brownDust2Capabilities,
+  taxonomies: bd2Taxonomies,
+  nav: bd2Nav,
 };

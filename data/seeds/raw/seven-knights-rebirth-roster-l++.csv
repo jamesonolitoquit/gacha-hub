@@ -1,0 +1,156 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,NO.,HERO,,,TYPE,,,,PASSIVE,,,,BASIC ATTACK,,,,SKILL1 (BTM SKILL),,,,SKILL2 (TOP SKILL),,,,AWK SKILL
+,1,,,FAI-T0,ATK,,,,,"ALL ENEMIES:
+● Inflicts [Physical Vulnerability] (always active)
+
+SELF:
+● [Revive] with 80% HP upon falling in battle (once per battle)
+● Grants [Barrier] equal to 135% of PATK for 3 turns upon revival (once per battle)
+● Deals additional DMG equal to 70% of PATK against targets inflicted with [Burn]",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK
+
+3 ENEMIES:
+● 35% chance to inflict [Burn] for 2 turns.",,,,"ALL ENEMIES:
+● Deals DMG equal to 57% of PATK 2 time(s)
+● Each attack has 60% chance of inflicting [Burn] for 2 turns",,,,"1 ENEMY:
+● Inflicts 3 [Buff Removal]
+● 100% chance to infliict [Burn] for 3 turns
+● Deals DMG equal to 340% of PATK and 20% of target's MAX HP
+● Instant [Execution] of an enemy with 24% or lower HP
+
+ENEMIES IN THE SAME ROW as the target:
+● 60% chance to inflict [Burn] for 2 turns
+● Deals DMG equal to 125% of PATK and 14% of target's MAX HP ",,,
+,,,,,,,,Skill Enhancements,,"● Increases Effect: [Physical Vulnerability] from 17% > 20%
+● Increases Effect: HP gained upon revival from 80% > 100%",,,,● Increases DMG: 100% > 130% of PATK,,,,"● Adds Effect: 29% chance to inflict [DEF Reduction] for 3 turns
+● Increases Chance: [Burn] chance increases from 60% > 70%",,,,● Increases DMG: 340% > 410% of PATK and 20% > 26% of target's MAX HP,,,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,,,,,Changes [Execution] condition from 24% > 30%,,
+,,,,,,,,,,,,,,,,,,,,,,,[Execution] targets the whole row of the target,,
+,,,,,,,,Effect Descriptions,,"Physical Vulnerability: Increases PDMG taken by 17%
+
+Burn: Deals DMG equal to 80% of caster's ATK every turn",,,,Burn: Deals DMG equal to 80% of caster's ATK every turn,,,,"Burn: Deals DMG equal to 80% of caster's ATK every turn
+
+DEF Reduction: Decreases DEF by 29%",,,,"Buff Removal: Removes buff in the order they are applied. DMG immunity and DMG nullification cannot be removed
+
+Burn: Deals DMG equal to 80% of caster's ATK every turn
+
+Execution: Instantly kills targets whose HP falls below a specific percentage (does not work on targets with HP exceeding 120% of caster's ATK)",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,2,,,ROSIE-T0,SUPPORT,,,,,"SELF:
+● Grants [MAX HP-Based DEF Boost] (always active)
+● Grants [All DMG Immunity] for 2 turns when HP falls to 50% or lower
+
+DEF-TYPE & UNIVERSAL-TYPE ALLIES:
+● Grants [Effect Probability Boost] (always active)",,,,"2 ENEMIES:
+● Deals DMG equal to 30% of MATK and 7% of caster's MAX HP",,,,"ALL ENEMIES:
+● Deals DMG equal to 30% of MATK and 7% of the caster's MAX HP 2 time(s)
+● 25% chance to inflict [Death] for 3 turns.",,,,"2 ALLIES:
+● [Revive] the fallen target with 40% HP
+
+ALL ENEMIES:
+● 100% chance to inflict [Buff Duration Reduction] by 2 turns",,,
+,,,,,,,,Skill Enhancements,,Increases Turns: [All DMG Immunity] duration from 2 > 3 turns,,,,● Adds Effect: 16% chance to inflict [Effect Resist Reduction] for 2 turns,,,,"● Increases DMG: 30% > 37% of MATK and 7% > 10% of MAX HP
+● Increases Chance: [Death] chance increases from 25% > 35%",,,,"● Increases Effect: HP gained upon revival from 40% > 55%
+● Adds Effect to REVIVED ALLIES: [Guts] upon revival (once per battle)",,,
+,,,,,,,,Transcendence Effects,,,Increases Effect: [Effect Probability Boost] from 20% > 26%,,,,,,,,,,,,Change Number of Targets: 2 ALLIES > ALL ALLIES,,
+,,,,,,,,,,-,,,,-,,,,-,,,,-,,,
+,,,,,,,,Effect Descriptions,,"MAX HP-based DEF Boost: Increases DEF by 100 for every 1000 MAX HP (Maximum: 900)
+
+Effect Probability Boost: Increases Effect Probability by 20%",,,,Effect Resist Reduction: Decreases Effect Resist by 16%,,,,"Death: The target takes DMG equal to 20% of current HP every turn, instantly dying on the last turn. Target dies instantly upon reaching 2 stacks of [Death]",,,,Guts: Survive with 1 HP upon taking lethal DMG for the first time,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,3,,,JURI-T0,MAGIC,,,,,"SELF:
+● 25% chance of performing a [Follow-Up Attack] (always active)
+● Grants [All DMG Nullification] 2 hits
+● Upon falling in battle, Revive with [Immortality] for 2 turns (once per battle)
+
+3 Enemies upon a [Follow-Up Attack]:
+● Deals DMG equal to 40% of MATK and 7% of target's MAX HP",,,,"2 ENEMIES:
+● Deals DMG equal to 55% of MATK",,,,"ALL ENEMIES:
+● Deals DMG equal to 65% of MATK 2 time(s)
+● 100% chance to inflict [DEF Reduction] for 3 turns.",,,,"ALL ENEMIES:
+● 60% chance to inflict [Souldeath] for 2 turns
+● Deals DMG equal to 70% of MATK 2 time(s)",,,
+,,,,,,,,Skill Enhancements,,"● Increases Turns: [Immortality] duration from 2 > 3 turns
+● Increases Effect: [Follow-Up Attack] DMG: 40% > 50% of MATK and 7% > 9% of target's MAX HP",,,,● Increases DMG: 55% > 70% of MATK,,,,"● Increases DMG: 65% > 77% of MATK
+● Increases Effect: [DEF Reduction] from 20% > 29%",,,,"● Increases DMG: 70% > 80% of MATK
+● Increases Chance: [Souldeath] chance increases from 60% >  70%",,,
+,,,,,,,,Transcendence Effects,,,Increases Chance: [Follow-Up Attack] chance increases from 25% > 35%,,,,,,,,,,,,,,
+,,,,,,,,,,,Adds Effect to SELF: CC Immunity for 3 turns upon gaining [Immortality],,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,"Follow-Up Attack: When an ally uses a basic attack, perform a follow-up attack on the same target
+
+Immortality: HP is set to 1 for the duration of the effect. Hero will perish once the effect expires",,,,,,,,DEF Reduction: Decreases DEF by 29%,,,,Souldeath: Falling in battle while inflicted with Souldeath prevents Revive and Immortality from activating,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,4,,,MELIA-T0,MAGIC,,,,,"SELF:
+● Grants [Physical Enhancement - Crystal Dragon] (always active)
+● [Revive] with 80% HP upon falling in battle (once per battle)
+● [Magic Bond - 4 targets]: Grants [CC Immunity] for 3 turns
+
+ALL ENEMIES:
+● Inflicts [Magic Vulnerability] (always active)
+
+ALL MAGIC ALLIES:
+● [Magic Bond - 5 targets]: Grants [Barrier] equal to 45% of caster's DEF for 2 turns upon using any attack 1 time",,,,"2 ENEMIES:
+● Deals DMG equal to 30% of MATK plus 35% of DEF
+● [Magic Bond - 3 targets]: 30% chance to inflict [Crystal Cluster] (ends after taking 6 hits)",,,,"ALL ENEMIES:
+● Deals DMG equal to 30% of MATK plus 32% of DEF 2 time(s)
+● [Magic Bond - 3 targets]: 50% chance to inflict [Crystal Cluster] (ends after taking 6 hits)
+● 100% chance to inflict [Crystal Resonance] (reduces hits by 4)",,,,"ALL ENEMIES:
+● Deals DMG equal to 30% of MATK plus 32% of DEF 2 time(s)
+● 100% chance to inflict [Increased Miss Chance] for 3 turns
+● [Magic Bond - 3 targets]: Each attack has 35% chance to inflict [Crystal Cluster] (ends after taking 4 hits)",,,
+,,,,,,,,Skill Enhancements,,"Increases Effect to SELF: HP gained from [Revive] 80% > 100%
+Increases Effect to ALL ENEMIES: [Magic Vulnerability] from 17% > 20%",,,,Increases Chance: [Crystal Cluster] from 30% > 35%,,,,Increases Chance: [Crystal Cluster] from 50% > 65%,,,,"Increases Effect: [Increased Miss Chance] from 36% > 48%
+Increases Chance: [Crystal Clluster] from 35% > 45%",,,
+,,,,,,,,Transcendence Effects,,,,,,,Increases Effect: Decreases [Crystal Cluster] hit count from 6 > 5 hits,,,,Increases Effect: Decreases [Crystal Cluster] hit count from 6 > 5 hits,,,,Added Effect to SELF: [Taunt] for 2 turns,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,"Physical Enhancement - Crystal Dragon: Increases Melia's basic DEF and HP
+
+Magic Bond: At the start of battle, Melia gains additional effects based on number of allies of the same type in the team
+
+Magic Vulnerability: Increases MDMG taken by 17%",,,,"Magic Bond: At the start of battle, Melia gains additional effects based on number of allies of the same type in the team
+
+Crystal Cluster: Detonates a Crystal Cluster after taking a set number of hits, dealing 2,435 Fixed DMG, with a 100% chance to inflict Cooldown Increase for 14s",,,,"Magic Bond: At the start of battle, Melia gains additional effects based on number of allies of the same type in the team
+
+Crystal Cluster: Detonates a Crystal Cluster after taking a set number of hits, dealing 2,435 Fixed DMG, with a 100% chance to inflict Cooldown Increase for 14s
+
+Crystal Resonance: Decreases the Crystal Cluster hit count applied to targets by the specified number of hits",,,,"Magic Bond: At the start of battle, Melia gains additional effects based on number of allies of the same type in the team
+
+Crystal Cluster: Detonates a Crystal Cluster after taking a set number of hits, dealing 2,435 Fixed DMG, with a 100% chance to inflict Cooldown Increase for 14s
+
+Increased Miss Chance: Increases the chance of missing attacks by 36%",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,5,,,GELIDUS-T0,UNI,,,,,"SELF:
+● Starting battles with at least 3 Universal hero(es) on your team grants HP healing equal to 165% of the caster's DEF when HP falls to 50% or lower (2 times per battle)
+● Grants [DMG Resistance] (always active)
+● Grants [DEF-Based Block Rate Boost] (always active)
+
+ALL ENEMIES:
+● Inflicts [Effect Probability Reduction] (always active)
+
+3 ENEMIES:
+● Deals DMG equal to 60% of PATK and 65% of DEF upon using any attack 2 time(s)
+● Using any attack 2 time(s) has a 75% chance to inflict [Extreme Chill] for 2 turns",,,,"1 ENEMY:
+● Deals DMG equal to 50% of PATK plus 60% of DEF 
+● 45% chance to inflict [Extreme Chill] for 1 turn",,,,"ALL ENEMIES:
+● Deals [Piercing] DMG equal to 65% of PATK plus 70% of DEF
+● 60% chance of inflicting [Extreme Chill] for 2 turns",,,,"ALL ENEMIES:
+● Deals [DEF-Ignoring] DMG equal to 30% of PATK plus 33% of DEF 2 time(s)
+● 60% chance of inflicting [Extreme Chill] for 2 turns",,,
+,,,,,,,,Skill Enhancements,,Increases Effect: [DEF-Based Block Rate Boost] max from 27% > 33%,,,,"Increases DMG: 50% > 60% of PATK plus 60% to 70% of DEF
+Increases Chance: [Extreme Chill] from 45% > 50%",,,,"Increases DMG: 65% > 75% of PATK plus 70% > 85% of DEF
+Increases Chance: [Extreme Chill] from 60% > 70%",,,,"Increases DMG: 30% > 35% of PATK plus 33% > 38% of DEF
+Increases Chance: [Extreme Chill] from 60% > 70%",,,
+,,,,,,,,Transcendence Effects,,,Increases Effect: [Effect Probability Reduction] from 20% > 26%,,,,Changes Number of Targets: [Extreme Chill] 1 > 3 Enemies,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,"DMG Resistance: Decreases DMG taken by 16%
+
+DEF-Based Block Rate Boost: Increases Block Rate by 3% for every 150 DEF (Maximum 27%)
+
+Effect Probability Reduction: Decreases Effect Probability by 20%
+
+Extreme Chill: Targets inflicted with [Extreme Chill] cannot take any actions. [Extreme Chill] is removed when hit by an enemy's attack. The caster heals by 100% of the DMG and the target takes DEF-Ignoring DMG equal to 60% of its MAX HP when [Extreme Chill] is removed. [Extreme Chill] is counted as [Freeze] and targets with [Extreme Chill] cannot be inflicted with [Freeze]",,,,,Extreme Chill: Targets inflicted with [Extreme Chill] cannot take any actions. [Extreme Chill] is removed when hit by an enemy's attack. The caster heals by 100% of the DMG and the target takes DEF-Ignoring DMG equal to 60% of its MAX HP when [Extreme Chill] is removed. [Extreme Chill] is counted as [Freeze] and targets with [Extreme Chill] cannot be inflicted with [Freeze],,,"Piercing: Ignores DMG Immunity effects on the target
+
+Extreme Chill: Targets inflicted with [Extreme Chill] cannot take any actions. [Extreme Chill] is removed when hit by an enemy's attack. The caster heals by 100% of the DMG and the target takes DEF-Ignoring DMG equal to 60% of its MAX HP when [Extreme Chill] is removed. [Extreme Chill] is counted as [Freeze] and targets with [Extreme Chill] cannot be inflicted with [Freeze]",,,,"Ignore DEF: Ignores 40% of the target's DEF
+
+
+Extreme Chill: Targets inflicted with [Extreme Chill] cannot take any actions. [Extreme Chill] is removed when hit by an enemy's attack. The caster heals by 100% of the DMG and the target takes DEF-Ignoring DMG equal to 60% of its MAX HP when [Extreme Chill] is removed. [Extreme Chill] is counted as [Freeze] and targets with [Extreme Chill] cannot be inflicted with [Freeze]",,,

@@ -39,7 +39,7 @@ export default async function PatchesPage({ params }: PatchesPageProps) {
   const patches = await patchService.listPatchesForGame(gameRecord.id);
 
   return (
-    <section aria-labelledby="patches-title" className="mx-auto max-w-6xl px-6 py-10">
+    <section aria-labelledby="patches-title">
       <p className="text-sm uppercase tracking-[0.3em] text-sky-300">{game.name}</p>
       <h1 id="patches-title" className="mt-3 text-4xl font-semibold">Patch Notes</h1>
       <p className="mt-3 max-w-2xl text-white/80">

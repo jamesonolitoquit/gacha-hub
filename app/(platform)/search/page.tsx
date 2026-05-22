@@ -16,6 +16,24 @@ type SearchPageProps = {
   };
 };
 
+const typeColors: Record<string, string> = {
+  game: '#7c5cff',
+  character: '#7c5cff',
+  skill: '#f4c542',
+  guide: '#00c851',
+  gear: '#33b5e5',
+  pet: '#aa66cc',
+};
+
+const typeLabels: Record<string, string> = {
+  game: 'Game',
+  character: 'Hero',
+  skill: 'Skill',
+  guide: 'Guide',
+  gear: 'Gear',
+  pet: 'Pet',
+};
+
 export default async function SearchPage({ searchParams }: SearchPageProps) {
   const games = await gameService.listGames();
   const query = searchParams?.q?.trim() ?? '';
@@ -24,7 +42,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
   const hasQuery = query.length > 0;
   const queryTooShort = hasQuery && query.length < 2;
   const canSearch = hasQuery && !queryTooShort;
-  const results = canSearch ? searchService.search(query, scope, gameSlug) : [];
+  const results = canSearch ? await searchService.search(query, scope, gameSlug) : [];
   const descriptionId = queryTooShort ? 'search-help search-error' : 'search-help';
   const selectedGame = games.find((game) => game.slug === gameSlug);
 
@@ -53,7 +71,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
           </p>
         ) : canSearch ? (
           <p id="search-status" aria-live="polite" className="text-sm text-white/75">
-            {results.length} result{results.length === 1 ? '' : 's'} found for "{query}".
+            {results.length} result{results.length === 1 ? '' : 's'} found for &ldquo;{query}&rdquo;.
             {selectedGame ? <span className="ml-2 text-sky-300">Scoped to {selectedGame.name}.</span> : null}
           </p>
         ) : (
@@ -74,18 +92,35 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
       <div className="mt-6">
         {results.length > 0 ? (
           <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3" aria-label="Search results">
-            {results.map((result) => (
-              <li key={`${result.type}:${result.slug}`}>
-                <Link
-                  href={result.type === 'character' && result.game ? `/games/${result.game.slug}/characters/${result.slug}` : `/games/${result.slug}`}
-                  className="block rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:border-sky-300/40 hover:bg-white/10 focus-visible:border-sky-300/55 focus-visible:bg-white/15"
-                >
-                  <p className="text-xs uppercase tracking-[0.25em] text-sky-300">{result.type}</p>
-                  <h2 className="mt-2 text-xl font-medium">{result.title}</h2>
-                  <p className="mt-2 text-sm text-white/75 font-medium">{result.description}</p>
-                </Link>
-              </li>
-            ))}
+            {results.map((result) => {
+              const color = typeColors[result.type] ?? '#888888';
+              const href = result.href ?? `/games/${result.slug}`;
+
+              return (
+                <li key={`${result.type}:${result.slug}`}>
+                  <Link
+                    href={href}
+                    className="group block rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:border-sky-300/40 hover:bg-white/10 focus-visible:border-sky-300/55 focus-visible:bg-white/15"
+                  >
+                    <div className="flex items-center gap-2">
+                      <span
+                        className="inline-block rounded px-1.5 py-0.5 text-[0.5rem] font-bold uppercase tracking-[0.15em]"
+                        style={{ background: `${color}20`, color }}
+                      >
+                        {typeLabels[result.type] ?? result.type}
+                      </span>
+                      {result.game && (
+                        <span className="text-[0.5rem] uppercase tracking-[0.15em] text-white/30">
+                          {result.game.name}
+                        </span>
+                      )}
+                    </div>
+                    <h2 className="mt-2 text-xl font-medium group-hover:text-sky-100 transition">{result.title}</h2>
+                    <p className="mt-2 text-sm text-white/75">{result.description}</p>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         ) : (
           canSearch ? (

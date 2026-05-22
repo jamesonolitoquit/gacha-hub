@@ -1,0 +1,174 @@
+[
+  {
+    "name": "SUNG JINWOO",
+    "slug": "sung-jinwoo",
+    "type": "Magic",
+    "rarity": "Collab",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [Magic DMG Boost] (always active)\n\nSELF:\n● Grants [All DMG Nullification] for 3 hits\n● [Revives] with 80% HP upon falling in battle (once per battle)\n● Grants [Conqueror of Adversity] (always active)\n● Grants [Effect Resist Boost] (always active)\n● Grants 1 [Level Up] upon using a basic attack 2 times (Max 30 Levels)\n● Grants 1 [Level Up] upon using a skill 1 time (Max 30 Levels)\n● Grants 2 [Level Up] when an enemy falls in battle (Max 30 Levels)",
+        "enhancements": [
+          "● Increases Effect: [Magic DMG Boost] from 17% > 20%\n● Increases Effect: [Revives] with 80% > 100% HP\n● Increases Effect: [Effect Resist Boost] from 40% > 49%"
+        ],
+        "transcendence": [
+          "Increases Effect to SELF: [Level Up] Max count from 30 > 40"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK\n● Deals additional DMG equal to 45% of MATK against targets with [Defense Boost]",
+        "enhancements": [
+          "● Increases DMG: 100% > 130% of MATK"
+        ]
+      },
+      "skill1": {
+        "description": "4 ENEMIES:\n● Deals [Piercing] DMG equal to 57% of MATK plus 7% of the target's MAX HP 2 times (HP-based DMG limited to 75% of caster's ATK)",
+        "enhancements": [
+          "●  Increases DMG: 57% > 67% of MATK plus 7% > 9% of target's MAX HP"
+        ]
+      },
+      "skill2": {
+        "description": "ALL ENEMIES:\n● Deals [DEF-Ignoring] DMG equal to 45% of MATK 2 times\n● Each attack deals additional [DEF-Ignoring] DMG equal to 62% of MATK when the target's SPD is lower than the caster's SPD",
+        "enhancements": [
+          "● Increases DMG: 45% > 55% of MATK"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Magic DMG Boost: Increases MDMG dealt by 17%",
+        "All DMG Nullification: Nullifies all DMG for a set amount of hits",
+        "Conqueror of Adversity (Stacks): DMG increases by 2% in proportion to the current stage level",
+        "Effect Resist Boost: Increases Effect Resistance by 40%",
+        "Level Up (Stacks): Increases All ATK by 3%. The total amount of enhancement levels is retained when the target falls"
+      ]
+    }
+  },
+  {
+    "name": "CHA HAEIN",
+    "slug": "cha-haein",
+    "type": "Attack",
+    "rarity": "Collab",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● [Revives] with 80% HP upon falling in battle (once per battle)\n\nALL ALLIES in Infinite Tower/Tower of Trials:\n● Grants [Effect Probability Boost] (always active)\n● Reduces skill cooldown by 15s upon using a skill",
+        "enhancements": [
+          "● Increases Effect: [Revives] with 80% > 100% HP\n● Increases Effect: [Effect Probability Boost] from 28% > 32%"
+        ],
+        "transcendence": [
+          "Adds Healing to ALL ALLIES: Heals HP equal to 40% of the caster's PATK upon using a skill"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of PATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of PATK"
+        ]
+      },
+      "skill1": {
+        "description": "3 ENEMIES:\n● Deals DMG equal to 62% of PATK 2 times\n● 55% chance to inflict [Paralysis] for 2 turns\n\nALL ALLIES:\n● Grants 2 [Debuff Removals]",
+        "enhancements": [
+          "● Increases DMG: 62% > 72% of PATK"
+        ]
+      },
+      "skill2": {
+        "description": "4 ENEMIES:\n● Deals DMG equal to 62% of PATK 2 times\n● Each attack deals additional DMG equal to 27% of PATK upon landing a Critical Hit\n● Each attack grants an additional 7% damage boost each time the number of targets is reduced by 1\n\nSELF:\n● Reduces the cooldown of this skill by 60s upon defeating an enemy with DMG from this skill",
+        "enhancements": [
+          "● Increases DMG: 62% > 75% of PATK"
+        ],
+        "transcendence": [
+          "Increases Effect: Resets the cooldown of this skill upon defeating an enemy with DMG from this skill"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Effect Probability Boost: Increases Effect Probability by 28%"
+      ]
+    }
+  },
+  {
+    "name": "YOO JINHO",
+    "slug": "yoo-jinho",
+    "type": "Defense",
+    "rarity": "Collab",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [DEF Boost] (always active)\n● Grants [Silence Immunity] for 2 turns\n● Grants [Silence Immunity] for 2 turns upon using a basic attack",
+        "enhancements": [
+          "● Increases Effect: [DEF Boost] from 13% > 18%"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 50% of PATK and 60% of DEF",
+        "enhancements": [
+          "● Increases DMG: 50% > 60% of PATK and 60% > 70% of DEF"
+        ]
+      },
+      "skill1": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 145% of PATK plus 165% of DEF\n● 85% chance to inflict [Stun] for 3 turns",
+        "enhancements": [
+          "● Increases Turns: [Stun] duration from 3 > 4 turns"
+        ],
+        "transcendence": [
+          "Increases DMG: 145% > 170% of PATK and 165% > 200% of DEF\nIncreases Chance: [Stun] chance increasess from 85% > 100%"
+        ]
+      },
+      "skill2": {
+        "description": "ALL ALLIES:\n● Grants [Barrier] equal to 110% of caster's DEF for 2 turns",
+        "enhancements": [
+          "● Increases Effect: [Barrier] from 110% > 130% of caster's DEF"
+        ],
+        "transcendence": [
+          "Adds Effect: Grants [DMG Resistance] for 3 turns"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Defense Boost: Increases Defense by 13%"
+      ],
+      "skill2": [
+        "DMG Resistance: Decrease DMG taken by 12%"
+      ]
+    }
+  },
+  {
+    "name": "LEE JOOHEE",
+    "slug": "lee-joohee",
+    "type": "Support",
+    "rarity": "Collab",
+    "skills": {
+      "passive": {
+        "description": "ALL ALIES:\n● Grants [Bleed Immunity] for 2 turns\n● Grants [Bleed Immunity] for 2 turns upon using a basic attack\n\nSELF: \n● Grants [Barrier] equal to 115% of caster's MATK for 3 turns upon using a skill",
+        "enhancements": [
+          "Increases Effect: [Barrier] from 115% > 135%"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK"
+        ]
+      },
+      "skill1": {
+        "description": "3 ALLLIES:\n● Heals HP equal to 85% of caster's MATK\n\nBACK ROW ALLIES:\n● Grants 1 [Debuff Removal]",
+        "enhancements": [
+          "● Increases Healing: HP Recovery from 85% > 100% of MATK"
+        ],
+        "transcendence": [
+          "Increases Effect: [Debuff Removal] from 1 > 2"
+        ]
+      },
+      "skill2": {
+        "description": "3 ALLIES:\n● Heals HP equal to 85% of caster's MATK",
+        "enhancements": [
+          "● Increases Healing: HP Recovery from 85% > 100% of MATK"
+        ],
+        "transcendence": [
+          "Reduces cooldown: To 75s"
+        ]
+      }
+    },
+    "effectDescriptions": {}
+  }
+]

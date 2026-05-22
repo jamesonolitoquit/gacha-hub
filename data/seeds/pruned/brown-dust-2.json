@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Valeria Steelheart",
+    "slug": "valeria-steelheart",
+    "characterClass": "Warrior",
+    "rarity": "5★",
+    "element": "Fire",
+    "description": "A veteran mercenary with unyielding spirit. Her relentless assault breaks through even the toughest defenses.",
+    "gameId": 3
+  },
+  {
+    "name": "Knight-Commander Roderic",
+    "slug": "knight-commander-roderic",
+    "characterClass": "Defender",
+    "rarity": "5★",
+    "element": "Light",
+    "description": "A stalwart defender who leads from the front. His shield is said to be unbreakable.",
+    "gameId": 3
+  },
+  {
+    "name": "Enchantress Mira",
+    "slug": "enchantress-mira",
+    "characterClass": "Magician",
+    "rarity": "5★",
+    "element": "Dark",
+    "description": "A mysterious magician wielding forbidden arcane arts. Her spells distort reality itself.",
+    "gameId": 3
+  },
+  {
+    "name": "Celestine the Luminary",
+    "slug": "celestine-the-luminary",
+    "characterClass": "Supporter",
+    "rarity": "4★",
+    "element": "Water",
+    "description": "A wandering supporter who empowers allies with radiant blessings. Essential for sustained campaigns.",
+    "gameId": 3
+  },
+  {
+    "name": "Fenris Wolfbane",
+    "slug": "fenris-wolfbane",
+    "characterClass": "Warrior",
+    "rarity": "4★",
+    "element": "Wind",
+    "description": "A feral warrior who channels beast instincts in combat. Fast and deadly up close.",
+    "gameId": 3
+  },
+  {
+    "name": "Stonewall Brunhild",
+    "slug": "stonewall-brunhild",
+    "characterClass": "Defender",
+    "rarity": "3★",
+    "element": "Fire",
+    "description": "A dependable defender who holds the line. Easy to recruit and raise.",
+    "gameId": 3
+  },
+  {
+    "name": "Pyromancer Cinder",
+    "slug": "pyromancer-cinder",
+    "characterClass": "Magician",
+    "rarity": "3★",
+    "element": "Fire",
+    "description": "A fire mage with explosive potential. Great area damage for early game content.",
+    "gameId": 3
+  }
+]

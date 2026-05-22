@@ -37,6 +37,9 @@ export function createDatabaseClient(): SupabaseClient | null {
 				'x-application-name': 'gachahub',
 			},
 		},
+		db: {
+			timeout: 10000,
+		},
 	});
 }
 

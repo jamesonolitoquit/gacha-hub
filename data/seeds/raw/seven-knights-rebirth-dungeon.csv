@@ -1,0 +1,269 @@
+,,,,,,,,,,,,,,,
+,,,POWER UP DUNGEONS 성장던전,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,https://youtu.be/_QoFPypOrvw,,,,,,https://youtu.be/kAEIaUHtyZY,,,,,
+,,,,,,,,,,,,,,,
+,"FIRE PARTICLE DUNGEON
+불의 원소 던전 ",,"STAGE15
+FREEZE COMP",BURN IMMUNITY,FREEZE,FREEZE,FREEZE,FREEZE,,"STAGE15
+BASIC
+COMP",BURN IMMUNITY,BARRIER,FREEZE,FREEZE,HEAL
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,RYAN-T0,HEAVENIA-T2,GELIDUS-T0,LANIA-T0,SPIKE-T0,,,YUI-T6,EVAN-T6,HEAVENIA-T2,LANIA-T0,LINA-T0
+,,,,GATEKEEP,AVENGER,AVENGER,AVENGER,AVENGER,,,PALADIN,GATEKEEP,AVENGER,AVENGER,PALADIN
+,,,,,,,,,,,,,,,
+,,,"STAGE 1-10 
+NUKE
+COMP",BURN IMMUNITY,BUFFER,ST DPS,"DEF DOWN (P)
++WEAKNESS HIT",HEAL,,"STAGE15
+1MAN
+4FODDER
+COMP",,,FREEZE,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,ARIEL-T0,XIAO QIAO-T0,PASCAL-T0,BISCUIT-T0,LINA-T0,,,,,GELIDUS-T0,,
+,,,,GATEKEEP,AVENGER,AVENGER,GATEKEEP,PALADIN,,,,,AVENGER,,
+,,,,,,,,,,,,,,,
+,● Deals PDMG and grants [PATK Boost],,"OTHER
+FREEZE
+UNITS",,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,"WATER PARTICLE DUNGEON
+불의 원소 던전 ",,"STAGE15
+POISON COMP",FREEZE IMMUNITY,POISON,"POISON
+HEAL
+UNABLE TO RECOVER",POISON,HEAL,,"STAGE15
+BASIC 
+COMP",FREEZE IMMUNITY,POISON,"POISON
+HEAL
+UNABLE TO RECOVER",BARRIER,HEAL
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,FENG YAN-T0,JANE-T2,BAI JIAO-SE,CLEO-T0,LINA-T0,,,FENG YAN-T0,JANE-T2,BAI JIAO-SE,EVAN-T0,LINA-T0
+,,,,GATEKEEP,AVENGER,AVENGER,AVENGER,PALADIN,,,GATEKEEP,AVENGER,AVENGER,GATEKEEP,PALADIN
+,,,,,,,,,,,,,,,
+,,,"STAGE 1-10 
+NUKE
+COMP",FREEZE IMMUNITY,UNABLE TO RECOVER,ST DPS,"DEF DOWN (P)
++WEAKNESS HIT",HEAL,,"STAGE15
+RUBY GAIN
+COMP",,,"POISON
+HEAL
+UNABLE TO RECOVER",,FREEZE IMMUNITY
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,FENG YAN-T0,CHLOE-T0,PASCAL-T0,BISCUIT-T0,LINA-T0,,,,,BAI JIAO-SE,,FENG YAN-T0
+,,,,GATEKEEP,GATEKEEP,AVENGER,GATEKEEP,PALADIN,,,,,AVENGER,,GATEKEEP
+,,,,,,,,,,,,,,,
+,"● Deals MDMG and grants [MAX HP Boost]
+● Heals self upon using 3-MAN AOE",,"OTHER
+POISON
+UNITS",,,,,,,,,,,,
+,,,,JUPY-T0,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,"EARTH PARTICLE DUNGEON
+땅의 원소 던전",,"STAGE15
+BURN COMP",STUN IMMUNITY,BURN,BURN,"DEF DOWN (P)
++WEAKNESS HIT","HEAL
+DEF DOWN (A)",,"STAGE15
+BASIC
+COMP",STUN IMMUNITY,BURN,BURN,"DEF DOWN (P)
++WEAKNESS HIT","HEAL
+DEF DOWN (A)"
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,SIEG-T0,RACHEL-T0,FAI-T0,BISCUIT-T0,LINA-T0,,,EVAN-T0,YURI-T0,RACHEL-T0,BISCUIT-T0,LINA-T0
+,,,,GATEKEEP,AVENGER,AVENGER,GATEKEEP,PALADIN,,,GATEKEEP,AVENGER,AVENGER,GATEKEEP,PALADIN
+,,,,,,,,,,,,,,,
+,,,"STAGE 1-10 
+NUKE COMP",STUN IMMUNITY,+WEAKNESS DMG,ST DPS,"DEF DOWN (P)
++WEAKNESS HIT","HEAL
+DEF DOWN (A)",,"STAGE15
+RUBY GAIN
+COMP",,,"BURN
+DEF DOWN (A)",,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,EVAN-T0,MIHO-T0,PASCAL-T0,BISCUIT-T0,LINA-T0,,,,,FAI-T0,,
+,,,,GATEKEEP,AVENGER,AVENGER,GATEKEEP,PALADIN,,,,,AVENGER,,
+,,,,,,,,,,,,,,,
+,"● Deals PDMG and grants [DEF Boost]
+● DMG multipliers scale partially off DEF as well",,"OTHER BURN
+UNITS",,,,,,,,,,,,
+,,,,JAVE-T0,RADGRID-T0,VELIKA-T0,SNIPPER-T0,,,,,,,,
+,,,,,,,,,,,,,,,
+,"LIGHT PARTICLE DUNGEON
+빛의 원소 던전",,"STAGE15
+MULTI-HIT","SHOCK IMMUNITY
+BUFF REMOVAL",MULTI-HIT,"MULTI-HIT
+HEAL","MULTI-HIT
+BARRIER","DOT
+HEAL",,CC MULTI-HIT,"SHOCK IMMUNITY
+BUFF REMOVAL",MULTI-HIT,DOT,"DOT
+HEAL","MULTI-HIT
+BARRIER"
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,CHLOE-T0,KYLE-T0,SUNWUKONG-T0,LING LING-T0,BAI JIAO-T2,,,CHLOE-T0,JOKER-T0,RACHEL-T0,BAI JIAO-T2,LING LING-T0
+,,,,GATEKEEP,AVENGER,AVENGER,GATEKEEP,SPELLWEAVE,,,GATEKEEP,GATEKEEP,SPELLWEAVE,SPELLWEAVE,GATEKEEP
+,,,,,,,,,,,,,,,
+,,,"MULTI-HIT
+BASIC
+COMP","SHOCK IMMUNITY
+BUFF REMOVAL",HEAL,"DOT
+HEAL","MULTI-HIT
+BUFF REMOVE","MULTI-HIT
+BARRIER",,"STAGE15
+RUBY GAIN
+COMP",,,MULTI-HIT,,"SHOCK IMMUNITY
+BUFF REMOVAL"
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,CHLOE-T0,LUCY-T6,BAI JIAO-T2,JOKER-T0,LING LING-T0,,,,,SUNWUKONG-T0,,CHLOE-T0
+,,,,GATEKEEP,GATEKEEP,AVENGER,GATEKEEP,GATEKEEP,,,,,AVENGER,,GATEKEEP
+,,,,,,,,,,,,,,,
+,"● Deals MDMG and grants [DMG Nullification]
+● Can also grant self [MATK Boost] on skill",,"OTHER
+MULTI-HIT/
+CC
+UNITS",,,,,,,,,,,,
+,,,,FAI-T0,CLEO-T0,MAY-T0,,,,,,,,,
+,,,,,,,,,,,,,,,
+,"DARK PARTICLE DUNGEON
+암흑의 원소 던전",,"STAGE15
+BLEED COMP","DEATH IMMUNITY
+BLEED",BLEED,"BLEED
+HEAL
+CLEANSE",BLEED,HEAL,,"STAGE15
+BASIC
+COMP","DEATH IMMUNITY
+BLEED",BLEED,"BLEED
+HEAL
+CLEANSE","HEAL
+CLEANSE",BLEED
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,XIAO-T0,FREYJA-T0,BAI JIAO-T2,BIDAM-T0,LINA-T0,,,XIAO-T0,SOI-T0,BAI JIAO-T2,LUCY-T0,ZHAO YUN-T0
+,,,,AVENGER,AVENGER,AVENGER,AVENGER,PALADIN,,,AVENGER,AVENGER,AVENGER,GUARDIAN,AVENGER
+,,,,,,,,,,,,,,,
+,,,"STAGE 1-10 
+NUKE COMP",+MDMG,+WEAKNESS DMG,ST DPS,"DEF DOWN (P)
++WEAKNESS HIT",HEAL,,"STAGE15
+RUBY GAIN
+COMP",,,"BLEED
+HEAL
+CLEANSE",,"DEATH IMMUNITY
+BLEED"
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,KYRIELLE-T0,MIHO-T0,PASCAL-T0,BISCUIT-T0,LINA-T0,,,,,BAI JIAO-T2,,XIAO-T0
+,,,,AVENGER,AVENGER,AVENGER,GATEKEEP,PALADIN,,,,,AVENGER,,AVENGER
+,,,,,,,,,,,,,,,
+,"● Deals PDMG and grants [PATK Boost], [DEF Boost] & [MAX HP Boost]
+● Inflicts [DEF Reduction] so Debuff Removal is highly important",,"OTHER
+BLEED
+UNITS",,,,,,,,,,,,
+,,,,BRANZE&BRANSEL-T0,REI-T0,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,"GOLD DUNGEON
+골드 던전",,"STAGE15
+MAX DMG
+COMP
+(MAGIC)",MAGIC VUL (P),+WEAKNESS DMG,DPS,"DEF DOWN (P)
++WEAKNESS HIT",+MATK,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,MELIA-T0,MIHO-T0,PASCAL-T2,BISCUIT-T0,XIAO QIAO-T2,,,,,,,
+,,,,AVENGER,AVENGER,AVENGER,GATEKEEP,AVENGER,,,,,,,
+,,,,,,,,,,,,,,,
+,,,"STAGE15
+MAX DMG
+COMP
+(ATTACK)",STUN IMMUNITY,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",DPS,"DEF DOWN (P)
++WEAKNESS HIT","+DMG
+DEF DOWN (A)",,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,MIHO-T0,RACHEL-T0,BAI LONG-T0,BISCUIT-T0,LINA-T2,,,,,,,
+,,,,AVENGER,AVENGER,AVENGER,AVENGER,PALADIN,,,,,,,
+,,,,,,,,,,,,,,,
+,"● After 5 basic attacks, it deals 99,999 Fixed Piercing DMG to your team 3 time(s) and reduces Buff Duration by 3 turns",,"OTHER DMG 
+BUFFERS",,,,,,,,,,,,
+,,,,ORLY-T0,KYRIELLE-T0,ESPADA-T0,VANESSA-T0,ARIEL-T0,,,,,,,

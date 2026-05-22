@@ -19,8 +19,13 @@ type SkillRow = {
   scaling_stat: string | null;
   targets: string | null;
   range_type: string | null;
+  order: number | null;
+  enhancement_text: string | null;
+  transcendence_text: string | null;
   icon_url: string | null;
   animation_url: string | null;
+  introduced_in_patch_id: number | null;
+  last_verified_patch_id: number | null;
   created_at: string;
   updated_at: string;
   deleted_at: string | null;
@@ -40,8 +45,13 @@ function mapSkillRow(row: SkillRow): SkillRecord {
     scalingStat: row.scaling_stat,
     targets: row.targets,
     rangeType: row.range_type,
+    order: row.order,
+    enhancementText: row.enhancement_text,
+    transcendenceText: row.transcendence_text,
     iconUrl: row.icon_url,
     animationUrl: row.animation_url,
+    introducedInPatchId: row.introduced_in_patch_id,
+    lastVerifiedPatchId: row.last_verified_patch_id,
     createdAt: new Date(row.created_at),
     updatedAt: new Date(row.updated_at),
     deletedAt: row.deleted_at ? new Date(row.deleted_at) : null,
@@ -51,18 +61,22 @@ function mapSkillRow(row: SkillRow): SkillRecord {
 export class SkillRepository {
   async findByCharacterId(characterId: number): Promise<SkillRecord[]> {
     if (db) {
-      const { data, error } = await db
-        .from('skills')
-        .select('id, character_id, slug, name, type, description, cooldown_turns, cost, power_type, scaling_stat, targets, range_type, icon_url, animation_url, created_at, updated_at, deleted_at')
-        .eq('character_id', characterId)
-        .is('deleted_at', null)
-        .order('name', { ascending: true });
+      try {
+        const { data, error } = await db
+          .from('skills')
+          .select('id, character_id, slug, name, type, description, cooldown_turns, cost, power_type, scaling_stat, targets, range_type, icon_url, animation_url, created_at, updated_at, deleted_at')
+          .eq('character_id', characterId)
+          .is('deleted_at', null)
+          .order('name', { ascending: true });
 
-      if (error) {
-        throw new Error(`Failed to load skills for character ${characterId}: ${error.message}`);
+        if (error) {
+          throw new Error(`Failed to load skills for character ${characterId}: ${error.message}`);
+        }
+
+        return (data ?? []).map((row) => mapSkillRow(row as SkillRow));
+      } catch {
+        // fall through to seed data
       }
-
-      return (data ?? []).map((row) => mapSkillRow(row as SkillRow));
     }
 
     return getSeedSkills(characterId).map((skill, index) => ({
@@ -78,8 +92,13 @@ export class SkillRepository {
       scalingStat: skill.scalingStat,
       targets: skill.targets,
       rangeType: skill.rangeType,
+      order: null,
+      enhancementText: null,
+      transcendenceText: null,
       iconUrl: null,
       animationUrl: null,
+      introducedInPatchId: null,
+      lastVerifiedPatchId: null,
       createdAt: new Date(),
       updatedAt: new Date(),
       deletedAt: null,
@@ -91,20 +110,22 @@ export class SkillRepository {
     const characterIds = characters.map((character) => character.id);
 
     if (db && characterIds.length > 0) {
-      const { data, error } = await db
-        .from('skills')
-        .select('id, character_id, slug, name, type, description, cooldown_turns, cost, power_type, scaling_stat, targets, range_type, icon_url, animation_url, created_at, updated_at, deleted_at')
-        .eq('slug', slug)
-        .in('character_id', characterIds)
-        .is('deleted_at', null)
-        .maybeSingle();
+      try {
+        const { data, error } = await db
+          .from('skills')
+          .select('id, character_id, slug, name, type, description, cooldown_turns, cost, power_type, scaling_stat, targets, range_type, icon_url, animation_url, created_at, updated_at, deleted_at')
+          .eq('slug', slug)
+          .in('character_id', characterIds)
+          .is('deleted_at', null)
+          .maybeSingle();
 
-      if (error) {
-        throw new Error(`Failed to load skill ${slug}: ${error.message}`);
-      }
+        if (error) throw new Error(`Failed to load skill ${slug}: ${error.message}`);
 
-      if (data) {
-        return mapSkillRow(data as SkillRow);
+        if (data) {
+          return mapSkillRow(data as SkillRow);
+        }
+      } catch {
+        // fall through to seed data
       }
     }
 
@@ -115,7 +136,7 @@ export class SkillRepository {
     }
 
     return {
-      id: 1,
+      id: Date.now(),
       characterId: skill.characterId,
       slug: skill.slug,
       name: skill.name,
@@ -127,8 +148,13 @@ export class SkillRepository {
       scalingStat: skill.scalingStat,
       targets: skill.targets,
       rangeType: skill.rangeType,
+      order: null,
+      enhancementText: null,
+      transcendenceText: null,
       iconUrl: null,
       animationUrl: null,
+      introducedInPatchId: null,
+      lastVerifiedPatchId: null,
       createdAt: new Date(),
       updatedAt: new Date(),
       deletedAt: null,
@@ -179,8 +205,13 @@ export class SkillRepository {
       scalingStat: input.scalingStat ?? null,
       targets: input.targets ?? null,
       rangeType: input.rangeType ?? null,
+      order: input.order ?? null,
+      enhancementText: input.enhancementText ?? null,
+      transcendenceText: input.transcendenceText ?? null,
       iconUrl: input.iconUrl ?? null,
       animationUrl: input.animationUrl ?? null,
+      introducedInPatchId: input.introducedInPatchId ?? null,
+      lastVerifiedPatchId: input.lastVerifiedPatchId ?? null,
       createdAt: new Date(),
       updatedAt: new Date(),
       deletedAt: null,

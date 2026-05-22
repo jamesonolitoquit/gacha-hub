@@ -3,7 +3,11 @@ import { notFound } from 'next/navigation';
 import { moduleRegistry } from '../../../../../../core/module-registry';
 import { characterService } from '../../../../../../server/services/character.service';
 import { gameService } from '../../../../../../server/services/game.service';
+import { guideService } from '../../../../../../server/services/guide.service';
 import { skillService } from '../../../../../../server/services/skill.service';
+import { tierEntryService } from '../../../../../../server/services/tier-entry.service';
+import { buildService } from '../../../../../../server/services/build.service';
+import HeroDetail from '../../../../../../shared/components/HeroDetail';
 
 type CharacterPageProps = {
   params: {
@@ -11,6 +15,23 @@ type CharacterPageProps = {
     slug: string;
   };
 };
+
+export async function generateStaticParams() {
+  const games = moduleRegistry.list();
+  const params: { gameSlug: string; slug: string }[] = [];
+
+  for (const game of games) {
+    const gameRecord = await gameService.getGameBySlug(game.slug);
+    if (!gameRecord) continue;
+
+    const characters = await characterService.listCharacters(gameRecord.id);
+    for (const character of characters) {
+      params.push({ gameSlug: game.slug, slug: character.slug });
+    }
+  }
+
+  return params;
+}
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const game = moduleRegistry.get(params.gameSlug);
@@ -44,36 +65,38 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
     notFound();
   }
 
+  const roster = await characterService.listCharacters(gameRecord.id);
   const skills = await skillService.listSkillsForCharacter(character.id);
+  const guides = (await guideService.listGuides(gameRecord.id))
+    .filter((g: any) => g.characterId === character.id);
+  const statValues = await characterService.getCharacterStats(character.id);
+
+  const skillTypeLabels = game.taxonomies?.skillTypes
+    ? Object.fromEntries(game.taxonomies.skillTypes.map((st: any) => [st.slug, st.label]))
+    : undefined;
+
+  const tierEntries = await tierEntryService.getTiersForCharacter(gameRecord.id, character.id);
+  const heroTiers = tierEntries.map((te: any) => ({
+    mode: te.mode,
+    tier: te.tier,
+    previousTier: te.previousTier,
+  }));
+
+  const build = await buildService.getBuildForCharacter(gameRecord.id, character.slug);
 
   return (
-    <section aria-labelledby="character-title" className="mx-auto max-w-6xl px-6 py-10">
-      <p className="text-sm uppercase tracking-[0.3em] text-sky-300">{game.name}</p>
-      <h1 id="character-title" className="mt-3 text-4xl font-semibold">{character.name}</h1>
-      <p className="mt-3 max-w-2xl text-white/80">
-        Character detail pages will render from the shared runtime shell and database content.
-      </p>
-
-      <div className="mt-10">
-        <h2 className="text-2xl font-semibold">Skills</h2>
-        <div className="mt-4 grid gap-4 md:grid-cols-2">
-          {skills.length > 0 ? (
-            skills.map((skill) => (
-              <Link
-                key={skill.id}
-                href={`/games/${game.slug}/skills/${skill.slug}`}
-                className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:border-sky-300/40 hover:bg-white/10 focus-visible:border-sky-300/55 focus-visible:bg-white/15"
-              >
-                <p className="text-xs uppercase tracking-[0.25em] text-sky-300">{skill.type ?? 'Skill'}</p>
-                <h3 className="mt-2 text-xl font-medium">{skill.name}</h3>
-                <p className="mt-2 text-sm text-white/75 font-medium">{skill.description}</p>
-              </Link>
-            ))
-          ) : (
-            <p className="text-white/75">No skills registered for this character yet.</p>
-          )}
-        </div>
-      </div>
+    <section aria-labelledby="character-title">
+      <HeroDetail
+        gameSlug={params.gameSlug}
+        character={character}
+        skills={skills}
+        roster={roster}
+        guides={guides}
+        statValues={statValues}
+        skillTypeLabels={skillTypeLabels}
+        heroTiers={heroTiers}
+        build={build}
+      />
     </section>
   );
 }

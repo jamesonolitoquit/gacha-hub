@@ -1,0 +1,314 @@
+[
+  {
+    "name": "XIAO",
+    "slug": "xiao",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Barrier scales off ATK% so this build pushes her ATK to the maximum possible. However, regardless of how thick the barrier is, it will only last for 2 turns."
+  },
+  {
+    "name": "EVAN",
+    "slug": "evan",
+    "characterClass": "Defense",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Barrier scales off DEF so this build focuses on increasing the survivability of the entire team with his barrier. However, the barrier only last for 2 turns."
+  },
+  {
+    "name": "YUI",
+    "slug": "yui",
+    "characterClass": "Support",
+    "rarity": "Rare",
+    "element": null,
+    "description": "This build puts more focus on her bulk, if she is still not strong enough while also not forsaking the HP-scaling heals."
+  },
+  {
+    "name": "KARON",
+    "slug": "karon",
+    "characterClass": "Support",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Healing scales of ATK% so this build pushes his healing capabilities to the maximum. Just be careful such that his ATK does not exceed the damage dealers (it can happen). If your main stats are all ATK%, then regulate the substats."
+  },
+  {
+    "name": "LEE JOOHEE",
+    "slug": "lee-joohee",
+    "characterClass": null,
+    "rarity": "Rare",
+    "element": null,
+    "description": "Healing scales of ATK% so this build pushes his healing capabilities to the maximum. Just be careful such that his ATK does not exceed the damage dealers (it can happen). If your main stats are all ATK%, then regulate the substats."
+  },
+  {
+    "name": "BLACK ROSE",
+    "slug": "black-rose",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Having high Crit Rate & decent Crit DMG is very essential in allowing her to kill the minions in the raids. If too frail, give 1 piece of DMG Taken Reduction armor."
+  },
+  {
+    "name": "LUCY",
+    "slug": "lucy",
+    "characterClass": "Support",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Healing scales off DEF% so this build maximizes her DEF% and thereby her heals as well."
+  },
+  {
+    "name": "VICTORIA",
+    "slug": "victoria",
+    "characterClass": "Universal",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Prioritize on keeping her alive as her survivability is key in not letting your team get paralyzed."
+  },
+  {
+    "name": "HEAVENIA",
+    "slug": "heavenia",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "This build increases Freeze DMG dealt to the Bosses."
+  },
+  {
+    "name": "LANIA",
+    "slug": "lania",
+    "characterClass": "Universal",
+    "rarity": "Rare",
+    "element": null,
+    "description": "If used for Freeze Immunity, go for bulk and survivability instead to prolong her utility on the field."
+  },
+  {
+    "name": "CHLOE",
+    "slug": "chloe",
+    "characterClass": "Support",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Make sure she has 1 turn CC Immunity otherwise Shadow Yeonhee will put her to Sleep and the run will be ruined. She needs to be awake to cleanse allies."
+  },
+  {
+    "name": "JANE",
+    "slug": "jane",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "If the Poison is not landing very well, then use this build for higher Poison Probability."
+  },
+  {
+    "name": "FENG YAN",
+    "slug": "feng-yan",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "If used for Freeze Immunity, go for bulk and survivability instead to prolong his utility on the field."
+  },
+  {
+    "name": "YURI",
+    "slug": "yuri",
+    "characterClass": "Magic",
+    "rarity": "Rare",
+    "element": null,
+    "description": "This build increases Burn DMG dealt to the Bosses. She is also a strong ST Magic damage dealer so focusing on Crit Rate & Crit DMG is key. If used in Iron Devourer, make sure Weakness Hit is high too."
+  },
+  {
+    "name": "JOKER",
+    "slug": "joker",
+    "characterClass": "Magic",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Pretty frail so best to build defensively on him so that he can quickly shred DMG Nullification."
+  },
+  {
+    "name": "LING LING",
+    "slug": "ling-ling",
+    "characterClass": "Magic",
+    "rarity": "Rare",
+    "element": null,
+    "description": "With primary use to remove hit shields, stacking on additional DOT potential makes her an all-in-one DMG nullification shredder,"
+  },
+  {
+    "name": "ZHAO YUN",
+    "slug": "zhao-yun",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Primarily geared with this build for chip damage on the boss. Enhances Bleed DMG too."
+  },
+  {
+    "name": "JIN",
+    "slug": "jin",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "If used for Silence Immunity, go for bulk and survivability instead to prolong his utility on the field."
+  },
+  {
+    "name": "CATTY",
+    "slug": "catty",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Maximize her Crit Rate in order for her to land Crits consistently."
+  },
+  {
+    "name": "ARIEL",
+    "slug": "ariel",
+    "characterClass": "Magic",
+    "rarity": "Rare",
+    "element": null,
+    "description": "If used for MDMG Boost, go for bulk and survivability instead to prolong her utility on the field."
+  },
+  {
+    "name": "ASURA",
+    "slug": "asura",
+    "characterClass": "Universal",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Barrier scales with ATK% so this build ensures her barrier is thick enough to keep the team alive."
+  },
+  {
+    "name": "JUPY",
+    "slug": "jupy",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "For a ST damage dealer, S1 gives her Crit Rate boost (37%) & at T4 (14%) so she only needs 49% Crit Rate from gears and focus can shift to Crit DMG & Weakness Hit. This build also increases Poison DMG dealt to the Bosses."
+  },
+  {
+    "name": "SNIPPER",
+    "slug": "snipper",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "This build increases Burn DMG dealt to the Bosses."
+  },
+  {
+    "name": "REI",
+    "slug": "rei",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Having high Crit Rate & decent Crit DMG for consistent DMG is important."
+  },
+  {
+    "name": "LI",
+    "slug": "li",
+    "characterClass": "Defense",
+    "rarity": "Rare",
+    "element": null,
+    "description": "This build is if you go 2nd and want to still apply your Taunt to protect the team before anything else occurs."
+  },
+  {
+    "name": "KARIN",
+    "slug": "karin",
+    "characterClass": "Support",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Heals scale off ATK% so this build not only makes her bulky enough but also allows for substantial healing."
+  },
+  {
+    "name": "HELLENIA",
+    "slug": "hellenia",
+    "characterClass": "Defense",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Self-heal scales off DEF so it aims to raise her DEF as high as possible, while maintaining bulk."
+  },
+  {
+    "name": "NOHO",
+    "slug": "noho",
+    "characterClass": "Magic",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Some DMG multipliers scale of HP. This build makes her bulky enough to sustain HP Alteration."
+  },
+  {
+    "name": "SERA",
+    "slug": "sera",
+    "characterClass": "Magic",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Has passive Crit Rate Boost (27%) & at T4 (14$) so will only need 59% Crit Rate from gears. Assassin set is also fine if it's too difficult to get high Crit Rate."
+  },
+  {
+    "name": "SARAH",
+    "slug": "sarah",
+    "characterClass": "Support",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Focus on making sure she survives."
+  },
+  {
+    "name": "SOI",
+    "slug": "soi",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Focus on making sure she survives."
+  },
+  {
+    "name": "YOO JINHO",
+    "slug": "yoo-jinho",
+    "characterClass": null,
+    "rarity": "Rare",
+    "element": null,
+    "description": "Barrier scales off DEF so this build focuses on increasing the survivability of the entire team with his barrier. However, the barrier only last for 2 turns."
+  },
+  {
+    "name": "LEO",
+    "slug": "leo",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "This build allows better surivavibility but just rememeber he also has an innate Revive."
+  },
+  {
+    "name": "CLEO",
+    "slug": "cleo",
+    "characterClass": "Magic",
+    "rarity": "Rare",
+    "element": null,
+    "description": "If used for Silence Immunity, go for bulk and survivability instead to prolong her utility on the field."
+  },
+  {
+    "name": "MAY",
+    "slug": "may",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Being a DOT hero, aim to boost any DOT damage with this build against bosses."
+  },
+  {
+    "name": "SYLVIA",
+    "slug": "sylvia",
+    "characterClass": "Magic",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Early-game Guild War DMG dealer so aim for a damage-oriented build (but is there really such thing as early game Guild War?)"
+  },
+  {
+    "name": "HOKIN",
+    "slug": "hokin",
+    "characterClass": "Attack",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Offense build."
+  },
+  {
+    "name": "RAHKUN",
+    "slug": "rahkun",
+    "characterClass": "Defense",
+    "rarity": "Rare",
+    "element": null,
+    "description": "Defense build. S2 grants Block Rate Boost (45%)."
+  },
+  {
+    "name": "BANE",
+    "slug": "bane",
+    "characterClass": "Magic",
+    "rarity": "Rare",
+    "element": null,
+    "description": "CC build. Has passive Effect Hit Rate boost (40%)."
+  }
+]

@@ -3,16 +3,17 @@ import { ReactNode } from 'react';
 import { moduleRegistry } from '../../../../core/module-registry';
 import { RuntimeShell } from '../../../../core/runtime-shell';
 import { GameProvider } from '../../../../platform/components/game-provider';
-import { GameSubnav } from './game-subnav';
-import { getOptimizedBannerUrl } from '../../../../shared/utils/banner';
+import { AppShell } from '../../app-shell';
+import GameSubnav from './game-subnav';
+import SearchTrigger from './search-trigger';
+import { hexToRgbTriplet } from '../../../../shared/utils/color';
 
-export default function GameLayout({
-  children,
-  params,
-}: {
+type Props = {
   children: ReactNode;
   params: { gameSlug: string };
-}) {
+};
+
+export default function GameLayout({ children, params }: Props) {
   const game = moduleRegistry.get(params.gameSlug);
 
   if (!game) {
@@ -22,32 +23,43 @@ export default function GameLayout({
   return (
     <RuntimeShell game={game}>
       <GameProvider game={game}>
-        <div className="min-h-screen">
-          <div className="mx-auto w-full max-w-6xl px-6 pt-6">
-            <a
-              href="#game-main"
-              className="sr-only focus:not-sr-only focus:absolute focus:left-6 focus:top-3 focus:z-40 focus:rounded focus:bg-sky-300 focus:px-4 focus:py-2 focus:font-semibold focus:text-slate-950"
+        <AppShell
+          skipTargetId="game-main"
+          skipLabel="Skip to game content"
+          header={(
+            <header
+              className="sticky top-[92px] z-40 border-b px-6 py-2.5 backdrop-blur-xl md:top-[64px] xl:px-10"
+              style={{
+                borderColor: 'rgba(255,255,255,0.06)',
+                background: 'rgba(10,15,24,0.7)',
+                ['--skr-primary-rgb' as string]: hexToRgbTriplet(game.theme.colors.primary),
+                ['--skr-secondary-rgb' as string]: hexToRgbTriplet(game.theme.colors.secondary),
+                ['--skr-background-rgb' as string]: hexToRgbTriplet(game.theme.colors.background),
+                ['--skr-surface-rgb' as string]: hexToRgbTriplet(game.theme.colors.surface),
+                ['--skr-text-rgb' as string]: hexToRgbTriplet(game.theme.colors.text),
+              }}
             >
-              Skip to game content
-            </a>
-            <section className="fantasy-panel relative overflow-hidden rounded-[2rem] p-6 md:p-8">
-              <div
-                className="absolute inset-0 w-full h-full bg-cover bg-center opacity-20"
-                style={{ backgroundImage: `url(${getOptimizedBannerUrl(game.bannerUrl, 1280)})` }}
-                aria-hidden="true"
-              />
-              <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-slate-950/15 via-slate-950/55 to-slate-950/85" aria-hidden="true" />
-              <div className="relative z-10">
-                <p className="text-sm uppercase tracking-[0.25em] text-sky-300">{game.name}</p>
-                <p className="mt-3 max-w-2xl text-white/75">
-                  A dedicated hub for {game.name}. Explore the realm, open its characters, and follow the latest updates.
-                </p>
-                <GameSubnav gameSlug={game.slug} />
+              <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between gap-4">
+                <div className="flex items-center gap-4">
+                  <span
+                    className="text-sm font-bold uppercase tracking-[0.2em]"
+                    style={{ color: game.theme.colors.secondary }}
+                  >
+                    {game.name}
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <GameSubnav gameSlug={game.slug} />
+                  <SearchTrigger />
+                </div>
               </div>
-            </section>
-          </div>
-          <section id="game-main">{children}</section>
-        </div>
+            </header>
+          )}
+        >
+          <section id="game-main" className="mx-auto w-full max-w-[1600px] px-6 py-8 xl:px-10">
+            {children}
+          </section>
+        </AppShell>
       </GameProvider>
     </RuntimeShell>
   );

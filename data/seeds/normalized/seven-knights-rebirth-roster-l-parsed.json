@@ -1,0 +1,1151 @@
+[
+  {
+    "name": "MIHO",
+    "slug": "miho",
+    "type": "Magic",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n●  Grants [Life Drain] to all allies for 2 turns upon activating skills twice\n● Grants [Weakness Hit DMG Boost] (always active)",
+        "enhancements": [
+          "● Adds Effect to SELF: Grants [Guts] (once per battle)\n● Adds Healing to SELF: Recovers 30% of MAX HP upon triggering [Guts]"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK"
+        ]
+      },
+      "skill1": {
+        "description": "3 ENEMIES:\n● 100% chance to inflict [Magic Vulnerability] for 3 turns\n● Deals DMG equal to 145% of MATK",
+        "enhancements": [
+          "● Increases DMG: 145% > 170% of MATK"
+        ],
+        "transcendence": [
+          "Adds Effect to BACK-ROW ALLIES: Grants 2 [Debuff Removal]"
+        ]
+      },
+      "skill2": {
+        "description": "3 ENEMIES:\n● 100% chance to inflict [Buff Duration Reduction] by 2 turns\n● Deals DMG equal to 160% of MATK",
+        "enhancements": [
+          "● Increases DMG: 160% > 185% of MATK"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Life Drain: Recovers HP equal to 20% of the DMG dealt",
+        "Weakness Hit DMG Boost: Increases Weakness Hit DMG by 23%"
+      ],
+      "skill1": [
+        "Magic Vulnerability: Increases MDMG taken by 22%"
+      ]
+    }
+  },
+  {
+    "name": "AMELIA",
+    "slug": "amelia",
+    "type": "Attack",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [Effect Hit Rate Boost] (always active)\n● [Revives] with 55% HP upon falling in battle (once per battle)\n\n2 ALLIES (EXCLUDING SELF):\n● Grants [Barrier] equal to 90% of the caster's PATK upon falling in battle (2 turns",
+        "enhancements": [
+          "● Increases Effect: [Effect Hit Rate Boost] from 40% > 49%"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "skill1": [
+        "Concussion: Concussed targets cannot perform any actions"
+      ]
+    }
+  },
+  {
+    "name": "TAKA",
+    "slug": "taka",
+    "type": "Attack",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "3 ENEMIES (in order of highest ATK power):\n● Performing any attack 2 time(s) inflicts 2 stacks of [Hawk's Talons] (Max 8 stacks)",
+        "enhancements": [
+          "● Adds Effect to SELF: Grants [All DMG Nullification] for 1 hit upon using skill"
+        ],
+        "transcendence": [
+          "Increases Effect: [Hawk's Talons] Physical Vulnerability (Increases PDMG taken) 3% > 4%"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of PATK\n● Deals additional DMG equal to 45% of PATK when target's current HP is 30% or lower",
+        "enhancements": [
+          "● Increases DMG: 100% > 132% of PATK\n● Increases DMG: Additional DMG from 45% > 55%"
+        ]
+      },
+      "skill1": {
+        "description": "3 ENEMIES:\n● Deals DMG equal to 145% of PATK (additional +37% Critical DMG)",
+        "enhancements": [
+          "● Increases Effect: Additional 37% > 46% Critical DMG"
+        ]
+      },
+      "skill2": {
+        "description": "3 ENEMIES:\n● Deals DMG equal to 145% of PATK\n● If the target's current health is below 30%",
+        "enhancements": [
+          "● Increases DMG: 145% > 170% of PATK"
+        ],
+        "transcendence": [
+          "Adds Effect: Ignore DEF"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Hawk's Talon: Increases PDMG taken by 3%"
+      ],
+      "skill2": [
+        "Ignore DEF: Ignores 40% of the target's DEF"
+      ]
+    }
+  },
+  {
+    "name": "VELIKA",
+    "slug": "velika",
+    "type": "Magic",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [Crit Rate Boost] (always active)\n● Grants [Barrier] equal to 160% of caster's MATK for 3 turns (once per round)\n\nALL ALLIES:\n● Grants [MDMG Boost] in Infinite Tower and Tower of Trials (always active)",
+        "enhancements": [
+          "● Increases Effect: [Crit Rate Boost] from 27% > 33%\n● Increases Effect: [MDMG Boost] from 28% > 31%"
+        ],
+        "transcendence": [
+          "Increases Effect: [Barrier] from 160% > 185%\nAdds Effect: Grants [Barrier] equal to 185% of MATK for 3 turns when HP falls to 50% or lower (once per battle)"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK\n\nALL ALLIES:\n● Reduces skill cooldowns by 9s in Infinite Tower and Tower of Trials",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK\n● Increases Effect: Skill Cooldown Reduction from 9s > 12s"
+        ]
+      },
+      "skill1": {
+        "description": "ALL ENEMIES:\n● Deals DMG equal to 105% of MATK\n● Deals additional DMG equal to 40% of MATK upon landing a Critical Hit\n● 60% chance to inflict [Burn] for 2 turns",
+        "enhancements": [
+          "● Increases DMG: 105% > 120% of MATK\n● Adds DMG: Deals additional DMG equal to 40% > 50% of MATK upon landing a Critical Hit"
+        ]
+      },
+      "skill2": {
+        "description": "ALL ENEMIES:\n● Deals DMG equal to 105% of MATK\n● Deals additional DMG equal to 55% of MATK upon landing a Critical Hit\n● 100% chance to inflict [Magic Vulnerability] for 3 turns",
+        "enhancements": [
+          "● Increases DMG: 105% > 120% of MATK\n● Increases Effect: [Magic Vulnerability] from 17% > 22%"
+        ],
+        "transcendence": [
+          "Adds Effect: 60% chance to inflict [Silence] for 2 turns"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Crit Rate Boost: Increase Crit Rate by 27%",
+        "MDMG Boost: Increase MDMG dealt by 28%"
+      ],
+      "skill1": [
+        "Burn: Deals DMG equal to 80% of caster's ATK every turn"
+      ],
+      "skill2": [
+        "Magic Vulnerability: Increase MDMG taken by 17%"
+      ]
+    }
+  },
+  {
+    "name": "ROOK",
+    "slug": "rook",
+    "type": "Defense",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [Block Rate Boost] (always active)\n\nSELF:\n● Grants [DMG Resistance] (always active)",
+        "enhancements": [
+          "● Increases Effect: [Block Rate Boost] from 19% > 23%\n● Increases Effect: [DMG Rediuction] from 16% > 20%"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 50% of PATK and 12% of caster's MAX HP",
+        "enhancements": [
+          "● Increases DMG: 50% > 60% of PATK and 12% > 14% of caster's MAX HP"
+        ]
+      },
+      "skill1": {
+        "description": "1 ENEMY (BACK ROW FIRST):\n● Deals DMG equal to 315% of PATK and 75% of caster's MAX HP",
+        "enhancements": [
+          "● Increases DMG: 315% > 380% of PATK and 75% > 91% of caster's MAX HP"
+        ],
+        "transcendence": [
+          "Adds Effect: Grants [Crit Rate Boost]"
+        ]
+      },
+      "skill2": {
+        "description": "ALL ALLIES:\n● Grants [Barrier] equal to 31% of the caster's MAX HP for 2 turns",
+        "enhancements": [
+          "● Increases Turns: [Barrier] duration from 2 > 3 turns"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Block Rate Boost: Increases Block Rate by 19%",
+        "DMG Resistance: Decreases DMG taken by 16%"
+      ],
+      "skill1": [
+        "Crit Rate Boost: Increases Crit Rate by 100%",
+        "HP Alteration: Sets the target's HP to a specified amount. Will not change the target's HP if their current HP is lower than that amount"
+      ]
+    }
+  },
+  {
+    "name": "CHANCELLOR",
+    "slug": "chancellor",
+    "type": "Universal",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● When HP falls below 50%",
+        "enhancements": [
+          "● Increases Effect: [DMG Reduction] from 11% > 13%\n● Increases DMG: 1285 > 1930 fixed DMG"
+        ],
+        "transcendence": [
+          "Adds Effect to SELF: Grants [All DMG Immunity] for 2 turns when HP falls to 50% or lower"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "DMG Reduction: Decreases DMG dealt by 11%"
+      ],
+      "skill1": [
+        "Buff Removal: Removes buff in the order they are applied. DMG immunity and DMG nullification cannot be removed",
+        "DEF Reduction: Decreases DEF by 34%"
+      ],
+      "skill2": [
+        "Increased Miss Chance: Increases the chance of missing attacks by 48%",
+        "All Attack Reduction: Decreases ATK by 24%"
+      ]
+    }
+  },
+  {
+    "name": "ALICE",
+    "slug": "alice",
+    "type": "Support",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [DEF Boost] for 1 turn\n\nSELF:\n● Taking a hit has 25% chance of healing HP equal to 9% of caster's MAX HP",
+        "enhancements": [
+          "● Increases Turns: [DEF Boost] duration from 1 > 2 turns\n● Increases Healing: Recovery amount from 9% > 10% of caster's MAX HP"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK"
+        ],
+        "transcendence": [
+          "Adds Effect: On the ALLY with LOWEST Current HP"
+        ]
+      },
+      "skill1": {
+        "description": "ALL ALLIES:\n● Grants [DEF Boost] for 3 turns\n● Grants [Continuous Healing] for 2 turns",
+        "enhancements": [
+          "● Increases Effect: [DEF Boost] from 31% > 39%"
+        ]
+      },
+      "skill2": {
+        "description": "ALL ALLIES:\n● Heals HP equal to 29% of caster's MAX HP",
+        "enhancements": [
+          "● Increases Healing: Recovery amount from 29% > 33% of caster's MAX HP"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "DEF Boost: Increases DEF by 31%"
+      ],
+      "basicAttack": [
+        "Continuous Healing: Heals HP equal to 15% of caster's MAX HP every turn"
+      ],
+      "skill1": [
+        "DEF Boost: Increase DEF by 31%",
+        "Continuous Healing: Heals HP equal to 15% of caster's MAX HP every turn",
+        "Incoming Healing Boost: Increase Incoming Healing Boost by 36%"
+      ]
+    }
+  },
+  {
+    "name": "ARAGON",
+    "slug": "aragon",
+    "type": "Defense",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ENEMIES:\n● Inflicts [All ATK Reduction] (always active)\n\nSELF:\n● Taking a hit has 25% chance of healing HP equal to 40% of caster's DEF",
+        "enhancements": [
+          "● Increases Healing: Recovery amount from 40% > 45% of caster's DEF"
+        ],
+        "transcendence": [
+          "Adds Effect to ALL ENEMIES: 100% chance to inflict [Crit Rate Reduction] for 2 turns upon activating skill once"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 50% of PATK and 60% of DEF",
+        "enhancements": [
+          "● Adds Effect: Skill Cooldown Reduction by 9s upon performing basic attack"
+        ]
+      },
+      "skill1": {
+        "description": "3 ENEMIES:\n● Deals [Piercing] DMG equal to 110% of PATK and 130% of DEF\n● 60% chance to inflict [Stun] for 2 turns",
+        "enhancements": [
+          "● Increases DMG: 110% > 130% of PATK and 130% > 150% of DEF\n● Increases Chance: [Stun] chance increases from 60% > 70%"
+        ],
+        "transcendence": [
+          "Adds Effect: 100% chance to inflict [Buff Duration Reduction] by 2 turns"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "All ATK Reduction: Decreases all ATK by 13%",
+        "Crit Rate Reduction: Decreases Crit Rate by 27%"
+      ],
+      "skill1": [
+        "Pierce: Ignores DMG immunity effects on the target",
+        "Stun: Unable to act for the duration of the effect"
+      ]
+    }
+  },
+  {
+    "name": "DEO",
+    "slug": "deo",
+    "type": "Attack",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [Silence Immunity] for 2 turns\n● Grants [Silence Immunity] for 2 turns upon using a basic attack\n● Grants 1 stack of [7-Dish Meal Set] upon using any attack (Max 7 stacks)",
+        "enhancements": [
+          "● Increases Effect: [7-Dish Meal Set] from 4% > 5%"
+        ],
+        "transcendence": [
+          "Adds Effect: Grants [Barrier] equal to 55% of caster's PATK for 2 turns upon using a skill"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of PATK\n● 40% chance to inflict [Bleed] for 2 turns",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of PATK\n● Increases Chance: [Bleed] chance increases from 40% > 50%"
+        ]
+      },
+      "skill1": {
+        "description": "ALL ALLIES:\n● Grants [Crit DMG Boost] for 3 turns",
+        "enhancements": [
+          "● Increases Effect: [Crit DMG Boost] from 40% > 49%"
+        ],
+        "transcendence": [
+          "Adds New Effect to 3 ENEMIES:\n● 100% chance to inflict 30% [All ATK Reduction] for 3 turns"
+        ]
+      },
+      "skill2": {
+        "description": "3 ENEMIES: \n● Deals DMG equal to 145% of PATK\n● Deals additional DMG equal to 65% of PATK upon landing a Critical Hit\n\nALL ALLIES:\n● Heals HP equal to 55% of caster's PATK",
+        "enhancements": [
+          "● Increases DMG: 145% > 170% of PATK\n● Increases Healing: HP Recovery amount from 55% > 65% of PATK"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "7-Dish Meal Set: Decreases PDMG taken by 4%"
+      ],
+      "skill1": [
+        "Crit DMG Boost: Increases Crit DMG by 40%"
+      ]
+    }
+  },
+  {
+    "name": "RURI",
+    "slug": "ruri",
+    "type": "Magic",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [MDMG Boost] (always active)\n● Grants [Weakness Hit Chance Boost] (always active)\n● Heals HP equal to 95% of caster's ATK upon using a skill",
+        "enhancements": [
+          "● Increases Effect: [MDMG Boost] from 24% > 29%\n● Increases Effect: [Weakness Hit Chance Boost] from 32% > 39%"
+        ],
+        "transcendence": [
+          "Adds Effect: Grants [Weakness Hit DMG Boost] for 3 turns upon activating a skill"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK"
+        ]
+      },
+      "skill1": {
+        "description": "3 ENEMIES:\n● Deals DMG equal to 75% of MATK 2 time(s)\n● Deals additional DMG equal to 35% of MATK upon landing a Weakness Hit for each hit",
+        "enhancements": [
+          "● Increases DMG: 75% > 90% of MATK\n● Increases DMG: 35% > 40% of MATK upon landing a Weakness Hit for each hit"
+        ]
+      },
+      "skill2": {
+        "description": "3 ENEMIES:\n● Deals DMG equal to 145% of MATK\n● Deals additional DMG equal to 130% of MATK upon landing a Weakness Hit",
+        "enhancements": [
+          "● Increases DMG: 145% > 170% of MATK\n● Increases DMG: 130% > 155% of MATK upon landing a Weakness Hit"
+        ],
+        "transcendence": [
+          "Adds Effect: Ignore DEF"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "MDMG Boost: Increases MDMG dealt by 24%",
+        "Weakness Hit Chance Boost: Increases Weakness Hit Chance by 32%",
+        "Weakness Hit DMG Boost: Increases Weakness Hit DMG by 48%"
+      ],
+      "skill2": [
+        "Ignore DEF: Ignores 40% of the target's DEF"
+      ]
+    }
+  },
+  {
+    "name": "NIA",
+    "slug": "nia",
+    "type": "Universal",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [Barrier] equal to 160% of caster's MATK for 3 turns (once per battle)\n● Grants [Effect Hit Rate Boost] (always active)",
+        "enhancements": [
+          "● Increases Effect: [Effect Hit Rate Boost] from 40% > 49%.\n● Increases Effect: [Barrier] from 160% > 185% of caster's MATK"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK\n● 30% chance to inflict [Shock] for 1 turn",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK\n● Increases Chance: [Shock] chance increases from 30% > 35%"
+        ]
+      },
+      "skill1": {
+        "description": "ALL ENEMIES:\n● Deals DMG equal to 90% of MATK\n● 40% chance to inflict [Shock] for 2 turns",
+        "enhancements": [
+          "● Increases DMG: 90% > 110% of MATK"
+        ],
+        "transcendence": [
+          "Increases Chance: [Shock] chance increases from 40% > 50%"
+        ]
+      },
+      "skill2": {
+        "description": "ALL ENEMIES:\n● Deals DMG equal to 115% of MATK\n● 100% chance to reduce duration of the target's buff by 2 turns\n● 60% chance to increase skill cooldowns by 16s",
+        "enhancements": [
+          "● Increases DMG: 115% > 135% of MATK\n● Increases Effect: [Skill Cooldown Increase] from 16s > 19s"
+        ],
+        "transcendence": [
+          "Increases Chance: [Skill Cooldown Increase] chance from 60% > 70%"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Effect Hit Rate Boost: Increases Effect Hit Rate by 40%"
+      ],
+      "basicAttack": [
+        "Shock: Unable to act for the duration of the effect"
+      ],
+      "skill2": [
+        "the afflicted target will take bonus DMG equal to 40% of the caster's ATK"
+      ]
+    }
+  },
+  {
+    "name": "ESPADA",
+    "slug": "espada",
+    "type": "Magic",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants 1 stack of [Purified Magic] when 1 enemy dies in battle. (max 4 stacks)",
+        "enhancements": [
+          "● Increases Effect: [Purified Magic]'s MDMG Boost from 8% > 10%"
+        ],
+        "transcendence": [
+          "Adds Effect to SELF: Grants [Magic Resistance] (always active)"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK"
+        ]
+      },
+      "skill1": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 340% of MATK\n● 100% chance to inflict [Magic Vulnerability] for 5 turns",
+        "enhancements": [
+          "● Increases Effect: [Magic Vulnerability] from 26% > 33%"
+        ]
+      },
+      "skill2": {
+        "description": "1 ENEMY:\n● Consumes 4 stack(s) of [Purified Magic] to deal additional DMG equal to 26% of MATK and 1300% target's MAX HP\n● Deals DMG equal to 425% of MATK",
+        "enhancements": [
+          "● Increases DMG: 425% > 515% of MATK"
+        ],
+        "transcendence": [
+          "Increases DMG: 26% > 32% of MATK and 1300% > 1600% of target's MAX HP"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Purified Magic: Increases MDMG dealt by 8% and Crit Rate by 10%",
+        "Magic Resistance: Decreases MDMG taken by 29%"
+      ],
+      "skill1": [
+        "Magic Vulnerability: Increases MDMG taken by 26%"
+      ]
+    }
+  },
+  {
+    "name": "SHANE",
+    "slug": "shane",
+    "type": "Attack",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [Magic Resistance] (always active)\n● Grants [Crit Rate Boost] (always active)\n\n1 ENEMY (upon activating 3 attacks):\n● Deals DMG equal to 100% of PATK",
+        "enhancements": [
+          "● Increases Effect: [Crit Rate Boost] from 35% > 41%\n● Increases Effect: [Magic Resistance] from 24% > 29%"
+        ],
+        "transcendence": [
+          "Adds Effect: Increases DMG by 20% for each debuff on the enemy (max 4)"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of PATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of PATK"
+        ]
+      },
+      "skill1": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 570% of PATK",
+        "enhancements": [
+          "● Increases DMG: 570% > 690% of PATK"
+        ],
+        "transcendence": [
+          "Adds Effect: Increases DMG by 50% for each debuff on the enemy (max 4)"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Magic Resistance: Decreases MDMG taken by 24%",
+        "Crit Rate Boost: Increases Crit Rate by 35%",
+        "Follow-up Attack: When an ally uses a basic attack"
+      ]
+    }
+  },
+  {
+    "name": "SIEG",
+    "slug": "sieg",
+    "type": "Universal",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [Stun Immunity] for 2 turns\n● Grants [Stun Immunity] for 2 turns upon performing a basic attack\n\nBACK ROW ALLIES:\n● Grants [PATK Boost] for 2 turns\n● Grants [PATK Boost] for 2 turns upon attacking 2 time(s)",
+        "enhancements": [
+          "● Increases Effect: [PATK Boost] from 23% > 27%"
+        ],
+        "transcendence": [
+          "Increases Turns: [PATK Boost] durations from 2 > 3 turns"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of PATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of PATK"
+        ]
+      },
+      "skill1": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 375% of PATK\n● 100% chance to inflict [DMG Reduction] for 5 turns",
+        "enhancements": [
+          "● Increases Effect: [DMG Reduction] from 17% > 23%"
+        ]
+      },
+      "skill2": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 545% of PATK\n\nALL ALLIES:\n● Heals HP equal to 25% of caster's PATK",
+        "enhancements": [
+          "● Increases DMG: 545% > 655% of PATK\n● Increases Healing: 25% > 30% of PATK"
+        ],
+        "transcendence": [
+          "Adds Effect: Ignore DEF"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "PATK Boost: Increases PATK by 23%"
+      ],
+      "skill1": [
+        "DMG Reduction: Decreases DMG dealt by 17%"
+      ],
+      "skill2": [
+        "Ignore DEF: Ignores 40% of the target's DEF"
+      ]
+    }
+  },
+  {
+    "name": "BALLISTA",
+    "slug": "ballista",
+    "type": "Attack",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF: \n● Grants [Camouflage] for 2 turns\n● 25% chance to do a [Follow-Up Attack] (always active)\n\n1 ENEMY upon a [Follow-Up Attack]:\n● Deals DMG equal to 100% of PATK\n\n3 ENEMIES:\n● Deals 1285 Fixed DMG upon performing any attack 3 time(s)",
+        "enhancements": [
+          "● Increases Chance: [Follow-Up Attack] chance increases from 25% > 30%"
+        ],
+        "transcendence": [
+          "Increases DMG: 1285 > 1485 Fixed DMG"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of PATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of PATK"
+        ]
+      },
+      "skill1": {
+        "description": "3 ENEMIES:\n● Deals [Piercing] DMG equal to 95% of PATK 2 time(s)\n● Activates again with 100% power upon defeating an enemy with DMG from this skill",
+        "enhancements": [
+          "● Increases DMG: 95 > 115% of PATK\n● Adds Effect to SELF: Grants [Follow-Up Chance Boost]"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Camouflage: Cannot become the target of a single-target attack. Attacks received while Camouflaged are guaranteed to miss. If the only attackable heroes on a team are Camouflaged"
+      ]
+    }
+  },
+  {
+    "name": "LINA",
+    "slug": "lina",
+    "type": "Support",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [Effect Resist Boost] (always active)\n\nSELF:\n● Grants [Barrier] equal to 39% of caster's MAX HP for 3 turns",
+        "enhancements": [
+          "● Increases Effect: [Effect Resist Boost] from 28% > 34%\n● Increases Effect: [Barrier] equal to 39% > 45% of caster's MAX HP"
+        ],
+        "transcendence": [
+          "Adds Effect to ALL ALLIES: Grants [Crit DMG Boost] (always active)"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK\n● Adds Effect: On the ALLY with LOWEST Current HP"
+        ]
+      },
+      "skill1": {
+        "description": "ALL ALLIES:\n● Heals HP equal to 21% of the caster's MAX HP\n● Grants [Continuous Healing] for 2 turns"
+      },
+      "skill2": {
+        "description": "ALL ALLIES:\n● Grants [DMG Boost] for 3 turns\n\nFRONT ROW ENEMIES:\n● 100% chance to inflict [DEF Reduction] for 3 turns",
+        "transcendence": [
+          "Change Number of Targets: FRONT ROW ENEMIES > ALL ENEMIES\n\nIncreases Effect: [DEF Reduction] from 34% > 41%"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Effect Resist Boost: Increases Effect Resist by 28%",
+        "Crit DMG Boost: Increases Crit DMG by 34%"
+      ],
+      "skill1": [
+        "Continuous Healing: Heals HP equal to 15% of caster's MAX HP every turn"
+      ],
+      "skill2": [
+        "DMG Boost: Increases DMG dealt by 23%",
+        "DEF Reduction: Decreases DEF by 34%"
+      ]
+    }
+  },
+  {
+    "name": "DAISY",
+    "slug": "daisy",
+    "type": "Magic",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [Petrify Immunity] for 2 turns\n● Grants [Petrify Immunity] for 2 turns upon activating a basic attack\n\n2 ALLIES WITH HIGHEST ATK:\n● Grants [MATK Boost] (always active)",
+        "enhancements": [
+          "● Increases Effect: [MATK Boost] from 21% > 27%"
+        ],
+        "transcendence": [
+          "Adds Effect: Grants [Barrier] equal to 55% of caster's MATK to all allies upon activating skills twice for 2 turns"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK"
+        ]
+      },
+      "skill1": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 270% of MATK\n● Deals DMG equal to 20% of target's MAX HP (HP-proportional DMG is limited to 350% of caster's MATK)",
+        "enhancements": [
+          "● Increases DMG: 270% > 330% of MATK"
+        ],
+        "transcendence": [
+          "Increases DMG: 20% > 26% of target's MAX HP (HP-proportional DMG is limited to 350% > 700% of caster's MATK)"
+        ]
+      },
+      "skill2": {
+        "description": "ALL ALLIES:\n● Grants [MATK Boost] for 3 turns\n\nALL ENEMIES:\n● Inflicts 1 [Buff Removal]\n● Deals DMG equal to 130% of PATK",
+        "enhancements": [
+          "● Increases Effect: [MATK Boost] from 27% > 33%\n● Increases DMG: 130% > 155% of MATK"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "MATK Boost: Increases MATK by 21%"
+      ],
+      "skill2": [
+        "MATK Boost: Increases MATK by 27%",
+        "Buff Removal: Removes buff in the order they are applied. DMG immunity and DMG nullification cannot be removed"
+      ]
+    }
+  },
+  {
+    "name": "BAI LONG",
+    "slug": "bai-long",
+    "type": "Attack",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [Crit Rate Boost] (always active)\n● Grants [DEF Ignore Efficiency Boost] (always active)\n● Grants [Pinnacle of Martial Arts] (always active)",
+        "enhancements": [
+          "● Increases Effect: [Crit Rate Boost] from 27% > 33%\n● Increases Effect: [DEF Ignore Efficiency Boost] from 5% > 10%"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of PATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK"
+        ]
+      },
+      "skill1": {
+        "description": "1 ENEMY:\n● Deals [DEF-Ignoring] DMG equal to 340% of PATK",
+        "enhancements": [
+          "● Increases DMG: 340% > 415% of PATK"
+        ],
+        "transcendence": [
+          "Adds Healing to ALL ALLIES: Heals HP equal to 30% of PATK"
+        ]
+      },
+      "skill2": {
+        "description": "1 ENEMY:\n● Deals [DEF-Ignoring] DMG equal to 475% of PATK",
+        "enhancements": [
+          "● Increases DMG: 475% > 575% of PATK"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Crit Rate Boost: Increases Crit Rate by 27%",
+        "DEF Ignore Efficiency Boost: All DMG ignores 5% of the target's DEF",
+        "Pinnacle of Martial Arts: Decreases PDMG taken by 29%"
+      ]
+    }
+  },
+  {
+    "name": "YU SHIN",
+    "slug": "yu-shin",
+    "type": "Magic",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [Effect Hit Rate Boost] (always active)\n\nSELF:\n● Grants [All DMG Immunity] for 2 turns",
+        "enhancements": [
+          "● Increases Turns: [All DMG Immunity] duration from 2 > 3 turns\n● Increases Effect: [Effect Hit Rate Boost] from 28% > 34%"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK\n● 100% chance to inflict [Effect Resist Reduction] for 2 turns",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK\n● Increases Effect: [Effect Resist Reduction] from 13% > 16%"
+        ]
+      },
+      "skill1": {
+        "description": "3 ENEMY:\n● Deals DMG equal to 80% of MATK 2 time(s) \n● Each attack has 40% chance to inflict [Paralysis] for 2 turns",
+        "enhancements": [
+          "● Increases DMG: 80% > 92% of MATK"
+        ],
+        "transcendence": [
+          "Adds Effect to 3 ALLIES: 2 [Debuff Removal]"
+        ]
+      },
+      "skill2": {
+        "description": "ALL ENEMIES:\n● Deals DMG equal to 115% of MATK\n● 45% chance to inflict [Paralysis] for 2 turns\n● 100% chance to inflict [Incoming Healing Reduction] for 3 turns",
+        "enhancements": [
+          "● Increases DMG: 115% > 135% of MATK\n● Increases Chance: [Paralysis] chance increases from 45% > 55%"
+        ],
+        "transcendence": [
+          "Increases Effect: [Incoming Healing Reduction] from 44% > 75%"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Effect Hit Rate Boost: Increases Effect Hit Rate by 28%"
+      ],
+      "basicAttack": [
+        "Effect Resist Reduction: Decrease Effect Resist by 13%"
+      ],
+      "skill2": [
+        "Paralysis: Unable to act for the duration of the effect"
+      ]
+    }
+  },
+  {
+    "name": "BIDAM",
+    "slug": "bidam",
+    "type": "Attack",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [PMDG Boost] for 3 turns upon attacking 3 time(s)\n● Recovers HP equal to 50% of caster's ATK upon attacking 3 time(s)",
+        "enhancements": [
+          "● Increases Effect: [PDMG Boost] from 29% > 35%\n● Increases Healing: Recovery amount from 50% > 55% of caster's PATK"
+        ]
+      },
+      "basicAttack": {
+        "description": "2 ENEMIES:\n● Deals DMG equal to 55% of PATK 2 time(s)\n● 35% chance to inflict [Bleed] for 2 turns",
+        "enhancements": [
+          "● Increases DMG: 55% > 65% of PATK\n● Increases Chance: [Bleed] chance increases from 35% > 40%"
+        ]
+      },
+      "skill1": {
+        "description": "3 ENEMIES:\n● Deals [Piercing] DMG equal to 72% of PATK 2 time(s)\n● Each attack has 55% chance to inflict [Bleed] for 3 turns",
+        "enhancements": [
+          "● Increases DMG: 72% > 85% of PATK\n● Increases Chance: [Bleed] chance increases from 55% > 60%"
+        ],
+        "transcendence": [
+          "Reduces Cooldown: Skill cooldown reduction from 70s > 55s\nAdds Effect: 100% chance to inflict [Bleed] for 3 turns on a target inflicted with [Bleed]"
+        ]
+      },
+      "skill2": {
+        "description": "3 ENEMIES:\n● Deals DMG equal to 175% of PATK\n● [Bleed Explosion]: detonates [Bleed] stacks to deal 120% of their DMG (max 3 stacks)",
+        "enhancements": [
+          "● Increases DMG: 175% > 205% of PATK"
+        ],
+        "transcendence": [
+          "Increases DMG: [Bleed Explosion] DMG increase from 120% > 150%"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "PDMG Boost: Increases PDMG dealt by 29%"
+      ],
+      "basicAttack": [
+        "Bleed: The target takes [Piercing] DMG equal to 60% of the caster's ATK every turn. DMG increases for every stack of [Bleed] on the target"
+      ]
+    }
+  },
+  {
+    "name": "BAI JIAO",
+    "slug": "bai-jiao",
+    "type": "Universal",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [All DMG Immunity] for 2 turns\n\nALL ALLIES:\n● Heals HP equal to 32% of MATK upon performing any attack 2 times",
+        "enhancements": [
+          "● Increases Turns: [All DMG Immunity] duration from 2 > 3 turns"
+        ],
+        "transcendence": [
+          "Adds Effect to SELF: Grants [Effect Probability Boost] (always active)"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK\n● 40% chance to inflict [Poison] for 2 turns",
+        "enhancements": [
+          "● Adds Effect: 40% chance to inflict [Bleed] for 2 turns"
+        ]
+      },
+      "skill1": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 90% of MATK 3 times\n● Each attack has a 60% chance to inflict [Poison] for 3 turns",
+        "enhancements": [
+          "● Increases DMG: 90% > 110% of MATK\n● Adds Effect: 100% chance to inflict [Unable to Recover] for 4 turns"
+        ],
+        "transcendence": [
+          "Increases Chance: 60% > 70% chance to [Poison]"
+        ]
+      },
+      "skill2": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 80% of MATK 3 times\n● Each attack has 60% chance to inflict [Bleed] for 3 turns\n\nALL ALLIES:\n● Grants 1 [Debuff Removal]",
+        "enhancements": [
+          "● Increases DMG: 80% > 110% of MATK"
+        ],
+        "transcendence": [
+          "Increases Chance: 60% > 70% chance to [Bleed]"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Effect Probability Boost: Increases Effect Probability by 22%"
+      ],
+      "basicAttack": [
+        "Poison: Deals 6% of target's MAX HP as DMG each turn (DMG cannot exceed 150% of the caster's ATK)",
+        "Bleed: The target takes [Piercing] DMG equal to 60% of the caster's ATK every turn. DMG increases for every stack of [Bleed] on the target"
+      ]
+    }
+  },
+  {
+    "name": "XIAO QIAO",
+    "slug": "xiao-qiao",
+    "type": "Magic",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [Paralysis Immunity] for 2 turns\n● Grants [Paralysis Immunity] for 2 turns upon using a basic attack\n● Grants [Barrier] equal to 45% of caster's MATK for 2 turns upon activating a skill 1 time\n\nSELF:\n● Grants [MDMG Boost] (always active)",
+        "enhancements": [
+          "● Increases Effect: [MDMG Boost] from 24% > 29%"
+        ],
+        "transcendence": [
+          "Adds Effect to SELF: Grants [Weakness Hit Chance Boost] (always active)"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK"
+        ]
+      },
+      "skill1": {
+        "description": "1 ENEMY:\n● Deals [DEF-Ignoring] DMG equal to 270% of MATK\n● Deals additional [DEF-Ignoring] DMG equal to 215% of MATK upon landing a weakness hit\n\nALL ALLIES: \n● Grants 2 [Debuff Removal]",
+        "enhancements": [
+          "● Increases DMG: 270% > 330% of MATK"
+        ]
+      },
+      "skill2": {
+        "description": "2 ALLIES (with Highest ATK):\n● Grants [MATK Boost] for 3 turns\n\n1 ENEMY:\n● Deals [DEF-Ignoring] DMG equal to 340% of MATK\n● 100% chance to inflict [Magic Vulnerability] for 5 turns",
+        "enhancements": [
+          "● Increases Effect: [MATK Boost] from 25% > 31%"
+        ],
+        "transcendence": [
+          "Adds Effect to 2 ALLIES (with Highest ATK): Grants [Crit DMG Boost] for 3 turns"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "MDMG Boost: Increases Magic DMG dealt by 24%",
+        "Weakness Hit Chance Boost: Increases weakness hit chance by 39%"
+      ],
+      "skill2": [
+        "MATK Boost: Increases MATK by 25%",
+        "Crit DMG Boost: Increases Crit DMG by 46%"
+      ]
+    }
+  },
+  {
+    "name": "PASCAL",
+    "slug": "pascal",
+    "type": "Magic",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [MATK Boost] (always active)\n● Grants [Crit DMG Boost] (always active)",
+        "enhancements": [
+          "● Increases Effect: [MATK Boost] from 27% > 33%"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK",
+        "enhancements": [
+          "● Increases DMG: 100% > 120% of MATK"
+        ]
+      },
+      "skill1": {
+        "description": "SELF:\n● Resets the cooldown of Skill 2\n● Grants [All DMG Nullification] for 1 hit",
+        "enhancements": [
+          "● Increases Stacks: [All DMG Nullification] stacks from 1 > 2"
+        ],
+        "transcendence": [
+          "Reduces Cooldown: Skill cooldown reduction from 60s > 40s"
+        ]
+      },
+      "skill2": {
+        "description": "1 ENEMY:\n● Deal [DEF-ignoring] DMG equal to 390% of MATK (additional 50% Crit Rate)",
+        "enhancements": [
+          "● Increases DMG: 390% > 470% of MATK"
+        ],
+        "transcendence": [
+          "Increases Effect: Additional 50% > 100% Crit Rate"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "MATK Boost: Increases MATK by 27%",
+        "Crit DMG Boost: Increases Crit DMG by 40%"
+      ],
+      "skill2": [
+        "Ignore DEF: Ignores 65% of the target's DEF"
+      ]
+    }
+  },
+  {
+    "name": "KNOX",
+    "slug": "knox",
+    "type": "Defense",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [Death Effect Probability Boost] (always active)\n\nSELF:\n● Grants [Barrier] equal to 39% of caster's MAX HP for 3 turns",
+        "enhancements": [
+          "● Increases Effect: [Barrier] equal to 39% > 45% of caster's MAX HP"
+        ],
+        "transcendence": [
+          "Adds Effect to ALL ENEMIES: [Effect Resist Reduction] (always active)"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 50% of PATK and 12% of caster's MAX HP",
+        "enhancements": [
+          "● Increases DMG: 50% > 60% of PATK and 12% > 14% of caster's MAX HP"
+        ]
+      },
+      "skill1": {
+        "description": "SELF: \n● Grants [All DMG Immunity] for 2 turns\n● Grants [Taunt] for 2 turns\n\n3 ALLIES:\n● Grants [Continuous Healing] for 2 turns",
+        "enhancements": [
+          "● Increases Healing: [Continuous Healing] amount from 15% > 20%"
+        ]
+      },
+      "skill2": {
+        "description": "3 ENEMIES:\n● Deals DMG equal to 80% of PATK and 19% of caster's MAX HP\n● 100% chance to inflict [Effect Resist Reduction] for 3 turns\n● 35% chance to inflict [Death] for 3 turns",
+        "enhancements": [
+          "● Increases Chance: [Death] chance increasess from 35% > 40%"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Effect Resist Reduction: Decreases Effect Resist by 34%",
+        "Death Effect Probability Boost: Increases Death Effect Probability by 25%"
+      ],
+      "skill1": [
+        "Continuous Healing: Heals HP equal to 15% of caster's MAX HP every turn",
+        "Taunt: Taunts enemies"
+      ]
+    }
+  },
+  {
+    "name": "DIAOCHAN",
+    "slug": "diaochan",
+    "type": "Support",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [MAX HP-based Effect Hit Rate Boost] (always active)\n● Grants [Barrier] equal to 39% caster's MAX HP for 3 turns\n\n2 ALLIES (excluding Self):\n-If target type is ATK or MAGIC\n● Grants [Barrier] equal to 20% of the caster's MAX HP for 2 turns when performing a basic attack\n● Grants [CC Immunity] for 2 turns upon performing a bsic attack",
+        "enhancements": [
+          "● Increases Effect to SELF: [Barrier] from 39% > 45% of MAX HP\n● Increases Effect to 2 ALLIES (ATTACK-TYPE/MAGIC-TYPE): [Barrier] from 20% > 22% of MAX HP"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of MATK\n\nALLY with LOWEST Current HP (excluding SELF):\n● Heals HP equal to 6% of caster's MAX HP",
+        "enhancements": [
+          "● Increases Healing: Recovery amount from 6% > 7% of caster's MAX HP"
+        ]
+      },
+      "skill1": {
+        "description": "3 ALLIES:\n● Heals HP equal to 25% of caster's MAX HP",
+        "enhancements": [
+          "● Increases Healing: HP recovery increased from 25% > 29%"
+        ],
+        "transcendence": [
+          "Adds Effect to 2 ALLIES (excluding SELF): Resets skill cooldown if target type is ATK or MAGIC"
+        ]
+      },
+      "skill2": {
+        "description": "2 ALLIES (Excluding SELF):\n● Grants [Crit DMG Boost] for 4 turns\n\n3 ENEMIES:\n● 100% chance to inflict [Buff Duration Reduction] by 2 turns\n● 85% chance to inflict [Sleep] for 2 turns",
+        "enhancements": [
+          "● Increases Chance: [Sleep] chance increases from 85% > 100%\n● Adds Effect to 2 ALLIES (excluding SELF): Grants [All ATK Boost] for 4 turns"
+        ],
+        "transcendence": [
+          "Adds Effect to 3 ENEMIES: 100% chance to inflict [Incoming Healing Reduction] for 3 turns"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "MAX HP-based Effect Hit Rate Boost: Increases Effect Hit Rate by 5% for every 1000 MAX HP (Maximum: 45%)"
+      ],
+      "skill2": [
+        "Crit DMG Boost: Increases Critical DMG by 43%",
+        "Sleep: Unable to act while asleep and will always receive critical DMG when hit. Sleep is immediately removed if DMG exceeding 7% of MAX HP is taken"
+      ]
+    }
+  },
+  {
+    "name": "GUAN YU",
+    "slug": "guan-yu",
+    "type": "Universal",
+    "rarity": "Legendary",
+    "skills": {
+      "passive": {
+        "description": "ALL ALLIES:\n● Grants [Shock Immunity] for 2 turns\n● Grants [Shock Immunity] for 2 turns upon using a basic attack\n\nBACK-ROW ALLIES:\n● Grants [PDMG Boost] for 2 turns\n● Grants [PDMG Boost] for 2 turns upon using any attack 2 times",
+        "enhancements": [
+          "● Increases Turns: [PDMG Boost] from 2 > 3 turns"
+        ],
+        "transcendence": [
+          "Adds Effect to BACK-ROW ALLIES: \n● Grants [Crit DMG Boost] for 3 turns\n● 40% chance to grant [Crit DMG Boost] for 3 turns upon using any attack 2 times"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of PATK",
+        "enhancements": [
+          "● Adds Effect: 30% chance to inflict [Unable to Recover] for 2 turns"
+        ]
+      },
+      "skill1": {
+        "description": "1 ENEMY:\n● 100% chance to inflict 3 [Buff Removal]\n● Deals DEF-Ignoring DMG equal to 390% of PATK",
+        "enhancements": [
+          "● Increases DMG: 390% > 480% of PATK"
+        ],
+        "transcendence": [
+          "Adds Effect: Grants additional 100% Crit Rate"
+        ]
+      },
+      "skill2": {
+        "description": "ALL ALLIES:\n● Grants 2 [Debuff Removal]\n● Grants [Continous Healing] for 2 turns for each debuff removed\n● Can be used only if the ally has a removable debuff",
+        "enhancements": [
+          "● Adds Effect: Grants [All DMG Immunity] for 1 turn"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "PDMG Boost: Increases Physical DMG dealt by 20%",
+        "Crit DMG Boost: Increases Crit DMG by 40%"
+      ],
+      "skill2": [
+        "Continuous Healing: Heals HP equal to 15% of the caster's MAX HP every turn"
+      ]
+    }
+  }
+]

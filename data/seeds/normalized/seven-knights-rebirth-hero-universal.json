@@ -1,0 +1,146 @@
+[
+  {
+    "name": "GELIDUS",
+    "slug": "gelidus",
+    "characterClass": "Universal",
+    "rarity": "Legendary++",
+    "element": null,
+    "description": "Rather than indirectly boosting Block Rate via DEF, this build focuses on the 2 most important stats - Block Rate & DMG Taken Reduction - itself."
+  },
+  {
+    "name": "ACE",
+    "slug": "ace",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Very important to keep him alive for this passive to be retained. So making him bulky is the most important priority, with as much Block Rate rolls as possible to complement DMG Taken Reduction."
+  },
+  {
+    "name": "EILEENE",
+    "slug": "eileene",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "If using her, then having her around is the biggest asset your team can have to upkeep their DMG output. Thus, keeping her alive as long as possible is the most important priority."
+  },
+  {
+    "name": "ELYSIA",
+    "slug": "elysia",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "This build aims to make her more bulky so that her core effects can last on the field longer."
+  },
+  {
+    "name": "JAVE",
+    "slug": "jave",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "This build focuses on ensuring his Burn lands, and is particularly used in Endgame PVP since Dragonflame can be potent in withering the enemies' HP down."
+  },
+  {
+    "name": "KARMA",
+    "slug": "karma",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "His heal is based off DMG dealt so it is important to boost his DMG and traditionally this was done by raising Crit Rate & Crit DMG. Has passive Block Rate of 33%."
+  },
+  {
+    "name": "KRIS",
+    "slug": "kris",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Healing scales of ATK% so having a max ATK% build for PVE can continuously sustain your team."
+  },
+  {
+    "name": "MIST",
+    "slug": "mist",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Having high ATK% allows Mist to have higher likelihood of inflicting Unremovable Death after Fear with just her Skill 2. However, this causes her to be more fragile and Death is still not guaranteed."
+  },
+  {
+    "name": "PALLANUS",
+    "slug": "pallanus",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "This build sacrifices some DMG output for better durability, with high Block Rate & DMG Taken Reduction."
+  },
+  {
+    "name": "RACHEL",
+    "slug": "rachel",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "This build is an option if you find survivability an issue, especially in the early game where she isn't actually a SubDPS either. May need Speed to allow DPS to go last."
+  },
+  {
+    "name": "SPIKE",
+    "slug": "spike",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "This build increases Freeze DMG dealt to the Bosses."
+  },
+  {
+    "name": "SUNWUKONG",
+    "slug": "sunwukong",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Primarily for those who are still reliant on him as a 3-TARGET damage dealer (even though he has been outclassed)."
+  },
+  {
+    "name": "TRUDE",
+    "slug": "trude",
+    "characterClass": "Universal",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Not a common build but this aims to increase her Barrier amount and self-heal as well to sustain herself for much longer since her Pain Endurance acts as a DMG Cap already."
+  },
+  {
+    "name": "BAI JIAO",
+    "slug": "bai-jiao",
+    "characterClass": "Universal",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Boss DMG also spills over to DMG from DOT effects (which scale off ATK%) so this allows maximum potential DOT damage allowing runs to be super fast."
+  },
+  {
+    "name": "CHANCELLOR",
+    "slug": "chancellor",
+    "characterClass": "Universal",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Aim to keep him alive with highest possible Block Rate and DMG Taken Reduction (more so for Guild War)."
+  },
+  {
+    "name": "GUAN YU",
+    "slug": "guan-yu",
+    "characterClass": "Universal",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "He may not be as tanky as he looks so in early progression, this build aims to increase his survivability to allow him to boost the Physical team well."
+  },
+  {
+    "name": "NIA",
+    "slug": "nia",
+    "characterClass": "Universal",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Speed is top priority for her on this build to not only allow your team to have speed advantage but also to land the Skill Cooldown Increase more effectively (since it is also probability-based)."
+  },
+  {
+    "name": "SIEG",
+    "slug": "sieg",
+    "characterClass": "Universal",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "An early build for progressing players who do struggle to keep him alive since he has important reasons to be alive. Block Rate needs to be near or 100%."
+  }
+]

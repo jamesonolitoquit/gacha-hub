@@ -1,0 +1,50 @@
+[
+  {
+    "name": "AQUILA",
+    "slug": "aquila",
+    "characterClass": "Defense",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Build focuses on tankiness and survivability to maintain her utility on the field."
+  },
+  {
+    "name": "RADGRID",
+    "slug": "radgrid",
+    "characterClass": "Defense",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "For those without good Paladin pieces, the standard Gatekeeper build is something to fall back on to give her 100% Block Rate more easily with DMG Taken Reduction."
+  },
+  {
+    "name": "RUDY",
+    "slug": "rudy",
+    "characterClass": "Defense",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "S2 provides CC Immunity at T6 so having Turn 1 CC Immunity almost guarantees that it will be casted without any hindrance from the enemy."
+  },
+  {
+    "name": "ARAGON",
+    "slug": "aragon",
+    "characterClass": "Defense",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Main DMG multipliers have DEF scaling. Main role is also to stun enemies effectively so having some Effect Hit substats would be good."
+  },
+  {
+    "name": "KNOX",
+    "slug": "knox",
+    "characterClass": "Defense",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "Build focuses on tankiness and survivability to maintain his utility on the field."
+  },
+  {
+    "name": "ROOK",
+    "slug": "rook",
+    "characterClass": "Defense",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "With a passive Block Rate (23%), aim for 77% more Block Rate, along with DMG Taken Reduction to boost his tankiness as best as possible."
+  }
+]

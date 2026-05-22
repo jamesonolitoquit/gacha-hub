@@ -1,0 +1,58 @@
+[
+  {
+    "name": "ROSIE",
+    "slug": "rosie",
+    "characterClass": "Support",
+    "rarity": "Legendary++",
+    "element": null,
+    "description": "Has Max HP-Based DEF Boost so will need at least 9000 HP to get up to 900 additional DEF."
+  },
+  {
+    "name": "BISCUIT",
+    "slug": "biscuit",
+    "characterClass": "Support",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "At times, Biscuit has to take the role of the mini damage dealer, particularly in Castle Rush (Mon-Wed) to clear either of the initial phases. High Crit Rate with decent Crit DMG (200%) is sufficient."
+  },
+  {
+    "name": "ORLY",
+    "slug": "orly",
+    "characterClass": "Support",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "This build focuses on ensuring she survives well so as to allow her utility to be maintained on the field."
+  },
+  {
+    "name": "PLATIN",
+    "slug": "platin",
+    "characterClass": "Support",
+    "rarity": "Legendary+",
+    "element": null,
+    "description": "Paladin set so that the Incoming Healing Boost increases his recovery to a large extent. However, this will require way better substat rolls for Block Rate."
+  },
+  {
+    "name": "ALICE",
+    "slug": "alice",
+    "characterClass": "Support",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "This build aims to raise her Effect Resistance so that she is able to get her Continuous Healing off for the team. A very niche build, sometimes used in Guild War."
+  },
+  {
+    "name": "DIAOCHAN",
+    "slug": "diaochan",
+    "characterClass": "Support",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "This build should allow hitting 9000HP for her passive bonus to be achieved must easier but also, do not forsake for bulk."
+  },
+  {
+    "name": "LINA",
+    "slug": "lina",
+    "characterClass": "Support",
+    "rarity": "Legendary",
+    "element": null,
+    "description": "A very niche build for Castle Rush Rachel with Nezha so that Nezha will cool down Lina instead to allow Lina's buff to be used with greater efficiency, as more Nezha's skills be used within the duration."
+  }
+]

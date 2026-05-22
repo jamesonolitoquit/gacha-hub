@@ -31,7 +31,7 @@ export default async function UpdatesPage() {
                 {games.map((game) => (
                   <li key={game.id}>
                     <Link
-                      href={`/games/${game.slug}/guides`}
+                      href={`/games/${game.slug}/patches`}
                       className="fantasy-card group rounded-3xl p-6 transition hover:-translate-y-0.5 hover:border-sky-300/40 focus-visible:border-sky-300/55 block w-full"
                     >
                       <div

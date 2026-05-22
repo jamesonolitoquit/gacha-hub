@@ -1,0 +1,234 @@
+[
+  {
+    "name": "FAI",
+    "slug": "fai",
+    "type": "Attack",
+    "rarity": "Legendary++",
+    "skills": {
+      "passive": {
+        "description": "ALL ENEMIES:\n● Inflicts [Physical Vulnerability] (always active)\n\nSELF:\n● [Revive] with 80% HP upon falling in battle (once per battle)\n● Grants [Barrier] equal to 135% of PATK for 3 turns upon revival (once per battle)\n● Deals additional DMG equal to 70% of PATK against targets inflicted with [Burn]",
+        "enhancements": [
+          "● Increases Effect: [Physical Vulnerability] from 17% > 20%\n● Increases Effect: HP gained upon revival from 80% > 100%"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 100% of PATK\n\n3 ENEMIES:\n● 35% chance to inflict [Burn] for 2 turns.",
+        "enhancements": [
+          "● Increases DMG: 100% > 130% of PATK"
+        ]
+      },
+      "skill1": {
+        "description": "ALL ENEMIES:\n● Deals DMG equal to 57% of PATK 2 time(s)\n● Each attack has 60% chance of inflicting [Burn] for 2 turns",
+        "enhancements": [
+          "● Adds Effect: 29% chance to inflict [DEF Reduction] for 3 turns\n● Increases Chance: [Burn] chance increases from 60% > 70%"
+        ]
+      },
+      "skill2": {
+        "description": "1 ENEMY:\n● Inflicts 3 [Buff Removal]\n● 100% chance to infliict [Burn] for 3 turns\n● Deals DMG equal to 340% of PATK and 20% of target's MAX HP\n● Instant [Execution] of an enemy with 24% or lower HP\n\nENEMIES IN THE SAME ROW as the target:\n● 60% chance to inflict [Burn] for 2 turns\n● Deals DMG equal to 125% of PATK and 14% of target's MAX HP",
+        "enhancements": [
+          "● Increases DMG: 340% > 410% of PATK and 20% > 26% of target's MAX HP"
+        ],
+        "transcendence": [
+          "Changes [Execution] condition from 24% > 30%"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Physical Vulnerability: Increases PDMG taken by 17%",
+        "Burn: Deals DMG equal to 80% of caster's ATK every turn"
+      ],
+      "basicAttack": [
+        "Burn: Deals DMG equal to 80% of caster's ATK every turn"
+      ],
+      "skill1": [
+        "Burn: Deals DMG equal to 80% of caster's ATK every turn",
+        "DEF Reduction: Decreases DEF by 29%"
+      ],
+      "skill2": [
+        "Buff Removal: Removes buff in the order they are applied. DMG immunity and DMG nullification cannot be removed",
+        "Burn: Deals DMG equal to 80% of caster's ATK every turn",
+        "Execution: Instantly kills targets whose HP falls below a specific percentage (does not work on targets with HP exceeding 120% of caster's ATK)"
+      ]
+    }
+  },
+  {
+    "name": "ROSIE",
+    "slug": "rosie",
+    "type": "Support",
+    "rarity": "Legendary++",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [MAX HP-Based DEF Boost] (always active)\n● Grants [All DMG Immunity] for 2 turns when HP falls to 50% or lower\n\nDEF-TYPE & UNIVERSAL-TYPE ALLIES:\n● Grants [Effect Probability Boost] (always active)",
+        "enhancements": [
+          "Increases Turns: [All DMG Immunity] duration from 2 > 3 turns"
+        ],
+        "transcendence": [
+          "Increases Effect: [Effect Probability Boost] from 20% > 26%"
+        ]
+      },
+      "basicAttack": {
+        "description": "2 ENEMIES:\n● Deals DMG equal to 30% of MATK and 7% of caster's MAX HP",
+        "enhancements": [
+          "● Adds Effect: 16% chance to inflict [Effect Resist Reduction] for 2 turns"
+        ]
+      },
+      "skill1": {
+        "description": "ALL ENEMIES:\n● Deals DMG equal to 30% of MATK and 7% of the caster's MAX HP 2 time(s)\n● 25% chance to inflict [Death] for 3 turns.",
+        "enhancements": [
+          "● Increases DMG: 30% > 37% of MATK and 7% > 10% of MAX HP\n● Increases Chance: [Death] chance increases from 25% > 35%"
+        ]
+      },
+      "skill2": {
+        "description": "2 ALLIES:\n● [Revive] the fallen target with 40% HP\n\nALL ENEMIES:\n● 100% chance to inflict [Buff Duration Reduction] by 2 turns",
+        "enhancements": [
+          "● Increases Effect: HP gained upon revival from 40% > 55%\n● Adds Effect to REVIVED ALLIES: [Guts] upon revival (once per battle)"
+        ],
+        "transcendence": [
+          "Change Number of Targets: 2 ALLIES > ALL ALLIES"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "MAX HP-based DEF Boost: Increases DEF by 100 for every 1000 MAX HP (Maximum: 900)",
+        "Effect Probability Boost: Increases Effect Probability by 20%"
+      ],
+      "basicAttack": [
+        "Effect Resist Reduction: Decreases Effect Resist by 16%"
+      ],
+      "skill1": [
+        "Death: The target takes DMG equal to 20% of current HP every turn"
+      ]
+    }
+  },
+  {
+    "name": "JURI",
+    "slug": "juri",
+    "type": "Magic",
+    "rarity": "Legendary++",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● 25% chance of performing a [Follow-Up Attack] (always active)\n● Grants [All DMG Nullification] 2 hits\n● Upon falling in battle",
+        "enhancements": [
+          "● Increases Turns: [Immortality] duration from 2 > 3 turns\n● Increases Effect: [Follow-Up Attack] DMG: 40% > 50% of MATK and 7% > 9% of target's MAX HP"
+        ],
+        "transcendence": [
+          "Increases Chance: [Follow-Up Attack] chance increases from 25% > 35%"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Follow-Up Attack: When an ally uses a basic attack"
+      ]
+    }
+  },
+  {
+    "name": "MELIA",
+    "slug": "melia",
+    "type": "Magic",
+    "rarity": "Legendary++",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Grants [Physical Enhancement - Crystal Dragon] (always active)\n● [Revive] with 80% HP upon falling in battle (once per battle)\n● [Magic Bond - 4 targets]: Grants [CC Immunity] for 3 turns\n\nALL ENEMIES:\n● Inflicts [Magic Vulnerability] (always active)\n\nALL MAGIC ALLIES:\n● [Magic Bond - 5 targets]: Grants [Barrier] equal to 45% of caster's DEF for 2 turns upon using any attack 1 time",
+        "enhancements": [
+          "Increases Effect to SELF: HP gained from [Revive] 80% > 100%\nIncreases Effect to ALL ENEMIES: [Magic Vulnerability] from 17% > 20%"
+        ]
+      },
+      "basicAttack": {
+        "description": "2 ENEMIES:\n● Deals DMG equal to 30% of MATK plus 35% of DEF\n● [Magic Bond - 3 targets]: 30% chance to inflict [Crystal Cluster] (ends after taking 6 hits)",
+        "enhancements": [
+          "Increases Chance: [Crystal Cluster] from 30% > 35%"
+        ],
+        "transcendence": [
+          "Increases Effect: Decreases [Crystal Cluster] hit count from 6 > 5 hits"
+        ]
+      },
+      "skill1": {
+        "description": "ALL ENEMIES:\n● Deals DMG equal to 30% of MATK plus 32% of DEF 2 time(s)\n● [Magic Bond - 3 targets]: 50% chance to inflict [Crystal Cluster] (ends after taking 6 hits)\n● 100% chance to inflict [Crystal Resonance] (reduces hits by 4)",
+        "enhancements": [
+          "Increases Chance: [Crystal Cluster] from 50% > 65%"
+        ],
+        "transcendence": [
+          "Increases Effect: Decreases [Crystal Cluster] hit count from 6 > 5 hits"
+        ]
+      },
+      "skill2": {
+        "description": "ALL ENEMIES:\n● Deals DMG equal to 30% of MATK plus 32% of DEF 2 time(s)\n● 100% chance to inflict [Increased Miss Chance] for 3 turns\n● [Magic Bond - 3 targets]: Each attack has 35% chance to inflict [Crystal Cluster] (ends after taking 4 hits)",
+        "enhancements": [
+          "Increases Effect: [Increased Miss Chance] from 36% > 48%\nIncreases Chance: [Crystal Clluster] from 35% > 45%"
+        ],
+        "transcendence": [
+          "Added Effect to SELF: [Taunt] for 2 turns"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "Physical Enhancement - Crystal Dragon: Increases Melia's basic DEF and HP",
+        "Magic Bond: At the start of battle"
+      ],
+      "skill1": [
+        "435 Fixed DMG"
+      ],
+      "awakenedSkill": [
+        "435 Fixed DMG"
+      ]
+    }
+  },
+  {
+    "name": "GELIDUS",
+    "slug": "gelidus",
+    "type": "Universal",
+    "rarity": "Legendary++",
+    "skills": {
+      "passive": {
+        "description": "SELF:\n● Starting battles with at least 3 Universal hero(es) on your team grants HP healing equal to 165% of the caster's DEF when HP falls to 50% or lower (2 times per battle)\n● Grants [DMG Resistance] (always active)\n● Grants [DEF-Based Block Rate Boost] (always active)\n\nALL ENEMIES:\n● Inflicts [Effect Probability Reduction] (always active)\n\n3 ENEMIES:\n● Deals DMG equal to 60% of PATK and 65% of DEF upon using any attack 2 time(s)\n● Using any attack 2 time(s) has a 75% chance to inflict [Extreme Chill] for 2 turns",
+        "enhancements": [
+          "Increases Effect: [DEF-Based Block Rate Boost] max from 27% > 33%"
+        ],
+        "transcendence": [
+          "Increases Effect: [Effect Probability Reduction] from 20% > 26%"
+        ]
+      },
+      "basicAttack": {
+        "description": "1 ENEMY:\n● Deals DMG equal to 50% of PATK plus 60% of DEF \n● 45% chance to inflict [Extreme Chill] for 1 turn",
+        "enhancements": [
+          "Increases DMG: 50% > 60% of PATK plus 60% to 70% of DEF\nIncreases Chance: [Extreme Chill] from 45% > 50%"
+        ],
+        "transcendence": [
+          "Changes Number of Targets: [Extreme Chill] 1 > 3 Enemies"
+        ]
+      },
+      "skill1": {
+        "description": "ALL ENEMIES:\n● Deals [Piercing] DMG equal to 65% of PATK plus 70% of DEF\n● 60% chance of inflicting [Extreme Chill] for 2 turns",
+        "enhancements": [
+          "Increases DMG: 65% > 75% of PATK plus 70% > 85% of DEF\nIncreases Chance: [Extreme Chill] from 60% > 70%"
+        ]
+      },
+      "skill2": {
+        "description": "ALL ENEMIES:\n● Deals [DEF-Ignoring] DMG equal to 30% of PATK plus 33% of DEF 2 time(s)\n● 60% chance of inflicting [Extreme Chill] for 2 turns",
+        "enhancements": [
+          "Increases DMG: 30% > 35% of PATK plus 33% > 38% of DEF\nIncreases Chance: [Extreme Chill] from 60% > 70%"
+        ]
+      }
+    },
+    "effectDescriptions": {
+      "passive": [
+        "DMG Resistance: Decreases DMG taken by 16%",
+        "DEF-Based Block Rate Boost: Increases Block Rate by 3% for every 150 DEF (Maximum 27%)",
+        "Effect Probability Reduction: Decreases Effect Probability by 20%",
+        "Extreme Chill: Targets inflicted with [Extreme Chill] cannot take any actions. [Extreme Chill] is removed when hit by an enemy's attack. The caster heals by 100% of the DMG and the target takes DEF-Ignoring DMG equal to 60% of its MAX HP when [Extreme Chill] is removed. [Extreme Chill] is counted as [Freeze] and targets with [Extreme Chill] cannot be inflicted with [Freeze]"
+      ],
+      "skill1": [
+        "Piercing: Ignores DMG Immunity effects on the target",
+        "Extreme Chill: Targets inflicted with [Extreme Chill] cannot take any actions. [Extreme Chill] is removed when hit by an enemy's attack. The caster heals by 100% of the DMG and the target takes DEF-Ignoring DMG equal to 60% of its MAX HP when [Extreme Chill] is removed. [Extreme Chill] is counted as [Freeze] and targets with [Extreme Chill] cannot be inflicted with [Freeze]"
+      ],
+      "skill2": [
+        "Ignore DEF: Ignores 40% of the target's DEF",
+        "Extreme Chill: Targets inflicted with [Extreme Chill] cannot take any actions. [Extreme Chill] is removed when hit by an enemy's attack. The caster heals by 100% of the DMG and the target takes DEF-Ignoring DMG equal to 60% of its MAX HP when [Extreme Chill] is removed. [Extreme Chill] is counted as [Freeze] and targets with [Extreme Chill] cannot be inflicted with [Freeze]"
+      ]
+    }
+  }
+]

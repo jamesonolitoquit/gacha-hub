@@ -62,7 +62,7 @@ export function GameSwitcher({ games }: GameSwitcherProps) {
         aria-expanded={open}
         aria-controls="game-switcher-menu"
         onClick={() => setOpen((value) => !value)}
-        className="relative inline-flex min-h-11 items-center gap-3 overflow-hidden rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-left transition hover:border-white/25 hover:bg-white/10 focus-visible:border-sky-300/55 focus-visible:bg-white/10"
+        className="group relative inline-flex min-h-9 items-center gap-2.5 overflow-hidden rounded-3xl border border-white/10 bg-white/5 px-2.5 py-1.5 text-left transition hover:border-white/25 hover:bg-white/10 focus-visible:border-sky-300/55 focus-visible:bg-white/10"
       >
         {currentGame ? (
           <span
@@ -75,7 +75,7 @@ export function GameSwitcher({ games }: GameSwitcherProps) {
         )}
         <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-slate-950/20 via-slate-950/55 to-slate-950/80" aria-hidden="true" />
         <span
-          className="relative z-10 inline-flex h-9 w-9 items-center justify-center rounded-xl text-[0.65rem] font-semibold tracking-[0.2em] text-white"
+          className="relative z-10 inline-flex h-8 w-8 items-center justify-center rounded-xl text-[0.58rem] font-semibold tracking-[0.16em] text-white"
           style={{
             background: isLauncherHub
               ? 'linear-gradient(135deg, #5c7cff, #a96cff)'
@@ -86,12 +86,12 @@ export function GameSwitcher({ games }: GameSwitcherProps) {
           {currentGame ? getMonogram(currentGame.name) : 'GH'}
         </span>
         <span className="relative z-10 min-w-0">
-          <span className="block text-[0.65rem] uppercase tracking-[0.28em] text-white/55 font-semibold">
+          <span className="block text-[0.52rem] uppercase tracking-[0.24em] text-white/55 font-semibold">
             {isLauncherHub ? 'Main hub' : 'Current realm'}
           </span>
-          <span className="block truncate text-sm font-semibold text-white">{currentGame?.name ?? 'GachaHub'}</span>
+          <span className="block truncate text-[0.84rem] font-semibold text-white">{currentGame?.name ?? 'GachaHub'}</span>
         </span>
-        <span className="relative z-10 ml-1 text-xs uppercase tracking-[0.25em] text-sky-300">Switch</span>
+        <span className="relative z-10 ml-1 text-[0.62rem] uppercase tracking-[0.2em] text-sky-300">Switch</span>
       </button>
 
       {open ? (

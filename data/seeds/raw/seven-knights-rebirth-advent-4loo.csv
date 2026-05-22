@@ -1,0 +1,316 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,ADVENT EXPEDITION - 4 LORDS OF OLD 강림원정대편,,,,,,,,,,,,,,,,,,,,,,,,,
+,ADVENT EXPEDITION PLAYLIST,,,,,"Positioning MATTERS! Speed priority goes from Front to Back in a Left to Right fashion.
+Speed order is labelled accordingly. You may NOT need to match the same speed amount but the Speed Order is neecssary.
+
+The relationship between Gears & Accessories is flexible. Whichever combination is easier to hit near 100%, use that.
+For e.g., If you have better Crit Rolls on your gears, then accessory can have Weakness Hit Chance instead and vice versa. If you can achieve both well with gears alone, then accessory can boost other 1-3 Target Atk DMG instead (IDEAL).",,,,,,,,,,,,,,"Skill Queues shown here MAY NOT match the Video Guide shown. In any case, the Skill Queue is the more updated guide.
+It is to be assumed that skills of DPS and fixed Support Heroes are enhanced. Any special cases will be identified in Notes.
+
+The Stats Tables is especially important for this mode. 
+It further shows ATK & Crit DMG in this mode because you may need a certain amount of stats to take down the phases as fast as possible. This is particularly more crucial for Phase 1 Teams, where you try to complete as fast as you can.
+The shaded stats, upon adding up, will be what you actually see on your Hero's Stat screen (BASE+GEARS+T4). The sum is shown in the adjacent cell.
+Stats from ACC, EE, PASSIVE & ALLY will only be applied in battle and is not reflected on the hero's stats details.",,,,,,,,,,,
+,Teo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Kyle,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Yeonhee,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Karma,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,"SHADOW TEO 
+(구)사황별 태오",,6M TEAM,,,PHASE 1,,,,,,,,,,,PHASE 2,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,+MDMG,,"DEF DOWN (P)
+BUFF REMOVE",,ST DPS,,MAGIC VUL (P),,"ST DMG BUFFER
+DEF DOWN (A)",,,,,,+WEAKNESS DMG,,ST DPS,,"+CRIT RATE
++CRIT DMG
+DEF DOWN (A)",,ST DPS,,"DEF DOWN (P)
++WEAKNESS CHANCE",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SKILL QUEUE:,,,0,4,8,12,16,,,,,,,,16,20,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,SPEED: 29,,,"SPEED
+ORDER",,A,,B,,E,,D,,C,,,,,,B,,C,,E,,D,,A,,,
+,,,,,,33,,33,,29,,29,,33,,,,,,29,,29,,27,,29,,39,,,
+,,,,ATK,,~3.8K,,~3.8K,,~4.5K+,,NOT IMPT,,~4K,,,,,,~4K,,~4.2K+,,NOT IMPT,,~4.3K+,,NOT IMPT,,,
+,,,,CRIT DMG,,~250%,,~230%,,~270%+,,,,~170%,,,,,,~220%,,~270%+,,,,~240%+,,,,,
+,,,,TOTAL:,,99,,99,,105,,,,91,,,,,,100,,100,,,,98,,,,,
+,,,,BASE,,5,89,5,89,5,5,,,5,91,,,,,5,73,5,73,,,5,71,,,,
+,,,,T4,,-,,-,,-,,,,14,,,,,,-,,-,,,,18,,,,,
+,,,,GEARS,,84,,84,,-,,,,72,,,,,,68,,68,,,,48,,,,,
+,,,,ACC,,10,,10,,-,,,,-,,,,,,10,,10,,,,10,,,,,
+,,,,EE,,-,,-,,-,,,,-,,,,,,-,,-,,,,-,,,,,
+,https://youtu.be/3HdWaKYJZrA,,,PASSIVE,,-,,-,,100,,,,-,,,,,,-,,-,,,,-,,,,,
+,,,,ALLY,,-,,-,,-,,,,-,,,,,,17,,17,,,,17,,,,,
+,,,,TOTAL:,,NOT IMPT,,NOT IMPT,,88,,NOT IMPT,,NOT IMPT,,,,,,50,,94,,NOT IMPT,,99,,NOT IMPT,,,
+,,,,T4,,,,,,-,88,,,,,,,,,20,50,20,40,,,-,45,,,,
+,,,,GEARS,,,,,,88,,,,,,,,,,30,,20,,,,45,,,,,
+,,,,ACC,,,,,,-,,,,,,,,,,-,,-,,,,-,,,,,
+,,,,EE,,,,,,-,,,,,,,,,,-,,-,,,,-,,,,,
+,,,,PASSIVE,,,,,,-,,,,,,,,,,-,,-,,,,-,,,,,
+,Buff Removal is needed to removve Teo's Immortal Buff. Also better to Debuff Teo to deal more damage,,,ALLY,,,,,,-,,,,,,,,,,-,,54,,,,54,,,,,
+,,,YEONJI,,,KYRIELLE-T0,,VANESSA-T0,,PASCAL-T6,,MELIA-T0,,XIAO-T6,,,,,,MIHO-T6,,XIAO QIAO-T6,,ORLY-SE,,DAISY-T6,,BISCUIT-T6,,WINDY,
+,,,RICHEL,,,AVENGER,,AVENGER,,AVENGER,,GATEKEEP,,AVENGER,,,,,,AVENGER,,AVENGER,,PALADIN,,AVENGER,,GATEKEEP,,YEONJI,
+,,,CROA,,,DMGCOMBI,,BOSSDMG+CWR,,BOSSDMG+ST,,BOSSDMG+CWR,,BLEED,,,,,,BOSSDMG+CWR,,BLEED,,HP,,BLEED,,DOT,,NOTE,
+,,,NOTES:,,,Supports do not have to wear Avenger pieces if you do not have sufficient. Bounty Hunter/Assassin for Xiao is alright too. Weakness Hit is less priority compared to Crit Rate & Crit DMG.,,,,,,,,,,,,,,NOTES:,Miho must have lower attack than Daisy and Xiao Qiao.,,,,,,,,,,
+,OPTIONS:,,NO MELIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,KYRIELLE-T0,,VANESSA-T6,,PASCAL-T6,,MIHO-T6,,LINA-T6,,,,,,ORLY-T0,,XIAO QIAO-T6,,XIAO-T6,,DAISY-T6,,BISCUIT-T6,,,
+,,,,"SPEED
+ORDER",,A,,B,,D,,E,,C,,,,,,B,,A,,D,,E,,C,,,
+,,,,,,29,,29,,29,,25,,29,,,,,,29,,31,,29,,19,,29,,,
+,,,SKILL QUEUE:,,,0,4,8,12,16,,,,,,,,16,20,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,STAGE 1 FOCUSED,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,BISCUIT-T0,,XIAO-T6,,PASCAL-T0,,ARIEL-T6,,MIHO-T0,,,,,,ORLY-T0,,VANESSA-T0,,XIAO QIAO-T2,,LINA-T0,,DAISY-T0,,,
+,,,,"SPEED
+ORDER",,A,,B,,E,,C,,D,,,,,,B,,A,,D,,E,,C,,,
+,,,,,,29,,29,,29,,29,,29,,,,,,29,,31,,29,,19,,29,,,
+,,,SKILL QUEUE:,,,0,4,8,12,16,20,,,,,,,,20,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,0,4,8,12,16,20,22,24,26,28,,,,,,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,"SHADOW KYLE
+(구)사황별 카일",,6M TEAM,,,PHASE 1,,,,,,,,,,,PHASE 2,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,"+PDMG
++CRIT DMG",,ST DPS,,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,ST DPS,,PHYS VUL (P),,,,,,ST DPS,,"+PATK
++IGNORE DEF EFFICIENCY",,ST DPS,,"+DMG
+DEF DOWN (A)",,"DEF DOWN (P)
++WEAKNESS CHANCE",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SKILL QUEUE:,,,0,4,8,12,(16),,,,,,,12,16,20,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,SPEED: 29,,,"SPEED
+ORDER",,A,,E,,B,,C,,D,,,,,,E,,A,,B,,C,,D,,,
+,,,,,,33,,29,,33,,33,,29,,,,,,25,,37,,29,,27,,27,,,
+,,,,ATK,,~3.6K,,~4.3K+,,~3.5K+,,~4.3K+,,~3.5K,,,,,,~3.6K+,,~3.4K+,,~4.3K+,,NOT IMPT,,NOT IMPT,,,
+,,,,CRIT DMG,,~200%,,~230%,,~220%+,,~290%+,,~230%,,,,,,~220%,,~200%+,,~270%+,,,,,,,
+,,,,TOTAL:,,105,,99,,99,,100,,97,,,,,,101,,95,,116,,,,,,,
+,,,,BASE,,5,5,5,89,5,89,5,59,5,87,,,,,5,91,5,85,5,73,,,,,,
+,,,,T4,,-,,-,,-,,18,,-,,,,,,18,,-,,-,,,,,,,
+,,,,GEARS,,-,,84,,84,,36,,82,,,,,,68,,80,,68,,,,,,,
+,,,,ACC,,-,,10,,10,,-,,10,,,,,,10,,10,,10,,,,,,,
+,,,,EE,,-,,-,,-,,-,,-,,,,,,-,,-,,-,,,,,,,
+,https://youtu.be/ZBXcPwQMZyY,,,PASSIVE,,100,,-,,-,,41,,-,,,,,,-,,-,,33,,,,,,,
+,,,,ALLY,,-,,-,,-,,-,,-,,,,,,-,,-,,-,,,,,,,
+,,,,TOTAL:,,95,,79,,67,,NOT IMPT,,NOT IMPT,,,,,,99,,NOT IMPT,,94,,NOT IMPT,,NOT IMPT,,,
+,,,,T4,,20,95,20,40,20,30,,,,,,,,,-,45,,,20,40,,,,,,
+,,,,GEARS,,75,,20,,10,,,,,,,,,,45,,,,20,,,,,,,
+,,,,ACC,,-,,-,,10,,,,,,,,,,-,,,,-,,,,,,,
+,,,,EE,,-,,-,,-,,,,,,,,,,-,,,,-,,,,,,,
+,,,,PASSIVE,,-,,39,,27,,,,,,,,,,-,,,,-,,,,,,,
+,Buff Removal is needed to removve Teo's Immortal Buff. Also better to Debuff Teo to deal more damage,,,ALLY,,-,,-,,-,,,,,,,,,,54,,,,54,,,,,,,
+,,,EIRIN,,,GUAN YU-T6,,RANDGRID-T6,,RACHEL-T6,,SHANE-T6,,FAI-T0,,,,,,SIEG-T6,,LU BU-T6,,BAI LONG-T6,,LINA-T6,,BISCUIT-T6,,WINDY,
+,,,DELLO,,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,,,,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,GATEKEEP,,EIRIN,
+,,,CROA,,,DMGCOMBI,,BOSSDMG+CWR,,DMGCOMBI,,BOSSDMG+ST,,BOSSDMG+CWR,,,,,,GUTS,,GUTS,,BOSSDMG+CWR,,DOT,,DOT,,SHERRY,
+,,,NOTES:,,,Supports do not have to wear Avenger pieces if you do not have sufficient. Bounty Hunter/Assassin for Xiao is alright too. Weakness Hit is less priority compared to Crit Rate & Crit DMG.,,,,,,,,,,,,,,NOTES:,Lu Bu must have lower attack than Sieg & Bai Long.,,,,,,,,,,
+,OPTIONS:,,NO FAI,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,SIEG-T6,,ACE-T0,,SHANE-T6,,RACHEL-T0,,GUAN YU-T6,,,,,,XIAO-T6,,LU BU-T6,,BAI LONG-T6,,LINA-T0,,BISCUIT-T6,,,
+,,,,"SPEED
+ORDER",,A,,B,,D,,E,,C,,,,,,D,,A,,C,,E,,B,,,
+,,,,,,29,,29,,29,,25,,29,,,,,,29,,37,,33,,27,,35,,,
+,,,SKILL QUEUE:,,,0,4,8,12,,,,,,,,12,16,20,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,STAGE 1 FOCUSED,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,BISCUIT-T0,,SIEG-T0,,SHANE-T2,,RACHEL-T0,,YUI-T6,,,,,,XIAO-T6,,ACE-T0,,BAI LONG-T2,,LINA-T0,,LU BU-T0,,,
+,,,,"SPEED
+ORDER",,A,,D,,C,,B,,E,,,,,,B,,A,,D,,E,,C,,,
+,,,,,,35,,25,,29,,29,,17,,,,,,29,,31,,29,,19,,29,,,
+,,,SKILL QUEUE:,,,0,4,8,12,16,20,,,,,,,,20,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,0,4,8,12,16,20,24,28,32,,,,,,,,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,"SHADOW YEONHEE
+(구)사황별 연희",,6M TEAM,,,PHASE 1,,,,,,,,,,,PHASE 2,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,"CLEANSE
++CRIT RATE
++ALL ATK",,DEF DOWN (A),,3-TARGET DPS,,+MATK,,"MAGIC VUL (A)
+DEF DOWN (P)",,,,,,3-TARGET DPS,,"+PATK
++IGNORE DEF EFFICIENCY",,ST DPS,,"+DMG
+DEF DOWN (A)",,"DEF DOWN (P)
++WEAKNESS CHANCE",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SKILL QUEUE:,,,0,4,8,12,16,,,,,,,,16,20,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,SPEED: 29,,,"SPEED
+ORDER",,E,,A,,B,,C,,D,,,,,,C,,A,,D,,B,,E,,,
+,,,,,,17,,35,,33,,29,,29,,,,,,29,,37,,17,,29,,17,,,
+,,,,ATK,,NOT IMPT,,NOT IMPT,,~3.5K+,,~4.3K+,,~3.5K,,,,,,~3.7K+,,~3.4K+,,NOT IMPT,,~4.3K+,,NOT IMPT,,,
+,,,,CRIT DMG,,,,,,~220%+,,~220%+,,~230%,,,,,,~280%,,~200%+,,,,~210%+,,,,,
+,,,,TOTAL:,,,,,,101,,77,,99,,,,,,98,,97,,,,97,,,,,
+,,,,BASE,,,,,,5,57,5,33,5,45,,,,,5,55,5,87,,,5,97,,,,
+,,,,T4,,,,,,-,,-,,-,,,,,,18,,18,,,,-,,,,,
+,,,,GEARS,,,,,,52,,28,,40,,,,,,32,,64,,,,92,,,,,
+,,,,ACC,,,,,,-,,-,,10,,,,,,10,,10,,,,-,,,,,
+,,,,EE,,,,,,-,,-,,-,,,,,,-,,-,,,,-,,,,,
+,https://youtu.be/eXrGgOvHoLM,,,PASSIVE,,,,,,-,,-,,-,,,,,,33,,-,,,,-,,,,,
+,,,,ALLY,,,,,,44,,44,,44,,,,,,-,,-,,,,-,,,,,
+,,,,TOTAL:,,NOT IMPT,,NOT IMPT,,99,,NOT IMPT,,NOT IMPT,,,,,,99,,NOT IMPT,,NOT IMPT,,101,,NOT IMPT,,,
+,,,,T4,,,,,,20,50,,,,,,,,,-,45,,,,,20,35,,,,
+,,,,GEARS,,,,,,30,,,,,,,,,,45,,,,,,15,,,,,
+,,,,ACC,,,,,,10,,,,,,,,,,-,,,,,,12,,,,,
+,,,,EE,,,,,,-,,,,,,,,,,-,,,,,,-,,,,,
+,https://youtu.be/sOsBmlyRcr0,,,PASSIVE,,,,,,39,,,,,,,,,,-,,,,,,-,,,,,
+,"Cleanse MUST BE on the Frontline as Yeonhee inflicts Sleep on the Backline
+(100% Effect Resist DOES NOT resist Sleep; Yeonhee has 100% Effect Rate)",,,ALLY,,,,,,-,,,,,,,,,,54,,,,,,54,,,,,
+,,,YEONJI,,,CHLOE-T6,,ORLY-SE,,RURI-T6,,O'MOK-T0,,VANESSA-T6,,,,,,NEZHA-T6,,DAISY-T6,,LINA-T6,,MIHO-T6,,BISCUIT-T6,,WINDY,
+,,,DELLO,,,ORCHES,,PALADIN,,AVENGER,,AVENGER,,AVENGER,,,,,,AVENGER,,AVENGER,,PALADIN,,AVENGER,,GATEKEEP,,YEONJI,
+,,,CROA,,,DMGCOMBI,,HP,,DMGCOMBI,,BOSSDMG+CWR,,BOSSDMG+CWR,,,,,,BOSSDMG+CWR,,BOSSDMG+CWR,,DOT,,BOSSDMG+CWR,,DOT,,NOTE,
+,,,NOTES:,,,You can also use Yeonhee over O'Mok. Both are there for the same purpose. Check to see Chloe has Orchestrator so that she will not be put to sleep by chance. You can use the 3-2 Formation too.,,,,,,,,,,,,,,NOTES:,Daisy must have lower attack than Nezha and Miho.,,,,,,,,,,
+,OPTIONS:,,NO FAI,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,VANESSA-T6,,CHLOE-T6,,RURI-T6,,LINA-T6,,YEONHEE-T6,,,,,,SUNWUKONG-T6,,BISCUIT-T6,,ORLY-SE,,MIHO-T6,,DAISY-T6,,,
+,,,,"SPEED
+ORDER",,A,,C,,B,,E,,D,,,,,,E,,B,,C,,D,,A,,,
+,,,,,,41,,36,,41,,23,,29,,,,,,29,,39,,35,,29,,45,,,
+,,,SKILL QUEUE:,,,0,4,8,12,16,,,,,,,,16,20,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,12,16,20,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,STAGE 1 FOCUSED,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,BISCUIT-T0,,O'MOK-T0,,RURI-T2,,MIHO-T0,,SARAH-T6,,,,,,NEZHA-T0,,CHLOE-T6,,VANESSA-T0,,LINA-T0,,DAISY-T0,,,
+,,,,"SPEED
+ORDER",,A,,D,,C,,B,,E,,,,,,B,,A,,D,,E,,C,,,
+,,,,,,35,,25,,29,,29,,17,,,,,,29,,31,,29,,19,,29,,,
+,,,SKILL QUEUE:,,,0,4,8,12,16,20,24,,,,,,,,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,0,4,8,12,16,20,24,28,32,36,,,,,,,,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,"SHADOW KARMA
+(구)사황별 카르마",,6M TEAM,,,PHASE 1,,,,,,,,,,,PHASE 2,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,"PHYS VUL (P)
+DEF DOWN (A)",,+PATK,,3-TARGET DPS,,PHYS VUL (A),,DEF DOWN (P),,,,,,"+PATK
++IGNORE DEF EFFICIENCY",,"DEF DOWN (A)
+PHYS VUL (A)
++WEAKNESS (P)",,3-TARGET DPS,,"+DMG
+DEF DOWN (A)",,"DEF DOWN (P)
++WEAKNESS CHANCE",,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SKILL QUEUE:,,,0,4,8,12,(16),,,,,,,12,16,20,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,SPEED: 19,,,"SPEED
+ORDER",,A,,B,,E,,C,,D,,,,,,A,,C,,D,,B,,E,,,
+,,,,,,57,,41,,29,,41,,29,,,,,,41,,29,,29,,35,,19,,,
+,,,,ATK,,~3.5K+,,~3.6K+,,~4.5K+,,~3.5K+,,~3.5K,,,,,,~3.7K+,,~4.3K+,,~4.3K+,,NOT IMPT,,NOT IMPT,,,
+,,,,CRIT DMG,,~220%+,,~180%+,,~160%+,,~200%+,,~220%,,,,,,~280%,,~210%+,,~210%+,,,,,,,
+,,,,TOTAL:,,73,,73,,89,,91,,97,,,,,,80,,97,,115,,,,,,,
+,,,,BASE,,5,73,5,73,5,79,5,81,5,87,,,,,5,37,5,97,5,115,,,,,,
+,,,,T4,,-,,-,,18,,-,,18,,,,,,-,,-,,18,,,,,,,
+,,,,GEARS,,68,,68,,56,,76,,64,,,,,,32,,92,,92,,,,,,,
+,,,,ACC,,-,,-,,10,,10,,10,,,,,,10,,-,,-,,,,,,,
+,,,,EE,,-,,-,,-,,-,,-,,,,,,-,,-,,-,,,,,,,
+,https://youtu.be/aLhWjQc8jX0,,,PASSIVE,,-,,-,,-,,-,,-,,,,,,33,,-,,-,,,,,,,
+,,,,ALLY,,-,,-,,-,,-,,-,,,,,,-,,-,,-,,,,,,,
+,,,,TOTAL:,,NOT IMPT,,30,,30,,NOT IMPT,,NOT IMPT,,,,,,65,,101,,81,,NOT IMPT,,NOT IMPT,,,
+,,,,T4,,,,-,30,-,30,,,,,,,,,20,65,20,35,-,15,,,,,,
+,,,,GEARS,,,,30,,30,,,,,,,,,,45,,15,,15,,,,,,,
+,,,,ACC,,,,-,,-,,,,,,,,,,-,,12,,12,,,,,,,
+,,,,EE,,,,-,,-,,,,,,,,,,-,,-,,-,,,,,,,
+,https://youtu.be/3N4-lh1l3Y8,,,PASSIVE,,,,-,,-,,,,,,,,,,-,,-,,-,,,,,,,
+, Karma takes more DMG when Endurance stacks are low; Takes less DMG when stacks are high and at 8 stacks & consumes all to deal more DMG,,,ALLY,,,,-,,-,,,,,,,,,,-,,54,,54,,,,,,,
+,,,EIRIN,,,ACE-T0,,KARL HERON-T0,,BIDAM-T6,,FAI-T0,,SIEG-T6,,,,,,LU BU-T6,,RACHEL-T6,,RYAN-T6,,LINA-T6,,BISCUIT-T6,,WINDY,
+,,,DELLO,,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,AVENGER,,,,,,AVENGER,,AVENGER,,AVENGER,,PALADIN,,GATEKEEP,,EIRIN,
+,,,CROA,,,BLEED,,BLEED,,BOSSDMG+ST,,BOSSDMG+CWR,,BOSSDMG+CWR,,,,,,BOSSDMG+CWR,,BOSSDMG+CWR,,BOSSDMG+ST,,DOT,,DOT,,SHERRY,
+,,,NOTES:,,,"Can use Taka if you do not have Fai or to replace Karl Heron and in that case, if Bidam doesn't manage to land enough bleed, Taka's S2 can finish on Turn 16. Crit is not as essential as ATK% for Bidam as Bleed scales with ATK%.",,,,,,,,,,,,,,NOTES:,Lu Bu must have lower attack than Ryan and Rachel.,,,,,,,,,,
+,OPTIONS:,,"NO BIDAM
+NO FAI",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,DELLONS-T0,,FENG YAN-T6,,GUAN YU-T2,,TAKA-T6,,ACE-T0,,,,,,SIEG-T6,,RACHEL-T6,,RYAN-T6,,LINA-T6,,BISCUIT-T6,,,
+,,,,"SPEED
+ORDER",,B,,E,,A,,C,,D,,,,,,A,,C,,D,,B,,E,,,
+,,,,,,29,,25,,41,,29,,25,,,,,,41,,29,,29,,35,,19,,,
+,,,SKILL QUEUE:,,,0,4,8,12,16,20,,,,,,,,20,24,28,32,36,40,44,48,52,56,60,64,68
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,STAGE 1 FOCUSED,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,BISCUIT-T0,,TAKA-T0,,LINA-T0,,KYLE-T2,,RACHEL-T0,,,,,,ACE-T0,,FENG YAN-T6,,YUI-T0,,RYAN-T0,,SIEG-T0,,,
+,,,,"SPEED
+ORDER",,A,,C,,E,,D,,B,,,,,,A,,B,,E,,C,,D,,,
+,,,,,,35,,29,,27,,29,,29,,,,,,29,,29,,20,,29,,25,,,
+,,,SKILL QUEUE:,,,0,4,8,12,16,20,24,28,,,,,,,,28,32,36,40,44,48,52,56,60,64,68

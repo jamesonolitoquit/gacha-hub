@@ -1,0 +1,90 @@
+,,,,,,,,,,,,,,,,,,,,,,,
+,NO.,HERO,,,TYPE,,,,PASSIVE,,,,BASIC ATTACK,,,,SKILL1 (BTM SKILL),,,,SKILL2 (TOP SKILL),,
+,1,,,SUNG JINWOO-T0,MAGIC,,,,,"ALL ALLIES:
+● Grants [Magic DMG Boost] (always active)
+
+SELF:
+● Grants [All DMG Nullification] for 3 hits
+● [Revives] with 80% HP upon falling in battle (once per battle)
+● Grants [Conqueror of Adversity] (always active)
+● Grants [Effect Resist Boost] (always active)
+● Grants 1 [Level Up] upon using a basic attack 2 times (Max 30 Levels)
+● Grants 1 [Level Up] upon using a skill 1 time (Max 30 Levels)
+● Grants 2 [Level Up] when an enemy falls in battle (Max 30 Levels)",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK
+● Deals additional DMG equal to 45% of MATK against targets with [Defense Boost]",,,,"4 ENEMIES:
+● Deals [Piercing] DMG equal to 57% of MATK plus 7% of the target's MAX HP 2 times (HP-based DMG limited to 75% of caster's ATK)",,,,"ALL ENEMIES:
+● Deals [DEF-Ignoring] DMG equal to 45% of MATK 2 times
+● Each attack deals additional [DEF-Ignoring] DMG equal to 62% of MATK when the target's SPD is lower than the caster's SPD",
+,,,,,,,,Skill Enhancements,,"● Increases Effect: [Magic DMG Boost] from 17% > 20%
+● Increases Effect: [Revives] with 80% > 100% HP
+● Increases Effect: [Effect Resist Boost] from 40% > 49%",,,,● Increases DMG: 100% > 130% of MATK ,,,,●  Increases DMG: 57% > 67% of MATK plus 7% > 9% of target's MAX HP,,,,● Increases DMG: 45% > 55% of MATK,
+,,,,,,,,Transcendence Effects,,,Increases Effect to SELF: [Level Up] Max count from 30 > 40,,,,,,,,,,,,
+,,,,,,,,,,,"Adds Effect to ALL ALLIES: Grants [All DMG Nullification] upon revival for 1 hit
+Adds Effect to SELF: Grants [All DMG Nullification] upon revival for 3 hits
+Adds Effect to SELF: Grants 10 [Level Up] upon revival",,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,"Magic DMG Boost: Increases MDMG dealt by 17%
+
+All DMG Nullification: Nullifies all DMG for a set amount of hits
+
+Conqueror of Adversity (Stacks): DMG increases by 2% in proportion to the current stage level
+
+Effect Resist Boost: Increases Effect Resistance by 40%
+
+Level Up (Stacks): Increases All ATK by 3%. The total amount of enhancement levels is retained when the target falls",,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,2,,,CHA HAEIN-T0,ATK,,,,,"SELF:
+● [Revives] with 80% HP upon falling in battle (once per battle)
+
+ALL ALLIES in Infinite Tower/Tower of Trials:
+● Grants [Effect Probability Boost] (always active)
+● Reduces skill cooldown by 15s upon using a skill
+",,,,"1 ENEMY:
+● Deals DMG equal to 100% of PATK",,,,"3 ENEMIES:
+● Deals DMG equal to 62% of PATK 2 times
+● 55% chance to inflict [Paralysis] for 2 turns
+
+ALL ALLIES:
+● Grants 2 [Debuff Removals]",,,,"4 ENEMIES:
+● Deals DMG equal to 62% of PATK 2 times
+● Each attack deals additional DMG equal to 27% of PATK upon landing a Critical Hit
+● Each attack grants an additional 7% damage boost each time the number of targets is reduced by 1
+
+SELF:
+● Reduces the cooldown of this skill by 60s upon defeating an enemy with DMG from this skill",
+,,,,,,,,Skill Enhancements,,"● Increases Effect: [Revives] with 80% > 100% HP
+● Increases Effect: [Effect Probability Boost] from 28% > 32%",,,,● Increases DMG: 100% > 120% of PATK ,,,,● Increases DMG: 62% > 72% of PATK,,,,● Increases DMG: 62% > 75% of PATK,
+,,,,,,,,Transcendence Effects,,,Adds Healing to ALL ALLIES: Heals HP equal to 40% of the caster's PATK upon using a skill,,,,,,,,,,,,Increases Effect: Resets the cooldown of this skill upon defeating an enemy with DMG from this skill
+,,,,,,,,,,-,,,,-,,,,-,,,,,
+,,,,,,,,Effect Descriptions,,Effect Probability Boost: Increases Effect Probability by 28%,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,3,,,YOO JINHO-T0,DEF,,,,,"ALL ALLIES:
+● Grants [DEF Boost] (always active)
+● Grants [Silence Immunity] for 2 turns
+● Grants [Silence Immunity] for 2 turns upon using a basic attack",,,,"1 ENEMY:
+● Deals DMG equal to 50% of PATK and 60% of DEF",,,,"1 ENEMY:
+● Deals DMG equal to 145% of PATK plus 165% of DEF
+● 85% chance to inflict [Stun] for 3 turns",,,,"ALL ALLIES:
+● Grants [Barrier] equal to 110% of caster's DEF for 2 turns",
+,,,,,,,,Skill Enhancements,,● Increases Effect: [DEF Boost] from 13% > 18%,,,,● Increases DMG: 50% > 60% of PATK and 60% > 70% of DEF,,,,● Increases Turns: [Stun] duration from 3 > 4 turns,,,,● Increases Effect: [Barrier] from 110% > 130% of caster's DEF,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,"Increases DMG: 145% > 170% of PATK and 165% > 200% of DEF
+Increases Chance: [Stun] chance increasess from 85% > 100%        ",,,,Adds Effect: Grants [DMG Resistance] for 3 turns
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,Defense Boost: Increases Defense by 13%,,,,,,,,,,,,DMG Resistance: Decrease DMG taken by 12%,
+,,,,,,,,,,,,,,,,,,,,,,,
+,4,,,LEE JOOHEE-T0,SUPPORT,,,,,"ALL ALIES:
+● Grants [Bleed Immunity] for 2 turns
+● Grants [Bleed Immunity] for 2 turns upon using a basic attack
+
+SELF: 
+● Grants [Barrier] equal to 115% of caster's MATK for 3 turns upon using a skill",,,,"1 ENEMY:
+● Deals DMG equal to 100% of MATK",,,,"3 ALLLIES:
+● Heals HP equal to 85% of caster's MATK
+
+BACK ROW ALLIES:
+● Grants 1 [Debuff Removal]",,,,"3 ALLIES:
+● Heals HP equal to 85% of caster's MATK",
+,,,,,,,,Skill Enhancements,,Increases Effect: [Barrier] from 115% > 135%,,,,● Increases DMG: 100% > 120% of MATK ,,,,● Increases Healing: HP Recovery from 85% > 100% of MATK,,,,● Increases Healing: HP Recovery from 85% > 100% of MATK,
+,,,,,,,,Transcendence Effects,,,,,,,,,,,Increases Effect: [Debuff Removal] from 1 > 2,,,,Reduces cooldown: To 75s
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Effect Descriptions,,,,,,,,,,,,,,,
