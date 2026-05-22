@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import HeaderCollapseFallback from './header-collapse-fallback';
 
 type AppShellProps = {
   skipTargetId: string;
@@ -18,6 +19,7 @@ export function AppShell({ skipTargetId, skipLabel, header, children, footer }: 
         {skipLabel}
       </a>
 
+      <HeaderCollapseFallback />
       {header}
 
       <main id={skipTargetId} className="pb-16">

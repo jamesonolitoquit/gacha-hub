@@ -13,9 +13,9 @@ function isActivePath(pathname: string, href: string) {
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
-export function PlatformNav() {
+export function PlatformNav({ compact = false }: { compact?: boolean }) {
   const pathname = usePathname();
-
+  
   return (
     <nav
       aria-label="Primary navigation"

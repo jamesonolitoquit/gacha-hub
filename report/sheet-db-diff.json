@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "sheetCsvUrl": "https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRM_Eup9Efmo8PauK9mXO_GN7oRe2GzpO1fuob72bK_lcGqMeVFXVAeH4hIQ4mRA90OX8job4DGzQ3D/pub?output=csv",
+    "timestamp": "2026-05-22T05:28:07.935Z"
+  },
+  "errors": [],
+  "summary": {
+    "missingInSheetCount": 111,
+    "missingInPrunedCount": 2,
+    "differingCount": 0
+  },
+  "sheet": {
+    "header": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rowCount": 83
+  },
+  "sheetMapSize": 2,
+  "prunedCount": 111,
+  "prunedMapSize": 111,
+  "missingInSheet": [
+    {
+      "slug": "karl-heron",
+      "name": "KARL HERON"
+    },
+    {
+      "slug": "fai",
+      "name": "FAI"
+    },
+    {
+      "slug": "branze-bransel",
+      "name": "BRANZE&BRANSEL"
+    },
+    {
+      "slug": "colt",
+      "name": "COLT"
+    },
+    {
+      "slug": "dellons",
+      "name": "DELLONS"
+    },
+    {
+      "slug": "kagura",
+      "name": "KAGURA"
+    },
+    {
+      "slug": "klahan",
+      "name": "KLAHAN"
+    },
+    {
+      "slug": "kyle",
+      "name": "KYLE"
+    },
+    {
+      "slug": "lu-bu",
+      "name": "LU BU"
+    },
+    {
+      "slug": "randgrid",
+      "name": "RANDGRID"
+    },
+    {
+      "slug": "ryan",
+      "name": "RYAN"
+    },
+    {
+      "slug": "teo",
+      "name": "TEO"
+    },
+    {
+      "slug": "amelia",
+      "name": "AMELIA"
+    },
+    {
+      "slug": "bai-long",
+      "name": "BAI LONG"
+    },
+    {
+      "slug": "ballista",
+      "name": "BALLISTA"
+    },
+    {
+      "slug": "bidam",
+      "name": "BIDAM"
+    },
+    {
+      "slug": "deo",
+      "name": "DEO"
+    },
+    {
+      "slug": "shane",
+      "name": "SHANE"
+    },
+    {
+      "slug": "taka",
+      "name": "TAKA"
+    },
+    {
+      "slug": "cha-haein",
+      "name": "CHA HAEIN"
+    },
+    {
+      "slug": "aquila",
+      "name": "AQUILA"
+    },
+    {
+      "slug": "radgrid",
+      "name": "RADGRID"
+    },
+    {
+      "slug": "rudy",
+      "name": "RUDY"
+    },
+    {
+      "slug": "aragon",
+      "name": "ARAGON"
+    },
+    {
+      "slug": "knox",
+      "name": "KNOX"
+    },
+    {
+      "slug": "rook",
+      "name": "ROOK"
+    },
+    {
+      "slug": "o-mok",
+      "name": "O'MOK"
+    },
+    {
+      "slug": "juri",
+      "name": "JURI"
+    },
+    {
+      "slug": "melia",
+      "name": "MELIA"
+    },
+    {
+      "slug": "freyja",
+      "name": "FREYJA"
+    },
+    {
+      "slug": "kyrielle",
+      "name": "KYRIELLE"
+    },
+    {
+      "slug": "nezha",
+      "name": "NEZHA"
+    },
+    {
+      "slug": "mercure",
+      "name": "MERCURE"
+    },
+    {
+      "slug": "reginleif",
+      "name": "REGINLEIF"
+    },
+    {
+      "slug": "rin",
+      "name": "RIN"
+    },
+    {
+      "slug": "silvesta",
+      "name": "SILVESTA"
+    },
+    {
+      "slug": "vanessa",
+      "name": "VANESSA"
+    },
+    {
+      "slug": "yeonhee",
+      "name": "YEONHEE"
+    },
+    {
+      "slug": "daisy",
+      "name": "DAISY"
+    },
+    {
+      "slug": "espada",
+      "name": "ESPADA"
+    },
+    {
+      "slug": "miho",
+      "name": "MIHO"
+    },
+    {
+      "slug": "pascal",
+      "name": "PASCAL"
+    },
+    {
+      "slug": "ruri",
+      "name": "RURI"
+    },
+    {
+      "slug": "velika",
+      "name": "VELIKA"
+    },
+    {
+      "slug": "xiao-qiao",
+      "name": "XIAO QIAO"
+    },
+    {
+      "slug": "yu-shin",
+      "name": "YU SHIN"
+    },
+    {
+      "slug": "sung-jinwoo",
+      "name": "SUNG JINWOO"
+    },
+    {
+      "slug": "xiao",
+      "name": "XIAO"
+    },
+    {
+      "slug": "evan",
+      "name": "EVAN"
+    },
+    {
+      "slug": "yui",
+      "name": "YUI"
+    }
+  ],
+  "missingInPruned": [
+    {
+      "slugOrName": "LATEST CHANGES"
+    },
+    {
+      "slugOrName": "19/5/2026 - 5.0"
+    }
+  ],
+  "differing": []
+}

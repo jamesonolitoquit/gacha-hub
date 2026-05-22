@@ -21,6 +21,7 @@ export type GameSwitcherItem = {
 
 type GameSwitcherProps = {
   games: GameSwitcherItem[];
+  compact?: boolean;
 };
 
 function getCurrentGame(pathname: string, games: GameSwitcherItem[]) {
@@ -36,7 +37,7 @@ function getMonogram(name: string) {
   return initials.toUpperCase();
 }
 
-export function GameSwitcher({ games }: GameSwitcherProps) {
+export function GameSwitcher({ games, compact = false }: GameSwitcherProps) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const currentGame = useMemo(() => getCurrentGame(pathname, games), [games, pathname]);
@@ -62,7 +63,9 @@ export function GameSwitcher({ games }: GameSwitcherProps) {
         aria-expanded={open}
         aria-controls="game-switcher-menu"
         onClick={() => setOpen((value) => !value)}
-        className="group relative inline-flex min-h-9 items-center gap-2.5 overflow-hidden rounded-3xl border border-white/10 bg-white/5 px-2.5 py-1.5 text-left transition hover:border-white/25 hover:bg-white/10 focus-visible:border-sky-300/55 focus-visible:bg-white/10"
+        className={`group relative inline-flex items-center overflow-hidden rounded-3xl border border-white/10 bg-white/5 text-left transition hover:border-white/25 hover:bg-white/10 focus-visible:border-sky-300/55 focus-visible:bg-white/10 ${
+          compact ? 'min-h-8 gap-1.5 px-2 py-1' : 'min-h-9 gap-2.5 px-2.5 py-1.5'
+        }`}
       >
         {currentGame ? (
           <span
@@ -85,13 +88,15 @@ export function GameSwitcher({ games }: GameSwitcherProps) {
         >
           {currentGame ? getMonogram(currentGame.name) : 'GH'}
         </span>
-        <span className="relative z-10 min-w-0">
+        <span className={`relative z-10 min-w-0 ${compact ? 'hidden md:block' : ''}`}>
           <span className="block text-[0.52rem] uppercase tracking-[0.24em] text-white/55 font-semibold">
             {isLauncherHub ? 'Main hub' : 'Current realm'}
           </span>
           <span className="block truncate text-[0.84rem] font-semibold text-white">{currentGame?.name ?? 'GachaHub'}</span>
         </span>
-        <span className="relative z-10 ml-1 text-[0.62rem] uppercase tracking-[0.2em] text-sky-300">Switch</span>
+        {!compact && (
+          <span className="relative z-10 ml-1 text-[0.62rem] uppercase tracking-[0.2em] text-sky-300">Switch</span>
+        )}
       </button>
 
       {open ? (
