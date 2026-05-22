@@ -30,7 +30,8 @@ export default function GameLayout({ children, params }: Props) {
             <header
                 className="sticky z-40 border-b px-6 py-2.5 backdrop-blur-xl xl:px-10 game-header transition-all duration-200"
                 style={{
-                  top: 'var(--platform-header-height, 92px)',
+                  top: '0px',
+                  transform: 'translateY(var(--platform-header-height, 92px))',
                   borderColor: 'rgba(255,255,255,0.06)',
                   background: 'rgba(10,15,24,0.7)',
                   ['--skr-primary-rgb' as string]: hexToRgbTriplet(game.theme.colors.primary),
