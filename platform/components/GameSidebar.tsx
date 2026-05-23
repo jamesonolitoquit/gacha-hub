@@ -29,6 +29,7 @@ export function GameSidebar() {
   const router = useRouter();
   const game = ctx.selectedGame;
   const isLauncher = !game;
+  const gameTheme = game?.theme;
 
   const [expanded, setExpanded] = useState(false);
   const [view, setView] = useState<'nav' | 'switcher'>(isLauncher ? 'switcher' : 'nav');
@@ -105,12 +106,12 @@ export function GameSidebar() {
               onClick={handleMonogramClick}
               className="flex items-center justify-center h-8 w-8 rounded-lg text-[0.55rem] font-bold text-white"
               style={{
-                background: game
-                  ? `linear-gradient(135deg, ${game.theme.colors.primary}, ${game.theme.colors.secondary})`
+                background: gameTheme
+                  ? `linear-gradient(135deg, ${gameTheme.colors.primary}, ${gameTheme.colors.secondary})`
                   : 'linear-gradient(135deg, #5c7cff, #a96cff)',
               }}
             >
-              {game ? (game.theme.logo?.monogram ?? getMonogram(game.name)) : 'GH'}
+              {gameTheme ? (gameTheme.logo?.monogram ?? getMonogram(game.name)) : 'GH'}
             </button>
           ) : view === 'switcher' ? (
             <button onClick={goLauncher} className="flex items-center gap-2 text-sm h-8" style={{ color: 'var(--muted)' }}>
@@ -122,14 +123,16 @@ export function GameSidebar() {
               <span
                 className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-[0.55rem] font-bold text-white"
                 style={{
-                  background: `linear-gradient(135deg, ${game!.theme.colors.primary}, ${game!.theme.colors.secondary})`,
+                  background: gameTheme
+                    ? `linear-gradient(135deg, ${gameTheme.colors.primary}, ${gameTheme.colors.secondary})`
+                    : 'linear-gradient(135deg, #5c7cff, #a96cff)',
                 }}
               >
-                {game!.theme.logo?.monogram ?? getMonogram(game!.name)}
+                {gameTheme?.logo?.monogram ?? getMonogram(game?.name ?? 'GachaHub')}
               </span>
               <span className="flex flex-col flex-1 min-w-0">
                 <span className="text-[0.5rem] uppercase tracking-[0.2em]" style={{ color: 'var(--muted)' }}>Realm</span>
-                <span className="text-sm font-semibold truncate" style={{ color: 'var(--foreground)' }}>{game!.name}</span>
+                <span className="text-sm font-semibold truncate" style={{ color: 'var(--foreground)' }}>{game?.name ?? 'GachaHub'}</span>
               </span>
               <ChevronDown className="h-3 w-3 shrink-0" style={{ color: 'var(--muted)' }} />
             </button>
@@ -178,7 +181,7 @@ export function GameSidebar() {
         /* Nav items */
         <div className="mt-2 px-2 space-y-0.5">
           {navItems.map((item) => (
-            <NavItemRow key={item.slug} item={item} gameSlug={game!.slug} pathname={pathname} primaryColor={primaryColor} expanded={expanded} />
+            <NavItemRow key={item.slug} item={item} gameSlug={game?.slug ?? ''} pathname={pathname} primaryColor={primaryColor} expanded={expanded} />
           ))}
         </div>
       )}
@@ -187,9 +190,11 @@ export function GameSidebar() {
 }
 
 function NavItemRow({ item, gameSlug, pathname, primaryColor, expanded }: { item: NavItem; gameSlug: string; pathname: string; primaryColor: string; expanded: boolean }) {
-  const href = item.page
-    ? item.page === 'index' ? `/games/${gameSlug}` : `/games/${gameSlug}/${item.page}`
-    : `/games/${gameSlug}/${item.slug}`;
+  const href = gameSlug
+    ? item.page
+      ? item.page === 'index' ? `/games/${gameSlug}` : `/games/${gameSlug}/${item.page}`
+      : `/games/${gameSlug}/${item.slug}`
+    : '/';
   const active = isActive(href, pathname);
   const hasChildren = !!item.children?.length;
 

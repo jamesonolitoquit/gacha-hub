@@ -10,18 +10,19 @@ export function ThemeApplier({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const html = document.documentElement;
     const game = ctx.selectedGame;
+    const theme = game?.theme;
 
-    if (game) {
-      const vars = useThemeVariables(game.theme);
+    if (theme) {
+      const vars = useThemeVariables(theme);
       Object.entries(vars).forEach(([key, val]) => {
         html.style.setProperty(key, val);
       });
       // Also set individual color hex values for inline use
-      html.style.setProperty('--skr-primary-rgb', hexToRgb(game.theme.colors.primary));
-      html.style.setProperty('--skr-secondary-rgb', hexToRgb(game.theme.colors.secondary));
-      html.style.setProperty('--skr-background-rgb', hexToRgb(game.theme.colors.background));
-      html.style.setProperty('--skr-surface-rgb', hexToRgb(game.theme.colors.surface));
-      html.style.setProperty('--skr-text-rgb', hexToRgb(game.theme.colors.text));
+      html.style.setProperty('--skr-primary-rgb', hexToRgb(theme.colors.primary));
+      html.style.setProperty('--skr-secondary-rgb', hexToRgb(theme.colors.secondary));
+      html.style.setProperty('--skr-background-rgb', hexToRgb(theme.colors.background));
+      html.style.setProperty('--skr-surface-rgb', hexToRgb(theme.colors.surface));
+      html.style.setProperty('--skr-text-rgb', hexToRgb(theme.colors.text));
       document.title = `${game.name} — GachaHub`;
     } else {
       // Reset to defaults

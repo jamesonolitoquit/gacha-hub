@@ -29,6 +29,7 @@ export function MobileNavSheet() {
   const router = useRouter();
   const game = ctx.selectedGame;
   const isLauncher = !game;
+  const gameTheme = game?.theme;
 
   const [sheetView, setSheetView] = useState<'nav' | 'switcher'>('nav');
   const [nestedOpen, setNestedOpen] = useState<Record<string, boolean>>({});
@@ -113,18 +114,18 @@ export function MobileNavSheet() {
                 className="inline-flex h-9 w-9 items-center justify-center rounded-xl text-[0.6rem] font-bold text-white"
                 style={{
                   background: game
-                    ? `linear-gradient(135deg, ${game.theme.colors.primary}, ${game.theme.colors.secondary})`
+                    ? `linear-gradient(135deg, ${gameTheme?.colors.primary}, ${gameTheme?.colors.secondary})`
                     : 'linear-gradient(135deg, #5c7cff, #a96cff)',
                 }}
               >
-                {game ? (game.theme.logo?.monogram ?? getMonogram(game.name)) : 'GH'}
+                {gameTheme ? (gameTheme.logo?.monogram ?? getMonogram(game.name)) : 'GH'}
               </span>
               <div className="flex flex-col flex-1 text-left">
                 <span className="text-sm font-semibold" style={{ color: 'var(--foreground)' }}>
                   {game ? game.name : 'GachaHub'}
                 </span>
                 <span className="text-[0.55rem] uppercase tracking-[0.2em]" style={{ color: 'var(--muted)' }}>
-                  {game ? (game.theme.label ?? 'Game hub') : 'Launcher'} &mdash; tap to change
+                  {gameTheme ? (gameTheme.label ?? 'Game hub') : 'Launcher'} &mdash; tap to change
                 </span>
               </div>
               <ChevronDown className="h-4 w-4" style={{ color: 'var(--muted)' }} />
@@ -149,7 +150,7 @@ export function MobileNavSheet() {
                 <MobileNavItemRow
                   key={item.slug}
                   item={item}
-                  gameSlug={game!.slug}
+                  gameSlug={game?.slug ?? ''}
                   pathname={pathname}
                   primaryColor={primaryColor}
                   nestedOpen={nestedOpen}
