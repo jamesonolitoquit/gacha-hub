@@ -372,7 +372,8 @@ export const tierEntries = pgTable(
   {
     id: serial('id').primaryKey(),
     gameId: integer('game_id').notNull(),
-    characterId: integer('character_id').notNull(),
+    characterId: integer('character_id'),
+    petId: integer('pet_id'),
     mode: varchar('mode', { length: 50 }).notNull(),
     tier: varchar('tier', { length: 10 }).notNull(),
     patchId: integer('patch_id'),
@@ -384,9 +385,9 @@ export const tierEntries = pgTable(
     deletedAt: timestamp('deleted_at', { mode: 'date' }),
   },
   (table) => ({
-    uniqueCharModePatch: uniqueIndex('tier_entries_char_mode_patch_unique').on(table.characterId, table.mode, table.patchId),
     gameIndex: index('tier_entries_game_id_idx').on(table.gameId),
-    characterIndex: index('tier_entries_character_id_idx').on(table.characterId),
+    charIndex: index('tier_entries_character_id_idx').on(table.characterId),
+    petIndex: index('tier_entries_pet_id_idx').on(table.petId),
     modeIndex: index('tier_entries_mode_idx').on(table.mode),
     tierIndex: index('tier_entries_tier_idx').on(table.tier),
   })

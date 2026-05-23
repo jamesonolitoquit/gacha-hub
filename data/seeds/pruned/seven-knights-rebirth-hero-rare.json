@@ -34,7 +34,7 @@
   {
     "name": "LEE JOOHEE",
     "slug": "lee-joohee",
-    "characterClass": null,
+    "characterClass": "Support",
     "rarity": "Rare",
     "element": null,
     "description": "Healing scales of ATK% so this build pushes his healing capabilities to the maximum. Just be careful such that his ATK does not exceed the damage dealers (it can happen). If your main stats are all ATK%, then regulate the substats."
@@ -250,7 +250,7 @@
   {
     "name": "YOO JINHO",
     "slug": "yoo-jinho",
-    "characterClass": null,
+    "characterClass": "Defense",
     "rarity": "Rare",
     "element": null,
     "description": "Barrier scales off DEF so this build focuses on increasing the survivability of the entire team with his barrier. However, the barrier only last for 2 turns."

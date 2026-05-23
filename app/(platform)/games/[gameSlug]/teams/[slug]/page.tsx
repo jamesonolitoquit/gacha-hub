@@ -6,6 +6,8 @@ import { teamService as teamServiceImport } from '../../../../../../server/servi
 import { characterService } from '../../../../../../server/services/character.service';
 import TeamComposition from '../../../../../../features/teams/components/TeamComposition';
 
+export const revalidate = 3600;
+
 type Props = {
   params: { gameSlug: string; slug: string };
 };
@@ -90,9 +92,7 @@ export default async function TeamDetailPage({ params }: Props) {
     ? team.characterIds.split(',').map(Number).filter(Boolean)
     : [];
 
-  const characters = await Promise.all(
-    characterIdArray.map((id) => characterService.getCharacterById(gameRecord.id, id))
-  );
+  const characters = await characterService.getCharactersByIds(gameRecord.id, characterIdArray);
 
   const characterSlugs = characters.filter(Boolean).map((c) => c!.slug);
   const characterNames: Record<string, string> = {};

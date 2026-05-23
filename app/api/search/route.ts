@@ -9,12 +9,19 @@ export async function GET(request: Request) {
 
   const results = await searchService.search(query, scope, gameSlug);
 
-  return NextResponse.json({
-    data: results,
-    meta: {
-      query,
-      scope,
-      total: results.length,
+  return NextResponse.json(
+    {
+      data: results,
+      meta: {
+        query,
+        scope,
+        total: results.length,
+      },
     },
-  });
+    {
+      headers: {
+        'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300',
+      },
+    }
+  );
 }

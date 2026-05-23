@@ -1,11 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { moduleRegistry } from '../../../../core/module-registry';
 import { characterService } from '../../../../server/services/character.service';
 import { guideService } from '../../../../server/services/guide.service';
 import { gameService } from '../../../../server/services/game.service';
 import { tierListService } from '../../../../server/services/tier-list.service';
-import { getOptimizedBannerUrl } from '../../../../shared/utils/banner';
 import HeroList from '../../../../shared/components/HeroList';
 import { hexToRgbTriplet } from '../../../../shared/utils/color';
 
@@ -28,6 +28,12 @@ type GamePageProps = {
   };
 };
 
+export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  return moduleRegistry.list().map((game) => ({ gameSlug: game.slug }));
+}
+
 export default async function GameLandingPage({ params }: GamePageProps) {
   const game = moduleRegistry.get(params.gameSlug);
 
@@ -41,9 +47,11 @@ export default async function GameLandingPage({ params }: GamePageProps) {
     notFound();
   }
 
-  const characters = await characterService.listCharacters(gameRecord.id);
-  const guides = await guideService.listGuides(gameRecord.id);
-  const tierLists = await tierListService.listTierLists(gameRecord.id);
+  const [characters, guides, tierLists] = await Promise.all([
+    characterService.listCharacters(gameRecord.id),
+    guideService.listGuides(gameRecord.id),
+    tierListService.listTierLists(gameRecord.id),
+  ]);
 
   return (
     <section aria-labelledby="game-title">
@@ -60,12 +68,13 @@ export default async function GameLandingPage({ params }: GamePageProps) {
       >
         {game.bannerUrl ? (
           <div className="absolute inset-0 -z-10">
-            <img
-              src={getOptimizedBannerUrl(game.bannerUrl, 1280)}
+            <Image
+              src={game.bannerUrl}
               alt={`${game.name} banner`}
-              className="h-full w-full object-cover opacity-20"
-              loading="eager"
-              decoding="async"
+              fill
+              priority
+              sizes="(max-width: 1280px) 100vw, 1280px"
+              className="object-cover opacity-20"
             />
           </div>
         ) : null}
@@ -105,12 +114,12 @@ export default async function GameLandingPage({ params }: GamePageProps) {
             <div className="relative aspect-[16/9] overflow-hidden rounded-[1.25rem] border border-white/10">
               {game.bannerUrl ? (
                 <div className="absolute inset-0 -z-10">
-                  <img
-                    src={getOptimizedBannerUrl(game.bannerUrl, 720)}
+                  <Image
+                    src={game.bannerUrl}
                     alt={`${game.name} banner`}
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                    decoding="async"
+                    fill
+                    sizes="(max-width: 720px) 100vw, 720px"
+                    className="object-cover"
                   />
                 </div>
               ) : null}

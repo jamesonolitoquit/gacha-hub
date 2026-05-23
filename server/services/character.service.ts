@@ -22,6 +22,10 @@ export class CharacterService {
     return characterRepository.findById(gameId, id);
   }
 
+  async getCharactersByIds(gameId: number, ids: number[]) {
+    return characterRepository.findByIds(gameId, ids);
+  }
+
   async listCharactersPaged(gameId: number, opts: { page?: number; limit?: number; search?: string; rarity?: string | number; role?: string }) {
     return characterDatasource.getCharactersForGamePaged(gameId, opts);
   }

@@ -1,11 +1,26 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { cache } from 'react';
 import { moduleRegistry } from '../../../../../../core/module-registry';
 import { characterService } from '../../../../../../server/services/character.service';
 import { gameService } from '../../../../../../server/services/game.service';
 import { guideService } from '../../../../../../server/services/guide.service';
 import GuideMetaBar from '../../../../../../features/guides/components/GuideMetaBar';
 import GuideContent from '../../../../../../features/guides/components/GuideContent';
+
+export const revalidate = 3600;
+
+const getGuidePageData = cache(async (gameSlug: string, slug: string) => {
+  const gameRecord = await gameService.getGameBySlug(gameSlug);
+  if (!gameRecord) return null;
+  const guide = await guideService.getGuide(gameRecord.id, slug);
+  if (!guide) return null;
+  let character = null;
+  if (guide.characterId) {
+    character = await characterService.getCharacterById(gameRecord.id, guide.characterId);
+  }
+  return { gameRecord, guide, character };
+});
 
 type GuidePageProps = {
   params: {
@@ -33,53 +48,25 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: GuidePageProps) {
   const game = moduleRegistry.get(params.gameSlug);
+  if (!game) return {};
 
-  if (!game) {
-    return {};
-  }
-
-  const gameRecord = await gameService.getGameBySlug(params.gameSlug);
-
-  if (!gameRecord) {
-    return {};
-  }
-
-  const guide = await guideService.getGuide(gameRecord.id, params.slug);
-
-  if (!guide) {
-    return {};
-  }
+  const data = await getGuidePageData(params.gameSlug, params.slug);
+  if (!data) return {};
 
   return {
-    title: `${guide.title} | ${game.name}`,
-    description: guide.summary ?? `Guide for ${game.name}.`,
+    title: `${data.guide.title} | ${game.name}`,
+    description: data.guide.summary ?? `Guide for ${game.name}.`,
   };
 }
 
 export default async function GuidePage({ params }: GuidePageProps) {
   const game = moduleRegistry.get(params.gameSlug);
+  if (!game) notFound();
 
-  if (!game) {
-    notFound();
-  }
+  const data = await getGuidePageData(params.gameSlug, params.slug);
+  if (!data) notFound();
 
-  const gameRecord = await gameService.getGameBySlug(params.gameSlug);
-
-  if (!gameRecord) {
-    notFound();
-  }
-
-  const guide = await guideService.getGuide(gameRecord.id, params.slug);
-
-  if (!guide) {
-    notFound();
-  }
-
-  let character = null;
-
-  if (guide.characterId) {
-    character = await characterService.getCharacterById(gameRecord.id, guide.characterId);
-  }
+  const { gameRecord, guide, character } = data;
 
   const guideTypeMeta = game.taxonomies?.guideTypes
     ? game.taxonomies.guideTypes.find((gt) => gt.slug === guide.guideType)

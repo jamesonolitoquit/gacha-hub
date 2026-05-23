@@ -233,8 +233,8 @@ test('game module pages use semantic list markup for content groups', () => {
 
   assert.match(gameLandingPage, /World focus/);
   assert.match(gameLandingPage, /Explore characters/);
-  assert.match(gameLandingPage, /getOptimizedBannerUrl\(game\.bannerUrl, 1280\)/);
-  assert.match(gameLandingPage, /getOptimizedBannerUrl\(game\.bannerUrl, 720\)/);
+  assert.match(gameLandingPage, /priority/);
+  assert.match(gameLandingPage, /sizes="\(max-width: 720px\) 100vw, 720px"/);
   assert.match(gameLandingPage, /aspect-\[16\/9\]/);
   assert.match(gameLandingPage, /<ul className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">/);
   assert.match(gameLandingPage, /HeroList gameSlug=\{game\.slug\} characters=\{characters\} \/>/);

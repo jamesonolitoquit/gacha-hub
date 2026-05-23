@@ -90,6 +90,49 @@ export class GuideRepository {
     }));
   }
 
+  async findByGameIdAndCharacterId(gameId: number, characterId: number): Promise<GuideRecord[]> {
+    if (db) {
+      try {
+        const { data, error } = await db
+          .from('guides')
+          .select('id, game_id, slug, title, content, summary, guide_type, character_id, author, is_verified, frontmatter, mode, boss, recommended_power, patch_id, created_at, updated_at, deleted_at')
+          .eq('game_id', gameId)
+          .eq('character_id', characterId)
+          .is('deleted_at', null)
+          .order('title', { ascending: true });
+
+        if (error) throw new Error(`Failed to load guides for game ${gameId}: ${error.message}`);
+
+        return (data ?? []).map((row) => mapGuideRow(row as GuideRow));
+      } catch {
+        // fall through to seed data
+      }
+    }
+
+    return getSeedGuides(gameId)
+      .filter((guide) => guide.characterId === characterId)
+      .map((guide, index) => ({
+        id: index + 1,
+        gameId: guide.gameId,
+        slug: guide.slug,
+        title: guide.title,
+        content: guide.content,
+        summary: guide.summary,
+        guideType: guide.guideType,
+        characterId: guide.characterId ?? null,
+        author: guide.author ?? 'GachaHub',
+        isVerified: true,
+        frontmatter: (guide.frontmatter as Record<string, unknown>) ?? null,
+        mode: guide.mode ?? null,
+        boss: guide.boss ?? null,
+        recommendedPower: guide.recommendedPower ?? null,
+        patchId: null,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        deletedAt: null,
+      }));
+  }
+
   async findBySlug(gameId: number, slug: string): Promise<GuideRecord | undefined> {
     if (db) {
       try {

@@ -17,13 +17,15 @@ function isDataUri(src: string): boolean {
   return src.startsWith('data:');
 }
 
-export default function ImageWithFallback({ src, alt, className, nameFallback }: { src?: string | null; alt?: string; className?: string; nameFallback?: string }) {
+export default function ImageWithFallback({ src, alt, className, nameFallback, backupSrc, sizes }: { src?: string | null; alt?: string; className?: string; nameFallback?: string; backupSrc?: string | null; sizes?: string }) {
   const [errored, setErrored] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const [currentSrc, setCurrentSrc] = useState<string | null>(src ?? null);
+  const [triedBackup, setTriedBackup] = useState(false);
 
   const initials = getInitials(nameFallback);
 
-  if (!src || errored) {
+  if (!currentSrc || errored) {
     return (
       <div className={`flex h-full w-full items-center justify-center bg-white/6 text-white/70 ${className ?? ''}`}>
         <span className="text-lg font-semibold">{initials || '—'}</span>
@@ -31,16 +33,23 @@ export default function ImageWithFallback({ src, alt, className, nameFallback }:
     );
   }
 
-  if (isDataUri(src)) {
+  if (isDataUri(currentSrc)) {
     return (
       <div className={`relative overflow-hidden bg-white/4 ${className ?? ''}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={src}
+          src={currentSrc}
           alt={alt ?? nameFallback ?? ''}
           className={`h-full w-full object-cover ${loaded ? '' : 'opacity-0'}`}
           onLoad={() => setLoaded(true)}
-          onError={() => setErrored(true)}
+          onError={() => {
+            if (backupSrc && !triedBackup) {
+              setCurrentSrc(backupSrc);
+              setTriedBackup(true);
+            } else {
+              setErrored(true);
+            }
+          }}
         />
         {!loaded && (
           <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-white/4 via-white/6 to-white/4" aria-hidden />
@@ -48,17 +57,23 @@ export default function ImageWithFallback({ src, alt, className, nameFallback }:
       </div>
     );
   }
-
   return (
     <div className={`relative overflow-hidden bg-white/4 ${className ?? ''}`}>
       <Image
-        src={src}
+        src={currentSrc!}
         alt={alt ?? nameFallback ?? ''}
         fill
-        sizes="(max-width: 640px) 144px, (max-width: 1024px) 144px, 144px"
+        sizes={sizes ?? "(max-width: 640px) 144px, (max-width: 1024px) 144px, 144px"}
         className={`object-cover transition-opacity ${loaded ? 'opacity-100' : 'opacity-0'}`}
-        onLoadingComplete={() => setLoaded(true)}
-        onError={() => setErrored(true)}
+        onLoad={() => setLoaded(true)}
+        onError={() => {
+          if (backupSrc && !triedBackup) {
+            setCurrentSrc(backupSrc);
+            setTriedBackup(true);
+          } else {
+            setErrored(true);
+          }
+        }}
       />
 
       {!loaded && (

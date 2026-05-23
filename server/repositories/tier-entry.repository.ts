@@ -8,7 +8,8 @@ export type CreateTierEntryInput = typeof tierEntries.$inferInsert;
 type TierEntryRow = {
   id: number;
   game_id: number;
-  character_id: number;
+  character_id: number | null;
+  pet_id: number | null;
   mode: string;
   tier: string;
   patch_id: number | null;
@@ -25,6 +26,7 @@ function mapTierEntryRow(row: TierEntryRow): TierEntryRecord {
     id: row.id,
     gameId: row.game_id,
     characterId: row.character_id,
+    petId: row.pet_id,
     mode: row.mode,
     tier: row.tier,
     patchId: row.patch_id,
@@ -43,7 +45,7 @@ export class TierEntryRepository {
       try {
         const { data, error } = await db
           .from('tier_entries')
-          .select('id, game_id, character_id, mode, tier, patch_id, previous_tier, tier_list_id, notes, created_at, updated_at, deleted_at')
+          .select('id, game_id, character_id, pet_id, mode, tier, patch_id, previous_tier, tier_list_id, notes, created_at, updated_at, deleted_at')
           .eq('tier_list_id', tierListId)
           .eq('game_id', gameId)
           .is('deleted_at', null)
@@ -62,6 +64,7 @@ export class TierEntryRepository {
         id: index + 1,
         gameId: entry.gameId,
         characterId: entry.characterId,
+        petId: entry.petId ?? null,
         mode: entry.mode,
         tier: entry.tier,
         patchId: entry.patchId ?? null,
@@ -79,7 +82,7 @@ export class TierEntryRepository {
       try {
         const { data, error } = await db
           .from('tier_entries')
-          .select('id, game_id, character_id, mode, tier, patch_id, previous_tier, tier_list_id, notes, created_at, updated_at, deleted_at')
+          .select('id, game_id, character_id, pet_id, mode, tier, patch_id, previous_tier, tier_list_id, notes, created_at, updated_at, deleted_at')
           .eq('game_id', gameId)
           .eq('character_id', characterId)
           .is('deleted_at', null)
@@ -96,6 +99,7 @@ export class TierEntryRepository {
       id: index + 1,
       gameId: entry.gameId,
       characterId: entry.characterId,
+      petId: entry.petId ?? null,
       mode: entry.mode,
       tier: entry.tier,
       patchId: entry.patchId ?? null,
@@ -113,7 +117,7 @@ export class TierEntryRepository {
       try {
         const { data, error } = await db
           .from('tier_entries')
-          .select('id, game_id, character_id, mode, tier, patch_id, previous_tier, tier_list_id, notes, created_at, updated_at, deleted_at')
+          .select('id, game_id, character_id, pet_id, mode, tier, patch_id, previous_tier, tier_list_id, notes, created_at, updated_at, deleted_at')
           .eq('game_id', gameId)
           .is('deleted_at', null)
           .order('tier', { ascending: true });
@@ -131,6 +135,7 @@ export class TierEntryRepository {
         id: index + 1,
         gameId: entry.gameId,
         characterId: entry.characterId,
+        petId: entry.petId ?? null,
         mode: entry.mode,
         tier: entry.tier,
         patchId: entry.patchId ?? null,

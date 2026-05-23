@@ -31,7 +31,7 @@ export default function HeroCard({ gameSlug, character, compact, accentPrimary =
       >
         <div className="flex items-center gap-3">
           <div className="h-10 w-10 flex-shrink-0 overflow-hidden rounded-md relative">
-            <ImageWithFallback src={character.portraitUrl} alt={character.name} nameFallback={character.name} className="h-10 w-10" />
+            <ImageWithFallback src={character.portraitUrl} alt={character.name} nameFallback={character.name} className="h-10 w-10" sizes="40px" />
           </div>
           <div className="min-w-0">
             <div className="flex items-center gap-2">
@@ -55,7 +55,7 @@ export default function HeroCard({ gameSlug, character, compact, accentPrimary =
       }}
     >
       <div className="aspect-square w-full bg-white/4 relative">
-        <ImageWithFallback src={character.portraitUrl} alt={character.name} nameFallback={character.name} className="h-full w-full object-cover" />
+        <ImageWithFallback src={character.portraitUrl} alt={character.name} nameFallback={character.name} className="h-full w-full object-cover" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 200px" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" aria-hidden />
         <div className="absolute left-3 bottom-3 right-3 flex items-center justify-between gap-2">
           <div className="truncate">

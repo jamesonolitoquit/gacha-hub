@@ -12,6 +12,12 @@ const cards = [
     href: '/admin/evidence',
     accent: 'text-sky-300',
   },
+  {
+    title: 'SKR Data Viewer',
+    description: 'Browse raw seed data for Seven Knights: Rebirth \u2014 heroes, skills, builds, gear, and pets.',
+    href: '/admin/skr-data',
+    accent: 'text-purple-300',
+  },
 ];
 
 export default function AdminPage() {

@@ -67,7 +67,8 @@ type SeedPatch = {
 
 type SeedTierEntry = {
   gameId: number;
-  characterId: number;
+  characterId: number | null;
+  petId?: number | null;
   mode: string;
   tier: string;
   patchId?: number | null;
@@ -763,16 +764,15 @@ export function getSeedCharacters(gameId: number) {
   return seedCharactersByGameSlug[gameSlug] ?? [];
 }
 
+let _seedCharactersByGameSlugCache: Record<string, SeedCharacter[]> = {};
+
 export function getSeedCharactersByGameSlug(gameSlug: string) {
   const resolvedGameSlug = getGameSlugByLookup(gameSlug);
-
-  if (!resolvedGameSlug) {
-    return [];
-  }
+  if (!resolvedGameSlug) return [];
+  if (_seedCharactersByGameSlugCache[resolvedGameSlug]) return _seedCharactersByGameSlugCache[resolvedGameSlug];
 
   const base = seedCharactersByGameSlug[resolvedGameSlug] ?? [];
 
-  // Attempt to load pruned/sample seed files and merge with embedded base seeds.
   try {
     const prunedDir = path.join(process.cwd(), 'data', 'seeds', 'pruned');
     const candidates = [`${resolvedGameSlug}.json`, `${resolvedGameSlug}.sample.json`];
@@ -790,10 +790,10 @@ export function getSeedCharactersByGameSlug(gameSlug: string) {
     }
 
     if (loaded.length === 0) {
+      _seedCharactersByGameSlugCache[resolvedGameSlug] = base;
       return base;
     }
 
-    // Map loaded entries to SeedCharacter shape and dedupe by slug.
     const slugSet = new Set(base.map((b) => b.slug));
     const merged = [...base];
 
@@ -818,8 +818,10 @@ export function getSeedCharactersByGameSlug(gameSlug: string) {
       }
     });
 
+    _seedCharactersByGameSlugCache[resolvedGameSlug] = merged;
     return merged;
   } catch (err) {
+    _seedCharactersByGameSlugCache[resolvedGameSlug] = base;
     return base;
   }
 }
@@ -1048,19 +1050,28 @@ export function findSeedTierEntriesForCharacter(gameId: number, characterId: num
   return seedTierEntries.filter((entry) => entry.gameId === gameId && entry.characterId === characterId);
 }
 
+let _seedGearCache: Record<number, SeedGear[]> = {};
+
 export function getSeedGear(gameId: number) {
   const gameSlug = getGameSlugById(gameId);
   if (!gameSlug) return [];
+  if (_seedGearCache[gameId]) return _seedGearCache[gameId];
   const base = seedGearByGameSlug[gameSlug] ?? [];
 
   try {
     const prunedDir = path.join(process.cwd(), 'data', 'seeds', 'pruned');
     const file = `${gameSlug}-gear.json`;
     const full = path.join(prunedDir, file);
-    if (!fs.existsSync(full)) return base;
+    if (!fs.existsSync(full)) {
+      _seedGearCache[gameId] = base;
+      return base;
+    }
     const raw = fs.readFileSync(full, 'utf8');
     const parsed = JSON.parse(raw);
-    if (!Array.isArray(parsed) || parsed.length === 0) return base;
+    if (!Array.isArray(parsed) || parsed.length === 0) {
+      _seedGearCache[gameId] = base;
+      return base;
+    }
     const slugSet = new Set(base.map((g) => g.slug));
     const merged = [...base];
     for (const item of parsed) {
@@ -1081,8 +1092,10 @@ export function getSeedGear(gameId: number) {
         });
       }
     }
+    _seedGearCache[gameId] = merged;
     return merged;
   } catch {
+    _seedGearCache[gameId] = base;
     return base;
   }
 }
@@ -1091,19 +1104,28 @@ export function findSeedGear(gameId: number, slug: string) {
   return getSeedGear(gameId).find((g) => g.slug === slug) ?? null;
 }
 
+let _seedPetsCache: Record<number, SeedPet[]> = {};
+
 export function getSeedPets(gameId: number) {
   const gameSlug = getGameSlugById(gameId);
   if (!gameSlug) return [];
+  if (_seedPetsCache[gameId]) return _seedPetsCache[gameId];
   const base = seedPetsByGameSlug[gameSlug] ?? [];
 
   try {
     const prunedDir = path.join(process.cwd(), 'data', 'seeds', 'pruned');
     const file = `${gameSlug}-pets.json`;
     const full = path.join(prunedDir, file);
-    if (!fs.existsSync(full)) return base;
+    if (!fs.existsSync(full)) {
+      _seedPetsCache[gameId] = base;
+      return base;
+    }
     const raw = fs.readFileSync(full, 'utf8');
     const parsed = JSON.parse(raw);
-    if (!Array.isArray(parsed) || parsed.length === 0) return base;
+    if (!Array.isArray(parsed) || parsed.length === 0) {
+      _seedPetsCache[gameId] = base;
+      return base;
+    }
     const slugSet = new Set(base.map((p) => p.slug));
     const merged = [...base];
     for (const item of parsed) {
@@ -1127,8 +1149,10 @@ export function getSeedPets(gameId: number) {
         });
       }
     }
+    _seedPetsCache[gameId] = merged;
     return merged;
   } catch {
+    _seedPetsCache[gameId] = base;
     return base;
   }
 }

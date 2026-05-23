@@ -5,13 +5,14 @@ import { useEffect, useRef } from 'react';
 type Props = {
   src?: string | null;
   alt?: string;
+  kind?: 'image' | 'video';
   open: boolean;
   onClose: () => void;
   onPrev?: () => void;
   onNext?: () => void;
 };
 
-export default function Lightbox({ src, alt = '', open, onClose, onPrev, onNext }: Props) {
+export default function Lightbox({ src, alt = '', kind = 'image', open, onClose, onPrev, onNext }: Props) {
   const touchStartX = useRef<number | null>(null);
   const closeRef = useRef<HTMLButtonElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -124,7 +125,19 @@ export default function Lightbox({ src, alt = '', open, onClose, onPrev, onNext 
 
         <div className="flex items-center gap-3">
           <button aria-label="Previous" onClick={onPrev} className="rounded-full bg-black/40 p-2 text-white/90 hover:scale-105 transform-gpu transition-transform">◀</button>
-          <img src={src} alt={alt} className="max-h-[80vh] max-w-[82vw] object-contain transition-transform duration-300 ease-out transform-gpu" />
+          {kind === 'video' ? (
+            <video
+              src={src}
+              controls
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="max-h-[80vh] max-w-[82vw] object-contain transition-transform duration-300 ease-out transform-gpu"
+            />
+          ) : (
+            <img src={src} alt={alt} className="max-h-[80vh] max-w-[82vw] object-contain transition-transform duration-300 ease-out transform-gpu" />
+          )}
           <button aria-label="Next" onClick={onNext} className="rounded-full bg-black/40 p-2 text-white/90 hover:scale-105 transform-gpu transition-transform">▶</button>
         </div>
       </div>

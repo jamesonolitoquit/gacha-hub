@@ -51,11 +51,12 @@ export default async function SkrCharacterDetailPage({ params }: Props) {
   const character = await characterService.getCharacter(gameRecord.id, params.slug);
   if (!character) notFound();
 
-  const roster = await characterService.listCharacters(gameRecord.id);
-  const skills = await skillService.listSkillsForCharacter(character.id);
-  const guides = (await guideService.listGuides(gameRecord.id))
-    .filter((g: any) => g.characterId === character.id);
-  const statValues = await characterService.getCharacterStats(character.id);
+  const [roster, skills, guides, statValues] = await Promise.all([
+    characterService.listCharacters(gameRecord.id),
+    skillService.listSkillsForCharacter(character.id),
+    guideService.listGuides(gameRecord.id, character.id),
+    characterService.getCharacterStats(character.id),
+  ]);
 
   const skillTypeLabels = game.taxonomies?.skillTypes
     ? Object.fromEntries(game.taxonomies.skillTypes.map((st: any) => [st.slug, st.label]))

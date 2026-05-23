@@ -79,6 +79,7 @@ export default function TierRow({ tier, color, heroes, gameSlug, collapsed, prev
                   alt={hero.name}
                   nameFallback={hero.name}
                   className="h-10 w-10 object-cover"
+                  sizes="40px"
                 />
                 {isNew && (
                   <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-amber-400 text-[6px] font-bold text-black shadow-sm">

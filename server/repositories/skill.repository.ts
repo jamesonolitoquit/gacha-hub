@@ -105,6 +105,55 @@ export class SkillRepository {
     }));
   }
 
+  async findByCharacterIds(characterIds: number[]): Promise<SkillRecord[]> {
+    if (characterIds.length === 0) return [];
+    if (db) {
+      try {
+        const { data, error } = await db
+          .from('skills')
+          .select('id, character_id, slug, name, type, description, cooldown_turns, cost, power_type, scaling_stat, targets, range_type, icon_url, animation_url, created_at, updated_at, deleted_at')
+          .in('character_id', characterIds)
+          .is('deleted_at', null)
+          .order('name', { ascending: true });
+
+        if (error) throw new Error(`Failed to load skills: ${error.message}`);
+        return (data ?? []).map((row) => mapSkillRow(row as SkillRow));
+      } catch {
+        // fall through to seed data
+      }
+    }
+
+    const results: SkillRecord[] = [];
+    for (const cid of characterIds) {
+      const skills = getSeedSkills(cid).map((skill, index) => ({
+        id: index + 1,
+        characterId: skill.characterId,
+        slug: skill.slug,
+        name: skill.name,
+        type: skill.type,
+        description: skill.description,
+        cooldownTurns: skill.cooldownTurns,
+        cost: skill.cost,
+        powerType: skill.powerType,
+        scalingStat: skill.scalingStat,
+        targets: skill.targets,
+        rangeType: skill.rangeType,
+        order: null,
+        enhancementText: null,
+        transcendenceText: null,
+        iconUrl: null,
+        animationUrl: null,
+        introducedInPatchId: null,
+        lastVerifiedPatchId: null,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        deletedAt: null,
+      }));
+      results.push(...skills);
+    }
+    return results;
+  }
+
   async findBySlug(gameId: number, slug: string): Promise<SkillRecord | undefined> {
     const characters = await characterRepository.findByGameId(gameId);
     const characterIds = characters.map((character) => character.id);

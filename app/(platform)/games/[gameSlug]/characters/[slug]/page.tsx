@@ -6,6 +6,8 @@ import { gameService } from '../../../../../../server/services/game.service';
 import { guideService } from '../../../../../../server/services/guide.service';
 import { skillService } from '../../../../../../server/services/skill.service';
 import { tierEntryService } from '../../../../../../server/services/tier-entry.service';
+
+export const revalidate = 3600;
 import { buildService } from '../../../../../../server/services/build.service';
 import HeroDetail from '../../../../../../shared/components/HeroDetail';
 
@@ -65,24 +67,24 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
     notFound();
   }
 
-  const roster = await characterService.listCharacters(gameRecord.id);
-  const skills = await skillService.listSkillsForCharacter(character.id);
-  const guides = (await guideService.listGuides(gameRecord.id))
-    .filter((g: any) => g.characterId === character.id);
-  const statValues = await characterService.getCharacterStats(character.id);
+  const [roster, skills, guides, statValues, tierEntries, build] = await Promise.all([
+    characterService.listCharacters(gameRecord.id),
+    skillService.listSkillsForCharacter(character.id),
+    guideService.listGuides(gameRecord.id, character.id),
+    characterService.getCharacterStats(character.id),
+    tierEntryService.getTiersForCharacter(gameRecord.id, character.id),
+    buildService.getBuildForCharacter(gameRecord.id, character.slug),
+  ]);
 
   const skillTypeLabels = game.taxonomies?.skillTypes
     ? Object.fromEntries(game.taxonomies.skillTypes.map((st: any) => [st.slug, st.label]))
     : undefined;
 
-  const tierEntries = await tierEntryService.getTiersForCharacter(gameRecord.id, character.id);
   const heroTiers = tierEntries.map((te: any) => ({
     mode: te.mode,
     tier: te.tier,
     previousTier: te.previousTier,
   }));
-
-  const build = await buildService.getBuildForCharacter(gameRecord.id, character.slug);
 
   return (
     <section aria-labelledby="character-title">

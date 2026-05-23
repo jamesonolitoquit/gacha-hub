@@ -7,6 +7,11 @@ const { createClient } = require('@supabase/supabase-js');
 const fs = require('fs');
 const path = require('path');
 
+// Parse CLI flags
+const argv = process.argv.slice(2);
+const NO_DELETE = argv.includes('--no-delete'); // skip destructive DELETEs
+const ONLY_PET = argv.includes('--only-pet'); // seed only pet tier entries (non-destructive flow)
+
 // Load env
 const envPath = path.join(__dirname, '..', '.env.local');
 const envVars = {};
@@ -43,6 +48,21 @@ async function checkTablesExist() {
   } catch {
     return false;
   }
+}
+
+async function columnExists(table, column) {
+  const { error } = await supabase.from(table).select(column).limit(1);
+  return !error;
+}
+
+async function migrate(filePath) {
+  const name = path.basename(filePath);
+  console.log(`  Migration "${name}" requires manual apply via Supabase dashboard:`);
+  console.log(`    1. Open https://supabase.com/dashboard/project/srcsxrvervgjumzuqhit/sql/new`);
+  console.log(`    2. Paste the contents of ${filePath}`);
+  console.log(`    3. Click "Run"`);
+  console.log(`    4. Re-run this seed script`);
+  return false;
 }
 
 async function clearTable(table) {
@@ -88,10 +108,14 @@ async function main() {
   const tables = ['imports_raw', 'import_runs', 'tier_entries', 'hero_stats', 'pets', 'gear',
     'game_taxonomies', 'evidence', 'teams', 'guides', 'skills', 'tier_lists', 'characters',
     'patches', 'games', 'users'];
-  for (const t of tables) {
-    await clearTable(t);
+  if (NO_DELETE) {
+    console.log('  Skipping destructive table clears (--no-delete)');
+  } else {
+    for (const t of tables) {
+      await clearTable(t);
+    }
+    console.log('');
   }
-  console.log('');
 
   // Step 3: Seed games
   const gamesData = [
@@ -115,7 +139,6 @@ async function main() {
 
   // Step 5: Seed characters
   // Load from pruned JSON files and assign predictable IDs
-  console.log('Loading characters...');
   const charFiles = [
     'seven-knights-rebirth-hero-attack.json',
     'seven-knights-rebirth-hero-defense.json',
@@ -128,12 +151,35 @@ async function main() {
   let charId = 1;
   const charSlugToDbId = {};
 
-  for (const file of charFiles) {
-    const heroes = readJSON(file);
-    for (const h of heroes) {
+  if (!ONLY_PET) {
+    console.log('Loading characters...');
+
+    for (const file of charFiles) {
+      const heroes = readJSON(file);
+      for (const h of heroes) {
+        const mapped = {
+          id: charId,
+          game_id: 1,
+          slug: h.slug,
+          name: h.name,
+          rarity: h.rarity || null,
+          element: h.element || null,
+          class: h.characterClass || null,
+          role: h.characterClass || null,
+          description: h.description || '',
+        };
+        allChars.push(mapped);
+        charSlugToDbId[h.slug] = charId;
+        charId++;
+      }
+    }
+
+    // DT and BD2 characters
+    const dtChars = readJSON('dragon-traveler.json');
+    for (const h of dtChars) {
       const mapped = {
         id: charId,
-        game_id: 1,
+        game_id: 3,
         slug: h.slug,
         name: h.name,
         rarity: h.rarity || null,
@@ -146,47 +192,38 @@ async function main() {
       charSlugToDbId[h.slug] = charId;
       charId++;
     }
-  }
 
-  // DT and BD2 characters
-  const dtChars = readJSON('dragon-traveler.json');
-  for (const h of dtChars) {
-    const mapped = {
-      id: charId,
-      game_id: 3,
-      slug: h.slug,
-      name: h.name,
-      rarity: h.rarity || null,
-      element: h.element || null,
-      class: h.characterClass || null,
-      role: h.characterClass || null,
-      description: h.description || '',
-    };
-    allChars.push(mapped);
-    charSlugToDbId[h.slug] = charId;
-    charId++;
-  }
+    const bd2Chars = readJSON('brown-dust-2.json');
+    for (const h of bd2Chars) {
+      const mapped = {
+        id: charId,
+        game_id: 2,
+        slug: h.slug,
+        name: h.name,
+        rarity: h.rarity || null,
+        element: h.element || null,
+        class: h.characterClass || null,
+        role: h.characterClass || null,
+        description: h.description || '',
+      };
+      allChars.push(mapped);
+      charSlugToDbId[h.slug] = charId;
+      charId++;
+    }
 
-  const bd2Chars = readJSON('brown-dust-2.json');
-  for (const h of bd2Chars) {
-    const mapped = {
-      id: charId,
-      game_id: 2,
-      slug: h.slug,
-      name: h.name,
-      rarity: h.rarity || null,
-      element: h.element || null,
-      class: h.characterClass || null,
-      role: h.characterClass || null,
-      description: h.description || '',
-    };
-    allChars.push(mapped);
-    charSlugToDbId[h.slug] = charId;
-    charId++;
+    await upsert('characters', allChars);
+    console.log(`  Total characters: ${allChars.length}`);
+  } else {
+    // If running only pet seeding, we still need the charSlugToDbId map for lookups, so build it
+    console.log('Skipping full character seed (--only-pet). Building in-memory name map from existing pruned files.');
+    for (const file of charFiles) {
+      const heroes = readJSON(file);
+      for (const h of heroes) {
+        charSlugToDbId[h.slug] = charId;
+        charId++;
+      }
+    }
   }
-
-  await upsert('characters', allChars);
-  console.log(`  Total characters: ${allChars.length}`);
 
   // Step 6: Seed skills
   console.log('Loading skills...');
@@ -310,8 +347,9 @@ async function main() {
     }
   }
 
-  await upsert('pets', allPets);
-  console.log(`  Total pets: ${allPets.length}`);
+    // Always upsert pets when seeding only-pet or full seed, to ensure pet IDs exist
+    await upsert('pets', allPets);
+    console.log(`  Total pets: ${allPets.length}`);
 
   // Step 9: Seed guides
   const guidesData = [
@@ -332,42 +370,219 @@ async function main() {
   const tierListsData = [
     { id: 1, game_id: 1, slug: 'pve-tier-list', title: 'PVE Tier List', tier_type: 'pve' },
     { id: 2, game_id: 1, slug: 'pvp-tier-list', title: 'PVP Tier List', tier_type: 'pvp' },
+    { id: 3, game_id: 1, slug: 'pet-tier-list', title: 'Pet Tier List', tier_type: 'pet' },
   ];
   await upsert('tier_lists', tierListsData);
 
-  // Step 11: Seed tier entries (link to first 5 SKR chars)
-  const tierEntriesData = [];
-  let teId = 1;
-  const teTargets = Object.keys(charSlugToDbId).slice(0, 5);
-  const teTiers = ['SS', 'S', 'A', 'S', 'SS'];
-  const pveTiers = ['SS', 'A', 'B', 'S', 'A'];
+  // Step 11: Seed tier entries (from CSV data)
+  function stripSuffix(name) {
+    return name.replace(/-(T\d|SE)$/, '');
+  }
 
-  for (let i = 0; i < teTargets.length; i++) {
-    const charDbId = charSlugToDbId[teTargets[i]];
-    tierEntriesData.push({
-      id: teId++, game_id: 1, character_id: charDbId,
-      mode: 'pvp', tier: teTiers[i], tier_list_id: 2,
-    });
-    tierEntriesData.push({
-      id: teId++, game_id: 1, character_id: charDbId,
-      mode: 'pve', tier: pveTiers[i], tier_list_id: 1,
-    });
-    // Add previousTier for one entry to test movement badge
-    if (i === 0) {
-      tierEntriesData[tierEntriesData.length - 1].previous_tier = 'S';
+  // Load character name→slug mapping (case-insensitive keys)
+  const nameToSlug = {};
+  for (const h of allChars) {
+    nameToSlug[h.name.toUpperCase()] = h.slug;
+  }
+
+  const tierEntriesData = [];
+  let teId = 1000; // start after existing IDs
+
+  // Parse PVE tier CSV
+  const pveCsvPath = path.join(prunedDir, '..', 'raw', 'seven-knights-rebirth-pvetier.csv');
+  if (!ONLY_PET && fs.existsSync(pveCsvPath)) {
+    const pveLines = fs.readFileSync(pveCsvPath, 'utf8').split('\n').map(l => l.trimEnd());
+    const TIERS = new Set(['SSS', 'SS', 'S', 'A', 'B', 'C', 'D']);
+
+    for (let li = 0; li < pveLines.length; li++) {
+      const parts = pveLines[li].split(',');
+      const colB = (parts[1] || '').trim();
+      const colC = (parts[2] || '').trim();
+
+      if (colC === 'SINGLE-TARGET DAMAGE DEALERS' || colC.indexOf('Refer to') === 0 || colC.indexOf('Last edit') === 0) continue;
+      if (pveLines[li].indexOf('CHANGES') >= 0 || pveLines[li].indexOf('===============') >= 0) continue;
+      if (pveLines[li].replace(/,/g, '').trim() === '') continue;
+
+      if (colB && TIERS.has(colB) && !colC) {
+        const currentTier = colB;
+        for (let di = li + 1; di < pveLines.length; di++) {
+          const dparts = pveLines[di].split(',');
+          const dB = (dparts[1] || '').trim();
+          const dC = (dparts[2] || '').trim();
+
+          if (dB && TIERS.has(dB) && !dC) {
+            li = di - 1;
+            break;
+          }
+
+          if (pveLines[di].replace(/,/g, '').trim() === '') continue;
+
+          const seen = new Set();
+          for (let i = 1; i < dparts.length; i++) {
+            const val = (dparts[i] || '').trim();
+            if (!val) continue;
+            const stripped = stripSuffix(val);
+            const slug = nameToSlug[stripped.toUpperCase()];
+            const charDbId = slug ? charSlugToDbId[slug] : null;
+            const entryKey = slug + '-' + currentTier;
+            if (charDbId && !seen.has(entryKey)) {
+              seen.add(entryKey);
+              tierEntriesData.push({
+                id: teId++, game_id: 1, character_id: charDbId,
+                mode: 'pve', tier: currentTier, tier_list_id: 1,
+              });
+            } else if (!slug && stripped.indexOf('Refer') !== 0 && stripped.indexOf('Last edit') !== 0) {
+              console.error(`  WARNING: PVE hero "${stripped}" not found in character roster`);
+            }
+          }
+        }
+      }
+    }
+    console.log(`  PVE tier entries: ${tierEntriesData.filter(e => e.tier_list_id === 1).length}`);
+  }
+
+  // Pet tier CSV — depends on pet_id column on tier_entries (migration 0005)
+  let hasPetIdCol = await columnExists('tier_entries', 'pet_id');
+  if (!hasPetIdCol) {
+    console.log('  Applying migration for pet tier support...');
+    const migrated = await migrate(path.join(__dirname, '..', 'db', 'migrations', '0005_add_pet_id_to_tier_entries.sql'));
+    if (migrated) {
+      hasPetIdCol = await columnExists('tier_entries', 'pet_id');
     }
   }
-  await upsert('tier_entries', tierEntriesData);
+  if (hasPetIdCol) {
+    const petCsvPath = path.join(prunedDir, '..', 'raw', 'seven-knights-rebirth-pettier.csv');
+    if (fs.existsSync(petCsvPath)) {
+      const petLines = fs.readFileSync(petCsvPath, 'utf8').split('\n').map(l => l.trimEnd());
+      const TIERS = new Set(['SSS', 'SS', 'S', 'A', 'B', 'C', 'D']);
+      const MODE_COLS = [
+        { mode: 'pve', colStart: 2, colEnd: 6 },
+        { mode: 'pvp', colStart: 7, colEnd: 11 },
+        { mode: 'farming', colStart: 12, colEnd: 14 },
+      ];
+
+      const petNameToId = {};
+      for (const p of allPets) {
+        petNameToId[p.name.toUpperCase()] = p.id;
+      }
+
+      let currentTier = null;
+      for (let li = 0; li < petLines.length; li++) {
+        const parts = petLines[li].split(',');
+        const colB = (parts[1] || '').trim();
+
+        if (TIERS.has(colB) && !(parts[2] || '').trim()) {
+          currentTier = colB;
+          continue;
+        }
+        if (!currentTier) continue;
+        if (petLines[li].replace(/,/g, '').trim() === '') continue;
+
+        for (const mc of MODE_COLS) {
+          for (let ci = mc.colStart; ci <= mc.colEnd; ci++) {
+            const val = (parts[ci] || '').trim();
+            if (!val) continue;
+            const stripped = stripSuffix(val);
+            const petDbId = petNameToId[stripped.toUpperCase()];
+            if (petDbId) {
+              tierEntriesData.push({
+                id: teId++, game_id: 1, character_id: null, pet_id: petDbId,
+                mode: mc.mode, tier: currentTier, tier_list_id: 3,
+              });
+            } else if (stripped.indexOf('Refer') !== 0 && stripped.indexOf('Last edit') !== 0) {
+              console.error(`  WARNING: Pet "${stripped}" not found in pet roster`);
+            }
+          }
+        }
+      }
+      console.log(`  Pet tier entries: ${tierEntriesData.filter(e => e.tier_list_id === 3).length}`);
+    }
+  } else {
+    console.log('  Pet tier entries: skipped (migration could not be applied automatically)');
+  }
+
+  // Parse PVP tier CSV (changelog section with tier movements)
+  const pvpCsvPath = path.join(prunedDir, '..', 'raw', 'seven-knights-rebirth-pvp.csv');
+  if (!ONLY_PET && fs.existsSync(pvpCsvPath)) {
+    const pvpLines = fs.readFileSync(pvpCsvPath, 'utf8').split('\n');
+    const seenPvp = new Set();
+
+    // Name aliases for character names that differ from CSV
+    const nameAliases = {
+      'CHA HAE-IN': 'CHA HAEIN',
+      'SUN WUKONG': 'SUNWUKONG',
+      'FREJYA': 'FREYJA',
+      'BRANZE': null,
+      'BRANSEL': null,
+    };
+
+    for (let i = 0; i < pvpLines.length; i++) {
+      const parts = pvpLines[i].split(',');
+      const colA = (parts[0] || '').trim();
+
+      const m = colA.match(/^(.+?)\s*~\s*(?:(Added to)\s+)?([A-Z]+)-Tier(?:\s*>\s*([A-Z]+)-Tier)?$/);
+      if (!m) continue;
+
+      const rawName = m[1].trim();
+      const isAdded = !!m[2];
+      const tierA = m[3];
+      const tierB = m[4];
+
+      // X > Y means: previous = X, current = Y
+      const currentTier = isAdded ? tierA : (tierB || tierA);
+      const prevTier = tierB ? tierA : null;
+
+      // Handle dual-hero entries
+      const heroNames = [];
+      if (rawName.toUpperCase() === 'BRANZE & BRANSEL') {
+        continue; // skip — no mapped characters
+      } else {
+        heroNames.push(rawName);
+      }
+
+      for (const hName of heroNames) {
+        const alias = nameAliases[hName.toUpperCase()];
+        const mappedName = alias === undefined ? hName : alias;
+        if (!mappedName) continue;
+
+        const slug = nameToSlug[mappedName.toUpperCase()];
+        if (!slug) {
+          if (mappedName.indexOf('Refer') !== 0 && mappedName.indexOf('Last edit') !== 0) {
+            console.error(`  WARNING: PVP hero "${mappedName}" not found`);
+          }
+          continue;
+        }
+
+        const charDbId = charSlugToDbId[slug];
+        if (!charDbId) continue;
+
+        const key = slug + '-' + currentTier;
+        if (!seenPvp.has(key)) {
+          seenPvp.add(key);
+          tierEntriesData.push({
+            id: teId++, game_id: 1, character_id: charDbId,
+            mode: 'pvp', tier: currentTier, previous_tier: prevTier, tier_list_id: 2,
+          });
+        }
+      }
+    }
+    console.log(`  PVP tier entries: ${tierEntriesData.filter(e => e.tier_list_id === 2).length}`);
+  }
+
+  // If only seeding pets, filter to pet tier entries
+  const toUpsert = ONLY_PET ? tierEntriesData.filter(e => e.tier_list_id === 3) : tierEntriesData;
+  await upsert('tier_entries', toUpsert);
 
   // Step 12: Seed teams
+  const topSlugs = Object.keys(charSlugToDbId).slice(0, 5);
   const teamsData = [
     { id: 1, game_id: 1, slug: 'destroyer-gaze-raid', name: 'Destroyer Gaze Raid',
       purpose: 'raid', difficulty: 'hard', synergy_score: 85, power_level: 95000,
-      character_ids: teTargets.slice(0, 3).join(','),
+      character_ids: topSlugs.slice(0, 3).join(','),
       notes: 'Magic team built around Destroyer Gaze mechanics.' },
     { id: 2, game_id: 1, slug: 'pvp-arena-speed', name: 'PVP Arena Speed Team',
       purpose: 'pvp', difficulty: 'medium', synergy_score: 88, power_level: 105000,
-      character_ids: teTargets.slice(0, 3).join(','),
+      character_ids: topSlugs.slice(0, 3).join(','),
       notes: 'Speed-tuned burst comp.' },
   ];
   await upsert('teams', teamsData);
@@ -383,8 +598,8 @@ async function main() {
     { stat_name: 'crit', base_value: 41, per_level_value: 0.5 },
   ];
 
-  for (let i = 0; i < Math.min(5, teTargets.length); i++) {
-    const charDbId = charSlugToDbId[teTargets[i]];
+  for (let i = 0; i < Math.min(5, topSlugs.length); i++) {
+    const charDbId = charSlugToDbId[topSlugs[i]];
     for (const stat of stats) {
       heroStatsData.push({
         id: hsId++, character_id: charDbId,

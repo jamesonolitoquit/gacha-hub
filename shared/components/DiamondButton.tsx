@@ -52,7 +52,7 @@ export default function DiamondButton({ href, label, active, iconSrc, icon, size
         <div className="flex items-center justify-center overflow-hidden rounded-sm" style={{ ...innerStyle, background: 'rgba(0,0,0,0.18)' }}>
           {iconSrc ? (
             <div className="relative w-full h-full">
-              <ImageWithFallback src={iconSrc} alt={label} className="w-full h-full object-cover" nameFallback={label} />
+              <ImageWithFallback src={iconSrc} alt={label} className="w-full h-full object-cover" nameFallback={label} sizes="(max-width: 640px) 48px, 64px" />
             </div>
           ) : icon ? (
             <div className="flex h-full w-full items-center justify-center text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.55)]">

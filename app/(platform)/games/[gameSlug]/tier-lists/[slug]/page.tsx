@@ -4,6 +4,7 @@ import { moduleRegistry } from '../../../../../../core/module-registry';
 import { tierListService } from '../../../../../../server/services/tier-list.service';
 import { tierEntryService } from '../../../../../../server/services/tier-entry.service';
 import { characterService } from '../../../../../../server/services/character.service';
+import { petService } from '../../../../../../server/services/pets.service';
 import { gameService } from '../../../../../../server/services/game.service';
 import TierRowView from './tier-row-view';
 
@@ -62,14 +63,22 @@ export default async function TierListDetailPage({ params }: Props) {
   const allCharacters = await characterService.listCharacters(gameRecord.id);
   const charById = new Map(allCharacters.map((c: any) => [c.id, c]));
 
+  const allPets = await petService.listPets(gameRecord.id);
+  const petById = new Map(allPets.map((p: any) => [p.id, p]));
+
   // Group entries by tier
   const grouped: Record<string, { character: any; previousTier?: string | null }[]> = {};
   for (const entry of entries) {
-    const character = charById.get(entry.characterId);
-    if (!character) continue;
+    let entity;
+    if (entry.characterId) {
+      entity = charById.get(entry.characterId);
+    } else if (entry.petId) {
+      entity = petById.get(entry.petId);
+    }
+    if (!entity) continue;
 
     if (!grouped[entry.tier]) grouped[entry.tier] = [];
-    grouped[entry.tier].push({ character, previousTier: entry.previousTier });
+    grouped[entry.tier].push({ character: entity, previousTier: entry.previousTier });
   }
 
   const tierConfig = game.taxonomies?.tiers ?? {

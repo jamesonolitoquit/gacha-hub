@@ -143,10 +143,12 @@ export default function SkrHeroDetail({
             >
               <div className="relative aspect-[4/5] w-full">
                 <ImageWithFallback
-                  src={character.fullArtUrl ?? character.portraitUrl}
+                  src={`/skr/${character.slug}-profile.png`}
+                  backupSrc={character.fullArtUrl ?? character.portraitUrl ?? null}
                   alt={character.name}
                   nameFallback={character.name}
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 450px"
                 />
                 <div
                   className="absolute inset-0"

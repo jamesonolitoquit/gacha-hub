@@ -278,6 +278,56 @@ export class CharacterRepository {
     };
   }
 
+  async findByIds(gameId: number, ids: number[]): Promise<CharacterRecord[]> {
+    if (ids.length === 0) return [];
+    if (db) {
+      try {
+        const { data, error } = await db
+          .from('characters')
+          .select('id, game_id, slug, name, rarity, element, class, role, portrait_url, full_art_url, icon_url, description, release_patch_id, created_at, updated_at, deleted_at')
+          .eq('game_id', gameId)
+          .in('id', ids)
+          .is('deleted_at', null);
+
+        if (error) throw new Error(error.message);
+        if (data) {
+          const all = data.map((row) => {
+            const mapped = mapCharacterRow(row as CharacterRow);
+            return hydrateCharacterAssets(mapped, findSeedCharacter(gameId, mapped.slug));
+          });
+          // Preserve input order
+          const byId = new Map(all.map((c) => [c.id, c]));
+          return ids.map((id) => byId.get(id)).filter(Boolean) as CharacterRecord[];
+        }
+      } catch {
+        // fall through to seed data
+      }
+    }
+
+    const seed = seedCharactersByGameId(gameId).filter((entry) => ids.includes(entry.id));
+    return seed.map((character) => ({
+      id: character.id,
+      gameId: character.gameId,
+      slug: character.slug,
+      name: character.name,
+      rarity: character.rarity != null ? String(character.rarity) : null,
+      element: character.element,
+      characterClass: character.characterClass,
+      role: character.role,
+      portraitUrl: character.portraitUrl ?? null,
+      fullArtUrl: character.fullArtUrl ?? null,
+      iconUrl: character.iconUrl ?? null,
+      description: character.description,
+      tags: null,
+      releasePatchId: null,
+      introducedInPatchId: null,
+      lastVerifiedPatchId: null,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+      deletedAt: null,
+    }));
+  }
+
   async findBySlug(gameId: number, slug: string): Promise<CharacterRecord | undefined> {
     if (db) {
       try {

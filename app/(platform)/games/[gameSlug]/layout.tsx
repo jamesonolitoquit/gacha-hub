@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { ReactNode } from 'react';
 import { moduleRegistry } from '../../../../core/module-registry';
 import { GameActivator } from '../../../../platform/components/GameActivator';
+import Breadcrumbs from '../../../../shared/components/Breadcrumbs';
 
 type Props = {
   children: ReactNode;
@@ -18,6 +19,7 @@ export default function GameLayout({ children, params }: Props) {
   return (
     <GameActivator game={game}>
       <section id="game-main" className="mx-auto w-full max-w-[1600px] px-6 py-8 xl:px-10">
+        <Breadcrumbs gameName={game.name} gameSlug={params.gameSlug} />
         {children}
       </section>
     </GameActivator>

@@ -40,6 +40,8 @@ export default function SkrCharacterCard({
   const display = raritySlug ? RARITY_DISPLAY[raritySlug] : undefined;
   const displayStars = display?.stars ?? stars ?? 0;
   const glowColor = display?.glow;
+  const hasProfileImage = ['melia', 'ryan', 'teo'].includes(character.slug);
+  const skrProfile = hasProfileImage ? `/skr/${character.slug}-profile.png` : null;
   return (
     <Link
       href={href}
@@ -51,10 +53,12 @@ export default function SkrCharacterCard({
     >
       <div className="aspect-[3/4] w-full min-h-[180px] overflow-hidden bg-[#1a1430]">
         <ImageWithFallback
-          src={character.portraitUrl}
+          src={skrProfile ?? character.portraitUrl}
+          backupSrc={skrProfile ? character.portraitUrl ?? null : null}
           alt={character.name}
           nameFallback={character.name}
           className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 200px"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
       </div>

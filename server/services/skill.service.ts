@@ -12,20 +12,23 @@ export class SkillService {
 
   async listSkillsForGame(gameId: number) {
     const characters = await characterRepository.findByGameId(gameId);
+    const characterIds = characters.map((c) => c.id);
+    const allSkills = await skillRepository.findByCharacterIds(characterIds);
 
-    const grouped = await Promise.all(
-      characters.map(async (char) => {
-        const skills = await skillRepository.findByCharacterId(char.id);
-        return {
-          characterId: char.id,
-          characterSlug: char.slug,
-          characterName: char.name,
-          skills,
-        };
-      })
-    );
+    const groupedByCharId = new Map<number, typeof allSkills>();
+    for (const skill of allSkills) {
+      if (!groupedByCharId.has(skill.characterId)) {
+        groupedByCharId.set(skill.characterId, []);
+      }
+      groupedByCharId.get(skill.characterId)!.push(skill);
+    }
 
-    return grouped;
+    return characters.map((char) => ({
+      characterId: char.id,
+      characterSlug: char.slug,
+      characterName: char.name,
+      skills: groupedByCharId.get(char.id) ?? [],
+    }));
   }
 }
 

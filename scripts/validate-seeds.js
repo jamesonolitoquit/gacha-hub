@@ -28,10 +28,13 @@ function validatePrunedSeeds(prunedDir = path.join(__dirname, '..', 'data', 'see
       continue;
     }
 
+    const isBuildsFile = file.includes('-builds.');
     arr.forEach((entry, i) => {
       const context = `${file}[${i}]`;
-      if (!entry.slug) problems.push({ entry: context, reason: 'missing-slug' });
-      if (!entry.name) problems.push({ entry: context, reason: 'missing-name' });
+      if (!isBuildsFile) {
+        if (!entry.slug) problems.push({ entry: context, reason: 'missing-slug' });
+        if (!entry.name) problems.push({ entry: context, reason: 'missing-name' });
+      }
       if (entry.characterClass !== undefined && !entry.rarity && !entry.slug?.startsWith('seed-')) problems.push({ entry: context, reason: 'missing-rarity' });
       // portrait/fullArt are optional — populated by asset pipeline
     });

@@ -319,7 +319,8 @@ CREATE INDEX IF NOT EXISTS idx_hero_stats_stat_name ON hero_stats(stat_name);
 CREATE TABLE IF NOT EXISTS tier_entries (
   id SERIAL PRIMARY KEY,
   game_id INTEGER NOT NULL REFERENCES games(id) ON DELETE CASCADE,
-  character_id INTEGER NOT NULL REFERENCES characters(id) ON DELETE CASCADE,
+  character_id INTEGER REFERENCES characters(id) ON DELETE CASCADE,
+  pet_id INTEGER REFERENCES pets(id) ON DELETE CASCADE,
   mode VARCHAR(50) NOT NULL,
   tier VARCHAR(10) NOT NULL,
   patch_id INTEGER REFERENCES patches(id),
@@ -328,14 +329,16 @@ CREATE TABLE IF NOT EXISTS tier_entries (
   notes TEXT,
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW(),
-  deleted_at TIMESTAMP,
-  UNIQUE(character_id, mode, patch_id)
+  deleted_at TIMESTAMP
 );
 
 CREATE INDEX IF NOT EXISTS idx_tier_entries_game_id ON tier_entries(game_id);
 CREATE INDEX IF NOT EXISTS idx_tier_entries_character_id ON tier_entries(character_id);
+CREATE INDEX IF NOT EXISTS idx_tier_entries_pet_id ON tier_entries(pet_id);
 CREATE INDEX IF NOT EXISTS idx_tier_entries_mode ON tier_entries(mode);
 CREATE INDEX IF NOT EXISTS idx_tier_entries_tier ON tier_entries(tier);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_tier_entries_char_unique ON tier_entries(character_id, mode, patch_id) WHERE character_id IS NOT NULL;
+CREATE UNIQUE INDEX IF NOT EXISTS idx_tier_entries_pet_unique ON tier_entries(pet_id, mode, patch_id) WHERE pet_id IS NOT NULL;
 
 -- ============================================================================
 -- import_runs: Admin import tracking

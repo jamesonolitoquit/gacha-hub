@@ -1,7 +1,10 @@
 import { guideRepository } from '../repositories/guide.repository';
 
 export class GuideService {
-  async listGuides(gameId: number) {
+  async listGuides(gameId: number, characterId?: number) {
+    if (characterId != null) {
+      return guideRepository.findByGameIdAndCharacterId(gameId, characterId);
+    }
     return guideRepository.findByGameId(gameId);
   }
 

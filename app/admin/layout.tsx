@@ -31,6 +31,12 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
           >
             Evidence
           </Link>
+          <Link
+            href="/admin/skr-data"
+            className="rounded-lg px-3 py-2 text-sm text-white/70 transition hover:bg-white/5 hover:text-white"
+          >
+            SKR Data
+          </Link>
         </nav>
         <main className="min-w-0 flex-1">{children}</main>
       </div>

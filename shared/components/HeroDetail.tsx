@@ -183,6 +183,7 @@ export default function HeroDetail({
                 alt={character.name}
                 nameFallback={character.name}
                 className="h-full w-full object-cover"
+                sizes="(max-width: 640px) 40vw, (max-width: 1024px) 25vw, 300px"
               />
               <div
                 className="absolute inset-0"
@@ -210,12 +211,13 @@ export default function HeroDetail({
               style={{ borderColor: 'rgba(255,255,255,0.1)' }}
             >
               <div className="relative aspect-[4/5] w-full">
-                <ImageWithFallback
-                  src={character.fullArtUrl ?? character.portraitUrl}
-                  alt={character.name}
-                  nameFallback={character.name}
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
-                />
+              <ImageWithFallback
+                src={character.fullArtUrl ?? character.portraitUrl}
+                alt={character.name}
+                nameFallback={character.name}
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 500px"
+              />
                 <div
                   className="absolute inset-0"
                   style={{ background: `linear-gradient(180deg, transparent 50%, rgba(10,15,24,0.4) 100%)` }}
@@ -527,6 +529,7 @@ export default function HeroDetail({
                         alt={entry.name}
                         nameFallback={entry.name}
                         className="h-10 w-10 object-cover"
+                        sizes="40px"
                       />
                     </div>
                     <div className="min-w-0">
