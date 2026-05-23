@@ -189,7 +189,7 @@ export default async function GameLandingPage({ params }: GamePageProps) {
             {guides.length} guide{guides.length === 1 ? '' : 's'} available.
           </p>
           {guides.length > 0 ? (
-            <ul className="mt-4 grid gap-4">
+            <ul className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {guides.map((guide) => (
                 <li key={guide.id}>
                   <Link
@@ -213,7 +213,7 @@ export default async function GameLandingPage({ params }: GamePageProps) {
             {tierLists.length} tier list{tierLists.length === 1 ? '' : 's'} available.
           </p>
           {tierLists.length > 0 ? (
-            <ul className="mt-4 grid gap-4">
+            <ul className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {tierLists.map((tierList) => (
                 <li key={tierList.id}>
                   <Link

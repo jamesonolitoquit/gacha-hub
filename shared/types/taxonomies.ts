@@ -62,5 +62,6 @@ export type NavItem = {
   slug: string
   label: string
   page?: string
+  icon?: string
   children?: NavItem[]
 }

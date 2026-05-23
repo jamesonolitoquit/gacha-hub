@@ -13,3 +13,11 @@ tsconfig.tsbuildinfo
 .ai/
 .vercel
 .env*.local
+tests/
+app/(platform)/collapse-demo.mp4
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+Thumbs.db

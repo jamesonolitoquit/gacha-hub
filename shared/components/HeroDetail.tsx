@@ -1,8 +1,8 @@
 "use client";
 
-import { useCallback, useContext, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { GameContext } from '../../platform/game-context';
+import { useGame } from '../../platform/hooks/useGame';
 import ImageWithFallback from './ImageWithFallback';
 import Lightbox from './Lightbox';
 import TaxonomyBadge from '../ui/TaxonomyBadge';
@@ -73,7 +73,7 @@ export default function HeroDetail({
   heroTiers = [],
   build = null,
 }: HeroDetailProps) {
-  const game = useContext(GameContext);
+  const game = useGame();
   const [openArt, setOpenArt] = useState(false);
   const [activeSkillIndex, setActiveSkillIndex] = useState(0);
   const tabBarRef = useRef<HTMLDivElement>(null);

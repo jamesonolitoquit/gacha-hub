@@ -27,17 +27,3 @@ jobs:
         with:
           name: seed-upserts-sql
           path: data/seeds/sql/seed-upserts.sql
-      - name: Optionally sign SQL preview
-        if: ${{ secrets.SIGNING_KEY != '' }}
-        run: |
-          echo 'Signing enabled — creating signature file'
-          echo "$SIGNING_KEY" | base64 -d > /tmp/signing_key.pem
-          openssl dgst -sha256 -sign /tmp/signing_key.pem -out data/seeds/sql/seed-upserts.sql.sig data/seeds/sql/seed-upserts.sql
-        env:
-          SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
-      - name: Upload SQL signature (if present)
-        if: ${{ secrets.SIGNING_KEY != '' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: seed-upserts-sql-signature
-          path: data/seeds/sql/seed-upserts.sql.sig

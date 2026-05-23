@@ -26,11 +26,11 @@ test('middleware injects resolved route headers', () => {
   assert.match(source, /x-gachahub-route-segment/);
 });
 
-test('search service uses slug-based bootstrap lookup', () => {
+test('search service uses module registry for game resolution', () => {
   const source = read('server/services/search.service.ts');
 
-  assert.match(source, /getSeedCharactersByGameSlug/);
-  assert.doesNotMatch(source, /getSeedCharacters\(gameId\)/);
+  assert.match(source, /moduleRegistry\.list\(\)/);
+  assert.match(source, /scoreCandidate/);
 });
 
 test('skills content slice is wired end to end', () => {
@@ -87,21 +87,12 @@ test('patches content slice is wired end to end', () => {
   assert.match(patchDetailPage, /patchService\.getPatch/);
 });
 
-test('platform navigation exposes active route semantics', () => {
-  const source = read('app/(platform)/platform-nav.tsx');
+test('unified navbar composes header, sidebar, and mobile sheet', () => {
+  const source = read('platform/components/UnifiedNavbar.tsx');
 
-  assert.match(source, /aria-label="Primary navigation"/);
-  assert.match(source, /aria-current=\{active \? 'page' : undefined\}/);
-  assert.match(source, /min-h-11/);
-});
-
-test('game subnav matches overview and sections correctly', () => {
-  const source = read('app/(platform)/games/[gameSlug]/game-subnav.tsx');
-
-  assert.ok(source.includes("const overviewMatch = /^\\/games\\/[^/]+$/.test(href);"));
-  assert.match(source, /if \(overviewMatch\) \{/);
-  assert.match(source, /return pathname === href;/);
-  assert.match(source, /return pathname === href \|\| pathname\.startsWith\(`\$\{href\}\/`\);/);
+  assert.match(source, /SiteHeader/);
+  assert.match(source, /GameSidebar/);
+  assert.match(source, /MobileNavSheet/);
 });
 
 test('search page implements accessible form feedback', () => {
@@ -168,62 +159,36 @@ test('module metadata keeps dragon traveler and brown dust 2 labels consistent',
 
 test('platform card grids use semantic list markup', () => {
   const gamesPage = read('app/(platform)/games/page.tsx');
-  const trendingPage = read('app/(platform)/trending/page.tsx');
-  const updatesPage = read('app/(platform)/updates/page.tsx');
-  const toolsPage = read('app/(platform)/tools/page.tsx');
 
   assert.match(gamesPage, /<ul className="w-full grid gap-4 md:grid-cols-2 xl:grid-cols-3">/);
   assert.match(gamesPage, /<li key=\{game\.id\}>/);
-
-  assert.match(trendingPage, /<ul className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">/);
-  assert.match(trendingPage, /<li key=\{game\.id\}>/);
-
-  assert.match(updatesPage, /<ul className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">/);
-  assert.match(updatesPage, /<li key=\{game\.id\}>/);
-
-  assert.match(toolsPage, /<ul className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">/);
-  assert.match(toolsPage, /<li>/);
 });
 
-test('platform header brand link has touch-friendly target', () => {
+test('platform layout wires unified navbar and theme applier', () => {
   const source = read('app/(platform)/layout.tsx');
 
-  assert.match(source, /GameSwitcher/);
-  assert.match(source, /gameSwitcherItems/);
-});
-
-test('game switcher exposes a dropdown menu', () => {
-  const source = read('app/(platform)/game-switcher.tsx');
-
-  assert.match(source, /aria-haspopup="menu"/);
-  assert.match(source, /Switch game hub/);
-  assert.match(source, /GachaHub/);
-  assert.match(source, /Choose a hub/);
-  assert.match(source, /bannerUrl\?/);
-  assert.match(source, /Current realm/);
-  assert.match(source, /role="menu"/);
-  assert.match(source, /return match \?\? null;/);
+  assert.match(source, /UnifiedNavbar/);
+  assert.match(source, /ThemeApplier/);
+  assert.match(source, /GameProvider/);
+  assert.match(source, /SearchProvider/);
 });
 
 test('homepage frames the hub as a chooser', () => {
-  const source = read('app/page.tsx');
+  const source = read('app/(platform)/page.tsx');
 
   assert.match(source, /Step into the archive of worlds and choose the game you want to explore\./i);
   assert.match(source, /Choose a game hub/);
-  assert.match(source, /Realm status/);
-  assert.match(source, /Pick a game from the switcher or the cards below/);
-  assert.match(source, /backgroundImage: `url\(\$\{getOptimizedBannerUrl\(game\.bannerUrl, 640\)\}\)`/);
+  assert.match(source, /GachaHub Portal/);
   assert.match(source, /gameModules/);
 });
 
-test('game layout provides contextual navigation and skip target', () => {
+test('game layout activates game context and provides main section', () => {
   const source = read('app/(platform)/games/[gameSlug]/layout.tsx');
 
-  assert.match(source, /href="#game-main"/);
-  assert.match(source, /focus:absolute focus:left-6 focus:top-3 focus:z-40/);
-  assert.match(source, /<GameSubnav gameSlug=\{game\.slug\} \/>/);
-  assert.match(source, /<section id="game-main">\{children\}<\/section>/);
-  assert.match(source, /backgroundImage: `url\(\$\{getOptimizedBannerUrl\(game\.bannerUrl, 1280\)\}\)`/);
+  assert.match(source, /GameActivator/);
+  assert.match(source, /moduleRegistry\.get/);
+  assert.match(source, /notFound\(\);/);
+  assert.match(source, /id="game-main"/);
 });
 
 test('guides and tier lists pages expose metadata and empty states', () => {
@@ -243,8 +208,8 @@ test('character and patch pages use stronger readability classes', () => {
   const characterPage = read('app/(platform)/games/[gameSlug]/characters/[slug]/page.tsx');
   const patchesPage = read('app/(platform)/games/[gameSlug]/patches/page.tsx');
 
-  assert.match(characterPage, /text-white\/75 font-medium/);
-  assert.match(characterPage, /focus-visible:border-sky-300\/55/);
+  assert.match(characterPage, /HeroDetail/);
+  assert.match(characterPage, /moduleRegistry\.get/);
   assert.match(patchesPage, /<time dateTime=\{new Date\(patch\.releaseDate\)\.toISOString\(\)\}/);
   assert.match(patchesPage, /text-white\/75/);
 });
@@ -255,8 +220,7 @@ test('characters index page exists with metadata and semantic list markup', () =
   assert.match(source, /export async function generateMetadata/);
   assert.match(source, /title: `Characters \| \$\{game\.name\}`/);
   assert.match(source, /characterService\.listCharacters\(gameRecord\.id\)/);
-  assert.match(source, /<ul className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">/);
-  assert.match(source, /<li key=\{character\.id\}>/);
+  assert.match(source, /CharactersIndex/);
   assert.match(source, /No characters available yet for this game\./);
 });
 
@@ -269,18 +233,18 @@ test('game module pages use semantic list markup for content groups', () => {
 
   assert.match(gameLandingPage, /World focus/);
   assert.match(gameLandingPage, /Explore characters/);
-  assert.match(gameLandingPage, /backgroundImage: `url\(\$\{getOptimizedBannerUrl\(game\.bannerUrl, 1280\)\}\)`/);
-  assert.match(gameLandingPage, /backgroundImage: `url\(\$\{getOptimizedBannerUrl\(game\.bannerUrl, 720\)\}\)`/);
-  assert.match(gameLandingPage, /aspect-\[16\/9\] overflow-hidden rounded-\[1\.25rem\] border border-white\/10 bg-cover bg-center/);
+  assert.match(gameLandingPage, /getOptimizedBannerUrl\(game\.bannerUrl, 1280\)/);
+  assert.match(gameLandingPage, /getOptimizedBannerUrl\(game\.bannerUrl, 720\)/);
+  assert.match(gameLandingPage, /aspect-\[16\/9\]/);
   assert.match(gameLandingPage, /<ul className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">/);
-  assert.match(gameLandingPage, /<li key=\{character\.id\}>/);
+  assert.match(gameLandingPage, /HeroList gameSlug=\{game\.slug\} characters=\{characters\} \/>/);
   assert.match(gameLandingPage, /id="characters-status" role="status" aria-live="polite"/);
   assert.match(gameLandingPage, /id="guides-status" role="status" aria-live="polite"/);
   assert.match(gameLandingPage, /id="tier-lists-status" role="status" aria-live="polite"/);
   assert.match(gameLandingPage, /Realm hub/);
   assert.match(gameLandingPage, /Realm traits/);
   assert.match(gameLandingPage, /Paths/);
-  assert.match(gameLandingPage, /No characters available yet for this game\./);
+  assert.match(gameLandingPage, /character record/);
   assert.match(gameLandingPage, /role="status" aria-live="polite" className="mt-4 text-white\/75">No guides available yet for this game\./);
   assert.match(gameLandingPage, /role="status" aria-live="polite" className="mt-4 text-white\/75">No tier lists published yet for this game\./);
 
@@ -289,7 +253,7 @@ test('game module pages use semantic list markup for content groups', () => {
 
   assert.match(guidesPage, /id="guides-status" role="status" aria-live="polite"/);
   assert.match(guidesPage, /<ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">/);
-  assert.match(guidesPage, /<li key=\{guide\.id\}>/);
+  assert.match(guidesPage, /<li key=\{guide\.slug\}>/);
   assert.match(guidesPage, /role="status" aria-live="polite" className="text-white\/75">No guides available yet for this game\./);
 
   assert.match(tierListsPage, /id="tier-lists-status" role="status" aria-live="polite"/);

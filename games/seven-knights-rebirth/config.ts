@@ -73,20 +73,20 @@ export const skrTaxonomies: GameTaxonomyConfig = {
 }
 
 export const skrNav: NavItem[] = [
-  { slug: 'overview', label: 'Overview', page: 'index' },
-  { slug: 'roster', label: 'Roster', page: 'characters' },
-  { slug: 'tier-lists', label: 'Tier Lists', page: 'tier-lists' },
-  { slug: 'builds', label: 'Builds', page: 'builds' },
-  { slug: 'teams', label: 'Teams', page: 'teams' },
+  { slug: 'overview', label: 'Overview', page: 'index', icon: 'LayoutDashboard' },
+  { slug: 'roster', label: 'Roster', page: 'characters', icon: 'Users' },
+  { slug: 'tier-lists', label: 'Tier Lists', page: 'tier-lists', icon: 'BarChart3' },
+  { slug: 'builds', label: 'Builds', page: 'builds', icon: 'Wrench' },
+  { slug: 'teams', label: 'Teams', page: 'teams', icon: 'Users2' },
   {
-    slug: 'database', label: 'Database', children: [
-      { slug: 'heroes', label: 'Heroes', page: 'characters' },
-      { slug: 'skills', label: 'Skills', page: 'skills' },
-      { slug: 'gear', label: 'Gear', page: 'database/gear' },
-      { slug: 'pets', label: 'Pets', page: 'database/pets' },
+    slug: 'database', label: 'Database', icon: 'Database', children: [
+      { slug: 'heroes', label: 'Heroes', page: 'characters', icon: 'User' },
+      { slug: 'skills', label: 'Skills', page: 'skills', icon: 'Sparkles' },
+      { slug: 'gear', label: 'Gear', page: 'database/gear', icon: 'Shield' },
+      { slug: 'pets', label: 'Pets', page: 'database/pets', icon: 'Heart' },
     ],
   },
-  { slug: 'guides', label: 'Guides', page: 'guides' },
-  { slug: 'tools', label: 'Tools', page: 'index' },
-  { slug: 'updates', label: 'Updates', page: 'patches' },
+  { slug: 'guides', label: 'Guides', page: 'guides', icon: 'BookOpen' },
+  { slug: 'tools',     label: 'Tools',     page: 'tools',    icon: 'Briefcase' },
+  { slug: 'updates', label: 'Updates', page: 'patches', icon: 'Megaphone' },
 ]

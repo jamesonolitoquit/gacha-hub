@@ -6,10 +6,40 @@ export type GameCapabilities = {
   community: Record<string, boolean>;
 };
 
+export type GameThemeColors = {
+  primary: string;
+  secondary: string;
+  background: string;
+  surface: string;
+  text: string;
+  muted?: string;
+  border?: string;
+  glow?: string;
+};
+
+export type GameThemeFonts = {
+  heading: string;
+  body: string;
+};
+
+export type GameThemeBackgrounds = {
+  body?: string;
+  panelOverlay?: string;
+  cardHighlight?: string;
+};
+
+export type GameThemeLogo = {
+  iconUrl?: string;
+  monogram?: string;
+};
+
 export type GameTheme = {
   name: string;
-  colors: Record<string, string>;
-  fonts: Record<string, string>;
+  label?: string;
+  colors: GameThemeColors;
+  fonts: GameThemeFonts;
+  backgrounds?: GameThemeBackgrounds;
+  logo?: GameThemeLogo;
 };
 
 export type GameRoute = {
