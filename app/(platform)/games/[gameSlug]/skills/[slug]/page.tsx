@@ -65,7 +65,7 @@ export default async function SkillDetailPage({ params }: SkillDetailPageProps) 
         <h1 id="skill-detail-title" className="text-4xl font-semibold">{skill.name}</h1>
         {skill.type && (
           <span
-            className="rounded-full border px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.15em]"
+            className="rounded-full border px-3 py-1 text-size-small font-semibold uppercase tracking-[0.15em]"
             style={{ borderColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.6)' }}
           >
             {skill.type}

@@ -112,7 +112,7 @@ export default async function GearDetailPage({ params }: Props) {
                   {gearSet.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="inline-block rounded-full border px-2 py-0.5 text-[0.55rem] font-semibold uppercase tracking-[0.15em] text-white/60"
+                      className="inline-block rounded-full border px-2 py-0.5 text-size-tiny font-semibold uppercase tracking-[0.15em] text-white/60"
                       style={{ borderColor: 'rgba(255,255,255,0.1)' }}
                     >
                       {tag}

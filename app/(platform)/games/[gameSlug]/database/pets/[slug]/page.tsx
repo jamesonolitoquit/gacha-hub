@@ -85,7 +85,7 @@ export default async function PetDetailPage({ params }: Props) {
             </h1>
             {pet.rarity && (
               <span
-                className="inline-block rounded-full px-2.5 py-0.5 text-[0.55rem] font-semibold uppercase tracking-[0.15em]"
+                className="inline-block rounded-full px-2.5 py-0.5 text-size-tiny font-semibold uppercase tracking-[0.15em]"
                 style={{ background: `${rarityColor}20`, color: rarityColor, border: `1px solid ${rarityColor}40` }}
               >
                 {pet.rarity}

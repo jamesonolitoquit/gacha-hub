@@ -40,42 +40,30 @@ export default async function PatchesPage({ params }: PatchesPageProps) {
 
   return (
     <section aria-labelledby="patches-title">
-      <p className="text-sm uppercase tracking-[0.3em] text-sky-300">{game.name}</p>
-      <h1 id="patches-title" className="mt-3 text-4xl font-semibold">Patch Notes</h1>
-      <p className="mt-3 max-w-2xl text-white/80">
-        Stay updated with the latest changes, improvements, and balance updates.
-      </p>
-      <p id="patches-status" role="status" aria-live="polite" className="mt-2 text-sm text-white/75">
-        {patches.length} patch{patches.length === 1 ? '' : 'es'} available.
-      </p>
-
-      <div className="mt-10">
-        {patches.length > 0 ? (
-          <ul className="space-y-4">
-            {patches.map((patch) => (
-              <li key={patch.id}>
-                <Link
-                  href={`/games/${game.slug}/patches/${patch.version}`}
-                  className="block rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:border-sky-300/40 hover:bg-white/10 focus-visible:border-sky-300/55 focus-visible:bg-white/15"
-                >
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.25em] text-sky-300">Version {patch.version}</p>
-                      <h3 className="mt-2 text-xl font-medium">{patch.title || `Version ${patch.version}`}</h3>
-                      {patch.notes && <p className="mt-1 text-sm text-white/75 font-medium">{patch.notes}</p>}
-                    </div>
-                    <time dateTime={new Date(patch.releaseDate).toISOString()} className="text-xs text-white/65 whitespace-nowrap">
-                      {new Date(patch.releaseDate).toLocaleDateString()}
-                    </time>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p role="status" aria-live="polite" className="text-white/75">No patches available yet.</p>
-        )}
+      <div className="flex items-center justify-between border-b pb-3 mb-4" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+        <h1 id="patches-title" className="text-lg font-semibold">Patch Notes</h1>
+        <p className="text-xs text-white/40">{patches.length} total</p>
       </div>
+
+      {patches.length > 0 ? (
+        <div className="space-y-2">
+          {patches.map((patch) => (
+            <Link
+              key={patch.id}
+              href={`/games/${game.slug}/patches/${patch.version}`}
+              className="flex items-center gap-3 rounded-xl border p-3 transition hover:bg-white/[0.03]" style={{ borderColor: 'rgba(255,255,255,0.06)' }}
+            >
+              <span className="shrink-0 rounded bg-sky-400/15 px-1.5 py-0.5 text-size-micro font-semibold uppercase tracking-[0.15em] text-sky-400">{patch.version}</span>
+              <span className="min-w-0 flex-1 text-sm font-medium text-white/80 truncate">{patch.title || `Version ${patch.version}`}</span>
+              <time dateTime={new Date(patch.releaseDate).toISOString()} className="shrink-0 text-size-tiny text-white/40">
+                {new Date(patch.releaseDate).toLocaleDateString()}
+              </time>
+            </Link>
+          ))}
+        </div>
+      ) : (
+        <p className="text-xs text-white/50">No patches available yet.</p>
+      )}
     </section>
   );
 }

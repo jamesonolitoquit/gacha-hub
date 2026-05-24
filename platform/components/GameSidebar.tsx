@@ -35,13 +35,23 @@ export function GameSidebar() {
   const [view, setView] = useState<'nav' | 'switcher'>(isLauncher ? 'switcher' : 'nav');
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  const prevGameSlug = useRef<string | undefined>(undefined);
+
   useEffect(() => {
     if (isLauncher) setView('switcher');
   }, [isLauncher]);
 
   useEffect(() => {
-    setExpanded(false);
-  }, [pathname]);
+    if (game) setView('nav');
+  }, [game]);
+
+  useEffect(() => {
+    const currentGameSlug = game?.slug;
+    if (currentGameSlug !== prevGameSlug.current) {
+      setExpanded(false);
+      prevGameSlug.current = currentGameSlug;
+    }
+  }, [game?.slug]);
 
   const handleEnter = useCallback(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
@@ -87,7 +97,7 @@ export function GameSidebar() {
       <aside
         className="fixed left-0 top-12 bottom-0 z-30 hidden lg:block overflow-hidden whitespace-nowrap border-r backdrop-blur-xl transition-[width] duration-200 ease-in-out"
         style={{
-          width: expanded ? '224px' : '48px',
+          width: expanded ? '200px' : '48px',
           borderColor: 'var(--border-color)',
           background: 'color-mix(in srgb, var(--surface) 92%, transparent)',
         }}
@@ -104,7 +114,7 @@ export function GameSidebar() {
           {!expanded ? (
             <button
               onClick={handleMonogramClick}
-              className="flex items-center justify-center h-8 w-8 rounded-lg text-[0.55rem] font-bold text-white"
+              className="flex items-center justify-center h-8 w-8 rounded-lg text-size-tiny font-bold text-white"
               style={{
                 background: gameTheme
                   ? `linear-gradient(135deg, ${gameTheme.colors.primary}, ${gameTheme.colors.secondary})`
@@ -121,7 +131,7 @@ export function GameSidebar() {
           ) : (
             <button onClick={handleMonogramClick} className="flex items-center gap-2 w-full text-left">
               <span
-                className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-[0.55rem] font-bold text-white"
+                className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-size-tiny font-bold text-white"
                 style={{
                   background: gameTheme
                     ? `linear-gradient(135deg, ${gameTheme.colors.primary}, ${gameTheme.colors.secondary})`
@@ -131,7 +141,7 @@ export function GameSidebar() {
                 {gameTheme?.logo?.monogram ?? getMonogram(game?.name ?? 'GachaHub')}
               </span>
               <span className="flex flex-col flex-1 min-w-0">
-                <span className="text-[0.5rem] uppercase tracking-[0.2em]" style={{ color: 'var(--muted)' }}>Realm</span>
+                <span className="text-size-tiny uppercase tracking-[0.2em]" style={{ color: 'var(--muted)' }}>Realm</span>
                 <span className="text-sm font-semibold truncate" style={{ color: 'var(--foreground)' }}>{game?.name ?? 'GachaHub'}</span>
               </span>
               <ChevronDown className="h-3 w-3 shrink-0" style={{ color: 'var(--muted)' }} />
@@ -163,7 +173,7 @@ export function GameSidebar() {
                 style={{ background: isCurrent ? `${m.theme.colors.primary}12` : 'transparent' }}
               >
                 <span
-                  className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-lg text-[0.5rem] font-bold text-white"
+                  className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-lg text-size-tiny font-bold text-white"
                   style={{ background: `linear-gradient(135deg, ${m.theme.colors.primary}, ${m.theme.colors.secondary})` }}
                 >
                   {m.theme.logo?.monogram ?? getMonogram(m.name)}
@@ -178,11 +188,27 @@ export function GameSidebar() {
           })}
         </div>
       ) : (
-        /* Nav items */
-        <div className="mt-2 px-2 space-y-0.5">
-          {navItems.map((item) => (
-            <NavItemRow key={item.slug} item={item} gameSlug={game?.slug ?? ''} pathname={pathname} primaryColor={primaryColor} expanded={expanded} />
-          ))}
+        /* Nav items with section grouping */
+        <div className="mt-1 px-2 space-y-1">
+          {navItems.map((item, idx) => {
+            const sections: Record<string, string | undefined> = {
+              overview: undefined, 'tier-lists': 'META', builds: 'META', teams: 'META',
+              database: 'DATABASE',
+              guides: 'CONTENT', tools: 'CONTENT', updates: 'CONTENT',
+            };
+            const prevSlug = idx > 0 ? navItems[idx - 1].slug : null;
+            const section = sections[item.slug];
+            const prevSection = prevSlug ? sections[prevSlug] : null;
+            const showHeader = section && section !== prevSection;
+            return (
+              <div key={item.slug}>
+                {showHeader && expanded && (
+                  <p className="px-2 pt-2 pb-1 text-size-micro font-bold uppercase tracking-[0.2em] text-white/30">{section}</p>
+                )}
+                <NavItemRow item={item} gameSlug={game?.slug ?? ''} pathname={pathname} primaryColor={primaryColor} expanded={expanded} />
+              </div>
+            );
+          })}
         </div>
       )}
     </aside>

@@ -68,7 +68,7 @@ export default function SkrCharacterCard({
         <div className="mt-1 flex flex-wrap items-center gap-1">
           {elementConfig && (
             <span
-              className="inline-flex items-center rounded-full px-1.5 py-0.5 text-[0.55rem] font-semibold uppercase tracking-wider"
+              className="inline-flex items-center rounded-full px-1.5 py-0.5 text-size-tiny font-semibold uppercase tracking-wider"
               style={{
                 background: `${elementConfig.color}20`,
                 border: `1px solid ${elementConfig.color}40`,
@@ -80,7 +80,7 @@ export default function SkrCharacterCard({
           )}
           {classConfig && (
             <span
-              className="inline-flex items-center rounded-full px-1.5 py-0.5 text-[0.55rem] font-semibold uppercase tracking-wider"
+              className="inline-flex items-center rounded-full px-1.5 py-0.5 text-size-tiny font-semibold uppercase tracking-wider"
               style={{
                 background: `${classConfig.color}20`,
                 border: `1px solid ${classConfig.color}40`,
@@ -93,7 +93,7 @@ export default function SkrCharacterCard({
         </div>
         {displayStars > 0 && (
           <div
-            className="mt-0.5 text-[0.6rem] tracking-wide"
+            className="mt-0.5 text-size-small tracking-wide"
             style={{
               color: '#ffd700',
               textShadow: glowColor

@@ -46,16 +46,12 @@ export default async function PetIndexPage({ params }: Props) {
 
   return (
     <section aria-labelledby="pets-title">
-      <p className="text-xs uppercase tracking-[0.3em] text-white/40">{game.name}</p>
-      <h1 id="pets-title" className="mt-2 text-3xl font-semibold text-white">Pets</h1>
-      <p className="mt-2 text-sm text-white/60">Companion units and their passive effects.</p>
-      <p id="pets-status" role="status" aria-live="polite" className="mt-2 text-sm text-white/50">
-        {pets.length} pet{pets.length === 1 ? '' : 's'} available.
-      </p>
-
-      <div className="mt-6">
-        <PetIndex pets={pets} />
+      <div className="flex items-center justify-between border-b pb-3 mb-4" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+        <h1 id="pets-title" className="text-lg font-semibold">Pets</h1>
+        <p className="text-xs text-white/40">{pets.length} companions</p>
       </div>
+
+      <PetIndex pets={pets} />
     </section>
   );
 }

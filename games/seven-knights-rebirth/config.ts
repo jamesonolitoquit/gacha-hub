@@ -1,4 +1,13 @@
 import type { GameTaxonomyConfig, NavItem } from '../../shared/types/taxonomies'
+import type { GameSeoConfig } from '../../core/types'
+
+export const skrSeo: GameSeoConfig = {
+  title: 'Seven Knights: Rebirth — Tier Lists, Builds, Heroes & Guides',
+  description: 'Complete Seven Knights: Rebirth resource hub. View top meta picks, tier lists, hero builds, team compositions, gear sets, pets, guides, and comprehensive database tools.',
+  keywords: ['seven knights rebirth', 'skr tier list', 'skr builds', 'skr heroes', 'seven knights rebirth guide'],
+  intro: 'Tier Lists, Builds, Teams, Gear, Pets, Guides, and Meta Rankings',
+  footerContent: 'Seven Knights: Rebirth is a mobile RPG published by Netmarble. GachaHub provides comprehensive coverage of heroes, tier lists, builds, team compositions, gear sets, pets, and gameplay guides to help you progress through every game mode including story, PvP arena, guild war, and raid content.',
+};
 
 export const skrTaxonomies: GameTaxonomyConfig = {
   classes: [
@@ -74,7 +83,6 @@ export const skrTaxonomies: GameTaxonomyConfig = {
 
 export const skrNav: NavItem[] = [
   { slug: 'overview', label: 'Overview', page: 'index', icon: 'LayoutDashboard' },
-  { slug: 'roster', label: 'Roster', page: 'characters', icon: 'Users' },
   { slug: 'tier-lists', label: 'Tier Lists', page: 'tier-lists', icon: 'BarChart3' },
   { slug: 'builds', label: 'Builds', page: 'builds', icon: 'Wrench' },
   { slug: 'teams', label: 'Teams', page: 'teams', icon: 'Users2' },

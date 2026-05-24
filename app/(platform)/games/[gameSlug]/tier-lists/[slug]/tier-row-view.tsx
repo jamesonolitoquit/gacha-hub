@@ -4,7 +4,7 @@ import { useState } from 'react';
 import TierRow from '../../../../../../features/tiers/components/TierRow';
 
 type Props = {
-  grouped: Record<string, { character: any; previousTier?: string | null }[]>;
+  grouped: Record<string, { character: any; previousTier?: string | null; notes?: string | null }[]>;
   tierConfig: {
     tiers: string[];
     colors: Record<string, string>;

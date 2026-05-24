@@ -16,6 +16,7 @@ type HeroSummary = {
 type HeroEntry = {
   character: HeroSummary;
   previousTier?: string | null;
+  notes?: string | null;
 };
 
 type Props = {
@@ -31,7 +32,7 @@ type Props = {
 export default function TierRow({ tier, color, heroes, gameSlug, collapsed, previousTier, entries }: Props) {
   if (heroes.length === 0) return null;
 
-  const heroEntries = entries ?? heroes.map((h) => ({ character: h, previousTier: null }));
+  const heroEntries = entries ?? heroes.map((h) => ({ character: h, previousTier: null, notes: null }));
 
   return (
     <div
@@ -61,7 +62,7 @@ export default function TierRow({ tier, color, heroes, gameSlug, collapsed, prev
           const isNew = entry.previousTier == null;
           const movedUp = entry.previousTier && tier !== entry.previousTier;
 
-          return (
+           return (
             <Link
               key={hero.slug}
               href={`/games/${gameSlug}/characters/${hero.slug}`}
@@ -70,6 +71,7 @@ export default function TierRow({ tier, color, heroes, gameSlug, collapsed, prev
                 borderColor: 'rgba(255,255,255,0.06)',
                 background: 'rgba(255,255,255,0.02)',
               }}
+              title={entry.notes || ''}
             >
               <div className="h-10 w-10 flex-shrink-0 overflow-hidden rounded-lg border relative"
                 style={{ borderColor: 'rgba(255,255,255,0.08)' }}

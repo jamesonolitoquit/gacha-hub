@@ -177,7 +177,7 @@ export default function SkrCharactersIndex({
               <button
                 key={cl.slug}
                 onClick={() => toggleClass(cl.slug)}
-                className="rounded-full px-2 py-0.5 text-[0.55rem] font-semibold uppercase tracking-wider transition"
+                className="rounded-full px-2 py-0.5 text-size-tiny font-semibold uppercase tracking-wider transition"
                 style={{
                   background: active ? `${cl.color}30` : 'rgba(255,255,255,0.05)',
                   border: `1px solid ${active ? `${cl.color}60` : 'rgba(255,255,255,0.1)'}`,
@@ -194,7 +194,7 @@ export default function SkrCharactersIndex({
               <button
                 key={r.slug}
                 onClick={() => toggleRarity(r.stars)}
-                className="rounded-full px-2 py-0.5 text-[0.55rem] font-semibold uppercase tracking-wider transition"
+                className="rounded-full px-2 py-0.5 text-size-tiny font-semibold uppercase tracking-wider transition"
                 style={{
                   background: active ? `${r.color}30` : 'rgba(255,255,255,0.05)',
                   border: `1px solid ${active ? `${r.color}60` : 'rgba(255,255,255,0.1)'}`,

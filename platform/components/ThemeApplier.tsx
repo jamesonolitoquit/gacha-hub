@@ -1,58 +1,76 @@
 'use client';
 
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useRef } from 'react';
+import { usePathname } from 'next/navigation';
 import { GameContext } from '../game-context';
 import { useThemeVariables } from '../../shared/hooks/useThemeVariables';
 
+const GAME_ROUTE_RE = /^\/games\/[^/]+/;
+
+const DEFAULT_VARS: Record<string, string> = {
+  '--background': '#0b1020',
+  '--foreground': '#f5f7fb',
+  '--surface': '#141b31',
+  '--accent': '#8ec5ff',
+  '--accent-secondary': '#f6d37a',
+  '--muted': 'rgba(255,255,255,0.55)',
+  '--border-color': 'rgba(255,255,255,0.1)',
+  '--glow-color': '#8ec5ff',
+  '--font-heading': 'Georgia, \'Times New Roman\', serif',
+  '--font-body': '\'Avenir Next\', \'Segoe UI\', \'Helvetica Neue\', Arial, sans-serif',
+  '--body-gradient': '',
+  '--panel-overlay': '',
+  '--card-highlight': '',
+  '--skr-primary-rgb': '',
+  '--skr-secondary-rgb': '',
+  '--skr-background-rgb': '',
+  '--skr-surface-rgb': '',
+  '--skr-text-rgb': '',
+};
+
+function applyVars(vars: Record<string, string>) {
+  const html = document.documentElement;
+  Object.entries(vars).forEach(([key, val]) => {
+    html.style.setProperty(key, val);
+  });
+}
+
 export function ThemeApplier({ children }: { children: React.ReactNode }) {
   const ctx = useContext(GameContext);
+  const pathname = usePathname();
+  const lastThemeRef = useRef<string | null>(null);
+
+  const isGameRoute = GAME_ROUTE_RE.test(pathname);
 
   useEffect(() => {
-    const html = document.documentElement;
+    if (!isGameRoute) {
+      if (lastThemeRef.current !== null) {
+        applyVars(DEFAULT_VARS);
+        lastThemeRef.current = null;
+        document.title = 'GachaHub';
+      }
+      return;
+    }
+
     const game = ctx.selectedGame;
     const theme = game?.theme;
+    if (!theme) return;
 
-    if (theme) {
-      const vars = useThemeVariables(theme);
-      Object.entries(vars).forEach(([key, val]) => {
-        html.style.setProperty(key, val);
-      });
-      // Also set individual color hex values for inline use
-      html.style.setProperty('--skr-primary-rgb', hexToRgb(theme.colors.primary));
-      html.style.setProperty('--skr-secondary-rgb', hexToRgb(theme.colors.secondary));
-      html.style.setProperty('--skr-background-rgb', hexToRgb(theme.colors.background));
-      html.style.setProperty('--skr-surface-rgb', hexToRgb(theme.colors.surface));
-      html.style.setProperty('--skr-text-rgb', hexToRgb(theme.colors.text));
-      document.title = `${game.name} — GachaHub`;
-    } else {
-      // Reset to defaults
-      const root = getComputedStyle(html);
-      const defaults = {
-        '--background': '#0b1020',
-        '--foreground': '#f5f7fb',
-        '--surface': '#141b31',
-        '--accent': '#8ec5ff',
-        '--accent-secondary': '#f6d37a',
-        '--muted': 'rgba(255,255,255,0.55)',
-        '--border-color': 'rgba(255,255,255,0.1)',
-        '--glow-color': '#8ec5ff',
-        '--font-heading': 'Georgia, \'Times New Roman\', serif',
-        '--font-body': '\'Avenir Next\', \'Segoe UI\', \'Helvetica Neue\', Arial, sans-serif',
-        '--body-gradient': '',
-        '--panel-overlay': '',
-        '--card-highlight': '',
-        '--skr-primary-rgb': '',
-        '--skr-secondary-rgb': '',
-        '--skr-background-rgb': '',
-        '--skr-surface-rgb': '',
-        '--skr-text-rgb': '',
-      };
-      Object.entries(defaults).forEach(([key, val]) => {
-        html.style.setProperty(key, val);
-      });
-      document.title = 'GachaHub';
-    }
-  }, [ctx.selectedGame]);
+    const themeKey = `${theme.colors.primary}|${theme.colors.secondary}|${theme.colors.background}|${theme.colors.surface}|${theme.colors.text}`;
+    if (themeKey === lastThemeRef.current) return;
+    lastThemeRef.current = themeKey;
+
+    const vars = useThemeVariables(theme);
+    applyVars(vars);
+
+    const el = document.documentElement;
+    el.style.setProperty('--skr-primary-rgb', hexToRgb(theme.colors.primary));
+    el.style.setProperty('--skr-secondary-rgb', hexToRgb(theme.colors.secondary));
+    el.style.setProperty('--skr-background-rgb', hexToRgb(theme.colors.background));
+    el.style.setProperty('--skr-surface-rgb', hexToRgb(theme.colors.surface));
+    el.style.setProperty('--skr-text-rgb', hexToRgb(theme.colors.text));
+    document.title = `${game.name} — GachaHub`;
+  }, [isGameRoute, ctx.selectedGame]);
 
   return <>{children}</>;
 }

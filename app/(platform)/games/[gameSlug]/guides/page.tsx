@@ -71,39 +71,31 @@ export default async function GuidesPage({ params }: GuidesPageProps) {
 
   return (
     <section aria-labelledby="guides-title">
-      <p className="text-sm uppercase tracking-[0.3em] text-sky-300">{game.name}</p>
-      <h1 id="guides-title" className="mt-3 text-4xl font-semibold">Guides</h1>
-      <p className="mt-3 max-w-2xl text-white/80">Starter paths, builds, and progression tips curated per module.</p>
-      <p id="guides-status" role="status" aria-live="polite" className="mt-2 text-sm text-white/75">
-        {guides.length} guide{guides.length === 1 ? '' : 's'} available.
-      </p>
-      <div className="mt-6">
-        {guides.length > 0 ? (
-          <div className="space-y-8">
-            {typeOrder.filter((t) => grouped[t]).map((type) => (
-              <section key={type} aria-labelledby={`guide-type-${type}`}>
-                <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                  {grouped[type].map((guide) => (
-                    <li key={guide.slug}>
-                      <Link
-                        href={`/games/${params.gameSlug}/guides/${guide.slug}`}
-                        className="block"
-                      >
-                        <GuideCard
-                          guide={guide}
-                          guideTypeMeta={guideTypeMap[guide.guideType ?? '']}
-                        />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ))}
-          </div>
-        ) : (
-          <p role="status" aria-live="polite" className="text-white/75">No guides available yet for this game.</p>
-        )}
+      <div className="flex items-center justify-between border-b pb-3 mb-4" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+        <h1 id="guides-title" className="text-lg font-semibold">Guides</h1>
+        <p className="text-xs text-white/40">{guides.length} total</p>
       </div>
+
+      {guides.length > 0 ? (
+        <div className="space-y-6">
+          {typeOrder.filter((t) => grouped[t]).map((type) => (
+            <section key={type} aria-labelledby={`guide-type-${type}`}>
+               {typeOrder.filter((t) => grouped[t]).length > 1 && (
+                 <p id={`guide-type-${type}`} className="mb-2 text-size-tiny font-semibold uppercase tracking-[0.2em] text-white/40">{type}</p>
+               )}
+              <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                {grouped[type].map((guide) => (
+                  <Link key={guide.slug} href={`/games/${params.gameSlug}/guides/${guide.slug}`} className="block">
+                    <GuideCard guide={guide} guideTypeMeta={guideTypeMap[guide.guideType ?? '']} />
+                  </Link>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      ) : (
+        <p role="status" aria-live="polite" className="text-white/50 text-xs">No guides available yet for this game.</p>
+      )}
     </section>
   );
 }

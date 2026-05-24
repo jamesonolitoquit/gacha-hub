@@ -10,7 +10,6 @@ export function GameActivator({ game, children }: { game: GameModule; children: 
 
   useEffect(() => {
     ctx.setSelectedGame(game);
-    return () => ctx.setSelectedGame(null);
   }, [game.slug]);
 
   return (

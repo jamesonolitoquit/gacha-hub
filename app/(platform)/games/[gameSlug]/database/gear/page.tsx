@@ -46,16 +46,12 @@ export default async function GearIndexPage({ params }: Props) {
 
   return (
     <section aria-labelledby="gear-title">
-      <p className="text-xs uppercase tracking-[0.3em] text-white/40">{game.name}</p>
-      <h1 id="gear-title" className="mt-2 text-3xl font-semibold text-white">Gear Sets</h1>
-      <p className="mt-2 text-sm text-white/60">Equipment sets and their effects.</p>
-      <p id="gear-status" role="status" aria-live="polite" className="mt-2 text-sm text-white/50">
-        {gearSets.length} gear set{gearSets.length === 1 ? '' : 's'} available.
-      </p>
-
-      <div className="mt-6">
-        <GearIndex gearSets={gearSets} />
+      <div className="flex items-center justify-between border-b pb-3 mb-4" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+        <h1 id="gear-title" className="text-lg font-semibold">Gear Sets</h1>
+        <p className="text-xs text-white/40">{gearSets.length} sets</p>
       </div>
+
+      <GearIndex gearSets={gearSets} />
     </section>
   );
 }

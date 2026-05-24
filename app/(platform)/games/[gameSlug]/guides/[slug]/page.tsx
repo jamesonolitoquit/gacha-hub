@@ -7,6 +7,7 @@ import { gameService } from '../../../../../../server/services/game.service';
 import { guideService } from '../../../../../../server/services/guide.service';
 import GuideMetaBar from '../../../../../../features/guides/components/GuideMetaBar';
 import GuideContent from '../../../../../../features/guides/components/GuideContent';
+import InlineCharacterCard from '../../../../../../features/guides/components/InlineCharacterCard';
 
 export const revalidate = 3600;
 
@@ -90,12 +91,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
         </article>
 
         {character ? (
-          <Link
-            href={`/games/${game.slug}/characters/${character.slug}`}
-            className="inline-flex min-h-11 w-fit items-center rounded-full border border-white/10 px-4 py-2 text-sm text-white/80 transition hover:border-sky-300/40 hover:bg-white/10 focus-visible:border-sky-300/55 focus-visible:bg-white/15"
-          >
-            View character: {character.name}
-          </Link>
+          <InlineCharacterCard gameSlug={params.gameSlug} character={character} />
         ) : null}
       </div>
     </section>

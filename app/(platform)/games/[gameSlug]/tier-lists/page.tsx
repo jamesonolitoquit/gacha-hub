@@ -74,39 +74,33 @@ export default async function TierListsPage({ params }: TierListsPageProps) {
 
   return (
     <section aria-labelledby="tier-lists-title">
-      <p className="text-sm uppercase tracking-[0.3em] text-sky-300">{game.name}</p>
-      <h1 id="tier-lists-title" className="mt-3 text-4xl font-semibold">Tier Lists</h1>
-      <p className="mt-3 max-w-2xl text-white/80">Compare unit performance by role, mode, and meta context.</p>
-      <p id="tier-lists-status" role="status" aria-live="polite" className="mt-2 text-sm text-white/75">
-        {tierLists.length} tier list{tierLists.length === 1 ? '' : 's'} available.
-      </p>
-      <div className="mt-6">
-        {tierLists.length > 0 ? (
-          <div className="space-y-8">
-            {modeOrder.filter((m) => grouped[m]).map((mode) => (
-              <section key={mode} aria-labelledby={`mode-${mode}`}>
-                <h2 id={`mode-${mode}`} className="mb-3 text-xs uppercase tracking-[0.3em] text-white/40">
-                  {MODE_LABELS[mode] ?? mode}
-                </h2>
-                <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                  {grouped[mode].map((tierList) => (
-                    <li key={tierList.id}>
-                      <Link
-                        href={`/games/${params.gameSlug}/tier-lists/${tierList.slug}`}
-                        className="group rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:border-sky-300/40 hover:bg-white/10 focus-visible:border-sky-300/55 block"
-                      >
-                        <h3 className="text-xl font-medium group-hover:text-sky-100">{tierList.title}</h3>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ))}
-          </div>
-        ) : (
-          <p role="status" aria-live="polite" className="text-white/75">No tier lists published yet for this game.</p>
-        )}
+      <div className="flex items-center justify-between border-b pb-3 mb-4" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+        <h1 id="tier-lists-title" className="text-lg font-semibold">Tier Lists</h1>
+        <p className="text-xs text-white/40">{tierLists.length} total</p>
       </div>
+
+      {tierLists.length > 0 ? (
+        <div className="space-y-6">
+          {modeOrder.filter((m) => grouped[m]).map((mode) => (
+            <section key={mode} aria-labelledby={`mode-${mode}`}>
+              <p id={`mode-${mode}`} className="mb-2 text-size-tiny font-semibold uppercase tracking-[0.2em] text-white/40">{MODE_LABELS[mode] ?? mode}</p>
+              <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                {grouped[mode].map((tierList) => (
+                  <Link
+                    key={tierList.id}
+                    href={`/games/${params.gameSlug}/tier-lists/${tierList.slug}`}
+                    className="rounded-xl border p-3 transition hover:bg-white/[0.03]" style={{ borderColor: 'rgba(255,255,255,0.06)' }}
+                  >
+                    <p className="text-sm font-semibold text-white">{tierList.title}</p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      ) : (
+        <p className="text-xs text-white/50">No tier lists published yet for this game.</p>
+      )}
     </section>
   );
 }

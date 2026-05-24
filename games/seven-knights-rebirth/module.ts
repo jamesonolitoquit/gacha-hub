@@ -1,6 +1,6 @@
 import type { GameModule } from '../../core/types';
 import { sevenKnightsRebirthCapabilities } from './capabilities';
-import { skrNav, skrTaxonomies } from './config';
+import { skrNav, skrSeo, skrTaxonomies } from './config';
 import { sevenKnightsRebirthRoutes } from './routes';
 import { sevenKnightsRebirthTheme } from './theme';
 
@@ -14,5 +14,6 @@ export const sevenKnightsRebirthModule: GameModule = {
   nav: skrNav,
   routes: sevenKnightsRebirthRoutes,
   theme: sevenKnightsRebirthTheme,
+  seo: skrSeo,
   capabilities: sevenKnightsRebirthCapabilities,
 };

@@ -98,6 +98,7 @@ export class GameRepository {
         if (data) {
           return mapGameRow(data as GameRow);
         }
+        // If no database record found, fall through to runtime module registry
       } catch {
         // Fall back to runtime module metadata when the Supabase schema is unavailable.
       }

@@ -23,7 +23,6 @@ export default function CharactersIndex({ gameSlug, characters }: { gameSlug: st
   const [role, setRole] = useState<'any' | string>('any');
   const [compactView, setCompactView] = useState(false);
   const [page, setPage] = useState(1);
-  const [filterOpen, setFilterOpen] = useState(false);
 
   const roles = useMemo(() => {
     const set = new Set<string>();
@@ -65,132 +64,75 @@ export default function CharactersIndex({ gameSlug, characters }: { gameSlug: st
   const safePage = Math.min(page, totalPages);
   const paged = filtered.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
 
-  function handleFilterChange(updater: () => void) {
-    updater();
-    setPage(1);
-  }
-
   return (
     <section>
-      <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex items-center gap-3">
-          <input
-            aria-label="Search characters"
-            placeholder="Search characters..."
-            value={query}
-            onChange={(e) => { setQuery(e.target.value); setPage(1); }}
-            className="rounded-md border border-white/10 bg-white/3 px-3 py-2 text-sm text-white/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-300"
-          />
+      {/* Persistent filter strip */}
+      <div className="flex items-center gap-2 rounded-xl border p-2" style={{ borderColor: 'rgba(255,255,255,0.06)', background: 'rgba(255,255,255,0.02)' }}>
+        <input
+          aria-label="Search characters"
+          placeholder="Search..."
+          value={query}
+          onChange={(e) => { setQuery(e.target.value); setPage(1); }}
+          className="min-w-0 flex-1 rounded-md border border-white/10 bg-white/3 px-2.5 py-1.5 text-xs text-white/90 focus:outline-none focus-visible:ring-1 focus-visible:ring-sky-300"
+        />
 
-          <select
-            value={String(rarity)}
-            onChange={(e) => { setRarity(e.target.value === 'any' ? 'any' : Number(e.target.value)); setPage(1); }}
-            className="rounded-md border border-white/10 bg-white/3 px-2 py-2 text-sm text-white/90"
-            aria-label="Filter by rarity"
-          >
-            <option value="any">Any rarity</option>
-            {rarities.map((r) => (
-              <option key={r} value={r}>{`${r}★`}</option>
-            ))}
-          </select>
+        <select
+          value={String(rarity)}
+          onChange={(e) => { setRarity(e.target.value === 'any' ? 'any' : Number(e.target.value)); setPage(1); }}
+          className="rounded-md border border-white/10 bg-white/3 px-2 py-1.5 text-xs text-white/90"
+          aria-label="Filter by rarity"
+        >
+          <option value="any">Rarity</option>
+          {rarities.map((r) => (
+            <option key={r} value={r}>{`${r}★`}</option>
+          ))}
+        </select>
 
-          <select
-            value={role}
-            onChange={(e) => { setRole(e.target.value === 'any' ? 'any' : e.target.value); setPage(1); }}
-            className="rounded-md border border-white/10 bg-white/3 px-2 py-2 text-sm text-white/90"
-            aria-label="Filter by role"
-          >
-            <option value="any">Any role</option>
-            {roles.map((r) => (
-              <option key={r} value={r}>{r}</option>
-            ))}
-          </select>
-        </div>
-        <div className="flex items-center gap-3">
-          <button
-            type="button"
-            onClick={() => setFilterOpen(true)}
-            className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/3 px-3 py-2 text-sm text-white/90"
-          >
-            <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden>
-              <path strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" d="M10 6h8M6 12h12M3 18h18" />
-            </svg>
-            Filter
-          </button>
-        </div>
+        <select
+          value={role}
+          onChange={(e) => { setRole(e.target.value === 'any' ? 'any' : e.target.value); setPage(1); }}
+          className="rounded-md border border-white/10 bg-white/3 px-2 py-1.5 text-xs text-white/90"
+          aria-label="Filter by role"
+        >
+          <option value="any">Role</option>
+          {roles.map((r) => (
+            <option key={r} value={r}>{r}</option>
+          ))}
+        </select>
 
-        <div className="flex items-center gap-3">
-          <div className="text-sm text-white/75">{filtered.length} result{filtered.length === 1 ? '' : 's'}</div>
-          {totalPages > 1 && (
-            <div className="flex items-center gap-1 text-sm text-white/60">
-              <button
-                type="button"
-                disabled={safePage <= 1}
-                onClick={() => setPage((p) => Math.max(1, p - 1))}
-                className="rounded border border-white/10 px-2 py-1 hover:bg-white/5 disabled:opacity-30"
-              >
-                Prev
-              </button>
-              <span className="px-1">{safePage} / {totalPages}</span>
-              <button
-                type="button"
-                disabled={safePage >= totalPages}
-                onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
-                className="rounded border border-white/10 px-2 py-1 hover:bg-white/5 disabled:opacity-30"
-              >
-                Next
-              </button>
-            </div>
-          )}
-          <button
-            type="button"
-            aria-pressed={compactView}
-            onClick={() => setCompactView((s) => !s)}
-            className="ml-2 inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/3 px-3 py-2 text-sm text-white/90"
-          >
-            {compactView ? 'Compact' : 'Grid'}
-          </button>
-        </div>
-      </div>
-      {filterOpen && (
-        <div className="fixed inset-0 z-50 flex items-start justify-center">
-          <div className="absolute inset-0 bg-black/50" onClick={() => setFilterOpen(false)} />
-          <div className="relative mt-24 w-[min(480px,95%)] rounded-2xl border bg-white/5 p-6" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
-            <div className="flex items-center justify-between">
-              <h3 className="text-lg font-semibold">Quick Filters</h3>
-              <button onClick={() => setFilterOpen(false)} className="text-white/70">Close</button>
-            </div>
-            <div className="mt-4 space-y-4">
-              <div>
-                <label className="text-xs uppercase tracking-[0.15em] text-white/50">Rarity</label>
-                <select
-                  value={String(rarity)}
-                  onChange={(e) => setRarity(e.target.value === 'any' ? 'any' : Number(e.target.value))}
-                  className="mt-1 w-full rounded-md border border-white/10 bg-white/3 px-3 py-2 text-sm text-white/90"
-                >
-                  <option value="any">Any rarity</option>
-                  {rarities.map((r) => (
-                    <option key={r} value={r}>{`${r}★`}</option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label className="text-xs uppercase tracking-[0.15em] text-white/50">Role</label>
-                <select
-                  value={role}
-                  onChange={(e) => setRole(e.target.value === 'any' ? 'any' : e.target.value)}
-                  className="mt-1 w-full rounded-md border border-white/10 bg-white/3 px-3 py-2 text-sm text-white/90"
-                >
-                  <option value="any">Any role</option>
-                  {roles.map((r) => (
-                    <option key={r} value={r}>{r}</option>
-                  ))}
-                </select>
-              </div>
-            </div>
+        <button
+          type="button"
+          aria-pressed={compactView}
+          onClick={() => setCompactView((s) => !s)}
+          className="rounded-md border border-white/10 bg-white/3 px-2 py-1.5 text-xs text-white/70 hover:text-white"
+        >
+          {compactView ? 'Grid' : 'Compact'}
+        </button>
+
+        <span className="text-xs text-white/40 whitespace-nowrap">{filtered.length}</span>
+
+        {totalPages > 1 && (
+          <div className="flex items-center gap-1 text-xs text-white/50">
+            <button
+              type="button"
+              disabled={safePage <= 1}
+              onClick={() => setPage((p) => Math.max(1, p - 1))}
+              className="rounded border border-white/10 px-1.5 py-1 hover:bg-white/5 disabled:opacity-30"
+            >
+              ‹
+            </button>
+            <span className="px-0.5">{safePage}/{totalPages}</span>
+            <button
+              type="button"
+              disabled={safePage >= totalPages}
+              onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+              className="rounded border border-white/10 px-1.5 py-1 hover:bg-white/5 disabled:opacity-30"
+            >
+              ›
+            </button>
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
       {paged.length > 0 ? (
         <HeroList gameSlug={gameSlug} characters={paged} compact={compactView} />

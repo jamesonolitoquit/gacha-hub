@@ -47,16 +47,12 @@ export default async function TeamsIndexPage({ params }: Props) {
 
   return (
     <section aria-labelledby="teams-title">
-      <p className="text-xs uppercase tracking-[0.3em] text-white/40">{game.name}</p>
-      <h1 id="teams-title" className="mt-2 text-3xl font-semibold text-white">Teams</h1>
-      <p className="mt-2 text-sm text-white/60">Team compositions and strategies.</p>
-      <p id="teams-status" role="status" aria-live="polite" className="mt-2 text-sm text-white/50">
-        {teams.length} team{teams.length === 1 ? '' : 's'} available.
-      </p>
-
-      <div className="mt-6">
-        <TeamIndex teams={teams} gameSlug={params.gameSlug} />
+      <div className="flex items-center justify-between border-b pb-3 mb-4" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+        <h1 id="teams-title" className="text-lg font-semibold">Teams</h1>
+        <p className="text-xs text-white/40">{teams.length} total</p>
       </div>
+
+      <TeamIndex teams={teams} gameSlug={params.gameSlug} />
     </section>
   );
 }

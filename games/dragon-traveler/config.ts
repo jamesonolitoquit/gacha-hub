@@ -74,7 +74,6 @@ export const dtTaxonomies: GameTaxonomyConfig = {
 
 export const dtNav: NavItem[] = [
   { slug: 'overview', label: 'Overview', page: 'index', icon: 'LayoutDashboard' },
-  { slug: 'roster', label: 'Roster', page: 'characters', icon: 'Users' },
   { slug: 'tier-lists', label: 'Tier Lists', page: 'tier-lists', icon: 'BarChart3' },
   { slug: 'builds', label: 'Builds', page: 'builds', icon: 'Wrench' },
   { slug: 'teams', label: 'Teams', page: 'teams', icon: 'Users2' },

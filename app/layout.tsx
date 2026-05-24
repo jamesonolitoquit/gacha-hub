@@ -28,6 +28,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://picsum.photos" />
+        <link rel="preconnect" href="https://sgimage.netmarble.com" />
+        <link rel="preconnect" href="https://images.pexels.com" />
+        <link rel="dns-prefetch" href="https://picsum.photos" />
+        <link rel="dns-prefetch" href="https://sgimage.netmarble.com" />
+        <link rel="dns-prefetch" href="https://images.pexels.com" />
+      </head>
       <body>{children}</body>
     </html>
   );

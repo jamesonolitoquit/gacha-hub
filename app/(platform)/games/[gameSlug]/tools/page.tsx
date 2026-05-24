@@ -1,22 +1,55 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { moduleRegistry } from '../../../../../core/module-registry';
 
-export default function SkrToolsPage() {
+type ToolsPageProps = {
+  params: {
+    gameSlug: string;
+  };
+};
+
+export async function generateMetadata({ params }: ToolsPageProps) {
+  const game = moduleRegistry.get(params.gameSlug);
+
+  if (!game) {
+    return {};
+  }
+
+  return {
+    title: `Tools | ${game.name}`,
+    description: `Tools for ${game.name}.`,
+  };
+}
+
+export default async function ToolsPage({ params }: ToolsPageProps) {
+  const game = moduleRegistry.get(params.gameSlug);
+
+  if (!game) {
+    notFound();
+  }
+
+  // Tools are only available for specific games
+  // For now, only SKR has a tools page with these tools
+  if (game.slug !== 'seven-knights-rebirth') {
+    notFound();
+  }
+
   const tools = [
     {
       label: 'Tier Lists',
-      href: '/games/seven-knights-rebirth/tier-lists',
+      href: `/games/${params.gameSlug}/tier-lists`,
       description: 'Community-ranked tier lists for PvP and PvE',
       icon: 'T',
     },
     {
       label: 'Team Builder',
-      href: '/games/seven-knights-rebirth/teams',
+      href: `/games/${params.gameSlug}/teams`,
       description: 'Browse and build team compositions',
       icon: 'B',
     },
     {
       label: 'Builds',
-      href: '/games/seven-knights-rebirth/builds',
+      href: `/games/${params.gameSlug}/builds`,
       description: 'Recommended gear, skill priorities, and stat spreads',
       icon: 'S',
     },
@@ -25,7 +58,7 @@ export default function SkrToolsPage() {
   return (
     <section aria-labelledby="tools-title">
       <h1 id="tools-title" className="text-2xl font-semibold text-white">Tools</h1>
-      <p className="mt-1 text-sm text-white/50">Community tools for Seven Knights: Rebirth.</p>
+      <p className="mt-1 text-sm text-white/50">Community tools for {game.name}.</p>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {tools.map((tool) => (

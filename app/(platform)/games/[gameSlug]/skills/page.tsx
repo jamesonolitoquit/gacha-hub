@@ -34,13 +34,12 @@ export default async function SkillsIndexPage({ params }: PageProps) {
 
   return (
     <section aria-labelledby="skills-title">
-      <p className="text-sm uppercase tracking-[0.3em] text-sky-300">{game.name}</p>
-      <h1 id="skills-title" className="mt-3 text-4xl font-semibold">Skills</h1>
-      <p className="mt-3 max-w-2xl text-white/80">Browse skills and their details grouped by character.</p>
-
-      <div className="mt-6">
-        <SkillList gameSlug={params.gameSlug} groups={groups} />
+      <div className="flex items-center justify-between border-b pb-3 mb-4" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+        <h1 id="skills-title" className="text-lg font-semibold">Skills</h1>
+        <p className="text-xs text-white/40">{groups.length} groups</p>
       </div>
+
+      <SkillList gameSlug={params.gameSlug} groups={groups} />
     </section>
   );
 }

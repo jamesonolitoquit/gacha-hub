@@ -42,6 +42,14 @@ export type GameTheme = {
   logo?: GameThemeLogo;
 };
 
+export type GameSeoConfig = {
+  title: string;
+  description: string;
+  keywords: string[];
+  intro: string;
+  footerContent: string;
+};
+
 export type GameRoute = {
   pattern?: string;
   component?: unknown;
@@ -58,5 +66,6 @@ export type GameModule = {
   routes: Record<string, GameRoute>;
   theme: GameTheme;
   capabilities: GameCapabilities;
+  seo?: GameSeoConfig;
   renderers?: Record<string, unknown>;
 };

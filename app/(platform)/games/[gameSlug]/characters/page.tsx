@@ -41,17 +41,13 @@ export default async function CharactersPage({ params }: CharactersPageProps) {
 
   return (
     <section aria-labelledby="characters-title">
-      <p className="text-sm uppercase tracking-[0.3em] text-sky-300">{game.name}</p>
-      <h1 id="characters-title" className="mt-3 text-4xl font-semibold">Characters</h1>
-      <p className="mt-3 max-w-2xl text-white/80">Browse all available character records for this game module.</p>
-      <p id="characters-status" role="status" aria-live="polite" className="mt-2 text-sm text-white/75">
-        {characters.length} character record{characters.length === 1 ? '' : 's'} available.
-      </p>
+      <div className="flex items-center justify-between border-b pb-3 mb-4" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+        <h1 id="characters-title" className="text-lg font-semibold">Characters</h1>
+        <p className="text-xs text-white/40">{characters.length} total</p>
+      </div>
 
       {characters.length > 0 ? (
-        <div className="mt-8">
-          <CharactersIndex gameSlug={game.slug} characters={characters} />
-        </div>
+        <CharactersIndex gameSlug={game.slug} characters={characters} />
       ) : (
         <p role="status" aria-live="polite" className="mt-8 text-white/75">No characters available yet for this game.</p>
       )}

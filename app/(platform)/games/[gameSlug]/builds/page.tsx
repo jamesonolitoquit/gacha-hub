@@ -54,31 +54,42 @@ export default async function BuildsIndexPage({ params }: Props) {
     characterName: charBySlug.get(b.characterSlug)?.name ?? b.characterSlug,
   }));
 
-  const usageOrder = ['pve', 'pvp', 'other'];
   const grouped: Record<string, typeof buildsWithNames> = {};
   for (const build of buildsWithNames) {
-    const key = build.keyUsage?.[0] ?? 'other';
-    if (!grouped[key]) grouped[key] = [];
-    grouped[key].push(build);
+    const usage = build.keyUsage ?? [];
+    let category = 'other';
+    if (usage.includes('pvp')) category = 'pvp';
+    else if (usage.includes('raid')) category = 'raid';
+    else if (usage.includes('pve')) category = 'pve';
+    else category = 'other';
+    if (!grouped[category]) grouped[category] = [];
+    grouped[category].push(build);
   }
+
+  const categoryLabels: Record<string, string> = {
+    pve: 'PvE Builds',
+    pvp: 'PvP Builds',
+    raid: 'Raid Builds',
+    other: 'Other',
+  };
+  const categoryOrder = ['pve', 'pvp', 'raid', 'other'];
 
   return (
     <section aria-labelledby="builds-title">
-      <p className="text-xs uppercase tracking-[0.3em] text-white/40">{game.name}</p>
-      <h1 id="builds-title" className="mt-2 text-3xl font-semibold text-white">Builds</h1>
-      <p className="mt-2 text-sm text-white/60">Character builds with gear recommendations and stat priorities.</p>
-      <p id="builds-status" role="status" aria-live="polite" className="mt-2 text-sm text-white/50">
-        {buildsWithNames.length} build{buildsWithNames.length === 1 ? '' : 's'} available.
-      </p>
+      <div className="flex items-center justify-between border-b pb-3 mb-4" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+        <h1 id="builds-title" className="text-lg font-semibold">Builds</h1>
+        <p className="text-xs text-white/40">{buildsWithNames.length} total</p>
+      </div>
 
-      <div className="mt-6 space-y-8">
-        {usageOrder.filter((u) => grouped[u]).map((usage) => (
-          <section key={usage} aria-labelledby={`builds-${usage}`}>
-            <h2 id={`builds-${usage}`} className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
-              {usage === 'pve' ? 'PVE' : usage === 'pvp' ? 'PVP' : 'Other'}
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {grouped[usage].map((build) => (
+      <div className="space-y-6">
+        {categoryOrder.filter((c) => grouped[c]).map((category) => (
+          <section key={category} aria-labelledby={`builds-${category}`}>
+            <div className="flex items-center gap-2 mb-3">
+              <span className="h-3 w-0.5 rounded-full" style={{ background: category === 'pve' ? '#33b5e5' : category === 'pvp' ? '#ff4444' : category === 'raid' ? '#aa66cc' : '#888' }} />
+              <h2 id={`builds-${category}`} className="text-size-tiny font-semibold uppercase tracking-[0.2em] text-white/50">{categoryLabels[category] ?? category}</h2>
+            </div>
+            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+              {grouped[category].map((build) => (
                 <Link
                   key={build.characterSlug}
                   href={`/games/${params.gameSlug}/characters/${build.characterSlug}`}
