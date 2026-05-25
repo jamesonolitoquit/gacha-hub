@@ -44,6 +44,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `${team.name} | ${game.name}`,
     description: `Team composition for ${team.name}.`,
+    alternates: { canonical: `/games/${params.gameSlug}/teams/${params.slug}` },
   };
 }
 
@@ -154,7 +155,7 @@ export default async function TeamDetailPage({ params }: Props) {
       )}
 
       {/* Gear Recommendations detail */}
-      {team.gearRecommendations && team.gearRecommendations && Object.keys(team.gearRecommendations).length > 0 && (
+      {team.gearRecommendations && Object.keys(team.gearRecommendations).length > 0 && (
         <div className="mt-4 rounded-xl border p-4" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
           <p className="mb-2 text-size-tiny font-semibold uppercase tracking-[0.2em] text-white/40">Gear Overview</p>
           <div className="space-y-2">
@@ -174,7 +175,7 @@ export default async function TeamDetailPage({ params }: Props) {
           <p className="mb-2 text-size-tiny font-semibold uppercase tracking-[0.2em] text-white/40">Alternatives</p>
           <div className="flex flex-wrap gap-2">
             {(team as any).alternatives.map((alt: string) => (
-              <Link key={alt} href={`/games/${params.gameSlug}/characters/${alt}`} className="rounded bg-white/5 px-2 py-1 text-size-tiny font-medium text-white/70 hover:bg-white/10 transition">
+              <Link key={alt} href={`/games/${params.gameSlug}/heroes/${alt}`} className="rounded bg-white/5 px-2 py-1 text-size-tiny font-medium text-white/70 hover:bg-white/10 transition">
                 {characterNames[alt] ?? alt}
               </Link>
             ))}

@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: PatchDetailPageProps) {
   return {
     title: `Patch ${params.version} | ${game.name}`,
     description: `Patch notes for version ${params.version} of ${game.name}.`,
+    alternates: { canonical: `/games/${params.gameSlug}/patches/${params.version}` },
   };
 }
 

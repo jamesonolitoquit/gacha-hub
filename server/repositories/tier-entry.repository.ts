@@ -1,5 +1,6 @@
 import { tierEntries } from '../../db/schema';
-import { findSeedTierEntriesByTierList, findSeedTierEntriesForCharacter, getSeedTierEntries } from '../bootstrap-data';
+import { getGameSlugById } from '../bootstrap-data';
+import { seedRegistry } from '../seeds/seed-registry';
 import { db } from '../db';
 
 export type TierEntryRecord = typeof tierEntries.$inferSelect;
@@ -58,7 +59,9 @@ export class TierEntryRepository {
       }
     }
 
-    return getSeedTierEntries()
+    const slug = getGameSlugById(gameId);
+    if (!slug) return [];
+    return seedRegistry.getTierEntries(slug)
       .filter((e) => e.tierListId === tierListId)
       .map((entry, index) => ({
         id: index + 1,
@@ -95,21 +98,25 @@ export class TierEntryRepository {
       }
     }
 
-    return findSeedTierEntriesForCharacter(gameId, characterId).map((entry, index) => ({
-      id: index + 1,
-      gameId: entry.gameId,
-      characterId: entry.characterId,
-      petId: entry.petId ?? null,
-      mode: entry.mode,
-      tier: entry.tier,
-      patchId: entry.patchId ?? null,
-      previousTier: entry.previousTier ?? null,
-      tierListId: entry.tierListId ?? null,
-      notes: entry.notes ?? null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    }));
+    const slug = getGameSlugById(gameId);
+    if (!slug) return [];
+    return seedRegistry.getTierEntries(slug)
+      .filter((e) => e.characterId === characterId)
+      .map((entry, index) => ({
+        id: index + 1,
+        gameId: entry.gameId,
+        characterId: entry.characterId,
+        petId: entry.petId ?? null,
+        mode: entry.mode,
+        tier: entry.tier,
+        patchId: entry.patchId ?? null,
+        previousTier: entry.previousTier ?? null,
+        tierListId: entry.tierListId ?? null,
+        notes: entry.notes ?? null,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        deletedAt: null,
+      }));
   }
 
   async findByGameId(gameId: number): Promise<TierEntryRecord[]> {
@@ -129,7 +136,9 @@ export class TierEntryRepository {
       }
     }
 
-    return getSeedTierEntries()
+    const slug = getGameSlugById(gameId);
+    if (!slug) return [];
+    return seedRegistry.getTierEntries(slug)
       .filter((e) => e.gameId === gameId)
       .map((entry, index) => ({
         id: index + 1,

@@ -190,7 +190,7 @@ export default function OverviewHeroSection({
             <HeroList gameSlug={gameSlug} characters={restHeroes} compact tierMap={tierMap} limit={anyFilter ? 24 : undefined} showViewAll={anyFilter} density={density} />
             {!anyFilter && restHeroes.length > 24 && (
               <Link
-                href={`/games/${gameSlug}/characters`}
+                href={`/games/${gameSlug}/heroes`}
                 className="mt-2 inline-flex text-size-tiny uppercase tracking-[0.2em] text-white/40 transition hover:text-white/70"
               >
                 View all characters →

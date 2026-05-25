@@ -146,7 +146,7 @@ export default function HeroDetail({
       <div className="flex items-center gap-4 border-b pb-3" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
         <div className="flex items-center gap-2">
           <Link
-            href={`/games/${gameSlug}/characters`}
+            href={`/games/${gameSlug}/heroes`}
             className="flex h-7 w-7 items-center justify-center rounded-lg border text-[0.5rem] text-white/40 transition hover:text-white"
             style={{ borderColor: 'rgba(255,255,255,0.1)' }}
           >
@@ -426,7 +426,7 @@ export default function HeroDetail({
           <div className="rounded-xl border p-3" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
             <div className="flex items-center justify-between mb-2">
               <p className="text-[0.5rem] font-semibold uppercase tracking-[0.2em] text-white/40">Roster</p>
-              <Link href={`/games/${gameSlug}/characters`} className="text-[0.5rem] font-semibold uppercase tracking-[0.15em] transition" style={{ color: primaryColor }}>
+              <Link href={`/games/${gameSlug}/heroes`} className="text-[0.5rem] font-semibold uppercase tracking-[0.15em] transition" style={{ color: primaryColor }}>
                 View all
               </Link>
             </div>
@@ -434,7 +434,7 @@ export default function HeroDetail({
               {roster.slice(0, 12).map((entry) => (
                 <Link
                   key={entry.slug}
-                  href={`/games/${gameSlug}/characters/${entry.slug}`}
+                  href={`/games/${gameSlug}/heroes/${entry.slug}`}
                   className={`flex-shrink-0 rounded-lg border p-2 transition ${
                     entry.slug === character.slug
                       ? 'border-white/20 bg-white/8'

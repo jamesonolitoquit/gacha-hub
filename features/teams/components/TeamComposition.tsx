@@ -37,11 +37,11 @@ export default function TeamComposition({ characters, gearRecommendations, gameS
           return (
             <div key={char.slug} className="rounded-xl border p-3" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
               <div className="flex items-center gap-2">
-                <Link href={`/games/${gameSlug}/characters/${char.slug}`} className="h-9 w-9 shrink-0 overflow-hidden rounded-lg border" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
+                <Link href={`/games/${gameSlug}/heroes/${char.slug}`} className="h-9 w-9 shrink-0 overflow-hidden rounded-lg border" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
                   <ImageWithFallback src={char.portraitUrl ?? char.iconUrl} alt={char.name} nameFallback={char.name} className="h-full w-full object-cover" sizes="36px" />
                 </Link>
                 <div className="min-w-0">
-                  <Link href={`/games/${gameSlug}/characters/${char.slug}`} className="text-sm font-semibold text-white hover:text-sky-200 transition truncate block">
+                  <Link href={`/games/${gameSlug}/heroes/${char.slug}`} className="text-sm font-semibold text-white hover:text-sky-200 transition truncate block">
                     {char.name}
                   </Link>
                   <div className="flex items-center gap-1.5 mt-0.5">

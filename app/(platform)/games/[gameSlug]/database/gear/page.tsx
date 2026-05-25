@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `Gear Sets | ${game.name}`,
     description: `Equipment sets and their effects for ${game.name}.`,
+    alternates: { canonical: `/games/${params.gameSlug}/database/gear` },
   };
 }
 

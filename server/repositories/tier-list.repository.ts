@@ -1,5 +1,6 @@
 import { tierLists } from '../../db/schema';
-import { findSeedTierList, getSeedTierLists } from '../bootstrap-data';
+import { getGameSlugById } from '../bootstrap-data';
+import { seedRegistry } from '../seeds/seed-registry';
 import { db } from '../db';
 
 export type TierListRecord = typeof tierLists.$inferSelect;
@@ -56,7 +57,9 @@ export class TierListRepository {
       }
     }
 
-    return getSeedTierLists(gameId).map((tierList, index) => ({
+    const slug = getGameSlugById(gameId);
+    if (!slug) return [];
+    return seedRegistry.getTierLists(slug).map((tierList, index) => ({
       id: index + 1,
       gameId: tierList.gameId,
       slug: tierList.slug,
@@ -93,7 +96,9 @@ export class TierListRepository {
       }
     }
 
-    const tierList = findSeedTierList(gameId, slug);
+    const gameSlug = getGameSlugById(gameId);
+    if (!gameSlug) return undefined;
+    const tierList = seedRegistry.getTierLists(gameSlug).find((t) => t.slug === slug);
 
     if (!tierList) {
       return undefined;

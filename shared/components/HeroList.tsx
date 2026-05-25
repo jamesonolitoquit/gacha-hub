@@ -47,7 +47,7 @@ export default function HeroList({ gameSlug, characters, compact, limit, showVie
       </ul>
       {showViewAll && characters.length > (limit ?? Infinity) && (
         <Link
-          href={`/games/${gameSlug}/characters`}
+          href={`/games/${gameSlug}/heroes`}
           className="mt-2 inline-flex text-size-tiny uppercase tracking-[0.2em] text-white/40 transition hover:text-white/70"
         >
           View all characters →

@@ -36,15 +36,12 @@ test('search service uses module registry for game resolution', () => {
 test('skills content slice is wired end to end', () => {
   const repository = read('server/repositories/skill.repository.ts');
   const service = read('server/services/skill.service.ts');
-  const skillPage = read('app/(platform)/games/[gameSlug]/skills/[slug]/page.tsx');
-  const characterPage = read('app/(platform)/games/[gameSlug]/characters/[slug]/page.tsx');
+  const heroPage = read('app/(platform)/games/[gameSlug]/heroes/[slug]/page.tsx');
 
   assert.match(repository, /\.from\('skills'\)/);
   assert.match(repository, /findByCharacterId/);
   assert.match(service, /getSkill\(gameId: number, slug: string\)/);
-  assert.match(skillPage, /skillService\.getSkill/);
-  assert.match(skillPage, /characterService\.getCharacterById/);
-  assert.match(characterPage, /skillService\.listSkillsForCharacter/);
+  assert.match(heroPage, /skillService\.listSkillsForCharacter/);
 });
 
 test('game repository uses the Supabase table API', () => {
@@ -58,7 +55,7 @@ test('game repository uses the Supabase table API', () => {
 });
 
 test('character page no longer falls back to game id 1', () => {
-  const source = read('app/(platform)/games/[gameSlug]/characters/[slug]/page.tsx');
+  const source = read('app/(platform)/games/[gameSlug]/heroes/[slug]/page.tsx');
 
   assert.doesNotMatch(source, /\?\? 1/);
   assert.match(source, /notFound\(\);/);
@@ -200,69 +197,62 @@ test('guides and tier lists pages expose metadata and empty states', () => {
   assert.match(guidesPage, /No guides available yet for this game\./);
 
   assert.match(tierListsPage, /export async function generateMetadata/);
-  assert.match(tierListsPage, /title: `Tier Lists \| \$\{game\.name\}`/);
+  assert.match(tierListsPage, /title:.*`Tier Lists \| \$\{game\.name\}`/);
   assert.match(tierListsPage, /No tier lists published yet for this game\./);
 });
 
-test('character and patch pages use stronger readability classes', () => {
-  const characterPage = read('app/(platform)/games/[gameSlug]/characters/[slug]/page.tsx');
+test('hero and patch pages use stronger readability classes', () => {
+  const heroPage = read('app/(platform)/games/[gameSlug]/heroes/[slug]/page.tsx');
   const patchesPage = read('app/(platform)/games/[gameSlug]/patches/page.tsx');
 
-  assert.match(characterPage, /HeroDetail/);
-  assert.match(characterPage, /moduleRegistry\.get/);
+  assert.match(heroPage, /HeroDetail/);
+  assert.match(heroPage, /moduleRegistry\.get/);
   assert.match(patchesPage, /<time dateTime=\{new Date\(patch\.releaseDate\)\.toISOString\(\)\}/);
-  assert.match(patchesPage, /text-white\/75/);
+  assert.match(patchesPage, /text-white\/50/);
 });
 
-test('characters index page exists with metadata and semantic list markup', () => {
-  const source = read('app/(platform)/games/[gameSlug]/characters/page.tsx');
+test('heroes index page exists with metadata and semantic list markup', () => {
+  const source = read('app/(platform)/games/[gameSlug]/heroes/page.tsx');
 
   assert.match(source, /export async function generateMetadata/);
-  assert.match(source, /title: `Characters \| \$\{game\.name\}`/);
+  assert.match(source, /title: `Heroes \| \$\{game\.name\}`/);
   assert.match(source, /characterService\.listCharacters\(gameRecord\.id\)/);
   assert.match(source, /CharactersIndex/);
-  assert.match(source, /No characters available yet for this game\./);
+  assert.match(source, /No heroes available yet for this game\./);
 });
 
 test('game module pages use semantic list markup for content groups', () => {
   const gameLandingPage = read('app/(platform)/games/[gameSlug]/page.tsx');
-  const charactersPage = read('app/(platform)/games/[gameSlug]/characters/page.tsx');
+  const heroesPage = read('app/(platform)/games/[gameSlug]/heroes/page.tsx');
   const guidesPage = read('app/(platform)/games/[gameSlug]/guides/page.tsx');
   const tierListsPage = read('app/(platform)/games/[gameSlug]/tier-lists/page.tsx');
   const patchesPage = read('app/(platform)/games/[gameSlug]/patches/page.tsx');
 
-  assert.match(gameLandingPage, /World focus/);
-  assert.match(gameLandingPage, /Explore characters/);
-  assert.match(gameLandingPage, /priority/);
-  assert.match(gameLandingPage, /sizes="\(max-width: 720px\) 100vw, 720px"/);
-  assert.match(gameLandingPage, /aspect-\[16\/9\]/);
-  assert.match(gameLandingPage, /<ul className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">/);
-  assert.match(gameLandingPage, /HeroList gameSlug=\{game\.slug\} characters=\{characters\} \/>/);
-  assert.match(gameLandingPage, /id="characters-status" role="status" aria-live="polite"/);
-  assert.match(gameLandingPage, /id="guides-status" role="status" aria-live="polite"/);
-  assert.match(gameLandingPage, /id="tier-lists-status" role="status" aria-live="polite"/);
-  assert.match(gameLandingPage, /Realm hub/);
-  assert.match(gameLandingPage, /Realm traits/);
-  assert.match(gameLandingPage, /Paths/);
-  assert.match(gameLandingPage, /character record/);
-  assert.match(gameLandingPage, /role="status" aria-live="polite" className="mt-4 text-white\/75">No guides available yet for this game\./);
-  assert.match(gameLandingPage, /role="status" aria-live="polite" className="mt-4 text-white\/75">No tier lists published yet for this game\./);
+  assert.match(gameLandingPage, /GameIdentityHero game=\{game\}/);
+  assert.match(gameLandingPage, /MetaStrip stats=\{stats\} gameSlug=\{game\.slug\}/);
+  assert.match(gameLandingPage, /ActionGrid stats=\{stats\} game=\{game\}/);
+  assert.match(gameLandingPage, /LiveMetaSection/);
+  assert.match(gameLandingPage, /FeaturedGuides/);
+  assert.match(gameLandingPage, /RecentUpdates/);
+  assert.match(gameLandingPage, /FeaturedHeroes heroes=\{featuredHeroes\} gameSlug=\{game\.slug\}/);
+  assert.match(gameLandingPage, /DatabaseShortcuts gameSlug=\{game\.slug\}/);
+  assert.match(gameLandingPage, /SeoFooter game=\{game\}/);
+  assert.match(gameLandingPage, /const sectionGap = 'mt-6 lg:mt-7'/);
 
-  assert.match(charactersPage, /id="characters-status" role="status" aria-live="polite"/);
-  assert.match(charactersPage, /role="status" aria-live="polite" className="mt-8 text-white\/75">No characters available yet for this game\./);
+  assert.match(heroesPage, /aria-labelledby="heroes-title"/);
+  assert.match(heroesPage, /role="status" aria-live="polite" className="mt-8 text-white\/75">No heroes available yet for this game\./);
 
-  assert.match(guidesPage, /id="guides-status" role="status" aria-live="polite"/);
-  assert.match(guidesPage, /<ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">/);
-  assert.match(guidesPage, /<li key=\{guide\.slug\}>/);
-  assert.match(guidesPage, /role="status" aria-live="polite" className="text-white\/75">No guides available yet for this game\./);
+  assert.match(guidesPage, /aria-labelledby="guides-title"/);
+  assert.match(guidesPage, /GuideCard guide=\{guide\}/);
+  assert.match(guidesPage, /div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">/);
+  assert.match(guidesPage, /role="status" aria-live="polite" className="text-white\/50 text-xs">No guides available yet for this game\./);
 
-  assert.match(tierListsPage, /id="tier-lists-status" role="status" aria-live="polite"/);
-  assert.match(tierListsPage, /<ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">/);
-  assert.match(tierListsPage, /<li key=\{tierList\.id\}>/);
-  assert.match(tierListsPage, /role="status" aria-live="polite" className="text-white\/75">No tier lists published yet for this game\./);
+  assert.match(tierListsPage, /aria-labelledby="tier-lists-title"/);
+  assert.match(tierListsPage, /<div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-3">/);
+  assert.match(tierListsPage, /Link\s*key=\{tierList\.id\}/);
+  assert.match(tierListsPage, /className="mt-8 text-center text-size-small text-white\/50">No tier lists published yet for this game\./);
 
-  assert.match(patchesPage, /id="patches-status" role="status" aria-live="polite"/);
-  assert.match(patchesPage, /<ul className="space-y-4">/);
-  assert.match(patchesPage, /<li key=\{patch\.id\}>/);
-  assert.match(patchesPage, /role="status" aria-live="polite" className="text-white\/75">No patches available yet\./);
+  assert.match(patchesPage, /aria-labelledby="patches-title"/);
+  assert.match(patchesPage, /Link\s*key=\{patch\.id\}/);
+  assert.match(patchesPage, /className="text-xs text-white\/50">No patches available yet\./);
 });

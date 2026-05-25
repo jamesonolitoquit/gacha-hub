@@ -1,5 +1,6 @@
 import { pets } from '../../db/schema';
-import { findSeedPet, getSeedPets } from '../bootstrap-data';
+import { getGameSlugById } from '../bootstrap-data';
+import { seedRegistry } from '../seeds/seed-registry';
 import { db } from '../db';
 
 export type PetRecord = typeof pets.$inferSelect;
@@ -66,25 +67,9 @@ export class PetRepository {
       }
     }
 
-    return getSeedPets(gameId).map((p) => ({
-      id: p.id,
-      gameId: p.gameId,
-      slug: p.slug,
-      name: p.name,
-      rarity: p.rarity,
-      faction: p.faction,
-      passive1Name: p.passive1Name,
-      passive1Description: p.passive1Description,
-      passive1Enhanced: p.passive1Enhanced,
-      passive2Name: p.passive2Name,
-      passive2Description: p.passive2Description,
-      passive2Enhanced: p.passive2Enhanced,
-      iconUrl: p.iconUrl,
-      patchId: null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    }));
+    const slug = getGameSlugById(gameId);
+    if (!slug) return [];
+    return seedRegistry.getPets(slug) as PetRecord[];
   }
 
   async findBySlug(gameId: number, slug: string): Promise<PetRecord | undefined> {
@@ -108,31 +93,10 @@ export class PetRepository {
       }
     }
 
-    const pet = findSeedPet(gameId, slug);
-
-    if (!pet) {
-      return undefined;
-    }
-
-    return {
-      id: pet.id,
-      gameId: pet.gameId,
-      slug: pet.slug,
-      name: pet.name,
-      rarity: pet.rarity,
-      faction: pet.faction,
-      passive1Name: pet.passive1Name,
-      passive1Description: pet.passive1Description,
-      passive1Enhanced: pet.passive1Enhanced,
-      passive2Name: pet.passive2Name,
-      passive2Description: pet.passive2Description,
-      passive2Enhanced: pet.passive2Enhanced,
-      iconUrl: pet.iconUrl,
-      patchId: null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    };
+    const gameSlug = getGameSlugById(gameId);
+    if (!gameSlug) return undefined;
+    const all = seedRegistry.getPets(gameSlug);
+    return all.find((p) => p.slug === slug) as PetRecord | undefined;
   }
 }
 

@@ -33,7 +33,7 @@ export default function HeroCard({ gameSlug, character, compact, tier, density, 
     if (density === 'list') {
       return (
         <Link
-          href={`/games/${gameSlug}/characters/${character.slug}`}
+          href={`/games/${gameSlug}/heroes/${character.slug}`}
           className="flex items-center gap-2 rounded-sm px-2 py-1.5 text-xs transition hover:bg-white/[0.04]"
           style={{ background: 'rgba(255,255,255,0.01)' }}
         >
@@ -66,7 +66,7 @@ export default function HeroCard({ gameSlug, character, compact, tier, density, 
         onMouseLeave={() => setHovering(false)}
       >
         <Link
-          href={`/games/${gameSlug}/characters/${character.slug}`}
+          href={`/games/${gameSlug}/heroes/${character.slug}`}
           className={`group flex items-center gap-2.5 rounded-lg ${padClass} transition hover:bg-white/[0.05]`}
           style={{ background: 'rgba(255,255,255,0.02)' }}
         >
@@ -138,7 +138,7 @@ export default function HeroCard({ gameSlug, character, compact, tier, density, 
 
   return (
     <Link
-      href={`/games/${gameSlug}/characters/${character.slug}`}
+      href={`/games/${gameSlug}/heroes/${character.slug}`}
       className="relative block overflow-hidden rounded-lg transition-all duration-200 hover:z-10 hover:scale-[1.03]"
       style={{
         boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.04)',

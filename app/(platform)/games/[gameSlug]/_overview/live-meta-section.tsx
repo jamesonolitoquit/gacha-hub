@@ -69,7 +69,7 @@ function HeroRow({ entries, gameSlug }: { entries: HeroEntry[]; gameSlug: string
         return (
           <Link
             key={e.characterId}
-            href={`/games/${gameSlug}/characters/${e.characterSlug}`}
+            href={`/games/${gameSlug}/heroes/${e.characterSlug}`}
             className="group flex shrink-0 items-center gap-2 rounded-xl px-3 py-2 transition hover:-translate-y-0.5"
             style={{
               background: 'rgba(255,255,255,0.02)',

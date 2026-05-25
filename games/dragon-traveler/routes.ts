@@ -1,9 +1,6 @@
 export const dragonTravelerRoutes = {
-  characters: {
-    pattern: '/characters/[slug]',
-  },
-  skills: {
-    pattern: '/skills/[slug]',
+  heroes: {
+    pattern: '/heroes/[slug]',
   },
   guides: {
     pattern: '/guides',

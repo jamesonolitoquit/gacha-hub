@@ -14,6 +14,7 @@ type ActionCard = {
 const ICON_MAP: Record<string, string> = {
   'tier-lists': 'BarChart3', builds: 'Wrench', teams: 'Users2',
   characters: 'User', 'database/gear': 'Shield', guides: 'BookOpen',
+  heroes: 'User',
 };
 
 const SUBTITLES: Record<string, string> = {
@@ -30,7 +31,7 @@ export default function ActionGrid({ stats, game }: { stats: OverviewStats; game
     { slug: 'tier-lists', label: 'Tier Lists', href: `/games/${game.slug}/tier-lists`, subtitle: SUBTITLES['tier-lists'], count: stats.tierLists, icon: ICON_MAP['tier-lists'] },
     { slug: 'builds', label: 'Builds', href: `/games/${game.slug}/builds`, subtitle: SUBTITLES.builds, count: stats.heroes, icon: ICON_MAP.builds },
     { slug: 'teams', label: 'Teams', href: `/games/${game.slug}/teams`, subtitle: SUBTITLES.teams, count: stats.teams, icon: ICON_MAP.teams },
-    { slug: 'characters', label: 'Heroes', href: `/games/${game.slug}/characters`, subtitle: SUBTITLES.characters, count: stats.heroes, icon: ICON_MAP.characters },
+    { slug: 'heroes', label: 'Heroes', href: `/games/${game.slug}/heroes`, subtitle: SUBTITLES.characters, count: stats.heroes, icon: ICON_MAP.heroes },
     { slug: 'database/gear', label: 'Gear', href: `/games/${game.slug}/database/gear`, subtitle: SUBTITLES['database/gear'], count: stats.gearSets, icon: ICON_MAP['database/gear'] },
     { slug: 'guides', label: 'Guides', href: `/games/${game.slug}/guides`, subtitle: SUBTITLES.guides, count: stats.guides, icon: ICON_MAP.guides },
   ];

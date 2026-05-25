@@ -11,7 +11,7 @@ export const revalidate = 3600;
 import { buildService } from '../../../../../../server/services/build.service';
 import HeroDetail from '../../../../../../shared/components/HeroDetail';
 
-type CharacterPageProps = {
+type HeroPageProps = {
   params: {
     gameSlug: string;
     slug: string;
@@ -35,7 +35,7 @@ export async function generateStaticParams() {
   return params;
 }
 
-export async function generateMetadata({ params }: CharacterPageProps) {
+export async function generateMetadata({ params }: HeroPageProps) {
   const game = moduleRegistry.get(params.gameSlug);
 
   if (!game) {
@@ -45,10 +45,11 @@ export async function generateMetadata({ params }: CharacterPageProps) {
   return {
     title: `${params.slug} | ${game.name}`,
     description: `Character details for ${params.slug} in ${game.name}.`,
+    alternates: { canonical: `/games/${params.gameSlug}/heroes/${params.slug}` },
   };
 }
 
-export default async function CharacterPage({ params }: CharacterPageProps) {
+export default async function HeroPage({ params }: HeroPageProps) {
   const game = moduleRegistry.get(params.gameSlug);
 
   if (!game) {
@@ -87,7 +88,7 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
   }));
 
   return (
-    <section aria-labelledby="character-title">
+    <section aria-labelledby="hero-title">
       <HeroDetail
         gameSlug={params.gameSlug}
         character={character}

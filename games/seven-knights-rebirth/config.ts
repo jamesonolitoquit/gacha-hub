@@ -88,8 +88,7 @@ export const skrNav: NavItem[] = [
   { slug: 'teams', label: 'Teams', page: 'teams', icon: 'Users2' },
   {
     slug: 'database', label: 'Database', icon: 'Database', children: [
-      { slug: 'heroes', label: 'Heroes', page: 'characters', icon: 'User' },
-      { slug: 'skills', label: 'Skills', page: 'skills', icon: 'Sparkles' },
+      { slug: 'heroes', label: 'Heroes', page: 'heroes', icon: 'User' },
       { slug: 'gear', label: 'Gear', page: 'database/gear', icon: 'Shield' },
       { slug: 'pets', label: 'Pets', page: 'database/pets', icon: 'Heart' },
     ],

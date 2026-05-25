@@ -1,6 +1,5 @@
 import { heroStats } from '../../db/schema';
 import { db } from '../db';
-import { getSeedHeroStats } from '../bootstrap-data';
 
 export type HeroStatRecord = {
   id: number;
@@ -36,18 +35,6 @@ function mapHeroStatRow(row: HeroStatRow): HeroStatRecord {
   };
 }
 
-function mapSeedHeroStat(stat: { statName: string; baseValue: number; perLevel: number | null; maxValue: number | null }, characterId: number, index: number): HeroStatRecord {
-  return {
-    id: index + 1,
-    characterId,
-    statName: stat.statName,
-    baseValue: stat.baseValue,
-    perLevelValue: stat.perLevel,
-    maxValue: stat.maxValue,
-    patchId: null,
-  };
-}
-
 export class HeroStatsRepository {
   async findByCharacterId(characterId: number): Promise<HeroStatRecord[]> {
     if (db) {
@@ -69,8 +56,7 @@ export class HeroStatsRepository {
       }
     }
 
-    const seed = getSeedHeroStats(characterId);
-    return seed.map((stat, i) => mapSeedHeroStat(stat, characterId, i));
+    return [];
   }
 }
 

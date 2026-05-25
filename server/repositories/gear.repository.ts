@@ -1,5 +1,6 @@
 import { gear } from '../../db/schema';
-import { findSeedGear, getSeedGear } from '../bootstrap-data';
+import { getGameSlugById } from '../bootstrap-data';
+import { seedRegistry } from '../seeds/seed-registry';
 import { db } from '../db';
 
 export type GearRecord = typeof gear.$inferSelect;
@@ -60,22 +61,9 @@ export class GearRepository {
       }
     }
 
-    return getSeedGear(gameId).map((g) => ({
-      id: g.id,
-      gameId: g.gameId,
-      slug: g.slug,
-      name: g.name,
-      source: g.source,
-      twoPieceEffect: g.twoPieceEffect,
-      fourPieceEffect: g.fourPieceEffect,
-      description: g.description,
-      iconUrl: g.iconUrl,
-      tags: g.tags,
-      patchId: null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    }));
+    const slug = getGameSlugById(gameId);
+    if (!slug) return [];
+    return seedRegistry.getGear(slug) as GearRecord[];
   }
 
   async findBySlug(gameId: number, slug: string): Promise<GearRecord | undefined> {
@@ -99,28 +87,10 @@ export class GearRepository {
       }
     }
 
-    const gearItem = findSeedGear(gameId, slug);
-
-    if (!gearItem) {
-      return undefined;
-    }
-
-    return {
-      id: gearItem.id,
-      gameId: gearItem.gameId,
-      slug: gearItem.slug,
-      name: gearItem.name,
-      source: gearItem.source,
-      twoPieceEffect: gearItem.twoPieceEffect,
-      fourPieceEffect: gearItem.fourPieceEffect,
-      description: gearItem.description,
-      iconUrl: gearItem.iconUrl,
-      tags: gearItem.tags,
-      patchId: null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    };
+    const gameSlug = getGameSlugById(gameId);
+    if (!gameSlug) return undefined;
+    const all = seedRegistry.getGear(gameSlug);
+    return all.find((g) => g.slug === slug) as GearRecord | undefined;
   }
 }
 

@@ -23,7 +23,7 @@ export default function InlineCharacterCard({ gameSlug, character }: Props) {
 
   return (
     <Link
-      href={`/games/${gameSlug}/characters/${character.slug}`}
+      href={`/games/${gameSlug}/heroes/${character.slug}`}
       className="inline-flex items-center gap-3 rounded-lg border border-white/10 p-3 transition hover:border-sky-300/40 hover:bg-white/5"
     >
       <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-md relative">

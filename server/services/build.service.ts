@@ -1,4 +1,5 @@
-import { getSeedBuilds, findSeedBuildForCharacter } from '../bootstrap-data';
+import { getGameSlugById } from '../bootstrap-data';
+import { seedRegistry } from '../seeds/seed-registry';
 
 export type BuildGearSet = {
   weapon: string;
@@ -21,11 +22,16 @@ export type BuildData = {
 
 export class BuildService {
   async listBuilds(gameId: number): Promise<BuildData[]> {
-    return getSeedBuilds(gameId) as BuildData[];
+    const slug = getGameSlugById(gameId);
+    if (!slug) return [];
+    return seedRegistry.getBuilds(slug) as BuildData[];
   }
 
   async getBuildForCharacter(gameId: number, characterSlug: string): Promise<BuildData | null> {
-    const seed = findSeedBuildForCharacter(gameId, characterSlug);
+    const slug = getGameSlugById(gameId);
+    if (!slug) return null;
+    const builds = seedRegistry.getBuilds(slug);
+    const seed = builds.find((b) => b.characterSlug === characterSlug) ?? null;
     if (!seed) return null;
 
     return {

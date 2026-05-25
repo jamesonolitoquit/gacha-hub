@@ -1,4 +1,6 @@
 import { db } from '../db';
+import { getGameSlugById } from '../bootstrap-data';
+import { seedRegistry } from '../seeds/seed-registry';
 
 export type OverviewStats = {
   heroes: number;
@@ -12,7 +14,7 @@ export type OverviewStats = {
 
 export class OverviewRepository {
   async getStats(gameId: number): Promise<OverviewStats> {
-    if (!db) return this.getFallbackStats();
+    if (!db) return this.getFallbackStats(gameId);
 
     try {
       const charIdsResult = await db
@@ -57,12 +59,25 @@ export class OverviewRepository {
         teams: teamsResult.count ?? 0,
       };
     } catch {
-      return this.getFallbackStats();
+      return this.getFallbackStats(gameId);
     }
   }
 
-  private getFallbackStats(): OverviewStats {
-    return { heroes: 0, skills: 0, gearSets: 0, pets: 0, guides: 0, tierLists: 0, teams: 0 };
+  private getFallbackStats(gameId: number): OverviewStats {
+    const slug = getGameSlugById(gameId);
+    if (!slug) return { heroes: 0, skills: 0, gearSets: 0, pets: 0, guides: 0, tierLists: 0, teams: 0 };
+    const chars = seedRegistry.getCharacters(slug);
+    const charIds = chars.map((c) => c.id);
+    const allSkills = seedRegistry.getSkills(slug);
+    return {
+      heroes: chars.length,
+      skills: allSkills.filter((s) => charIds.includes(s.characterId)).length,
+      gearSets: seedRegistry.getGear(slug).length,
+      pets: seedRegistry.getPets(slug).length,
+      guides: 0,
+      tierLists: seedRegistry.getTierLists(slug).length,
+      teams: seedRegistry.getTeams(slug).length,
+    };
   }
 }
 

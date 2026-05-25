@@ -95,7 +95,7 @@ export class SearchService {
             description: [c.characterClass, c.role, c.element].filter(Boolean).join(' \u00B7 '),
             score: s,
             game: module,
-            href: `/games/${module.slug}/characters/${c.slug}`,
+            href: `/games/${module.slug}/heroes/${c.slug}`,
           });
         }
       }
@@ -115,7 +115,7 @@ export class SearchService {
               description: [skill.type, skill.powerType, skill.targets].filter(Boolean).join(' \u00B7 '),
               score: s,
               game: module,
-              href: `/games/${module.slug}/characters/${group.characterSlug}`,
+              href: `/games/${module.slug}/heroes/${group.characterSlug}`,
             });
           }
         }

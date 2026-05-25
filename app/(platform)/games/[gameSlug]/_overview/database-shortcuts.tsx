@@ -8,8 +8,7 @@ type Shortcut = {
 
 export default function DatabaseShortcuts({ gameSlug }: { gameSlug: string }) {
   const shortcuts: Shortcut[] = [
-    { label: 'Heroes', href: `/games/${gameSlug}/characters`, icon: 'User' },
-    { label: 'Skills', href: `/games/${gameSlug}/skills`, icon: 'Sparkles' },
+    { label: 'Heroes', href: `/games/${gameSlug}/heroes`, icon: 'User' },
     { label: 'Gear', href: `/games/${gameSlug}/database/gear`, icon: 'Shield' },
     { label: 'Pets', href: `/games/${gameSlug}/database/pets`, icon: 'Heart' },
   ];

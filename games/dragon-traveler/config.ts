@@ -79,8 +79,7 @@ export const dtNav: NavItem[] = [
   { slug: 'teams', label: 'Teams', page: 'teams', icon: 'Users2' },
   {
     slug: 'database', label: 'Database', icon: 'Database', children: [
-      { slug: 'heroes', label: 'Heroes', page: 'characters', icon: 'User' },
-      { slug: 'skills', label: 'Skills', page: 'skills', icon: 'Sparkles' },
+      { slug: 'heroes', label: 'Heroes', page: 'heroes', icon: 'User' },
     ],
   },
   { slug: 'guides', label: 'Guides', page: 'guides', icon: 'BookOpen' },

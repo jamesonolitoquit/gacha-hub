@@ -233,7 +233,7 @@ export default function SkrCharactersIndex({
               <SkrCharacterCard
                 key={character.id}
                 character={character}
-                href={`/games/${gameSlug}/characters/${character.slug}`}
+                href={`/games/${gameSlug}/heroes/${character.slug}`}
                 elementConfig={elementConfig}
                 classConfig={classConfig}
                 stars={stars}

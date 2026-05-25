@@ -121,13 +121,6 @@ test('tier list detail page exists', () => {
   assert.match(source, /tierEntryService\.getEntriesForTierList/);
 });
 
-test('skill detail page exists', () => {
-  const source = read('app/(platform)/games/[gameSlug]/skills/[slug]/page.tsx');
-
-  assert.match(source, /export async function generateMetadata/);
-  assert.match(source, /skillService\.getSkill/);
-});
-
 test('database migration exists', () => {
   const source = read('db/migrations/001_init_schema.sql');
 

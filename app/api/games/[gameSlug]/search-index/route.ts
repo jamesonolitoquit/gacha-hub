@@ -34,7 +34,7 @@ export async function GET(
     entries.push({
       label: c.name,
       description: [c.characterClass, c.role, c.element].filter(Boolean).join(' · '),
-      href: `/games/${params.gameSlug}/characters/${c.slug}`,
+      href: `/games/${params.gameSlug}/heroes/${c.slug}`,
       type: 'hero',
     });
   }
@@ -44,7 +44,7 @@ export async function GET(
       entries.push({
         label: s.name,
         description: [s.type, s.powerType, s.targets].filter(Boolean).join(' · '),
-        href: `/games/${params.gameSlug}/characters/${group.characterSlug}`,
+        href: `/games/${params.gameSlug}/heroes/${group.characterSlug}`,
         type: 'skill',
       });
     }

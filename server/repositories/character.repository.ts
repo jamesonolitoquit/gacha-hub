@@ -1,5 +1,6 @@
 import { characters } from '../../db/schema';
-import { findSeedCharacter, getSeedCharactersByGameSlug, getGameSlugById } from '../bootstrap-data';
+import { getGameSlugById } from '../bootstrap-data';
+import { seedRegistry } from '../seeds/seed-registry';
 import { db } from '../db';
 import { generatePlaceholderPortraitUrl } from '../../shared/utils/portrait';
 
@@ -52,65 +53,13 @@ function mapCharacterRow(row: CharacterRow): CharacterRecord {
   };
 }
 
-function hydrateCharacterAssets(character: CharacterRecord, seed?: ReturnType<typeof findSeedCharacter>): CharacterRecord {
-  const placeholders = {
-    portraitUrl: generatePlaceholderPortraitUrl(character.name, character.role),
-    fullArtUrl: generatePlaceholderPortraitUrl(character.name, character.role),
-    iconUrl: generatePlaceholderPortraitUrl(character.name, character.role),
-  };
-
-  if (!seed) {
-    return {
-      ...character,
-      portraitUrl: character.portraitUrl ?? placeholders.portraitUrl,
-      fullArtUrl: character.fullArtUrl ?? placeholders.fullArtUrl,
-      iconUrl: character.iconUrl ?? placeholders.iconUrl,
-    };
-  }
-
+function hydrateCharacterAssets(character: CharacterRecord): CharacterRecord {
   return {
     ...character,
-    portraitUrl: character.portraitUrl ?? seed.portraitUrl ?? placeholders.portraitUrl,
-    fullArtUrl: character.fullArtUrl ?? seed.fullArtUrl ?? placeholders.fullArtUrl,
-    iconUrl: character.iconUrl ?? seed.iconUrl ?? placeholders.iconUrl,
+    portraitUrl: character.portraitUrl ?? generatePlaceholderPortraitUrl(character.name, character.role),
+    fullArtUrl: character.fullArtUrl ?? generatePlaceholderPortraitUrl(character.name, character.role),
+    iconUrl: character.iconUrl ?? generatePlaceholderPortraitUrl(character.name, character.role),
   };
-}
-
-function mapSeedCharacter(character: ReturnType<typeof findSeedCharacter> extends infer T ? T : never, index = 1): CharacterRecord {
-  if (!character) {
-    throw new Error('Seed character not found');
-  }
-
-  return {
-    id: index,
-    gameId: character.gameId,
-    slug: character.slug,
-    name: character.name,
-    rarity: character.rarity,
-    element: character.element,
-    characterClass: character.characterClass,
-    role: character.role,
-    portraitUrl: character.portraitUrl ?? null,
-    fullArtUrl: character.fullArtUrl ?? null,
-    iconUrl: character.iconUrl ?? null,
-    description: character.description,
-    tags: null,
-    releasePatchId: null,
-    introducedInPatchId: null,
-    lastVerifiedPatchId: null,
-    createdAt: new Date(),
-    updatedAt: new Date(),
-    deletedAt: null,
-  };
-}
-
-function seedCharactersByGameId(gameId: number) {
-  const slug = getGameSlugById(gameId);
-  return slug ? getSeedCharactersByGameSlug(slug) : [];
-}
-
-function mapSeedCharacters(gameId: number): CharacterRecord[] {
-  return seedCharactersByGameId(gameId).map((character, index) => mapSeedCharacter(character, index + 1));
 }
 
 export class CharacterRepository {
@@ -130,11 +79,17 @@ export class CharacterRepository {
 
         return (data ?? []).map((row) => mapCharacterRow(row as CharacterRow));
       } catch {
-        return mapSeedCharacters(gameId);
+        return this.getSeedCharacters(gameId);
       }
     }
 
-    return mapSeedCharacters(gameId);
+    return this.getSeedCharacters(gameId);
+  }
+
+  private getSeedCharacters(gameId: number): CharacterRecord[] {
+    const slug = getGameSlugById(gameId);
+    if (!slug) return [];
+    return seedRegistry.getCharacters(slug) as CharacterRecord[];
   }
 
   async findByGameIdPaged(
@@ -182,7 +137,7 @@ export class CharacterRepository {
       }
     }
 
-    const all = seedCharactersByGameId(gameId);
+    const all = this.getSeedCharacters(gameId);
     let filtered = all;
 
     if (opts.search) {
@@ -200,27 +155,7 @@ export class CharacterRepository {
     }
 
     const total = filtered.length;
-    const paged = filtered.slice(offset, offset + limit).map((c, i) => ({
-      id: c.id,
-      gameId: c.gameId,
-      slug: c.slug,
-      name: c.name,
-      rarity: c.rarity != null ? String(c.rarity) : null,
-      element: c.element,
-      characterClass: c.characterClass,
-      role: c.role,
-      portraitUrl: c.portraitUrl ?? null,
-      fullArtUrl: c.fullArtUrl ?? null,
-      iconUrl: c.iconUrl ?? null,
-      description: c.description,
-      tags: null,
-      releasePatchId: null,
-      introducedInPatchId: null,
-      lastVerifiedPatchId: null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    }));
+    const paged = filtered.slice(offset, offset + limit);
 
     return { rows: paged, total };
   }
@@ -242,40 +177,14 @@ export class CharacterRepository {
 
         if (data) {
           const mapped = mapCharacterRow(data as CharacterRow);
-          return hydrateCharacterAssets(mapped, findSeedCharacter(gameId, mapped.slug));
+          return hydrateCharacterAssets(mapped);
         }
       } catch {
-        // Fall back to seed data when the Supabase schema is unavailable.
       }
     }
 
-    const character = seedCharactersByGameId(gameId).find((entry) => entry.id === id);
-
-    if (!character) {
-      return undefined;
-    }
-
-    return {
-      id: character.id,
-      gameId: character.gameId,
-      slug: character.slug,
-      name: character.name,
-      rarity: character.rarity != null ? String(character.rarity) : null,
-      element: character.element,
-      characterClass: character.characterClass,
-      role: character.role,
-      portraitUrl: character.portraitUrl ?? null,
-      fullArtUrl: character.fullArtUrl ?? null,
-      iconUrl: character.iconUrl ?? null,
-      description: character.description,
-      tags: null,
-      releasePatchId: null,
-      introducedInPatchId: null,
-      lastVerifiedPatchId: null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    };
+    const all = this.getSeedCharacters(gameId);
+    return all.find((entry) => entry.id === id);
   }
 
   async findByIds(gameId: number, ids: number[]): Promise<CharacterRecord[]> {
@@ -293,39 +202,17 @@ export class CharacterRepository {
         if (data) {
           const all = data.map((row) => {
             const mapped = mapCharacterRow(row as CharacterRow);
-            return hydrateCharacterAssets(mapped, findSeedCharacter(gameId, mapped.slug));
+            return hydrateCharacterAssets(mapped);
           });
-          // Preserve input order
           const byId = new Map(all.map((c) => [c.id, c]));
           return ids.map((id) => byId.get(id)).filter(Boolean) as CharacterRecord[];
         }
       } catch {
-        // fall through to seed data
       }
     }
 
-    const seed = seedCharactersByGameId(gameId).filter((entry) => ids.includes(entry.id));
-    return seed.map((character) => ({
-      id: character.id,
-      gameId: character.gameId,
-      slug: character.slug,
-      name: character.name,
-      rarity: character.rarity != null ? String(character.rarity) : null,
-      element: character.element,
-      characterClass: character.characterClass,
-      role: character.role,
-      portraitUrl: character.portraitUrl ?? null,
-      fullArtUrl: character.fullArtUrl ?? null,
-      iconUrl: character.iconUrl ?? null,
-      description: character.description,
-      tags: null,
-      releasePatchId: null,
-      introducedInPatchId: null,
-      lastVerifiedPatchId: null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    }));
+    const all = this.getSeedCharacters(gameId);
+    return all.filter((entry) => ids.includes(entry.id));
   }
 
   async findBySlug(gameId: number, slug: string): Promise<CharacterRecord | undefined> {
@@ -345,40 +232,14 @@ export class CharacterRepository {
 
         if (data) {
           const mapped = mapCharacterRow(data as CharacterRow);
-          return hydrateCharacterAssets(mapped, findSeedCharacter(gameId, mapped.slug));
+          return hydrateCharacterAssets(mapped);
         }
       } catch {
-        // Fall back to seed data when the Supabase schema is unavailable.
       }
     }
 
-    const character = findSeedCharacter(gameId, slug);
-
-    if (!character) {
-      return undefined;
-    }
-
-    return {
-      id: character.id,
-      gameId: character.gameId,
-      slug: character.slug,
-      name: character.name,
-      rarity: character.rarity != null ? String(character.rarity) : null,
-      element: character.element,
-      characterClass: character.characterClass,
-      role: character.role,
-      portraitUrl: character.portraitUrl ?? null,
-      fullArtUrl: character.fullArtUrl ?? null,
-      iconUrl: character.iconUrl ?? null,
-      description: character.description,
-      tags: null,
-      releasePatchId: null,
-      introducedInPatchId: null,
-      lastVerifiedPatchId: null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    };
+    const all = this.getSeedCharacters(gameId);
+    return all.find((entry) => entry.slug === slug);
   }
 
   async create(input: CreateCharacterInput): Promise<CharacterRecord> {
@@ -408,7 +269,7 @@ export class CharacterRepository {
 
       if (data) {
         const mapped = mapCharacterRow(data as CharacterRow);
-        return hydrateCharacterAssets(mapped, findSeedCharacter(mapped.gameId, mapped.slug));
+        return hydrateCharacterAssets(mapped);
       }
     }
 

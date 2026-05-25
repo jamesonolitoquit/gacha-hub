@@ -87,7 +87,7 @@ export default function SkrThumbnailCarousel({ gameSlug, characters, currentSlug
             <div key={character.id} className="w-[100px] flex-shrink-0">
               <SkrCharacterCard
                 character={character}
-                href={`/games/${gameSlug}/characters/${character.slug}`}
+                href={`/games/${gameSlug}/heroes/${character.slug}`}
                 elementConfig={elementConfig}
                 classConfig={classConfig}
                 stars={stars}

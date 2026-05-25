@@ -5,8 +5,8 @@ type StatPill = { label: string; value: number; href: string };
 
 export default function MetaStrip({ stats, gameSlug }: { stats: OverviewStats; gameSlug: string }) {
   const pills: StatPill[] = [
-    { label: 'Heroes', value: stats.heroes, href: `/games/${gameSlug}/characters` },
-    { label: 'Skills', value: stats.skills, href: `/games/${gameSlug}/skills` },
+    { label: 'Heroes', value: stats.heroes, href: `/games/${gameSlug}/heroes` },
+    { label: 'Skills', value: stats.skills, href: `/games/${gameSlug}/heroes` },
     { label: 'Tier Lists', value: stats.tierLists, href: `/games/${gameSlug}/tier-lists` },
     { label: 'Gear Sets', value: stats.gearSets, href: `/games/${gameSlug}/database/gear` },
     { label: 'Pets', value: stats.pets, href: `/games/${gameSlug}/database/pets` },

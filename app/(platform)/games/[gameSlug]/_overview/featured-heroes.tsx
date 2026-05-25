@@ -41,7 +41,7 @@ export default function FeaturedHeroes({
           return (
             <Link
               key={h.id}
-              href={`/games/${gameSlug}/characters/${h.slug}`}
+              href={`/games/${gameSlug}/heroes/${h.slug}`}
               className="group shrink-0 rounded-xl p-3 transition hover:-translate-y-0.5"
               style={{
                 background: 'rgba(255,255,255,0.02)',

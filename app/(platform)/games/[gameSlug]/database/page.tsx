@@ -26,8 +26,8 @@ export default async function DatabaseLandingPage({ params }: Props) {
   ]);
 
   const entries = [
-    { slug: 'characters', label: 'Heroes', count: characters.length, href: `/games/${params.gameSlug}/characters` },
-    { slug: 'skills', label: 'Skills', count: skills.length, href: `/games/${params.gameSlug}/skills` },
+    { slug: 'heroes', label: 'Heroes', count: characters.length, href: `/games/${params.gameSlug}/heroes` },
+    { slug: 'skills', label: 'Skills', count: skills.length, href: `/games/${params.gameSlug}/heroes` },
     ...(gearSets.length > 0 ? [{ slug: 'gear', label: 'Gear Sets', count: gearSets.length, href: `/games/${params.gameSlug}/database/gear` }] : []),
     ...(pets.length > 0 ? [{ slug: 'pets', label: 'Pets', count: pets.length, href: `/games/${params.gameSlug}/database/pets` }] : []),
   ];

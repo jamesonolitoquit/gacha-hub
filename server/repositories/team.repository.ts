@@ -1,6 +1,8 @@
 import { teams } from '../../db/schema';
-import { getSeedCharacters, getSeedTeams, findSeedTeam } from '../bootstrap-data';
+import { getGameSlugById } from '../bootstrap-data';
+import { seedRegistry } from '../seeds/seed-registry';
 import { db } from '../db';
+import type { NormalizedTeam } from '../seeds/types';
 
 export type TeamRecord = typeof teams.$inferSelect;
 export type CreateTeamInput = typeof teams.$inferInsert;
@@ -47,20 +49,13 @@ function mapTeamRow(row: TeamRow): TeamRecord {
   };
 }
 
-function resolveCharacterSlugs(gameId: number, slugs: string[]): string {
-  const chars = getSeedCharacters(gameId);
-  const slugToId = new Map(chars.map((c) => [c.slug, c.id]));
-  const ids = slugs.map((s) => slugToId.get(s) ?? 0).filter((id) => id > 0);
-  return ids.join(',');
-}
-
-function mapSeedTeam(seed: SeedTeam, gameId: number, index: number): TeamRecord {
+function mapSeedTeam(seed: NormalizedTeam, gameId: number, index: number): TeamRecord {
   return {
     id: index + 1,
     gameId: seed.gameId,
     slug: seed.slug,
     name: seed.name,
-    characterIds: resolveCharacterSlugs(gameId, seed.characterSlugs),
+    characterIds: seed.characterIds,
     synergyScore: seed.synergyScore,
     powerLevel: seed.powerLevel,
     purpose: seed.purpose,
@@ -75,19 +70,6 @@ function mapSeedTeam(seed: SeedTeam, gameId: number, index: number): TeamRecord 
     deletedAt: null,
   };
 }
-
-type SeedTeam = {
-  gameId: number;
-  slug: string;
-  name: string;
-  characterSlugs: string[];
-  purpose: string;
-  difficulty: string;
-  synergyScore: number;
-  powerLevel: number;
-  gearRecommendations?: Record<string, unknown>;
-  notes?: string;
-};
 
 export class TeamRepository {
   async findByGameId(gameId: number): Promise<TeamRecord[]> {
@@ -112,7 +94,9 @@ export class TeamRepository {
       }
     }
 
-    return getSeedTeams(gameId).map((t, i) => mapSeedTeam(t as SeedTeam, gameId, i));
+    const slug = getGameSlugById(gameId);
+    if (!slug) return [];
+    return seedRegistry.getTeams(slug).map((t, i) => mapSeedTeam(t, gameId, i));
   }
 
   async findBySlug(gameId: number, slug: string): Promise<TeamRecord | undefined> {
@@ -138,9 +122,11 @@ export class TeamRepository {
       }
     }
 
-    const seed = findSeedTeam(gameId, slug);
+    const gameSlug = getGameSlugById(gameId);
+    if (!gameSlug) return undefined;
+    const seed = seedRegistry.getTeams(gameSlug).find((t) => t.slug === slug);
     if (!seed) return undefined;
-    return mapSeedTeam(seed as SeedTeam, gameId, 0);
+    return mapSeedTeam(seed, gameId, 0);
   }
 
   async create(input: CreateTeamInput): Promise<TeamRecord> {

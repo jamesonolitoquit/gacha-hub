@@ -1,6 +1,7 @@
 import { skills } from '../../db/schema';
-import { characterRepository } from './character.repository';
-import { findSeedSkillByGameId, getSeedSkills } from '../bootstrap-data';
+import { CharacterRepository } from './character.repository';
+import { getGameSlugById } from '../bootstrap-data';
+import { seedRegistry } from '../seeds/seed-registry';
 import { db } from '../db';
 
 export type SkillRecord = typeof skills.$inferSelect;
@@ -59,7 +60,7 @@ function mapSkillRow(row: SkillRow): SkillRecord {
 }
 
 export class SkillRepository {
-  async findByCharacterId(characterId: number): Promise<SkillRecord[]> {
+  async findByCharacterId(characterId: number, gameId: number = 1): Promise<SkillRecord[]> {
     if (db) {
       try {
         const { data, error } = await db
@@ -75,37 +76,16 @@ export class SkillRepository {
 
         return (data ?? []).map((row) => mapSkillRow(row as SkillRow));
       } catch {
-        // fall through to seed data
       }
     }
 
-    return getSeedSkills(characterId).map((skill, index) => ({
-      id: index + 1,
-      characterId: skill.characterId,
-      slug: skill.slug,
-      name: skill.name,
-      type: skill.type,
-      description: skill.description,
-      cooldownTurns: skill.cooldownTurns,
-      cost: skill.cost,
-      powerType: skill.powerType,
-      scalingStat: skill.scalingStat,
-      targets: skill.targets,
-      rangeType: skill.rangeType,
-      order: null,
-      enhancementText: null,
-      transcendenceText: null,
-      iconUrl: null,
-      animationUrl: null,
-      introducedInPatchId: null,
-      lastVerifiedPatchId: null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    }));
+    const slug = getGameSlugById(gameId);
+    if (!slug) return [];
+    const all = seedRegistry.getSkills(slug);
+    return all.filter((s) => s.characterId === characterId) as SkillRecord[];
   }
 
-  async findByCharacterIds(characterIds: number[]): Promise<SkillRecord[]> {
+  async findByCharacterIds(characterIds: number[], gameId: number = 1): Promise<SkillRecord[]> {
     if (characterIds.length === 0) return [];
     if (db) {
       try {
@@ -119,43 +99,17 @@ export class SkillRepository {
         if (error) throw new Error(`Failed to load skills: ${error.message}`);
         return (data ?? []).map((row) => mapSkillRow(row as SkillRow));
       } catch {
-        // fall through to seed data
       }
     }
 
-    const results: SkillRecord[] = [];
-    for (const cid of characterIds) {
-      const skills = getSeedSkills(cid).map((skill, index) => ({
-        id: index + 1,
-        characterId: skill.characterId,
-        slug: skill.slug,
-        name: skill.name,
-        type: skill.type,
-        description: skill.description,
-        cooldownTurns: skill.cooldownTurns,
-        cost: skill.cost,
-        powerType: skill.powerType,
-        scalingStat: skill.scalingStat,
-        targets: skill.targets,
-        rangeType: skill.rangeType,
-        order: null,
-        enhancementText: null,
-        transcendenceText: null,
-        iconUrl: null,
-        animationUrl: null,
-        introducedInPatchId: null,
-        lastVerifiedPatchId: null,
-        createdAt: new Date(),
-        updatedAt: new Date(),
-        deletedAt: null,
-      }));
-      results.push(...skills);
-    }
-    return results;
+    const slug = getGameSlugById(gameId);
+    if (!slug) return [];
+    const all = seedRegistry.getSkills(slug);
+    return all.filter((s) => characterIds.includes(s.characterId)) as SkillRecord[];
   }
 
   async findBySlug(gameId: number, slug: string): Promise<SkillRecord | undefined> {
-    const characters = await characterRepository.findByGameId(gameId);
+    const characters = await new CharacterRepository().findByGameId(gameId);
     const characterIds = characters.map((character) => character.id);
 
     if (db && characterIds.length > 0) {
@@ -174,40 +128,13 @@ export class SkillRepository {
           return mapSkillRow(data as SkillRow);
         }
       } catch {
-        // fall through to seed data
       }
     }
 
-    const skill = findSeedSkillByGameId(gameId, slug);
-
-    if (!skill) {
-      return undefined;
-    }
-
-    return {
-      id: Date.now(),
-      characterId: skill.characterId,
-      slug: skill.slug,
-      name: skill.name,
-      type: skill.type,
-      description: skill.description,
-      cooldownTurns: skill.cooldownTurns,
-      cost: skill.cost,
-      powerType: skill.powerType,
-      scalingStat: skill.scalingStat,
-      targets: skill.targets,
-      rangeType: skill.rangeType,
-      order: null,
-      enhancementText: null,
-      transcendenceText: null,
-      iconUrl: null,
-      animationUrl: null,
-      introducedInPatchId: null,
-      lastVerifiedPatchId: null,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-      deletedAt: null,
-    };
+    const gameSlug = getGameSlugById(gameId);
+    if (!gameSlug) return undefined;
+    const all = seedRegistry.getSkills(gameSlug);
+    return all.find((s) => s.slug === slug) as SkillRecord | undefined;
   }
 
   async create(input: CreateSkillInput): Promise<SkillRecord> {

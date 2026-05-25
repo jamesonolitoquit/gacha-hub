@@ -1,9 +1,6 @@
 export const brownDust2Routes = {
-  characters: {
-    pattern: '/characters/[slug]',
-  },
-  skills: {
-    pattern: '/skills/[slug]',
+  heroes: {
+    pattern: '/heroes/[slug]',
   },
   guides: {
     pattern: '/guides',

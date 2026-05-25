@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: GamePageProps) {
     title: game.seo?.title ?? `${game.name} — Tier Lists, Builds & Guides`,
     description: game.seo?.description ?? `Tactical database for ${game.name} — tier lists, builds, characters, and guides.`,
     keywords: game.seo?.keywords?.join(', ') ?? '',
+    alternates: { canonical: `/games/${params.gameSlug}` },
   };
 }
 

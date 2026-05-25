@@ -5,13 +5,13 @@ import { characterService } from '../../../../../server/services/character.servi
 import { gameService } from '../../../../../server/services/game.service';
 import CharactersIndex from '../../../../../shared/components/CharactersIndex';
 
-type CharactersPageProps = {
+type HeroesPageProps = {
   params: {
     gameSlug: string;
   };
 };
 
-export async function generateMetadata({ params }: CharactersPageProps) {
+export async function generateMetadata({ params }: HeroesPageProps) {
   const game = moduleRegistry.get(params.gameSlug);
 
   if (!game) {
@@ -19,12 +19,13 @@ export async function generateMetadata({ params }: CharactersPageProps) {
   }
 
   return {
-    title: `Characters | ${game.name}`,
-    description: `Browse all characters for ${game.name}.`,
+    title: `Heroes | ${game.name}`,
+    description: `Browse all heroes for ${game.name}.`,
+    alternates: { canonical: `/games/${params.gameSlug}/heroes` },
   };
 }
 
-export default async function CharactersPage({ params }: CharactersPageProps) {
+export default async function HeroesPage({ params }: HeroesPageProps) {
   const game = moduleRegistry.get(params.gameSlug);
 
   if (!game) {
@@ -40,16 +41,16 @@ export default async function CharactersPage({ params }: CharactersPageProps) {
   const characters = await characterService.listCharacters(gameRecord.id);
 
   return (
-    <section aria-labelledby="characters-title">
+    <section aria-labelledby="heroes-title">
       <div className="flex items-center justify-between border-b pb-3 mb-4" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
-        <h1 id="characters-title" className="text-lg font-semibold">Characters</h1>
+        <h1 id="heroes-title" className="text-lg font-semibold">Heroes</h1>
         <p className="text-xs text-white/40">{characters.length} total</p>
       </div>
 
       {characters.length > 0 ? (
         <CharactersIndex gameSlug={game.slug} characters={characters} />
       ) : (
-        <p role="status" aria-live="polite" className="mt-8 text-white/75">No characters available yet for this game.</p>
+        <p role="status" aria-live="polite" className="mt-8 text-white/75">No heroes available yet for this game.</p>
       )}
     </section>
   );

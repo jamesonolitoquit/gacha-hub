@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `Teams | ${game.name}`,
     description: `Team compositions and strategies for ${game.name}.`,
+    alternates: { canonical: `/games/${params.gameSlug}/teams` },
   };
 }
 

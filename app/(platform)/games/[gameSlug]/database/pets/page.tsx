@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `Pets | ${game.name}`,
     description: `Companion units and their passive effects for ${game.name}.`,
+    alternates: { canonical: `/games/${params.gameSlug}/database/pets` },
   };
 }
 

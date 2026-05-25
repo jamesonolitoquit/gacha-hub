@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `Builds | ${game.name}`,
     description: `Character builds, gear recommendations, and stat priorities for ${game.name}.`,
+    alternates: { canonical: `/games/${params.gameSlug}/builds` },
   };
 }
 
@@ -92,7 +93,7 @@ export default async function BuildsIndexPage({ params }: Props) {
               {grouped[category].map((build) => (
                 <Link
                   key={build.characterSlug}
-                  href={`/games/${params.gameSlug}/characters/${build.characterSlug}`}
+                  href={`/games/${params.gameSlug}/heroes/${build.characterSlug}`}
                   className="block"
                 >
                   <BuildCard build={build} gameSlug={params.gameSlug} />

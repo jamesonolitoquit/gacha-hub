@@ -38,7 +38,7 @@ export default function BuildCard({ build, gameSlug }: Props) {
     <div className="rounded-xl border p-3 transition hover:bg-white/[0.03]" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
       <div className="flex items-start justify-between gap-2">
         <div className="min-w-0">
-          <Link href={`/games/${gameSlug}/characters/${build.characterSlug}`} className="text-sm font-semibold text-white hover:text-sky-300 transition truncate block">
+          <Link href={`/games/${gameSlug}/heroes/${build.characterSlug}`} className="text-sm font-semibold text-white hover:text-sky-300 transition truncate block">
             {build.characterName}
           </Link>
           <p className="mt-0.5 text-[0.55rem] text-white/50">{activeGear.setName}</p>

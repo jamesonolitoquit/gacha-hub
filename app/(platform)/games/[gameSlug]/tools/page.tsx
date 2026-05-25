@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: ToolsPageProps) {
   return {
     title: `Tools | ${game.name}`,
     description: `Tools for ${game.name}.`,
+    alternates: { canonical: `/games/${params.gameSlug}/tools` },
   };
 }
 

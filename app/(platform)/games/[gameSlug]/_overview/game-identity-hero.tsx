@@ -36,7 +36,7 @@ export default function GameIdentityHero({ game }: { game: GameModule }) {
 
         <div className="mt-5 flex flex-wrap items-center gap-3">
           <Link
-            href={`/games/${game.slug}/characters`}
+            href={`/games/${game.slug}/heroes`}
             className="inline-flex items-center gap-1.5 rounded-xl px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110"
             style={{ background: `${primary}22`, color: primary }}
           >

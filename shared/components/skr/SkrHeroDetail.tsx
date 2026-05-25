@@ -107,7 +107,7 @@ export default function SkrHeroDetail({
     <article className="space-y-6">
       {/* Back link */}
       <Link
-        href={`/games/${gameSlug}/characters`}
+        href={`/games/${gameSlug}/heroes`}
         className="inline-flex items-center gap-1.5 text-xs text-white/50 transition hover:text-white"
       >
         <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>

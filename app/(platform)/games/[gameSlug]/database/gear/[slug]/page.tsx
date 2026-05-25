@@ -39,6 +39,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `${gearSet.name} | ${game.name}`,
     description: gearSet.twoPieceEffect ?? `Gear set details for ${gearSet.name}.`,
+    alternates: { canonical: `/games/${params.gameSlug}/database/gear/${params.slug}` },
   };
 }
 
@@ -144,7 +145,7 @@ export default async function GearDetailPage({ params }: Props) {
             {relatedBuilds.map((b) => (
               <Link
                 key={b.characterSlug}
-                href={`/games/${params.gameSlug}/characters/${b.characterSlug}`}
+                href={`/games/${params.gameSlug}/heroes/${b.characterSlug}`}
                 className="rounded-xl border border-white/10 bg-white/[0.02] px-4 py-2 text-sm font-medium text-white transition hover:bg-white/[0.06]"
               >
                 {b.characterSlug.replace(/-/g, ' ')}

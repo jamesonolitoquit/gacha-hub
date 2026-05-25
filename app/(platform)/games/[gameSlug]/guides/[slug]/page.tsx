@@ -57,6 +57,7 @@ export async function generateMetadata({ params }: GuidePageProps) {
   return {
     title: `${data.guide.title} | ${game.name}`,
     description: data.guide.summary ?? `Guide for ${game.name}.`,
+    alternates: { canonical: `/games/${params.gameSlug}/guides/${params.slug}` },
   };
 }
 

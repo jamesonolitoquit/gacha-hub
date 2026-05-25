@@ -1,9 +1,6 @@
 export const sevenKnightsRebirthRoutes = {
-  characters: {
-    pattern: '/characters/[slug]',
-  },
-  skills: {
-    pattern: '/skills/[slug]',
+  heroes: {
+    pattern: '/heroes/[slug]',
   },
   guides: {
     pattern: '/guides',
@@ -16,9 +13,6 @@ export const sevenKnightsRebirthRoutes = {
   },
   'pet-detail': {
     pattern: '/database/pets/[slug]',
-  },
-  'database-skills': {
-    pattern: '/database/skills',
   },
   teams: {
     pattern: '/teams',
